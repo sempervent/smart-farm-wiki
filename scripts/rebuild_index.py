@@ -154,7 +154,20 @@ def main() -> int:
         all_files.add(rel.as_posix())
 
     missing_in_index = sorted(all_files - linked)
-    extra_in_index = sorted(linked - all_files - {"log.md"})
+    # Index may link outside wiki/ (e.g. ../AGENTS.md). Only flag dangling targets.
+    repo_resolved = root.resolve()
+    extra_raw = sorted(linked - all_files - {"log.md"})
+    extra_in_index: list[str] = []
+    for link in extra_raw:
+        try:
+            resolved = (index_path.parent / link).resolve()
+            resolved.relative_to(repo_resolved)
+        except ValueError:
+            extra_in_index.append(link)
+            continue
+        if resolved.is_file():
+            continue
+        extra_in_index.append(link)
 
     if missing_in_index:
         print("Missing from index (file exists, no link):", file=sys.stderr)
