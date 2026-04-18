@@ -210,3 +210,9 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Added [`scripts/pdf_to_markdown.py`](../../scripts/pdf_to_markdown.py) (PyMuPDF): writes `*-extracted.md` next to each PDF under `raw/`; `--all-raw --force`. Dependency `pymupdf` in [`pyproject.toml`](../../pyproject.toml). Documented in [`docs/workflows/ingest.md`](../../docs/workflows/ingest.md), [`README.md`](../../README.md), [`AGENTS.md`](../../AGENTS.md). Ran conversion for local PDFs in `raw/processed/2026/` (extracts gitignored with `raw/**`). Tests in [`tests/test_pdf_to_markdown.py`](../../tests/test_pdf_to_markdown.py).
 
+---
+
+## [2026-04-18] query | Long 360 tractor no-start (web synthesis)
+
+- Added [`analyses/long-360-tractor-no-start-synthesis.md`](analyses/long-360-tractor-no-start-synthesis.md): diesel troubleshooting (crank vs no-crank, battery/load, Thermostart, fuel bleed, forums); web reference list; linked from [`index.md`](index.md); updated [`analyses/repository-analysis.md`](analyses/repository-analysis.md) counts.
+
