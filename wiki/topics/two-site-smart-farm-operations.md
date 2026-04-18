@@ -3,7 +3,7 @@ title: Two-site smart farm operations
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-21
 tags:
   - two-site
   - operations
@@ -16,7 +16,21 @@ review_status: unreviewed
 
 **Navigation hub** for the **~5-acre home base** + **~120-acre production** + **~35-minute** separation scenario (East Tennessee business plan). **Does not** duplicate long analyses—use the links below.
 
+**Business plan (first-class package)**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
+
 **Meta plan**: [`Smart Farm Wiki — repository implementation plan (business plan integration)`](../analyses/smart-farm-wiki-repository-implementation-plan.md)
+
+**Structure / governance** (overlaps, hubs, entities): [`Structural audit — repository shape and canonical routing`](../analyses/structural-audit-repository-and-canonical-routing.md), [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md), and [`AGENTS.md`](../../AGENTS.md).
+
+## Canonical ownership (durable scope)
+
+| Cluster | Canonical entry | Notes |
+|---------|-----------------|--------|
+| **Business plan (ET)** | [`Package hub`](../business-plan/east-tennessee-two-site-farm-business-plan.md) + [`Planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) | Chapters are supporting; **not** parallel “strategy blogs.” |
+| **Two-site ops (named sites)** | [`Two-site operating model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) | Generic pattern: [`Dual-site — non-agritourism`](../analyses/dual-site-operations-model-non-agritourism.md). **Entities**: [`SITE_HOME`](../entities/five-acre-home-base-site-home-et-two-site.md), [`SITE_FARM`](../entities/120-acre-production-farm-site-farm-et-two-site.md). |
+| **Telemetry + SoR** | [`Reference architecture`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`SoR boundaries`](../analyses/telemetry-system-of-record-boundaries-and-authority.md), [`Field telemetry ref arch`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md) | **Entity**: [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). |
+| **Land IDs** | [`Farm spatial model / asset registry`](../analyses/farm-spatial-model-and-asset-registry-standard.md) | **Entity**: [`Farm parcels and land units`](../entities/farm-parcels-and-land-units.md). |
+| **Water / power infra** | Topic hubs + runbooks (see tables below) | **Entities**: [`Farm water infrastructure system`](../entities/farm-water-infrastructure-system.md), [`Farm on-site power system`](../entities/farm-on-site-power-system.md). |
 
 ## Business plan (decision-grade)
 

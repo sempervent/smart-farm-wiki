@@ -43,7 +43,7 @@ Background captures (not a substitute for the manuals above):
 - [`GiST spatial index in PostGIS (Medium capture)`](../source-notes/postgis-gist-spatial-index-medium.md)
 - [`PostGIS — complete workflow (capture)`](../source-notes/postgis-complete-workflow.md)
 
-Farm management and lab-build context: [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md).
+Farm management and lab-build context: [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md). **Product entity**: [`farmOS`](../entities/farmos.md).
 
 ## Related
 

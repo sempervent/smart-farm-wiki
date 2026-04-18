@@ -18,6 +18,8 @@ aliases:
 
 # East Tennessee two-site farm business plan — planning framework
 
+**Package navigation (reading order)**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
+
 ## Purpose of this framework
 
 This wiki holds a **decision-grade**, **phased** business plan for a future operation with:

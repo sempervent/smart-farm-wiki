@@ -17,6 +17,8 @@ This page is the **steering document** for the vault’s **domain** (not CI or M
 
 **Epistemic stance**: Claims about *your* operation require *your* data; the wiki holds **placeholders**, **source-notes**, and **synthesis**. This overview **does not** replace professionals (legal, tax, electrical, vet).
 
+**Canonical ownership & anti-sprawl**: Which **cluster** owns durable meaning (business plan, two-site ops, telemetry/SoR, validation, economics) and how **entities** and **hubs** should route readers—see [`Structural audit — page ownership, entity gaps, and hub routing`](structural-audit-page-ownership-entity-gaps-and-hub-routing.md). Prefer **extending** a canonical page over a parallel analysis; follow **`AGENTS.md`** (page ownership, canonicalization, entity-first).
+
 ---
 
 ## Target future-state
@@ -176,16 +178,16 @@ Parent: [`Automation degraded modes and manual fallback SOP`](automation-degrade
 
 ## Prioritized backlog (short)
 
-1. **Telemetry system of record** analysis (conflict rules: farmOS vs HA vs TSDB)—backlog P0 #6.  
+1. **Telemetry system of record** — extend [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md) with **conflict playbooks** (farmOS vs HA vs TSDB) as operators deploy; backlog P0 #6 tracked in [`Implementation backlog`](implementation-backlog-strategic-audit.md).  
 2. **Parcel/paddock naming** + **asset registry minimum fields** as first-class templates (if not yet split from spatial standard).  
-3. **Two-site operations topic hub** linking foundation pages + weekly coverage matrix.  
+3. **Two-site operations topic hub** — [`topics/two-site-smart-farm-operations`](../topics/two-site-smart-farm-operations.md) is live; **ongoing**: keep tables **current** when adding sibling pages.  
 4. **Farm cybersecurity and remote access** topic hub (CISA ingests → policy).  
 5. **Homestead civil systems** topic (command post during crises).  
 6. **Stocking and forage — methods** (extension synthesis).  
 7. **Insurance checklist** (two parcels).  
 8. **Resilience graph** analysis (roads × water × power × comms).  
-9. **Instrumentation priority matrix** (acres, risks, ROI).  
-10. **Entity placeholders** for sites/equipment when ready.
+9. **Instrumentation priority matrix** — [`Instrumentation priority matrix — two-site smart farm`](instrumentation-priority-matrix-two-site-smart-farm.md) exists; **fill** with site evidence over time.  
+10. **Named entities** — [`farmOS`](../entities/farmos.md), [`Home Assistant`](../entities/home-assistant.md); **sites & systems** — [`Five-acre home base (SITE_HOME)`](../entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre production farm (SITE_FARM)`](../entities/120-acre-production-farm-site-farm-et-two-site.md), [`Farm parcels and land units`](../entities/farm-parcels-and-land-units.md), [`Farm water infrastructure system`](../entities/farm-water-infrastructure-system.md), [`Farm on-site power system`](../entities/farm-on-site-power-system.md), [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md); **equipment instances** when stable names exist.
 
 Detailed tracking: [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md).
 
@@ -193,6 +195,7 @@ Detailed tracking: [`Implementation backlog — strategic audit (P0–P3)`](impl
 
 ## Meta and navigation
 
+- **Structural audit (repo shape)**: [`Structural audit — repository shape and canonical routing`](structural-audit-repository-and-canonical-routing.md)  
 - **Strategic audit**: [`Strategic audit — decision-safe operations for a two-site smart farm`](strategic-audit-decision-safe-operations.md)  
 - **IA & prompts**: [`Information architecture — decision-safe operational brain (target design)`](information-architecture-decision-safe-operations.md), [`Agentic wiki improvement prompts (staged, strategic audit)`](agentic-wiki-improvement-prompts-strategic-audit.md)  
 - **Economics**: [`Business viability and farm economics — gap analysis`](business-viability-and-farm-economics-gap-analysis.md)  

@@ -21,6 +21,8 @@ Give a **single first-draft** **logical** picture of the **smart-farm stack** fo
 
 **Business plan links**: [`Planning framework`](east-tennessee-two-site-farm-business-plan-framework.md), [`Smart technology and telemetry strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md).
 
+**Entity anchors** (modeled sites and systems—no parcel-specific claims): [`Five-acre home base (SITE_HOME)`](../entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre production farm (SITE_FARM)`](../entities/120-acre-production-farm-site-farm-et-two-site.md), [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md).
+
 ---
 
 ## Package map (this wiki)

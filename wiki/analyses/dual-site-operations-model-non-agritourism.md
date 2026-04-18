@@ -83,6 +83,16 @@ Give a **first-draft operational model** for running a farm business split acros
 - [`Automation degraded modes and manual fallback SOP`](automation-degraded-modes-manual-fallback-sop.md) — when **automation is wrong or offline**.
 - Future: **CAPEX/OPEX and enterprise sequencing — two-site constraint** (see [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md)).
 
+## Canonical sibling (East Tennessee business plan)
+
+For the **named** **5-acre home base + 120-acre production + ~35-minute** scenario with **phased enterprise** and **telemetry strategy**, use the **scenario-specific** operating model—do not duplicate that narrative here:
+
+- [`Two-site operating model — 5-acre home base and 120-acre farm`](two-site-operations-model-5ac-homebase-120ac-production.md)
+
+This page remains the **generic**, **non-agritourism** pattern when **lodging is not** the revenue center.
+
+---
+
 ## Open items
 
 - [ ] Fill placeholders (`SITE_*`, commute, enterprise).

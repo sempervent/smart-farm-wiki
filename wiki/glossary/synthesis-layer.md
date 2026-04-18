@@ -3,7 +3,7 @@ title: Synthesis layer
 page_type: glossary
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 tags:
   - glossary
 review_status: reviewed
@@ -14,3 +14,5 @@ review_status: reviewed
 The **synthesis layer** is the maintained set of wiki pages that organize and connect evidence from `raw/`. It is the durable model agents evolve over time.
 
 **Contrast:** raw evidence vs wiki structure — see [`Raw vs wiki`](../comparisons/raw-vs-wiki.md).
+
+**Glossary hub:** [`Smart Farm Wiki glossary (hub)`](smart-farm-wiki-glossary.md) — cross-links for recurring operational terms.

@@ -480,3 +480,33 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - Captured synthesis in [`analyses/time-smart-sensors-120ac-to-5ac-homestead.md`](analyses/time-smart-sensors-120ac-to-5ac-homestead.md): operational time vs E2E latency, clock correlation, staleness/authority, sampling vs control-loop; links to existing two-site and telemetry pages.
 - Updated [`index.md`](index.md) (Analyses); [`timing-on-the-farm-synthesis.md`](analyses/timing-on-the-farm-synthesis.md) (related entry).
 
+---
+
+## [2026-04-21] policy | AGENTS governance + structural audit (canonical routing)
+
+- `AGENTS.md`: **public vs private** corpus and secrets, **canonicalization before proliferation**, **entity-first** for named products/orgs, **hub maintenance**, **claim strength and source authority**; session checklist and **lint** definition-of-done updated.
+- Added [`analyses/structural-audit-repository-and-canonical-routing.md`](analyses/structural-audit-repository-and-canonical-routing.md) — strengths, structural risks, highest-value canonical extensions, merge vs routing policy.
+- Entities: [`entities/farmos.md`](entities/farmos.md), [`entities/home-assistant.md`](entities/home-assistant.md); [`entities/example-org.md`](entities/example-org.md) links to those patterns.
+- **Routing** (not merge): [`dual-site-operations-model-non-agritourism.md`](analyses/dual-site-operations-model-non-agritourism.md) ↔ [`two-site-operations-model-5ac-homebase-120ac-production.md`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md).
+- Fix: [`comparisons/farmos-vs-lightweight-stack-two-site-farm.md`](comparisons/farmos-vs-lightweight-stack-two-site-farm.md) → [`telemetry-system-of-record-boundaries-and-authority.md`](analyses/telemetry-system-of-record-boundaries-and-authority.md) (replacing mistaken backlog link).
+- Hubs / index: [`overview.md`](overview.md), [`index.md`](index.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`topics/farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`concepts/data-storage.md`](concepts/data-storage.md).
+
+---
+
+## [2026-04-21] refactor | Business plan + glossary + timelines as first-class lanes
+
+- **`wiki/business-plan/`**: [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) — package navigation spine (`page_type: topic`); `scripts/wiki_common.py` + `scripts/bootstrap.py` include `business-plan/`; `AGENTS.md` mission + taxonomy + index categories updated.
+- **`wiki/index.md`**: new **Business plan** section (moved ET pages out of the **Analyses** block); **Entities** intro; **Timelines** + **Glossary** expanded with real pages; removed template `timelines/example-domain-timeline.md`.
+- **Glossary**: [`glossary/smart-farm-wiki-glossary.md`](glossary/smart-farm-wiki-glossary.md) hub + [`two-site-sites`](glossary/two-site-sites.md), [`system-of-record-farm-data`](glossary/system-of-record-farm-data.md), [`validation-gate`](glossary/validation-gate.md), [`degraded-mode`](glossary/degraded-mode.md); [`synthesis-layer.md`](glossary/synthesis-layer.md) links hub.
+- **Timeline**: [`timelines/east-tennessee-two-site-farm-business-plan-phase-timeline.md`](timelines/east-tennessee-two-site-farm-business-plan-phase-timeline.md) — Phases 0–4 bands.
+- Wiring: [`overview.md`](overview.md), [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/structural-audit-repository-and-canonical-routing.md`](analyses/structural-audit-repository-and-canonical-routing.md).
+
+---
+
+## [2026-04-21] policy | Page ownership audit + entity layer (anti–analysis sprawl)
+
+- Added [`analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md): canonical **clusters** vs supporting analyses, overlap risks, hub weaknesses, entity backlog, agritourism vs ET routing.
+- **`AGENTS.md`**: **Page ownership** section; **entity-first** expanded (sites, infrastructure systems); **agent checklist** points at ownership audit.
+- **Entities** (planning roles, no fake deeds): [`five-acre-home-base-site-home-et-two-site.md`](entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre-production-farm-site-farm-et-two-site.md`](entities/120-acre-production-farm-site-farm-et-two-site.md), [`farm-parcels-and-land-units.md`](entities/farm-parcels-and-land-units.md), [`farm-water-infrastructure-system.md`](entities/farm-water-infrastructure-system.md), [`farm-on-site-power-system.md`](entities/farm-on-site-power-system.md), [`field-telemetry-network-two-site.md`](entities/field-telemetry-network-two-site.md); [`example-org.md`](entities/example-org.md) updated.
+- **Hubs / routing**: [`overview.md`](overview.md), [`index.md`](index.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) (**Canonical ownership** table), [`analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) (entity anchors), [`analyses/structural-audit-repository-and-canonical-routing.md`](analyses/structural-audit-repository-and-canonical-routing.md) (related link), [`glossary/two-site-sites.md`](glossary/two-site-sites.md), [`glossary/smart-farm-wiki-glossary.md`](glossary/smart-farm-wiki-glossary.md).
+

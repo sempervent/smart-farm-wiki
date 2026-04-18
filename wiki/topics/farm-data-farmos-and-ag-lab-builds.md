@@ -17,6 +17,8 @@ review_status: unreviewed
 
 Together these sources connect **software** (farmOS hosting and extensibility) to **physical lab build-out** motivation without collapsing “farm management app” into generic homelab chatter.
 
+**Canonical entity**: [`farmOS`](../entities/farmos.md)
+
 **Source notes**
 
 - [`source-notes/farmos-overview-farmos-org.md`](../source-notes/farmos-overview-farmos-org.md)

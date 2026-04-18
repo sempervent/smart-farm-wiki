@@ -37,7 +37,7 @@ Given **two physical sites** (homestead + distant parcel), is **farmOS** (Drupal
 
 - [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md)
 - [`farmOS model — Assets (documentation capture)`](../source-notes/farmos-model-assets-documentation.md), [`farmOS model — Logs (documentation capture)`](../source-notes/farmos-model-logs-documentation.md)
-- [`Telemetry system of record — options and boundaries`](../analyses/implementation-backlog-strategic-audit.md) *(standalone page pending—see backlog P0 #6)*
+- [`Telemetry system of record — boundaries and authority`](../analyses/telemetry-system-of-record-boundaries-and-authority.md) — authority matrix for records vs telemetry vs dashboards
 - [`Dual-site operations model — non-agritourism farm business`](../analyses/dual-site-operations-model-non-agritourism.md)
 
 ---

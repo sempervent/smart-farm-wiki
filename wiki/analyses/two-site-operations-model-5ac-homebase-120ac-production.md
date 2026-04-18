@@ -22,6 +22,12 @@ Define how a **single farm business** runs when **family and command infrastruct
 
 This page is **operational**, not legal or tax advice. It stays **valid** while **enterprise mix** on the 120 acres is still open: it describes **where work and capital land**, not **which commodity** wins.
 
+## Relationship to generic dual-site pattern
+
+For a **production-led** two-site layout **without** the East Tennessee plan’s named sites, see the **generic** template (same commute/batching concerns, different placeholders):
+
+- [`Dual-site operations model — non-agritourism farm business`](dual-site-operations-model-non-agritourism.md)
+
 ## Decisions supported by this page
 
 | Decision | This page provides |

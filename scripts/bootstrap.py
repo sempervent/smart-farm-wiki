@@ -23,6 +23,7 @@ DIRS = [
     "wiki/comparisons",
     "wiki/timelines",
     "wiki/glossary",
+    "wiki/business-plan",
     "wiki/source-notes",
     "raw/inbox",
     "raw/processed",

@@ -9,7 +9,7 @@ This file is the **highest-priority behavioral contract** for any automated or h
 This repository implements an **LLM-maintained markdown wiki**: a persistent, compounding knowledge base where:
 
 - **`raw/`** holds **immutable** source material (notes, imports, excerpts, files).
-- **`wiki/`** holds the **agent-authored synthesis** (entities, concepts, analyses, cross-links).
+- **`wiki/`** holds the **agent-authored synthesis** (business plan packages, entities, concepts, timelines, glossary, analyses, cross-links).
 - **`docs/`** holds the **operator handbook** for humans and agents (read in-repo); it explains *how* the system works, not the domain knowledge itself. (In this fork, the **MkDocs site** is built from **`wiki/`** only; see `mkdocs.yml` and `docs/operations/publishing.md`.)
 
 The **mechanical goal** is **deterministic, inspectable, markdown-first** workflows: plain files, clear paths, validation scripts, and reproducible doc builds.
@@ -78,7 +78,7 @@ Periodic hygiene: link integrity, orphan reduction, stale-claim review, duplicat
 ## Maintaining `wiki/index.md`
 
 - `index.md` is the **catalog and navigation surface** agents should read first.
-- Organize by **page category** (overview, entities, concepts, topics, source-notes, analyses, comparisons, timelines, glossary).
+- Organize by **page category** (overview, **business plan packages**, entities, concepts, topics, source-notes, analyses, comparisons, timelines, glossary).
 - Each entry: **relative link** + **one-line description**.
 - After adding/removing/renaming pages, update `index.md`. Run `uv run python scripts/rebuild_index.py` to compare index links to files on disk.
 
@@ -119,6 +119,8 @@ Standard directories under `wiki/`:
 | `glossary` | `glossary/` | Definition-first entries |
 | `operating_doc` | (rare; or root) | How the repo itself is operated |
 
+**Business plan packages** (`wiki/business-plan/`): **first-class** navigation pages for a **named** business plan (e.g. East Tennessee two-site). They **do not replace** analysis chapters in `analyses/`—they provide a **stable spine** (reading order, artifact tables, links to critique and repo wiring). Use `page_type: topic` unless a dedicated type is introduced later.
+
 ---
 
 ## Naming conventions
@@ -146,6 +148,54 @@ See [raw/processed/2026/example.md](../../raw/processed/2026/example.md) — sec
 ```
 
 - Prefer `source_ids` in frontmatter for machine-checkable linkage.
+
+---
+
+## Public corpus vs private or sensitive material
+
+- **`raw/`** may be **large, local-only, or gitignored**; CI and clones may not have every file. **Do not** treat missing `raw/` targets in validation as permission to weaken provenance in the wiki—keep stable paths, and run `validate_wiki.py --raw-pdf-links` when the full corpus is present.
+- **MkDocs** publishes **`wiki/`** as the public-facing site; **`docs/`** is the operator handbook. Paths under `raw/` in wiki markdown are **neutralized** in HTML builds so public readers do not get **broken navigable links** to files that are not shipped—see `docs/operations/raw-corpus-and-publishing.md`. **Obsidian** authors may still open `raw/` locally.
+- **Secrets and operational security**: Do not commit **passwords, keys, hostnames, or internal IPs** into `wiki/` or `raw/` unless policy explicitly allows and rotation is understood. Prefer **placeholders** (`BROKER_LABEL`, `SITE_FARM`) in published pages and keep **site-specific truth** in **private** runbooks or encrypted stores outside the repo.
+
+---
+
+## Canonicalization before proliferation
+
+- Before adding a **new** analysis or topic page, search **`wiki/index.md`**, **`wiki/analyses/domain-content-overview.md`**, and the relevant **topic hub** (e.g. [`wiki/topics/two-site-smart-farm-operations.md`](wiki/topics/two-site-smart-farm-operations.md)) for an existing **canonical** page (business-plan core, reference architecture, runbook parent).
+- **Extend** the canonical page with a dated subsection, a table row, or a “See also” block rather than spawning a **parallel essay** that overlaps scope. If overlap is unavoidable, add **`supersedes` / `superseded_by`** (or explicit “routing” sections pointing to the canonical home) and log the decision in `wiki/log.md`.
+- Meta and repository-structure audits belong in **`analyses/`** with clear titles; they should **link** to domain hubs rather than replacing them.
+
+---
+
+## Entity-first rule (persistent real-world subjects)
+
+- **Named products**, **organizations**, **operating sites** (homestead vs production parcel **roles**), **infrastructure systems** (water, power, field telemetry as a stack), **breeds**, **regulated agencies**, and **major software projects** that appear in multiple pages should eventually have an **`entities/`** page: one **canonical title**, `page_type: entity`, short **scope** (what the page is for), and links **out** to concepts, comparisons, and source-notes. Site entities use **planning labels** (`SITE_HOME`, `SITE_FARM`) and **do not** assert uncommitted parcel facts.
+- **Concepts** remain for **ideas** (e.g. “LoRaWAN” as technology); **entities** are for **specific** things (e.g. a particular **open-source project** or **company**) when the vault needs stable cross-links and index entries.
+- Until an entity exists, link to **source-notes** and **topics**; add the entity when the third or fourth page would duplicate the same introduction text.
+
+---
+
+## Hub maintenance
+
+- **Topic hubs** and **`wiki/index.md`** are **routing contracts**: when you add a sibling page (new runbook, comparison, or business-plan chapter), update the **hub table** or index section so the new page is **discoverable** without relying on search alone.
+- **Strategic-audit** and **implementation-backlog** pages are **maps**, not substitutes for hubs—keep **`domain-content-overview`** and topic hubs aligned when navigation changes.
+
+---
+
+## Page ownership (canonical subjects)
+
+- A **canonical page** **owns** durable scope for a **cluster** (business plan package + framework, reference architecture + SoR + field telemetry, validation stack, two-site operating model). **Major** additions to the subject should land **there** first, or in a clearly scoped **child** analysis that **links upward** in the opening section.
+- **Analyses** that only **support** a canonical page (runbooks, pilots, query syntheses) should **not** copy the canonical page’s **outline**; add a **Routing** paragraph if overlap could confuse readers.
+- **Ownership map** (clusters, risks, entity backlog): [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md). Update that audit when **ownership** or **merge** decisions change materially—log significant changes in `wiki/log.md`.
+- **Agritourism vs production-led** scenarios are **different** products; cross-link as **alternates**, do not merge without explicit `supersedes` and human intent.
+
+---
+
+## Claim strength and source authority
+
+- Prefer **authoritative** sources for upgradable claims: **Extension**, **USDA / NRCS**, **land-grant** publications, **peer-reviewed** work, vendor **primary documentation**, and **standards** (ITU, IEEE, RFC). Label **forums, blogs, and chat exports** as **anecdotal** unless corroborated.
+- Use frontmatter **`confidence`** and **`review_status`** honestly. When mixing strong and weak sources on one page, **separate** them visually (subsections or tables). **Do not** upgrade **“might”** to **“does”** without a cited source or a labeled assumption.
+- **Regulatory and safety** claims (food safety, animal health, electrical work) require **explicit** sourcing or **deferral** to professionals—see [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md).
 
 ---
 
@@ -253,7 +303,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 ## Agent session checklist
 
-1. Read `AGENTS.md` (this file) and `wiki/index.md`. When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment.
+1. Read `AGENTS.md` (this file) and `wiki/index.md`. When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
 2. Identify layer: raw vs wiki vs docs change.
 3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits.
 4. Update `wiki/index.md` when navigation should change.
@@ -268,7 +318,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 |------|-----------|
 | **Ingest** | Raw filed (for **PDFs**: sibling `*-extracted.md` + source-note cites both); source-notes + synthesis updated; log + index updated; validator passes; run `--raw-pdf-links` when the full `raw/` corpus is present locally |
 | **Query** | Answer cites wiki/raw; durable page created/updated if needed; log appended |
-| **Lint** | Validator clean (`--strict` in CI); orphans/titles addressed or explicitly deferred in log |
+| **Lint** | Validator clean (`--strict` in CI); orphans/titles addressed or explicitly deferred in log; hubs/index aligned after navigation changes (see **Hub maintenance**) |
 
 ---
 

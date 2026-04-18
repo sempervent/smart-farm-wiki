@@ -119,4 +119,5 @@ def requires_frontmatter_schema(rel_wiki_path: Path) -> bool:
         "timelines",
         "glossary",
         "source-notes",
+        "business-plan",
     }
