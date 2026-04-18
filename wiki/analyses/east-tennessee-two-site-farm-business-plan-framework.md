@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — planning framework
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 review_status: unreviewed
 tags:
   - business-plan
@@ -74,6 +74,29 @@ All paths under `wiki/analyses/`, kebab-case.
 | Business risk register (matrix) | [`business-risk-register-two-site-smart-farm.md`](business-risk-register-two-site-smart-farm.md) |
 | Manual fallback + degraded modes | [`manual-fallback-degraded-modes-critical-operations.md`](manual-fallback-degraded-modes-critical-operations.md) |
 | Validation before major spend | [`validation-backlog-before-major-spend-two-site-smart-farm.md`](validation-backlog-before-major-spend-two-site-smart-farm.md) |
+
+### Financial planning layer (worksheets — evidence fills blanks)
+
+| Layer | Page |
+|-------|------|
+| Enterprise unit economics — methodology | [`enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md`](enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md) |
+| CAPEX, OPEX, enterprise sequencing (two-site) | [`capex-opex-enterprise-sequencing-two-site-constraint.md`](capex-opex-enterprise-sequencing-two-site-constraint.md) |
+| Farm accounting baseline — COA + enterprise P&L | [`farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md`](farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md) |
+| Revenue milestone model (supplemental → replacement) | [`revenue-milestone-model-supplemental-to-salary-replacement.md`](revenue-milestone-model-supplemental-to-salary-replacement.md) |
+| Instrumentation ROI model | [`instrumentation-roi-model-two-site-smart-farm.md`](instrumentation-roi-model-two-site-smart-farm.md) |
+
+### Smart-farm architecture package (supports the business plan)
+
+| Page | Role |
+|------|------|
+| [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md) | **Hub**: control center vs production, package map |
+| [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md) | Records vs telemetry vs dashboards vs alerts |
+| [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) | **Minimum** IDs + map authority |
+| [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md) | First acres / risks / systems + scoring matrix |
+| [`Automation principles — two-site smart farm`](automation-principles-two-site-smart-farm.md) | Early / late / never |
+| [`Manual fallback and degraded modes — critical operations`](manual-fallback-degraded-modes-critical-operations.md) | Scenario model + ops matrix |
+| [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) | Trust zones, admin paths, patching burden |
+| [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) | MQTT/broker/backhaul **logical** stack |
 
 ---
 
@@ -247,15 +270,24 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 
 ---
 
+## Topic hub (navigation)
+
+- [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md) — hub-and-spoke index for this business plan cluster
+
 ## Links to existing vault spine
 
 - [`Dual-site operations model — non-agritourism`](dual-site-operations-model-non-agritourism.md)
+- [`Reference architecture — 5-acre home base + 120-acre farm`](reference-architecture-5ac-homebase-120ac-smart-farm.md) — Smart-farm **architecture package** hub (SoR, security, instrumentation order, degraded modes)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md)
 - [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md)
 - [`CAPEX, OPEX, and enterprise sequencing — two-site constraint`](capex-opex-enterprise-sequencing-two-site-constraint.md)
 - [`Business viability and farm economics — gap analysis`](business-viability-and-farm-economics-gap-analysis.md)
 - [`Strategic audit — decision-safe operations`](strategic-audit-decision-safe-operations.md)
 - [`Hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — Skeptical critique, revised implementation order, **do not finance yet** list
+- [`Business plan remediation backlog`](east-tennessee-two-site-farm-business-plan-remediation-backlog.md) — Weakness→fix matrix, **decision controls**, P0/P1/P2 validation checklist
+- [`Business plan source-ingest campaign — East Tennessee two-site`](business-plan-source-ingest-campaign-east-tennessee-two-site.md) — **Extension/NRCS/market/insurance** priorities; proposed source-note titles; **raw vs synthesis** rules
+- [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — Validation matrix, **pilot** program (land, infra, business, telemetry, labor), **phase** gates, cheap proofs; [`checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
+- [`Business plan wiki — Git-friendly execution sequence`](business-plan-wiki-git-execution-sequence.md) — How to **merge** the plan work in **coherent PRs** (navigation first, meta after core)
 - Comparisons: [`LoRaWAN vs Meshtastic`](../comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md), [`farmOS vs lightweight`](../comparisons/farmos-vs-lightweight-stack-two-site-farm.md), [`own vs hire`](../comparisons/own-equipment-vs-custom-hire-two-site-logistics.md), [`fixed vs mobile gateway`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md)
 
 ---

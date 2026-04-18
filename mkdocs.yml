@@ -40,6 +40,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+hooks:
+  - scripts/mkdocs_neutralize_raw_links.py
+
 plugins:
   - search
 
@@ -58,6 +61,9 @@ markdown_extensions:
 validation:
   links:
     not_found: ignore
+
+extra_css:
+  - stylesheets/raw-source-refs.css
 
 extra:
   social:

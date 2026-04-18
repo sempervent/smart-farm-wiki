@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """
-Validate PDF ↔ machine-extract pairing under raw/ and optional wiki links to raw/.
+Validate PDF ↔ machine-extract pairing under raw/ and wiki links pointing into raw/.
 
-- Every ``*.pdf`` on disk under ``raw/`` must have a sibling ``<stem>-extracted.md``.
-- Wiki markdown links pointing under ``raw/`` are checked for existing targets when present;
-  missing targets are warnings by default (sparse corpus clones) and errors with ``--strict``.
-- ``wiki/source-notes/*`` with ``source_ids`` ending in ``.pdf`` must include a link to the
-  corresponding ``*-extracted.md`` (convention for converted-PDF sources).
+**Public / default mode (no ``--strict``):**
 
-``validate_wiki.py`` skips raw link existence by design; use this script (or
-``validate_wiki.py --raw-pdf-links``) when the processed corpus is available locally.
+- Structural / safety checks still **fail** the run: malformed source-note conventions
+  (PDF in ``source_ids`` without a body link to ``*-extracted.md``).
+- Missing **local** targets (PDF without extract; wiki link to absent ``raw/`` file) are
+  **warnings** only — the evidence corpus may be gitignored or absent in CI.
+
+**Strict / local mode (``--strict``):**
+
+- Missing local PDF extracts and missing wiki ``raw/`` link targets are promoted to **errors**
+  (use when a full local ``raw/`` corpus is available).
+
+``validate_wiki.py`` skips raw link existence by default; use
+``validate_wiki.py --raw-pdf-links`` with or without ``--strict`` to mirror the policy above.
 """
 
 from __future__ import annotations
@@ -125,13 +131,28 @@ def run_checks(
     *,
     wiki_raw_targets: bool,
     source_note_extract_links: bool,
+    strict_local_raw: bool = False,
 ) -> tuple[list[str], list[str]]:
-    errors = check_pdf_extract_pairs(root)
+    """
+    ``strict_local_raw``: when True, missing on-disk PDF extracts and missing wiki ``raw/``
+    targets are errors; when False, they are warnings only.
+    """
+    errors: list[str] = []
     warnings: list[str] = []
+
+    pdf_pair_msgs = check_pdf_extract_pairs(root)
+    if strict_local_raw:
+        errors.extend(pdf_pair_msgs)
+    else:
+        warnings.extend(pdf_pair_msgs)
 
     if wiki_raw_targets:
         _e, w = check_wiki_raw_link_targets(root)
-        warnings.extend(w)
+        errors.extend(_e)
+        if strict_local_raw:
+            errors.extend(w)
+        else:
+            warnings.extend(w)
 
     if source_note_extract_links:
         errors.extend(check_pdf_source_notes_link_extracts(root))
@@ -147,7 +168,10 @@ def main() -> int:
     parser.add_argument(
         "--strict",
         action="store_true",
-        help="Treat missing wiki raw link targets as errors (not warnings).",
+        help=(
+            "Require local raw corpus to be complete: missing PDF *-extracted.md pairs and "
+            "missing wiki markdown targets under raw/ become errors (not warnings)."
+        ),
     )
     parser.add_argument(
         "--no-wiki-raw-targets",
@@ -166,11 +190,8 @@ def main() -> int:
         root,
         wiki_raw_targets=not args.no_wiki_raw_targets,
         source_note_extract_links=not args.no_source_note_extract_links,
+        strict_local_raw=args.strict,
     )
-
-    if args.strict:
-        errors.extend(warnings)
-        warnings = []
 
     for w in warnings:
         print(f"WARNING: {w}", file=sys.stderr)
@@ -180,7 +201,11 @@ def main() -> int:
     if errors:
         return 1
     if warnings:
-        print(f"\n{len(warnings)} warning(s); use --strict to fail on missing raw targets.", file=sys.stderr)
+        print(
+            f"\n{len(warnings)} warning(s) (missing local raw targets or PDF extracts); "
+            "use --strict to fail the run when the full corpus is present.",
+            file=sys.stderr,
+        )
     return 0
 
 

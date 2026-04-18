@@ -3,7 +3,7 @@ title: Wiki overview
 page_type: overview
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-17
 tags:
   - meta
   - llm-wiki
@@ -22,6 +22,7 @@ This vault is a **structured synthesis layer** on top of immutable **raw** sourc
 4. For **how this repository is built and published** (CI, scripts, corpus scale), read [`analyses/repository-analysis.md`](analyses/repository-analysis.md); for the operator handbook, see `docs/` at the repo root.
 5. For **what the domain content covers** (agriculture, networks, power, regional business, time sync), read [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md).
 6. For the **target information architecture** (decision-safe operational brain: dual-site spine, telemetry, spatial registry, SOPs), read [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md) together with [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md) and [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md).
+7. For the **East Tennessee two-site farm business plan** (5 ac home base + 120 ac production + phased grazing-led strategy), start at [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) or [`analyses/east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md); repository wiring is described in [`analyses/smart-farm-wiki-repository-implementation-plan.md`](analyses/smart-farm-wiki-repository-implementation-plan.md).
 
 **Principles**
 

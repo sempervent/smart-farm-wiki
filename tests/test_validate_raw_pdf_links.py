@@ -8,13 +8,13 @@ import pytest
 
 
 def test_validate_raw_pdf_links_passes_on_repo(repo_root: Path) -> None:
+    """Public/default policy: missing local raw targets are warnings, not failures."""
     proc = subprocess.run(
         [
             sys.executable,
             str(repo_root / "scripts" / "validate_raw_pdf_links.py"),
             "--root",
             str(repo_root),
-            "--strict",
         ],
         cwd=repo_root,
         capture_output=True,
@@ -23,7 +23,7 @@ def test_validate_raw_pdf_links_passes_on_repo(repo_root: Path) -> None:
     assert proc.returncode == 0, proc.stderr + proc.stdout
 
 
-def test_pdf_missing_extract_fails(tmp_path: Path) -> None:
+def test_pdf_missing_extract_warns_without_strict(tmp_path: Path) -> None:
     scripts = Path(__file__).resolve().parent.parent / "scripts"
     root = tmp_path
     (root / "raw" / "processed" / "2026").mkdir(parents=True)
@@ -35,6 +35,28 @@ def test_pdf_missing_extract_fails(tmp_path: Path) -> None:
             str(scripts / "validate_raw_pdf_links.py"),
             "--root",
             str(root),
+        ],
+        cwd=root,
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0
+    assert "WARNING" in proc.stderr or "missing machine extract" in proc.stderr.lower()
+
+
+def test_pdf_missing_extract_fails_with_strict(tmp_path: Path) -> None:
+    scripts = Path(__file__).resolve().parent.parent / "scripts"
+    root = tmp_path
+    (root / "raw" / "processed" / "2026").mkdir(parents=True)
+    (root / "raw" / "processed" / "2026" / "orphan.pdf").write_bytes(b"%PDF-1.4\n")
+
+    proc = subprocess.run(
+        [
+            sys.executable,
+            str(scripts / "validate_raw_pdf_links.py"),
+            "--root",
+            str(root),
+            "--strict",
         ],
         cwd=root,
         capture_output=True,

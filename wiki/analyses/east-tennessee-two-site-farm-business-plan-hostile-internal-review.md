@@ -141,6 +141,7 @@ This **reorders** **emotion**: **infrastructure** **that** **reduces** **catastr
 
 ## Links
 
+- [`Business plan remediation backlog`](east-tennessee-two-site-farm-business-plan-remediation-backlog.md) — **Actionable** fixes, decision controls, **do not finance** register, validation checklist
 - [`Planning framework`](east-tennessee-two-site-farm-business-plan-framework.md)
 - [`Executive summary`](east-tennessee-two-site-farm-business-plan-executive-summary.md)
 - [`Strategic audit — decision-safe operations`](strategic-audit-decision-safe-operations.md)

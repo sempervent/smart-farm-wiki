@@ -87,7 +87,8 @@ def main() -> int:
         action="store_true",
         help=(
             "Also run PDF ↔ *-extracted.md checks and wiki links into raw/ "
-            "(see scripts/validate_raw_pdf_links.py). Missing raw targets follow --strict."
+            "(see scripts/validate_raw_pdf_links.py). With --strict, missing local raw "
+            "targets and PDF extracts fail the run; without --strict, they are warnings only."
         ),
     )
     args = parser.parse_args()
@@ -208,11 +209,10 @@ def main() -> int:
                 root,
                 wiki_raw_targets=True,
                 source_note_extract_links=True,
+                strict_local_raw=args.strict,
             )
             errors.extend(r_errors)
-            if args.strict:
-                errors.extend(r_warnings)
-            else:
+            if not args.strict:
                 warnings.extend(r_warnings)
 
     return _finish(errors, warnings, args.strict)

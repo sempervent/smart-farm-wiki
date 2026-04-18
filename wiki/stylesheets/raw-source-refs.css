@@ -1,0 +1,6 @@
+/* Provenance text replaced by MkDocs hook for raw/ paths (not on public site) */
+.raw-source-ref {
+  border-bottom: 1px dotted var(--md-typeset-a-color, #4051b5);
+  cursor: help;
+  font-style: italic;
+}

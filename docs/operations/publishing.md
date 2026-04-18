@@ -23,3 +23,5 @@ uv run mkdocs build --strict
 ```
 
 Artifacts land in `site/` (gitignored).
+
+**Raw links:** Markdown links into `raw/` are rewritten at build time by `scripts/mkdocs_neutralize_raw_links.py` (see [`raw-corpus-and-publishing.md`](raw-corpus-and-publishing.md)) so the public site does not expose broken URLs to omitted evidence files. Obsidian-authored sources stay unchanged.

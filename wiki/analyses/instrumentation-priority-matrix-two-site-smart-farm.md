@@ -3,7 +3,7 @@ title: Instrumentation priority matrix — two-site smart farm
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 review_status: unreviewed
 tags:
   - telemetry
@@ -19,7 +19,42 @@ confidence: medium
 
 Rank **where automation earns its keep first** for a **35-minute** separated operation: **trip reduction**, **risk reduction**, and **labor relief**—with **explicit** cost of **false positives** and **maintenance**.
 
-Aligns with [`East Tennessee two-site farm business plan — smart-tech strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) and [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md).
+**Architecture package**: [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md). Aligns with [`East Tennessee two-site farm business plan — smart-tech strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) and [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md). **Financial shell** (payback inputs, OPEX, triage hours): [`Instrumentation ROI model`](instrumentation-roi-model-two-site-smart-farm.md).
+
+---
+
+## First acres, first risks, first systems
+
+**Intent**: Order work so **instrumentation** follows **operational** **truth**—**water**, **power**, **access**—not **dashboard** **novelty**.
+
+### First acres (where to instrument before “everywhere”)
+
+| Priority | Land / infrastructure | Why first |
+|----------|----------------------|-----------|
+| P0 | Water delivery points stock depend on | Welfare + highest trip ROI |
+| P0 | Pump / electrical head for that water | Silent failure modes |
+| P1 | Lanes / gates on critical paths | Escape and labor if motorized |
+| P2 | Representative paddock for grazing pressure | Not every acre on day one |
+
+### First risks (what failure must surface early)
+
+| Risk class | Example signal | Manual cross-check |
+|------------|----------------|---------------------|
+| Dehydration / dry tank | Level / flow / pump run | Visual schedule |
+| Unknown pump state | Current, pressure, run hours | Physical at asset |
+| Power loss at remote hub | UPS / battery / generator status | Visit + sound |
+| Fence breach *(if instrumented)* | Break detection *(optional)* | Patrol still required |
+
+### First systems (stack order—not brands)
+
+| Order | System | Role |
+|-------|--------|------|
+| 1 | Stable field → hub comms | Nothing else matters if backhaul is flaky |
+| 2 | Time sync at edges | Comparable logs—[`Timing on the farm — synthesis`](timing-on-the-farm-synthesis.md) |
+| 3 | Durable telemetry store (SoR rules) | History for debugging and trend |
+| 4 | Dashboards / automation | After 1–3 are credible |
+
+See [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md).
 
 ## Key decisions supported
 
@@ -83,5 +118,7 @@ Aligns with [`East Tennessee two-site farm business plan — smart-tech strategy
 
 ## Links
 
+- [`Automation principles — two-site smart farm`](automation-principles-two-site-smart-farm.md)
+- [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md)
 - [`Capital phasing table`](capital-phasing-table-years-0-10-two-site-smart-farm.md)
 - [`Validation backlog — before major spend`](validation-backlog-before-major-spend-two-site-smart-farm.md)

@@ -60,21 +60,21 @@ A **wiki-native**, **phased** business plan for an **East Tennessee** **two-site
 | Topic | Page |
 |-------|------|
 | Vision, objectives, stop rules | [`Vision`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) |
-| Two-site model + control center | [`Two-site operating model`](east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) |
-| Strategy family + rationale | [`Recommended strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) |
-| Smart tech + automation discipline | [`Smart-tech strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) |
-| Labor + weekly rhythm | [`Labor model`](east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) |
-| Capital + infrastructure sequence | [`Capital plan`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md) |
-| Revenue + milestones | [`Revenue`](east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md) |
-| Risks | [`Risk register`](east-tennessee-two-site-farm-business-plan-risk-register.md) |
+| Two-site model + control center | [`Two-site operating context (ET)`](east-tennessee-two-site-farm-business-plan-two-site-operating-context.md); ops model [`5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) |
+| Strategy family + rationale | [`Recommended enterprise strategy — phased East Tennessee path`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) |
+| Smart tech + automation discipline | [`Smart technology and telemetry strategy — control center on 5 acres`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) |
+| Labor + weekly rhythm | [`Labor model and weekly operating rhythm`](east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) |
+| Capital + infrastructure sequence | [`Capital plan and infrastructure sequencing`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md) |
+| Revenue + milestones | [`Revenue model and milestones`](east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md) |
+| Risks | [`Risk register and mitigation strategy`](east-tennessee-two-site-farm-business-plan-risk-register.md) |
 | 10-year phases | [`Roadmap`](east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) |
-| Validation tasks | [`Validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) |
+| Validation tasks | [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) |
 
 ### Operational artifacts (fillable; execution layer)
 
 | Artifact | Page |
 |----------|------|
-| Two-site ops — 5 ac home / 120 ac production | [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) |
+| Two-site ops — 5 ac home / 120 ac production | [`Two-site operating model — 5-acre home base and 120-acre farm`](two-site-operations-model-5ac-homebase-120ac-production.md) |
 | Family labor + coverage matrix | [`Family labor and coverage matrix`](family-labor-model-and-coverage-matrix-two-site-smart-farm.md) |
 | Instrumentation priority matrix | [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md) |
 | Capital phasing 0–10 years | [`Capital phasing table`](capital-phasing-table-years-0-10-two-site-smart-farm.md) |

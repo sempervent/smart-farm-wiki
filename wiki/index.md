@@ -31,6 +31,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 ## Topics
 
 - [Knowledge synthesis](topics/knowledge-synthesis.md) — Cross-cutting theme for how conclusions are built here.
+- [Two-site smart farm operations](topics/two-site-smart-farm-operations.md) — **Hub**: East TN 5 ac + 120 ac business plan, operational artifacts, telemetry, runbooks, comparisons.
 - [Agritourism, tiny housing, and natural building sources](topics/agritourism-tiny-housing-and-natural-building.md) — Farm stays, natural building, agritourism listicles, news excerpts.
 - [Tennessee hobby farm and small-farm business sources](topics/tennessee-hobby-farm-and-small-farm-business-sources.md) — Hobby-farm primers, TN business guides, USDA BFR, revenue/licensing excerpts, startup PDFs.
 - [Backyard livestock and homestead animal sources](topics/backyard-livestock-and-homestead-animals.md) — Poultry/cattle guides, AI husbandry marketing, PDF papers.
@@ -275,13 +276,18 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
 - [Implementation backlog — strategic audit (P0–P3)](analyses/implementation-backlog-strategic-audit.md) — Prioritized build list: templates, topics, SOPs, analyses; top 10 pages first.
 - [Information architecture — decision-safe operational brain (target design)](analyses/information-architecture-decision-safe-operations.md) — Target IA: hub layers, required pages, cross-links, orphan/integration gaps, migration phases.
+- [Smart Farm Wiki — repository implementation plan (business plan integration)](analyses/smart-farm-wiki-repository-implementation-plan.md) — Executable plan: file tree, page table, minimum merge set, phased order, placeholders-until-evidence.
+- [Business plan wiki — Git-friendly execution sequence](analyses/business-plan-wiki-git-execution-sequence.md) — PR batches, commits per PR, landing order, minimum usable milestone.
 - [Business viability and farm economics — gap analysis (strategic audit)](analyses/business-viability-and-farm-economics-gap-analysis.md) — Revenue, enterprise, channels, staffing, insurance, books, CAPEX/OPEX, logistics, risk; prioritized page list; decisions not yet supportable from the vault alone.
 - [Smart technology architecture audit (strategic audit)](analyses/smart-technology-architecture-audit.md) — Field stack, identity, alerting, security, fragmentation; reference page outline; required SOPs and diagrams.
 - [Agentic wiki improvement prompts (staged, strategic audit)](analyses/agentic-wiki-improvement-prompts-strategic-audit.md) — Pre-prompt + Phase 1–4 copy-paste prompts: deliverables, acceptance criteria, files to create/update.
 - [Dual-site operations model — non-agritourism farm business](analyses/dual-site-operations-model-non-agritourism.md) — Production-led two-site logistics; batching, equipment home, coverage; connects strands.
 - [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — Logical stack, SPOFs, HA/farmOS/MQTT/TSDB roles; foundation for runbooks.
+- [Reference architecture — 5-acre home base + 120-acre farm](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) — **Smart-farm architecture package** hub: control center vs production, scenario design, links to SoR/security/instrumentation/degraded modes.
+- [Telemetry system of record — boundaries and authority](analyses/telemetry-system-of-record-boundaries-and-authority.md) — Records vs telemetry vs dashboards vs alerts vs manual verification.
+- [Automation principles — two-site smart farm](analyses/automation-principles-two-site-smart-farm.md) — Automate early / late / never; distance and maintenance burden.
+- [Remote access and operational security model — two-site smart farm](analyses/remote-access-operational-security-model-two-site-smart-farm.md) — Trust zones, admin paths, patching cadence, physical risk at remote site.
 - [Farm spatial model and asset registry standard](analyses/farm-spatial-model-and-asset-registry-standard.md) — Paddock/asset/device IDs; map authority; farmOS-aligned naming.
-- [CAPEX, OPEX, and enterprise sequencing — two-site constraint](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md) — Capital phasing and distance-driven OPEX; UT budget ingests.
 - [Weekly coverage matrix — two-site farm operations](analyses/weekly-coverage-matrix-two-site-farm-operations.md) — Fillable grid; Tier A/B/C checks.
 - [Automation degraded modes and manual fallback SOP](analyses/automation-degraded-modes-manual-fallback-sop.md) — Failure classes, manual safe states, per-system placeholders.
 - [Runbook — broker or backhaul down](analyses/runbook-broker-or-backhaul-down.md) — MQTT/uplink failure; verify physical; parent architecture required.
@@ -312,26 +318,38 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [East Tennessee two-site farm business plan — vision, objectives, and constraints](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)
 - [East Tennessee two-site farm business plan — two-site operating model](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) — 5 ac control center; 35-min batching.
 - [Enterprise options analysis — 120-acre East Tennessee two-site smart farm](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) — Full scenario matrix; top paths; comparison table.
-- [East Tennessee two-site farm business plan — recommended enterprise strategy](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) — Grazing-led phased mixed family; branching logic.
-- [East Tennessee two-site farm business plan — smart technology, telemetry, and automation](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)
-- [East Tennessee two-site farm business plan — labor model and weekly operating rhythm](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md)
-- [East Tennessee two-site farm business plan — capital plan and phased infrastructure roadmap](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md)
-- [East Tennessee two-site farm business plan — revenue model and business milestones](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
-- [East Tennessee two-site farm business plan — risk register and mitigation strategy](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
+- [Recommended enterprise strategy — phased East Tennessee path](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) — Grazing-led phased mixed; branching logic.
+- [Smart technology and telemetry strategy — control center on 5 acres](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)
+- [Labor model and weekly operating rhythm](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md)
+- [Capital plan and infrastructure sequencing](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md)
+- [Revenue model and milestones](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
+- [Risk register and mitigation strategy](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
 - [East Tennessee two-site farm business plan — 10-year roadmap](analyses/east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) — Phases 0–4.
-- [East Tennessee two-site farm business plan — validation backlog and next research tasks](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md)
+- [Validation backlog and decision gates](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md)
+- [Validation and pilot plan — first 24 months (East Tennessee two-site)](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — Assumption matrix, pilot streams, Phase 1→2 / 2→3 gates, cheap proofs; minimal spend.
+- [Pilot and recon checklists — first 24 months (two-site smart farm)](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) — Land, infra, business, telemetry, labor tables.
 
 **Two-site smart farm — operational artifacts** (tables / matrices; fill over time):
 
-- [Two-site operations model — 5 ac home base, 120 ac production](analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
+- [Two-site operating model — 5-acre home base and 120-acre farm](analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
 - [Family labor model and coverage matrix — two-site smart farm](analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md)
 - [Instrumentation priority matrix — two-site smart farm](analyses/instrumentation-priority-matrix-two-site-smart-farm.md)
 - [Capital phasing table — years 0 to 10](analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md)
-- [Revenue milestone model — supplemental to salary replacement](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md)
 - [Business risk register — two-site smart farm](analyses/business-risk-register-two-site-smart-farm.md)
 - [Manual fallback and degraded modes — critical operations](analyses/manual-fallback-degraded-modes-critical-operations.md)
 - [Validation backlog — assumptions before major spend](analyses/validation-backlog-before-major-spend-two-site-smart-farm.md)
+
+**Financial planning layer** (methodology + milestones; evidence fills placeholders):
+
+- [Enterprise unit economics — worksheet methodology (two-site smart farm)](analyses/enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md)
+- [CAPEX, OPEX, and enterprise sequencing — two-site constraint](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md)
+- [Farm accounting baseline — chart of accounts and enterprise P&L structure](analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md)
+- [Revenue milestone model — supplemental to salary replacement](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md)
+- [Instrumentation ROI model — two-site smart farm](analyses/instrumentation-roi-model-two-site-smart-farm.md)
+
 - [East Tennessee two-site farm business plan — hostile internal review](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — Skeptical critique: top weaknesses, validation order, pages to revise, finance prohibitions.
+- [Business plan remediation backlog](analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md) — Weakness→fix matrix, do-not-finance register, P0/P1/P2 checklist, page revision acceptance criteria.
+- [Business plan source-ingest campaign — East Tennessee two-site](analyses/business-plan-source-ingest-campaign-east-tennessee-two-site.md) — Prioritized Extension/NRCS/market/insurance/farmOS sources; backlog titles; ingest routing rules.
 
 ## Comparisons
 

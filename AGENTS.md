@@ -277,8 +277,8 @@ Optional YAML frontmatter is encouraged. Common fields:
 | Script | Role |
 |--------|------|
 | `scripts/bootstrap.py` | Create missing dirs/files; optional rename placeholders |
-| `scripts/validate_wiki.py` | Repository integrity checks; links under `raw/` need not resolve by default (corpus may be uncommitted); optional `--raw-pdf-links` when corpus is local |
-| `scripts/validate_raw_pdf_links.py` | PDF ↔ `*-extracted.md` pairing, wiki links into `raw/`, PDF source-note extract links (also via `validate_wiki.py --raw-pdf-links`) |
+| `scripts/validate_wiki.py` | Repository integrity checks; links under `raw/` need not resolve by default (corpus may be uncommitted); optional `--raw-pdf-links` with `--strict` when validating a full local corpus |
+| `scripts/validate_raw_pdf_links.py` | PDF ↔ `*-extracted.md` pairing, wiki links into `raw/`, PDF source-note extract links; **default** warns on missing local files; **`--strict`** fails (public CI uses non-strict via pytest). Public MkDocs build neutralizes `raw/` links in HTML — see `docs/operations/raw-corpus-and-publishing.md` |
 | `scripts/rebuild_index.py` | Audit or regenerate index sections |
 | `scripts/append_log.py` | Append a correctly formatted log entry |
 | `scripts/scaffold_page.py` | New page from `templates/` |

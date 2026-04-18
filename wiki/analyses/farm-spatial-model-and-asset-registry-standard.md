@@ -3,7 +3,7 @@ title: Farm spatial model and asset registry standard
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-18
 aliases:
   - Spatial data and farm asset registry standard
 tags:
@@ -87,6 +87,21 @@ Define a **minimal, practical standard** so **parcels, paddocks, infrastructure,
 | **Fewer than ~20** land units | Spreadsheet + map screenshot may suffice **if** IDs are stable. |
 | **Overlapping uses** (graze + hay + crop) | Prefer **seasonal management zones** as attributes, **not** new polygons every year—**or** accept versioning. |
 | **Telemetry scaling** | **Enforce** `device_id` ↔ `paddock_id` linkage **before** adding sensors—see audit **technology ↔ land** gap. |
+
+---
+
+## Architecture package — minimum standard (two-site smart farm)
+
+**Hub**: [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md). **Authority** for **map vs books vs telemetry**: [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md).
+
+| Minimum rule | Rationale |
+|----------------|-----------|
+| **Stable `site` + land-unit IDs** before **device** sprawl | **History** and **runbooks** reference **place** |
+| **`device_id` ↔ `paddock_id` or `asset_id`** for every field endpoint | **Otherwise** dashboards are **unmoored** |
+| **One `MAP_AUTHORITY_LABEL`** | **Single** **operating** map—paper or GIS |
+| **Migration log** when **sensors** **move** | **Avoid** **silent** **history** **break** |
+
+---
 
 ## Links to related future or existing pages
 

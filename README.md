@@ -67,7 +67,7 @@ uv run python scripts/pdf_to_markdown.py --all-raw --force   # PDFs under raw/ â
 ## Conventions
 
 - **Filenames:** `kebab-case.md` in taxonomy folders; see validator for exceptions (`index`, `log`, `overview` at `wiki/` root).
-- **Links:** relative `.md` links for wiki and raw (Obsidian / GitHub / tooling). The published handbook may link to GitHub blob URLs for files outside `docs/` so MkDocs strict builds stay clean.
+- **Links:** relative `.md` links for wiki and raw (Obsidian / GitHub / tooling). The published handbook may link to GitHub blob URLs for files outside `docs/` so MkDocs strict builds stay clean. Links into `raw/` are **neutralized in the public MkDocs HTML** (see [`docs/operations/raw-corpus-and-publishing.md`](docs/operations/raw-corpus-and-publishing.md)) while staying normal links locally in Obsidian.
 
 ## License
 

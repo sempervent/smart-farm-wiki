@@ -3,7 +3,7 @@ title: Field telemetry reference architecture — homestead + 120-acre farm
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-18
 tags:
   - telemetry
   - architecture
@@ -18,6 +18,8 @@ confidence: low
 ## Purpose
 
 Provide a **single first-draft reference** for how **sensors, gateways, uplink, broker, and operator interfaces** could fit together across **`SITE_HOMESTEAD`** and **`SITE_FARM`**—without claiming this is your deployed stack. Use it to spot **single points of failure (SPOFs)**, **missing boundaries**, and **where truth lives** for events.
+
+**Package hub** (5 ac + 120 ac framing, SoR, security): [`Reference architecture — 5-acre home base + 120-acre farm`](reference-architecture-5ac-homebase-120ac-smart-farm.md).
 
 ## Scope
 
@@ -101,7 +103,7 @@ Provide a **single first-draft reference** for how **sensors, gateways, uplink, 
 - [`LoRa, MQTT, and gateway bridges`](../topics/lora-mqtt-and-gateway-bridges.md) — patterns and sources.
 - [`Field network IoT comparisons (HaLow, LoRa, NB-IoT)`](../topics/field-network-iot-comparisons.md) — radio tradeoffs.
 - [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md) — records vs telemetry.
-- *Telemetry system of record — options and boundaries* — **not yet a standalone page**; see **[P0 #6](implementation-backlog-strategic-audit.md)** in the implementation backlog.
+- [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md) — **authority** matrix for records vs telemetry vs dashboards.
 - [`Spatial data and farm asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) — bind **device IDs** to places.
 - [`Automation degraded modes and manual fallback SOP`](automation-degraded-modes-manual-fallback-sop.md) — behavior when this architecture **breaks**.
 
@@ -109,7 +111,7 @@ Provide a **single first-draft reference** for how **sensors, gateways, uplink, 
 
 - [ ] Replace placeholders with **one-page** network list: subnets, VPN, broker hostnames (even if private).
 - [ ] Add **ASCII or exported** diagram when stable.
-- [ ] Cross-link to **OT security** page when it exists (see [`Implementation backlog`](implementation-backlog-strategic-audit.md) P2).
+- [ ] Align **admin** paths with [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md).
 
 ---
 

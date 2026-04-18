@@ -4,6 +4,15 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 ---
 
+## [2026-04-19] policy | Raw validation + MkDocs: public CI without local corpus
+
+- `scripts/validate_raw_pdf_links.py`: **default** treats missing local PDF/extract pairs and missing wiki `raw/` link targets as **warnings**; **`--strict`** fails when the full corpus is expected. `validate_wiki.py --raw-pdf-links` passes `strict` through the same way.
+- `tests/test_validate_raw_pdf_links.py`: repo-wide check runs **without** `--strict`.
+- `scripts/mkdocs_neutralize_raw_links.py` + `mkdocs.yml` **hooks**: rewrite `raw/` markdown links to non-navigable spans in the public HTML build; Obsidian sources unchanged. `wiki/stylesheets/raw-source-refs.css`.
+- Docs: [`docs/operations/raw-corpus-and-publishing.md`](../docs/operations/raw-corpus-and-publishing.md), updates to [`validation.md`](../docs/operations/validation.md), [`publishing.md`](../docs/operations/publishing.md), [`ingest.md`](../docs/workflows/ingest.md), [`AGENTS.md`](../AGENTS.md), [`README.md`](../README.md).
+
+---
+
 ## [2026-04-17] policy | Initialize template wiki
 
 - Seeded `wiki/` with example pages demonstrating taxonomy and linking.
@@ -393,6 +402,70 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Added **eight** first-draft **operational** analyses: [`two-site-operations-model-5ac-homebase-120ac-production`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md), [`family-labor-model-and-coverage-matrix-two-site-smart-farm`](analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md), [`instrumentation-priority-matrix-two-site-smart-farm`](analyses/instrumentation-priority-matrix-two-site-smart-farm.md), [`capital-phasing-table-years-0-10-two-site-smart-farm`](analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md), [`revenue-milestone-model-supplemental-to-salary-replacement`](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md), [`business-risk-register-two-site-smart-farm`](analyses/business-risk-register-two-site-smart-farm.md), [`manual-fallback-degraded-modes-critical-operations`](analyses/manual-fallback-degraded-modes-critical-operations.md), [`validation-backlog-before-major-spend-two-site-smart-farm`](analyses/validation-backlog-before-major-spend-two-site-smart-farm.md). Each: purpose, **decisions supported**, fillable structure, **Known/assumed/open**, links to business-plan pages and runbooks.
 - Updated [`east-tennessee-two-site-farm-business-plan-framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`executive summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md), [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md).
+
+---
+
+## [2026-04-18] query | Business plan wiki — Git-friendly execution sequence
+
+- Added [`analyses/business-plan-wiki-git-execution-sequence.md`](analyses/business-plan-wiki-git-execution-sequence.md): **9** logical **PRs** (navigation → framework → narrative → artifacts → meta → financial layer → architecture → 24-mo validation → source/IA), **commit** order inside PRs, **landing** **order** (hub/index with dependents), **minimum** **usable** **state** milestone; linked from [`smart-farm-wiki-repository-implementation-plan`](analyses/smart-farm-wiki-repository-implementation-plan.md), [`east-tennessee-two-site-farm-business-plan-framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`index.md`](index.md).
+
+---
+
+## [2026-04-18] query | Validation and pilot plan — first 24 months (two-site business plan)
+
+- Added [`analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md): **validation matrix** (assumption → test → cost band → time → success → unlock → V ID), **pilot** sections (land mapping, infra recon, business, telemetry, labor), **Phase** **1→2** / **2→3** **gates** **+** **scaling** **blockers**, **cheap** **proofs** list; **minimal** **spend** framing.
+- Added [`analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md`](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) — linked **templates** (owner/date/done/evidence columns).
+- Updated [`east-tennessee-two-site-farm-business-plan-validation-backlog.md`](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md), [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`index.md`](index.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-18] refactor | Smart-farm architecture package (two-site business plan)
+
+- Added [`analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) — **package hub** (5 ac control center + 120 ac production, commute, scenarios, links).
+- Added [`analyses/telemetry-system-of-record-boundaries-and-authority.md`](analyses/telemetry-system-of-record-boundaries-and-authority.md) — authority matrix: records, telemetry, dashboards, alerts, manual verification.
+- Added [`analyses/automation-principles-two-site-smart-farm.md`](analyses/automation-principles-two-site-smart-farm.md) — automate early / late / never; distance and maintenance.
+- Added [`analyses/remote-access-operational-security-model-two-site-smart-farm.md`](analyses/remote-access-operational-security-model-two-site-smart-farm.md) — trust zones, remote admin patterns, patching burden, physical risk.
+- Expanded [`analyses/instrumentation-priority-matrix-two-site-smart-farm.md`](analyses/instrumentation-priority-matrix-two-site-smart-farm.md) — **first acres / first risks / first systems**; [`analyses/manual-fallback-degraded-modes-critical-operations.md`](analyses/manual-fallback-degraded-modes-critical-operations.md) — **scenario model** (travel, outage, sensor, comms, maintenance); [`analyses/farm-spatial-model-and-asset-registry-standard.md`](analyses/farm-spatial-model-and-asset-registry-standard.md) — architecture **minimum standard** subsection; [`analyses/field-telemetry-reference-architecture-homestead-120ac.md`](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — SoR link + security cross-link.
+- Updated [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`index.md`](index.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-18] refactor | Financial planning layer scaffolding (two-site business plan)
+
+- Added [`analyses/enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md`](analyses/enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md), [`analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md`](analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md), [`analyses/instrumentation-roi-model-two-site-smart-farm.md`](analyses/instrumentation-roi-model-two-site-smart-farm.md) — purpose/inputs/outputs/assumptions/placeholder tables; **no** fabricated budgets.
+- Expanded [`analyses/capex-opex-enterprise-sequencing-two-site-constraint.md`](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md), [`analyses/revenue-milestone-model-supplemental-to-salary-replacement.md`](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md) — same scaffolding pattern; bridge-years table; scenario-aware milestones.
+- Updated [`analyses/instrumentation-priority-matrix-two-site-smart-farm.md`](analyses/instrumentation-priority-matrix-two-site-smart-farm.md) — link to ROI model; [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md) — **Financial planning layer** subsection; [`index.md`](index.md) — financial layer block; [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) — finance table rows.
+
+---
+
+## [2026-04-18] ingest | Business plan source-ingest campaign (meta)
+
+- Added [`analyses/business-plan-source-ingest-campaign-east-tennessee-two-site.md`](analyses/business-plan-source-ingest-campaign-east-tennessee-two-site.md): **campaign goals** (G1–G7), **P0–P3** category priority, per-category **questions / wiki targets / prefer vs avoid**, **proposed source-note filenames** backlog, **routing rules** (raw vs `source_note` vs synthesis vs comparison vs defer). Linked from [`planning framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`index.md`](index.md), [`knowledge-synthesis`](topics/knowledge-synthesis.md), [`two-site-smart-farm-operations`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-17] query | Business plan remediation backlog (from hostile review)
+
+- Added [`analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md`](analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md): **15-row** weakness→fix matrix (severity, repo fix, fix type), **revised** implementation priority, **do not finance** register, **P0/P1/P2** real-world checklist, **page revision** acceptance table, **decision controls**; linked from [`hostile internal review`](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md), [`planning framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`index.md`](index.md), [`knowledge-synthesis`](topics/knowledge-synthesis.md), [`two-site-smart-farm-operations`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-17] query | Repository implementation plan — business plan integration
+
+- Added [`analyses/smart-farm-wiki-repository-implementation-plan.md`](analyses/smart-farm-wiki-repository-implementation-plan.md): proposed **topic hub** (`topics/two-site-smart-farm-operations.md`), file tree (new vs update), page-by-page table, **minimum coherent merge** PR set, phased execution, **placeholders until evidence**; linked from [`index.md`](index.md).
+
+---
+
+## [2026-04-17] refactor | Business plan eight core pages — first-draft operational rewrite
+
+- Rewrote for long-term wiki use (purpose, **decisions supported**, knowns, assumptions, open questions, **iterative updates**, relative links): [`two-site-operations-model-5ac-homebase-120ac-production`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md), [`recommended-enterprise-strategy`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md), [`smart-tech-strategy`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`labor-and-family-model`](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md), [`capital-and-financing`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md), [`revenue-and-phased-income`](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md), [`risk-register`](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md), [`validation-backlog`](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md). Updated [`index.md`](index.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`executive-summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) link text; **risk** register adds R12–R13 (two-site delay, remote theft).
+
+---
+
+## [2026-04-17] refactor | Topic hub + overview wiring for two-site business plan
+
+- Added [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) — navigation hub (business plan, artifacts, telemetry, resilience, finance, comparisons).
+- Updated [`overview.md`](overview.md) (how-to-read bullet 7), [`index.md`](index.md) (Topics), [`knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md) (topic hub link); [`smart-farm-wiki-repository-implementation-plan.md`](analyses/smart-farm-wiki-repository-implementation-plan.md) marks minimum-merge steps **done**.
 
 ---
 
