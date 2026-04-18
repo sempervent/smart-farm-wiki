@@ -1,4 +1,4 @@
-name: Publish handbook (GitHub Pages)
+name: Publish wiki (GitHub Pages)
 
 on:
   push:

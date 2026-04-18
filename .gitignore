@@ -39,3 +39,10 @@ Thumbs.db
 # User scratch (optional)
 scratch/
 tmp/
+
+# Raw corpus (AGENTS.md): do not commit inbox drops or processed sources by default;
+# directory layout is preserved via tracked .gitkeep files.
+# (Git cannot re-include a file if a parent dir is excluded; un-ignore dirs then .gitkeep.)
+raw/**
+!raw/**/
+!raw/**/.gitkeep

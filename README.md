@@ -1,15 +1,15 @@
 # LLM Wiki Template
 
-A **GitHub template repository** for a structured, **LLM-maintained markdown wiki**: immutable `raw/` sources, a compounding `wiki/` synthesis layer, and an operator handbook in `docs/` published with **MkDocs (Material)**. It is designed for personal research, project intelligence, reading companions, due diligence, and small team knowledge bases—not a generic notes dump.
+A structured, **LLM-maintained markdown wiki**: immutable `raw/` sources (typically not committed—see `.gitignore`), a compounding `wiki/` synthesis layer, and an operator handbook in `docs/` (read in-repo). The **published site** is **MkDocs (Material)** built from **`wiki/`** only (`docs_dir` in `mkdocs.yml`). Suited to personal research, project intelligence, reading companions, due diligence, and small team knowledge bases—not a generic notes dump.
 
 ## What you get
 
-- **Clear layers:** `raw/` (evidence) vs `wiki/` (maintained model) vs `docs/` (how to run the system).
+- **Clear layers:** `raw/` (evidence) vs `wiki/` (maintained model) vs `docs/` (how to run the system; not part of the MkDocs site).
 - **Agent contract:** [`AGENTS.md`](AGENTS.md) is the highest-priority schema for humans and automation (ingest / query / lint, append-only log, no silent raw edits).
 - **Navigation:** [`wiki/index.md`](wiki/index.md) is the catalog; [`wiki/log.md`](wiki/log.md) is the append-only chronology.
 - **Integrity:** `scripts/validate_wiki.py` checks links, index coverage, log headings, frontmatter rules, orphans, and more (`--strict` in CI).
 - **Tooling:** Bootstrap, scaffold, append-log, and index audit scripts. Dependencies live in **`pyproject.toml`** and are installed with **[uv](https://docs.astral.sh/uv/)** (`uv sync` creates `.venv/` from **`uv.lock`**).
-- **CI + Pages:** GitHub Actions runs tests, validation, and `mkdocs build --strict`; pushes to `main` deploy the handbook to GitHub Pages.
+- **CI + Pages:** GitHub Actions runs tests, validation, and `mkdocs build --strict` (wiki); pushes to `main` deploy the site to GitHub Pages.
 
 ## Create a new repository from this template
 
@@ -32,7 +32,7 @@ Open **`wiki/`** (or the repo root) in **Obsidian** as a vault. Read [`docs/quic
 | [`AGENTS.md`](AGENTS.md) | Operating contract for agents |
 | [`wiki/`](wiki/) | Taxonomy pages, `index.md`, `log.md` |
 | [`raw/`](raw/) | Inbox, processed sources, assets (immutable after filing) |
-| [`docs/`](docs/) | MkDocs handbook (architecture, workflows, conventions) |
+| [`docs/`](docs/) | Operator handbook (architecture, workflows; not in MkDocs build) |
 | [`scripts/`](scripts/) | Validation and helpers |
 | [`templates/`](templates/) | Page and checklist templates |
 | [`examples/`](examples/) | Isolated demos (not wired into the live wiki) |

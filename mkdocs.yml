@@ -1,14 +1,17 @@
-# MkDocs site: template handbook and operator documentation.
-# Wiki content lives in /wiki (Obsidian); this site documents how to run and maintain it.
+# MkDocs site: published wiki (`wiki/`). Operator handbook (`docs/`) is not part of the site build.
+# See docs/operations/publishing.md for CI and local build commands.
 
-site_name: LLM Wiki Template
-site_description: Structured, agent-maintained markdown wiki — handbook and operations
-site_author: Template maintainers
+site_name: Smart Farm Wiki
+site_description: Agent-maintained markdown wiki — synthesis, topics, and source-notes
+site_author: Repository maintainers
 
-# Replace after "Use this template" with your repo URL (bootstrap.py can set this).
-repo_url: https://github.com/sempervent/llm-wiki-template
-repo_name: sempervent/llm-wiki-template
-edit_uri: edit/main/docs/
+repo_url: https://github.com/sempervent/smart-farm-wiki
+repo_name: sempervent/smart-farm-wiki
+edit_uri: edit/main/wiki/
+
+docs_dir: wiki
+
+# Navigation is generated from the `wiki/` tree (MkDocs 1.5+). Start at index.md or overview.md.
 
 theme:
   name: material
@@ -51,28 +54,14 @@ markdown_extensions:
   - toc:
       permalink: true
 
-nav:
-  - Home: index.md
-  - Quickstart: quickstart.md
-  - Architecture: architecture.md
-  - Workflows:
-      - workflows/ingest.md
-      - workflows/query.md
-      - workflows/lint.md
-  - Conventions:
-      - conventions/page-schema.md
-      - conventions/linking.md
-      - conventions/frontmatter.md
-      - conventions/citations.md
-  - Operations:
-      - operations/validation.md
-      - operations/publishing.md
-      - operations/agent-maintenance.md
-      - operations/obsidian.md
+# Wiki pages cite `raw/` paths that are not in docs_dir; do not fail the build on those.
+validation:
+  links:
+    not_found: ignore
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/sempervent/llm-wiki-template
+      link: https://github.com/sempervent/smart-farm-wiki
 
-copyright: Copyright &copy; 2026 — LLM Wiki Template
+copyright: Copyright &copy; 2026 — Smart Farm Wiki

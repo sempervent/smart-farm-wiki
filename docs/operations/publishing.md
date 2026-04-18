@@ -2,12 +2,12 @@
 
 ## What gets published
 
-- The **handbook** in `docs/` is the MkDocs site (`mkdocs.yml`).
-- The **wiki** in `wiki/` is optimized for Obsidian and Git; it is not automatically dumped into the MkDocs nav (keeps the handbook focused). You can add selected wiki pages to `mkdocs.yml` if you want them on the site.
+- The **wiki** in `wiki/` is the MkDocs site (`mkdocs.yml` sets `docs_dir: wiki`). Navigation is generated from the wiki tree; start from `wiki/index.md` in the built site.
+- The **operator handbook** in `docs/` is **not** included in the MkDocs build; it remains in-repo documentation for humans and agents (read in GitHub or your editor).
 
 ## GitHub Actions
 
-- **`.github/workflows/ci.yml`** — pull requests and pushes: `uv sync --frozen`, validate, pytest, MkDocs strict build.
+- **`.github/workflows/ci.yml`** — pull requests and pushes: `uv sync --frozen`, validate, pytest, MkDocs strict build (wiki only).
 - **`.github/workflows/docs.yml`** — pushes to `main` and manual dispatch: same steps plus upload to GitHub Pages (`actions/deploy-pages`).
 - Uses concurrency to cancel superseded runs.
 

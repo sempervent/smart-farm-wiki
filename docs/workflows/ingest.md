@@ -2,6 +2,8 @@
 
 **Goal:** Add sources to `raw/`, ground them in `wiki/source-notes/`, and update synthesis pages without mutating archived material.
 
+**Git:** This repository may list `raw/**` in `.gitignore` so local source drops are not committed; only `**/.gitkeep` placeholders under `raw/` stay tracked to preserve directory layout. If your clone should track `raw/` in git, adjust `.gitignore` accordingly.
+
 ## Steps
 
 1. **Drop or file raw content** under `raw/inbox/`; after triage, move to `raw/processed/...` with stable paths. Do not later rewrite processed text to “fix” meaning—add a new raw note if the source changes.
