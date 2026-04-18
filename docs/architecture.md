@@ -13,13 +13,17 @@ flowchart TB
     pages[entities concepts analyses ...]
   end
   subgraph handbook [docs layer operator docs]
-    mk[MkDocs site]
+    docsmd[docs/ handbook]
+  end
+  subgraph site [published site]
+    mk[MkDocs from wiki/]
   end
   inbox --> processed
   processed --> pages
   pages --> index
   pages --> log
-  handbook --> mk
+  pages --> mk
+  handbook --> docsmd
 ```
 
 ## Layers
@@ -28,7 +32,8 @@ flowchart TB
 |-------|------|------|
 | **Raw** | `raw/` | Immutable sources after filing; provenance for claims |
 | **Wiki** | `wiki/` | Structured synthesis: taxonomy, links, analyses |
-| **Handbook** | `docs/` | How to run the system; built by MkDocs |
+| **Handbook** | `docs/` | How to run the system (not part of the MkDocs site) |
+| **Site** | `wiki/` via `mkdocs.yml` | Published MkDocs Material site (`docs_dir: wiki`) |
 | **Examples** | `examples/` | Isolated demos; not the live corpus unless promoted |
 
 ## Contracts
