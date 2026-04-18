@@ -1,23 +1,27 @@
 ---
 title: Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn
 page_type: analysis
+page_subtype: operational_guide
+operational_maturity: pilot_ready
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - k3s
   - longhorn
   - kubernetes
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn
 
 ## Purpose
 
-**Platform-specific** backup and disaster-recovery layer for **k3s + Longhorn + workloads** (farmOS, brokers)—sitting **on top of** generic [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md) and [`Restore and recovery tiers`](restore-recovery-tiers-homelab-farm-systems.md).
+**Integration page**: maps **parallel backup tracks** (application logical, Longhorn volume/system, etcd, Rancher, secrets) to the **k3s + Longhorn** platform described in [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md). Sits **on top of** generic [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md) and [`Restore and recovery tiers`](restore-recovery-tiers-homelab-farm-systems.md).
+
+**When things go wrong**: follow [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md) for **restore order** and failure classification.
 
 **Canonical package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md).
 
@@ -50,8 +54,10 @@ confidence: medium
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Raspberry Pi k3s fleet — backup and restore sequence`](raspberry-pi-k3s-fleet-backup-and-restore-sequence.md) (operational ordering: app dumps → Longhorn → etcd)
 - [`Runbook — backup validation and recovery drill`](runbook-backup-validation-and-recovery-drill.md)
 - [`Central vs local backup scope — farm edge stack`](central-vs-local-backup-scope-farm-edge-stack.md)
 - [`Off-grid implications — backup and networking choices`](off-grid-implications-backup-and-networking-choices.md)
-- [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
+- [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
+- [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)

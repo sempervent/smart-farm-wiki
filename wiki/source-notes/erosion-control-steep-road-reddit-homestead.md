@@ -10,10 +10,14 @@ tags:
   - erosion
   - roads
   - drainage
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # Erosion control on steep road — r/homestead thread
+
+**Authority**: **Community thread**—themes may match **agency** guidance but are **not** engineering sign-off. Prefer [`Authoritative roads and driveways — source cluster`](authoritative-roads-and-driveways-source-cluster.md).
 
 **Raw**: [`raw/processed/2026/erosion-control-steep-road-reddit-homestead.md`](../../raw/processed/2026/erosion-control-steep-road-reddit-homestead.md)
 

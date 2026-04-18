@@ -1,16 +1,18 @@
 ---
 title: Backup strategy comparison — farmOS, homelab, PostgreSQL, containers
 page_type: analysis
+page_subtype: operational_guide
+operational_maturity: pilot_ready
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - farmos
   - postgresql
   - homelab
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Backup strategy comparison — farmOS, homelab, PostgreSQL, containers
@@ -18,6 +20,8 @@ confidence: medium
 ## Purpose
 
 **Decision-safe** comparison of **backup granularities** for **farmOS-class** stacks (Drupal + DB), **PostgreSQL** services, **containers**, and **Kubernetes volumes**—grounded in **ingested operator docs**, not a single vendor recipe.
+
+**Doctrine role**: Canonical **mechanism** table for the package—defines **backup vs synchronization** and **volume vs logical** tradeoffs before you pick tools.
 
 **Sources**: [`homelab backup stack — official captures`](../source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md) · [`Backup / DR — official documentation cluster`](../source-notes/backup-dr-official-documentation-cluster.md). **Gap context**: [`source gap audit`](source-gap-audit-backup-dr-and-subghz-wifi-2026-04-18.md).
 
@@ -75,6 +79,7 @@ confidence: medium
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md)
 - [`Central vs local backup scope — farm edge stack`](central-vs-local-backup-scope-farm-edge-stack.md)
 - [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md)

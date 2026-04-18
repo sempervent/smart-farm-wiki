@@ -74,6 +74,8 @@ aliases:
 
 ## Related
 
+- [`Site inventory baseline — Claxton home base`](site-inventory-baseline-claxton-home-base-east-tennessee.md) — **field** **inventory** (structures, access, storage)—**measured** facts land here; complements this **synthesis**
+- [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — full **baseline** map (infra, utilities, loads, templates)
 - [`Parcel intelligence — Claxton home base`](parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) — structured **parcel worksheet** (placeholders until WSS AOI filed)
 - [`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md) — **Parcel** gaps not yet filled from vault sources
 - [`Demory farm — site intelligence (Campbell County)`](demory-farm-site-intelligence.md)

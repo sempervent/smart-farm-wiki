@@ -3,7 +3,7 @@ title: Mesh and field networking strategy — off-grid Demory farm
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - mesh
@@ -19,6 +19,8 @@ confidence: medium
 ## Purpose
 
 Define **how** **`SITE_FARM`** **(Demory)** **should** **use** **local** **RF** **and** **LAN** **when** **off-grid-first** **:** **resilient** **mesh** **behavior** **,** **offline** **survivability** **,** **and** **WAN** **/** **Starlink** **only** **as** **secondary** **convenience** **—** **aligned** **with** [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md) **(**farm** **WAN** **conditional** **/** **deferred** **)** **.**
+
+**Doctrine package**: [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) · [`Field-node classes and communication roles — Demory`](field-node-classes-and-communication-roles-demory-farm.md).
 
 **Sources**: [`Off-grid power, field RF, and optional WAN — source index`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md).
 
@@ -86,6 +88,6 @@ Define **how** **`SITE_FARM`** **(Demory)** **should** **use** **local** **RF** 
 
 ## Related
 
-- [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md)
+- [`Off-grid power doctrine — Demory farm site`](off-grid-power-strategy-demory-farm-site.md)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md)
 - [`Execution topology package — two-site smart farm (Mermaid)`](execution-topology-package-two-site-smart-farm.md)

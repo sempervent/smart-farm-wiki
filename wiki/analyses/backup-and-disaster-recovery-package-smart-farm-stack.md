@@ -5,7 +5,7 @@ page_subtype: operational_guide
 operational_maturity: pilot_ready
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - disaster-recovery
@@ -13,8 +13,8 @@ tags:
   - k3s
   - longhorn
   - rancher
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Backup and disaster recovery package — smart farm stack
@@ -23,11 +23,42 @@ confidence: medium
 
 **Canonical navigation spine** for **backup and disaster recovery** across **farmOS**, **PostgreSQL-backed** services, **k3s** control plane (**etcd**), **Longhorn** volumes, **Rancher**, **configuration and secrets**, and **edge gateways / field devices** where they affect **whether backups complete** or **what must survive** a site loss.
 
+**Topic router** (same content, navigation-first): [`Backup and disaster recovery — doctrine hub`](../topics/backup-disaster-recovery-doctrine-hub.md).
+
 **Design stance**: Prefer **restore-tested** procedures (tabletop or staging) over **decorative** backup jobs that never complete a full restore. Distinguish **backup** from **synchronization**, and **block/volume** copies from **application-consistent** recovery.
+
+**Evidence stance**: **Operational** claims on this page (what to back up, in what order, and what “consistent” means for PostgreSQL) defer to **vendor/project primary documentation** in [`Backup / DR — official documentation cluster`](../source-notes/backup-dr-official-documentation-cluster.md) and project captures—not forum threads. Broader corpus hygiene: [`Source authority hardening audit`](source-authority-hardening-audit.md).
 
 **Official pointers + captures**: [`Backup / DR — official documentation cluster`](../source-notes/backup-dr-official-documentation-cluster.md) · [`homelab backup stack captures`](../source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md) · [`backup-dr link batch`](../../raw/processed/2026/backup-dr-official-documentation-links-batch-2026-04-17.md).
 
-**Platform provisioning context**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) · [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md).
+**Platform provisioning context**: [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) · [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) · [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md).
+
+**Business execution context**: Pilot and validation work should **prove** backup/restore paths—not only deploy clusters—before **G\***-class spend. Router: [`Business plan execution and pilot operations hub`](../topics/business-plan-execution-and-pilot-operations-hub.md) · [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md).
+
+---
+
+## Scope (what this package covers)
+
+| Component | In scope for doctrine |
+|-----------|------------------------|
+| **farmOS** + **PostgreSQL** | Logical exports, version expectations, SoR alignment |
+| **k3s** control plane | Embedded **etcd** (or external datastore per your install)—snapshots **off** node disk |
+| **Longhorn** | Volume backup, system backup, CSI—**not** a substitute for **logical** DB path unless restore-tested |
+| **Rancher** | Optional; backup/restore **in addition to** cluster state—encryption config **out of band** |
+| **Configuration, secrets, GitOps** | Helm values, Sealed Secrets/SOPS/KMS—**not** fully captured by naive etcd story alone |
+| **Edge gateways & farm-adjacent services** | **Config** exports, **queue** disks, **central** replication policy—[`Central vs local backup scope`](central-vs-local-backup-scope-farm-edge-stack.md) |
+
+---
+
+## Recommended read order
+
+1. **Distinctions** (below): backup vs sync; volume vs app-aware.  
+2. [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md) — pick mechanisms.  
+3. [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md) — label your targets; fill RPO/RTO **after** drills.  
+4. [`Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md) — parallel tracks A–E.  
+5. [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md) — failure classes and restore **order**.  
+6. [`Runbook — backup validation and recovery drill`](runbook-backup-validation-and-recovery-drill.md) — **restore-tested** evidence.  
+7. [`Central vs local backup scope — farm edge stack`](central-vs-local-backup-scope-farm-edge-stack.md) · [`Off-grid implications — backup and networking choices`](off-grid-implications-backup-and-networking-choices.md) — two-site / power / WAN.
 
 ---
 
@@ -37,9 +68,10 @@ confidence: medium
 |-------|------------------|-----------------|
 | **Granularity & mechanisms** | [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md) | Logical DB vs volume vs restic patterns; **backup vs sync** |
 | **Tiers & expectations** | [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md) | Tier 0–3; **RPO/RTO** as **your** filled targets, not wiki-invented SLAs |
-| **k3s + Longhorn + workloads** | [`Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md) | Three tracks (app / Longhorn / etcd) |
+| **k3s + Longhorn + workloads** | [`Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md) | Parallel tracks (app / Longhorn / etcd / Rancher / secrets) |
 | **Pi fleet sequence** | [`Raspberry Pi k3s fleet — backup and restore sequence`](raspberry-pi-k3s-fleet-backup-and-restore-sequence.md) | Ordered steps aligned to platform guide |
 | **Central vs edge scope** | [`Central vs local backup scope — farm edge stack`](central-vs-local-backup-scope-farm-edge-stack.md) | What must land in **one** backup store vs **local** queue |
+| **DR decision rules** | [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md) | Failure classes, restore **order**, rebuild vs restore |
 | **Validation & drills** | [`Runbook — backup validation and recovery drill`](runbook-backup-validation-and-recovery-drill.md) | Prove restores **before** an outage |
 | **Off-grid scheduling** | [`Off-grid implications — backup and networking choices`](off-grid-implications-backup-and-networking-choices.md) | Power/WAN vs backup windows |
 
@@ -84,7 +116,7 @@ flowchart TB
   end
   subgraph cfg [Configuration]
     S[Secrets + Helm values]
-    G[Edge gateway config]
+    G[Edge gateway / field service config]
   end
   F --> L
   B --> L
@@ -100,5 +132,6 @@ flowchart TB
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md)
 - [`Manual fallback and degraded modes — critical operations`](manual-fallback-degraded-modes-critical-operations.md)

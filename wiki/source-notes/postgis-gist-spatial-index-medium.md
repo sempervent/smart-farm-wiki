@@ -10,10 +10,14 @@ tags:
   - postgis
   - postgresql
   - spatial-data
+  - listicle-blog
 review_status: unreviewed
+confidence: low
 ---
 
 # GiST spatial index in PostGIS (Medium capture)
+
+**Authority**: **Pedagogy / blog**—for **index and function semantics** use PostGIS reference: [`PostgreSQL and PostGIS — official documentation primary cluster`](postgresql-and-postgis-official-documentation-primary-cluster.md).
 
 **Raw**: [`raw/processed/2026/postgis-gist-spatial-index-medium.md`](../../raw/processed/2026/postgis-gist-spatial-index-medium.md)
 
@@ -22,3 +26,4 @@ review_status: unreviewed
 **Used by**
 
 - [`Data storage (farm and edge stacks)`](../concepts/data-storage.md)
+- [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md)

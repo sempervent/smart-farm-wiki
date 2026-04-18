@@ -10,10 +10,14 @@ tags:
   - agriculture
   - homelab
   - automation
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # Agriculture lab build (2023, r/homelab)
+
+**Authority**: **Single build narrative**—use **farmOS docs** and [`PostgreSQL and PostGIS — official documentation primary cluster`](postgresql-and-postgis-official-documentation-primary-cluster.md) for data-layer claims.
 
 **Raw**: [`raw/processed/2026/agriculture-lab-build-2023-homelab-reddit.md`](../../raw/processed/2026/agriculture-lab-build-2023-homelab-reddit.md)
 

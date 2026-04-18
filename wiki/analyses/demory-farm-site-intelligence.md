@@ -95,10 +95,11 @@ When **`SITE_FARM`** **is** **modeled** **as** **off-grid-first** **(**solar** *
 
 | Page | Role |
 |------|------|
-| [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) | **Continuous** **vs** **duty-cycled** **loads** **;** **networking** **as** **electrical** **load** **.** |
+| [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) | **First-class** hub: power domains, field nodes, WAN deps, degraded modes, stop rules. |
+| [`Off-grid power doctrine — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) | **Continuous** **vs** **duty-cycled** **loads** **;** **networking** **as** **electrical** **load** **.** |
 | [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) | **Meshtastic** **/** **HaLow** **/** **Wi‑Fi** **roles** **;** **what** **must** **work** **without** **WAN** **.** |
 | [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) | **SOC** **+** **WAN** **failure** **classes** **.** |
-| [`Off-grid operational decision rules — power and networking`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) | **DR-*** **gates** **.** |
+| [`Off-grid infrastructure stop rules — Demory`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) | **DR-*** **gates** **;** **simplification** **triggers** **.** |
 | [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md) | **Reference** **/** **pilot** **/** **degraded** **diagrams** **.** |
 | [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) | **Operational** **comparison** **.** |
 | [`Off-grid power, field RF, and optional WAN — source index`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) | **Raw** **/** **PDF** **provenance** **.** |
@@ -107,6 +108,8 @@ When **`SITE_FARM`** **is** **modeled** **as** **off-grid-first** **(**solar** *
 
 ## Related
 
+- [`Site inventory baseline — Demory farm site`](site-inventory-baseline-demory-farm-site-east-tennessee.md) — **field** **inventory** (fields, structures, water points)—**measured** facts land here; complements this **synthesis**
+- [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — full **baseline** map (infra, utilities, loads, templates)
 - [`Parcel intelligence — Demory farm site`](parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) — structured **parcel worksheet** (vault WSS table + pending clip to ~120 ac)
 - [`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md) — **Parcel** gaps not yet filled from vault sources
 - [`Claxton home base — site intelligence (Anderson County)`](claxton-home-base-site-intelligence.md)

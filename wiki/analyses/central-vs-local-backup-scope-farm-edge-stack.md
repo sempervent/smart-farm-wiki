@@ -3,19 +3,19 @@ title: Central vs local backup scope — farm edge stack
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - edge
   - two-site
   - homelab
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Central vs local backup scope — farm edge stack
 
-**Parent package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md).
+**Parent package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md). **DR decisions**: [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md).
 
 ---
 
@@ -61,5 +61,6 @@ confidence: medium
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md)
 - [`Runbook — backup validation and recovery drill`](runbook-backup-validation-and-recovery-drill.md)

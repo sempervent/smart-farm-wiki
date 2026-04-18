@@ -1,9 +1,9 @@
 ---
-title: Homelab / edge Kubernetes platform strategy — Pi fleet, k3s, Longhorn, Rancher
+title: Platform strategy for farm and homestead services
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - k3s
   - longhorn
@@ -13,13 +13,17 @@ tags:
   - farmos
 review_status: unreviewed
 confidence: medium
+aliases:
+  - Homelab edge Kubernetes platform strategy Pi fleet k3s Longhorn Rancher
 ---
 
-# Homelab / edge Kubernetes platform strategy — Pi fleet, k3s, Longhorn, Rancher
+# Platform strategy for farm and homestead services
 
 ## Purpose
 
 **Canonical platform** story for this wiki: a **small** **homelab / farm edge** footprint using a **Raspberry Pi fleet** (or similar ARM SBCs), **k3s**, **Longhorn** for **distributed block storage**, optional **Rancher** for **multi-cluster UX**, and **central** or **co-located** storage servers where justified—**tied** to **farmOS**, **telemetry**, and **two-site** control-plane assumptions without **Kubernetes maximalism**.
+
+**Doctrine package** (reading order, HA semantics, roles): [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md).
 
 **Sources**: [`K3s / Longhorn / Rancher / Pi captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md). **Backup/DR**: [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`Kubernetes platform backup / DR — Pi, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md).
 
@@ -49,6 +53,8 @@ confidence: medium
 
 ## Related
 
+- [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) — **First-class** hub: k3s / Longhorn / Rancher **roles**, **HA** meaning, **approved vs deferred**
+- [`k3s role in the homelab / farm platform`](k3s-role-in-homelab-farm-platform.md), [`Longhorn role in the homelab / farm platform`](longhorn-role-in-homelab-farm-platform.md), [`HA meaning and constraints`](ha-meaning-and-constraints-homelab-farm-platform.md)
 - [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md) — DR spine (etcd, Longhorn, Rancher, farmOS/PostgreSQL, secrets, drills)
 - [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) — **Stepwise operator runbook** (prerequisites → bootstrap → Longhorn → optional Rancher → backup → validation).
 - [`Raspberry Pi fleet provisioning standard — smart farm / homelab`](raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md)

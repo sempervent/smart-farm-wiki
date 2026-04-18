@@ -9,10 +9,14 @@ source_ids:
 tags:
   - homelab
   - education
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # You should build a homelab if your major is computing — Reddit
+
+**Authority**: **Motivation thread**—not technical authority for **production** stack decisions.
 
 **Raw**: [`raw/processed/2026/build-homelab-if-major-computing-reddit.md`](../../raw/processed/2026/build-homelab-if-major-computing-reddit.md)
 

@@ -3,7 +3,7 @@ title: Platform decision memo — phase, HA scope, deferrals (Pi / k3s / Longhor
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - k3s
   - longhorn
@@ -22,7 +22,11 @@ aliases:
 
 Decision memo for the smart-farm-wiki homelab/edge Kubernetes platform: what belongs in Phase 0/1, what is deferred, what “HA” means in this repo, and what must not be overbuilt before workload truth (farmOS, telemetry) exists.
 
-**Canonical stack doc**: [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md).
+**Doctrine package** (first-class hub): [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md).
+
+**Canonical stack doc**: [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md).
+
+**HA semantics** (expanded): [`HA meaning and constraints — homelab / farm platform`](ha-meaning-and-constraints-homelab-farm-platform.md). **Component roles**: [`k3s role`](k3s-role-in-homelab-farm-platform.md), [`Longhorn role`](longhorn-role-in-homelab-farm-platform.md).
 
 ---
 
@@ -62,6 +66,8 @@ Decision memo for the smart-farm-wiki homelab/edge Kubernetes platform: what bel
 | **Longhorn replication** | Survive node/disk loss on the same farm LAN | Geographic DR; ransomware immutability (needs object-lock / air-gap policy) |
 | **Central NAS “HA”** | Vendor appliance feature set | Kubernetes SLO unless integrated as PV backend |
 
+**Full doctrine**: [`HA meaning and constraints — homelab / farm platform`](ha-meaning-and-constraints-homelab-farm-platform.md).
+
 ---
 
 ## Anti-patterns (do not overbuild)
@@ -74,5 +80,6 @@ Decision memo for the smart-farm-wiki homelab/edge Kubernetes platform: what bel
 
 ## Related
 
+- [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
 - [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md)
 - [`Kubernetes platform backup / DR`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md)

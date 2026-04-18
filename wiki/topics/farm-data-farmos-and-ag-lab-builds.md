@@ -3,7 +3,7 @@ title: Farm data, farmOS, and agriculture lab builds
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-24
 tags:
   - farmos
   - agriculture
@@ -18,6 +18,8 @@ review_status: unreviewed
 Together these sources connect **software** (farmOS hosting and extensibility) to **physical lab build-out** motivation without collapsing “farm management app” into generic homelab chatter.
 
 **Canonical entity**: [`farmOS`](../entities/farmos.md)
+
+**PostgreSQL / PostGIS (official first)**: [`PostgreSQL and PostGIS — official documentation primary cluster`](../source-notes/postgresql-and-postgis-official-documentation-primary-cluster.md) — use for **release-accurate** SQL and spatial behavior; Medium/blog primers below are **pedagogy only**.
 
 **Source notes**
 

@@ -3,20 +3,23 @@ title: Rural road and driveway erosion sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-19
+updated: 2026-04-24
 tags:
   - erosion
   - roads
   - drainage
-review_status: unreviewed
+review_status: reviewed
 ---
 
 # Rural road and driveway erosion sources
 
-**Narrative**: Ingested materials on **unpaved road erosion**—**Reddit** threads (homestead steep road; off-grid cabin switchbacks), **Backwoods Home** maintenance memoir (**outslope**, **grade dips**, dragging), **SubStrata** seasonal factors, **Desert Mountain Corp**–style stabilization overview (FHWA gravel guide pointer), **Las Pilitas** hillside planting (native mix; critique of grass-only slopes), **Lowe’s** residential slope products, **Corrosion Technologies** vendor page. **PDF corpus** (with text extracts): **Ridge to Reefs** dirt-road practices, **Southern Appalachian Layman’s Guide** (NRCS), **Penn State** crown/cross-slope bulletin, **USFS** traveled-way shape (1997), **low-volume roads BMP** Chapter 7 (drainage), **Kentucky EPSC** slope protection. Pair with hydrology hubs when roads tie to **ponds** or **runoff**.
+**Authority (read first)**: **Primary-weight** index for **grading, drainage, and erosion** on unpaved roads—[`Authoritative roads and driveways — source cluster (agency, extension, manuals)`](../source-notes/authoritative-roads-and-driveways-source-cluster.md) · [`FHWA — Gravel Roads Construction and Maintenance Guide (official reference)`](../source-notes/fhwa-gravel-roads-maintenance-guide-official-reference.md). Use these for **design and maintenance** claims; cite Reddit / blogs only as **exploratory** (see [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md)).
+
+**Narrative (mixed corpus)**: **Agency / extension / manual PDFs** (NRCS layman’s guide, Penn State crown/cross-slope, USFS traveled-way, low-volume roads BMP Ch.7, Kentucky EPSC, Ridge to Reefs) sit alongside **community and vendor** material—**Reddit** threads (homestead steep road; off-grid cabin switchbacks), **Backwoods Home** maintenance memoir (**outslope**, **grade dips**, dragging), **SubStrata** seasonal article, **Desert Mountain Corp**–style stabilization overview (FHWA pointer in prose), **Las Pilitas** hillside planting, **Lowe’s** / **Corrosion Technologies** retail/vendor pages. The latter group supplies **vocabulary and field experience**, not permit engineering.
 
 **Source notes**
 
+- [`source-notes/authoritative-roads-and-driveways-source-cluster.md`](../source-notes/authoritative-roads-and-driveways-source-cluster.md) — **Start here** (agency / manuals).
 - [`source-notes/erosion-control-steep-road-reddit-homestead.md`](../source-notes/erosion-control-steep-road-reddit-homestead.md)
 - [`source-notes/six-tips-road-erosion-control-substrata.md`](../source-notes/six-tips-road-erosion-control-substrata.md)
 - [`source-notes/soil-stabilization-erosion-dust-control-corrosion-technologies.md`](../source-notes/soil-stabilization-erosion-dust-control-corrosion-technologies.md)

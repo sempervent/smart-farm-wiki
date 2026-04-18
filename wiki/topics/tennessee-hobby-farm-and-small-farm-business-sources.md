@@ -3,7 +3,7 @@ title: Tennessee hobby farm and small-farm business sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-20
+updated: 2026-04-18
 tags:
   - tennessee
   - hobby-farm
@@ -20,6 +20,7 @@ See [`Agritourism, tiny houses, and Tennessee hobby farms (query synthesis)`](..
 
 **Source notes**
 
+- [`source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md`](../source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **2026-04-18 ingest batch**: TN ag exemption, greenbelt, hobby-farm articles, IRS/federal tax framing, UT extension pubs, TN statute PDF + extracts (provenance index).
 - [`source-notes/beginning-farmers-and-ranchers-usda-farmers-gov.md`](../source-notes/beginning-farmers-and-ranchers-usda-farmers-gov.md)
 - [`source-notes/tennessee-business-tax-registration-licensing-tntap.md`](../source-notes/tennessee-business-tax-registration-licensing-tntap.md)
 - [`source-notes/zarla-how-to-start-business-in-tennessee.md`](../source-notes/zarla-how-to-start-business-in-tennessee.md)

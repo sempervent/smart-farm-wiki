@@ -5,14 +5,14 @@ page_subtype: standard
 operational_maturity: pilot_ready
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-24
 tags:
   - raspberry-pi
   - k3s
   - provisioning
   - homelab
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Raspberry Pi fleet provisioning standard — smart farm / homelab
@@ -20,6 +20,10 @@ confidence: medium
 ## Purpose
 
 **Minimum** **operator** **standard** for **Pi-class** nodes joining a **k3s** fleet that may run **farmOS**, **telemetry**, and **Longhorn**—aligned with **official k3s** install notes and **Longhorn on K3s** prerequisites.
+
+**Standards catalog**: [`Operational standards — farm and homelab platform`](../topics/operational-standards-farm-homelab-platform.md).
+
+**Doctrine package**: [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md).
 
 **Sources**: [`k3s quick-start`](../../raw/processed/2026/k3s-quick-start-guide-docs-capture-inbox-2026-04-18.md), [`Longhorn CSI on K3s`](../../raw/processed/2026/longhorn-csi-on-k3s-docs-capture-inbox-2026-04-18.md), [`Pi + k3s + Longhorn homelab narrative`](../../raw/processed/2026/raspberry-pi-k3s-longhorn-rancher-homelab-capture-inbox-2026-04-18.md) (secondary). **External**: [K3s requirements](https://docs.k3s.io/installation/requirements).
 
@@ -47,6 +51,17 @@ confidence: medium
 
 ---
 
+## Operational boundaries (this repo)
+
+| Boundary | Rule |
+|----------|------|
+| **Node count** | **Phase 0/1**: **one** k3s **server** + **agents** unless [`platform decision memo`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md) gates justify HA. |
+| **Disk** | **No** production farmOS **without** **SSD-class** **storage** for **etcd** / Longhorn paths on **server** nodes—**SD-only** is **fragile** (pilot **only**). |
+| **Network** | **Stable** **LAN** **and** **reserved** **IPs**; **edge** **farm** **nodes** **must** **match** **power** **and** **WAN** **plans** ([`Two-site operations`](../topics/two-site-smart-farm-operations.md)). |
+| **Secrets** | **kubeconfig** and **join** **tokens** are **credentials**—**not** checked into git ([`remote access`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md) posture). |
+
+---
+
 ## Pilot vs production-ready
 
 | Aspect | Pilot (acceptable) | Production-ready (raise bar) |
@@ -59,6 +74,8 @@ confidence: medium
 
 ## Related
 
+- [`k3s cluster bootstrap standard — smart farm / homelab`](k3s-cluster-bootstrap-standard-smart-farm-homelab.md) · [`Kubernetes edge — scheduling, storage class, and Longhorn roles standard`](kubernetes-edge-scheduling-storage-longhorn-standard.md)
 - [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) (full runbook: bootstrap → Longhorn → optional Rancher → backup)
-- [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
+- [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
+- [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
 - [`Platform decision memo`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md)

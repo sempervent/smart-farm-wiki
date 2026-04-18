@@ -3,7 +3,7 @@ title: Longhorn vs central storage architecture — homelab / farm platform
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - longhorn
   - storage
@@ -17,7 +17,7 @@ confidence: medium
 
 ## Purpose
 
-**Choose** between **Longhorn** (distributed **Kubernetes** block storage) and **central** storage (NAS/NFS/object **outside** the cluster) for **farmOS**, **telemetry stacks**, and **media**—without prescribing a vendor SKU.
+**Doctrine** — **storage comparison** — in [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md). **Choose** between **Longhorn** (distributed **Kubernetes** block storage) and **central** storage (NAS/NFS/object **outside** the cluster) for **farmOS**, **telemetry stacks**, and **media**—without prescribing a vendor SKU. **Longhorn’s scope** alone: [`Longhorn role in the homelab / farm platform`](longhorn-role-in-homelab-farm-platform.md).
 
 **Sources**: [`Longhorn CSI on K3s`](../../raw/processed/2026/longhorn-csi-on-k3s-docs-capture-inbox-2026-04-18.md), [`homelab Pi + Longhorn capture`](../../raw/processed/2026/raspberry-pi-k3s-longhorn-rancher-homelab-capture-inbox-2026-04-18.md), [`Longhorn system backup`](../../raw/processed/2026/longhorn-backup-system-capture-inbox-2026-04-17.md). **Compare** also [`Backup strategy comparison`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md).
 
@@ -40,6 +40,20 @@ confidence: medium
 - **Longhorn** for **stateful** **workloads** **(farmOS DB PVC,** **broker** **PVC** **)**.
 - **Central** **NFS** **or** **S3-compatible** **target** for **backup** **repositories** **(restic)** **and** **media**—see [`Kubernetes platform backup / DR`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md).
 
+```mermaid
+flowchart LR
+  subgraph k3s["k3s"]
+    app["farmOS / stateful"]
+  end
+  lh["Longhorn PVCs"]
+  nas["Central NAS / object"]
+  restic["restic / off-cluster backup"]
+
+  app --> lh
+  lh --> nas
+  restic --> nas
+```
+
 ---
 
 ## “HA storage” in this wiki
@@ -52,5 +66,5 @@ confidence: medium
 ## Related
 
 - [`Raspberry Pi k3s fleet — central and HA storage options`](raspberry-pi-k3s-fleet-central-and-ha-storage-options.md) (operational decision path for this wiki’s Pi stack)
-- [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
+- [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
 - [`Rancher role and timing`](rancher-role-and-timing-k3s-homelab-farm-platform.md)

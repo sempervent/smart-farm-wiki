@@ -3,7 +3,7 @@ title: Authoritative execution evidence cluster — East Tennessee (index)
 page_type: source_note
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-18
 source_ids: []
 tags:
   - tennessee
@@ -64,6 +64,7 @@ confidence: high
 | TN Revenue — Agricultural exemption (PDF) | [`Tennessee Revenue — Agricultural exemption Jan 2023 (PDF)`](tn-revenue-agricultural-exemption-jan2023-pdf.md) |
 | Agricultural exemption (page capture) | [`Agricultural exemption — page capture`](agricultural-exemption-page-inbox-2026-04-18.md) |
 | Public Chapter 498 — agritourism act | [`Tennessee — Public Chapter 498 agritourism act (PDF)`](tn-public-chapter-498-agritourism-act-pdf.md) |
+| **2026-04-18 batch** — TN law / greenbelt / hobby-farm / IRS framing + UT insurance pub (index) | [`Inbox batch — Tennessee farm policy, LoRaWAN… (2026-04-18)`](inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) |
 
 ## FSA / financing / beginning farmer
 

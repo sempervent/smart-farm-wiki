@@ -10,10 +10,14 @@ tags:
   - ducks
   - poultry
   - meat
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # Ducks for meat (Reddit r/homestead thread)
+
+**Authority**: **Anecdotal** (per summary)—not a controlled trial; pair **extension** / **NRCS** sources for husbandry standards.
 
 **Raw path:** [`raw/processed/2026/ducks-for-meat-reddit-homestead.md`](../../raw/processed/2026/ducks-for-meat-reddit-homestead.md)
 

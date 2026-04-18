@@ -3,7 +3,7 @@ title: Evidence grade and canonical authority
 page_type: concept
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-24
 tags:
   - meta
   - epistemics
@@ -35,5 +35,6 @@ confidence: high
 ## See also
 
 - [`Evidence grade` (glossary)](../glossary/evidence-grade.md)
+- [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md) — where **low-authority** ingests remain, and which **official** clusters supersede them
 - [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md)
 - [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md)

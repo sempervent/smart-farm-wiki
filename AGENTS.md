@@ -9,7 +9,7 @@ This file is the **highest-priority behavioral contract** for any automated or h
 This repository implements an **LLM-maintained markdown wiki**: a persistent, compounding knowledge base where:
 
 - **`raw/`** holds **immutable** source material (notes, imports, excerpts, files).
-- **`wiki/`** holds the **agent-authored synthesis** (business plan packages, entities, concepts, timelines, glossary, analyses, cross-links).
+- **`wiki/`** holds the **agent-authored synthesis** (business plan packages, entities, concepts, timelines, glossary, analyses, **procedural guides** in `analyses/` via `page_subtype`, cross-links).
 - **`docs/`** holds the **operator handbook** for humans and agents (read in-repo); it explains *how* the system works, not the domain knowledge itself. (In this fork, the **MkDocs site** is built from **`wiki/`** only; see `mkdocs.yml` and `docs/operations/publishing.md`.)
 
 The **mechanical goal** is **deterministic, inspectable, markdown-first** workflows: plain files, clear paths, validation scripts, and reproducible doc builds.
@@ -135,6 +135,19 @@ Procedure runbooks, stepwise operator guides, and **standards** often live under
 
 **Standards** may also be `topic` pages when they are purely narrative; use `page_type: analysis` + `page_subtype: standard` when the page is checklist-heavy and validated like other analyses.
 
+### Guides vs runbooks vs standards (within `analyses/`)
+
+Procedural content stays under **`wiki/analyses/`** for validation and MkDocs consistency. Distinctions are **semantic** (reader intent), not separate directories:
+
+| Reader intent | Metadata / convention |
+|---------------|------------------------|
+| **Standard** (norms) | `page_subtype: standard` — short **bars**; link out to guides for full sequences |
+| **Guide** (how-to, drill, doctrine spine with operator routing) | `page_subtype: operational_guide` |
+| **Runbook** (incident / degraded mode) | `operational_guide` + prefer **`runbook-*.md`** filename (or **Runbook —** title) |
+| **Essay / audit** | Default analysis (`page_subtype` omitted or `meta_audit` / `query_synthesis`) |
+
+**Package strategy** (where they live, maturity labels, linking to architecture and entities): [`wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md`](wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md).
+
 ---
 
 ## Naming conventions
@@ -183,6 +196,7 @@ See [raw/processed/2026/example.md](../../raw/processed/2026/example.md) — sec
 
 - **One procedure owner per subject cluster** (e.g. Pi k3s: strategy page + one guide hub linking sequence pages). New checklists should attach to that hub or justify a new `page_subtype: operational_guide` scope in `wiki/log.md`.
 - **Standards** (short norms) **vs** **guides** (long sequences): prefer a standard page + guide hub pair over two guides with duplicated outlines.
+- **First-class guides**: treat procedural pages as durable products—tag **`operational_maturity`**, link **standards** + **entities** + **architecture**, and follow the **package strategy** page above.
 - Use [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) when `index.md` feels too flat—do **not** duplicate the full analysis list there.
 
 ---
@@ -334,7 +348,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 ## Agent session checklist
 
-1. Read `AGENTS.md` (this file) and `wiki/index.md`. For **navigation / IA** context, see [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) and [`wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md`](wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md). When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
+1. Read `AGENTS.md` (this file) and `wiki/index.md`. For **navigation / IA** context, see [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) and [`wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md`](wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md). For **procedural how-tos and runbooks**, see [`wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md`](wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md). When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
 2. Identify layer: raw vs wiki vs docs change.
 3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits.
 4. Update `wiki/index.md` when navigation should change.

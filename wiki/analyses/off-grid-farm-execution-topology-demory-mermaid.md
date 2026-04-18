@@ -3,7 +3,7 @@ title: Off-grid farm execution topology — Demory (Mermaid)
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-17
 tags:
   - mermaid
   - off-grid
@@ -18,7 +18,9 @@ confidence: medium
 
 **Three** **Mermaid** **views** **for** **`SITE_FARM`** **(Demory)** **:** **reference** **(intended** **off-grid** **+** **field** **network** **) **,** **pilot** **(Phase** **0/1** **) **,** **degraded** **(low** **SOC** **/** **WAN** **loss** **/** **local-only** **)** **—** **with** **power** **domains** **and** **trust** **zones** **.**
 
-**Policy** **pages** **:** [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) **,** [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) **,** [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) **.**
+**Doctrine** **package** **:** [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) **.**
+
+**Policy** **pages** **:** [`Off-grid power doctrine — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) **,** [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) **,** [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) **.**
 
 **Two-site** **WAN** **context** **(**Claxton** **vs** **Demory** **)** **:** [`Execution topology package — two-site smart farm (Mermaid)`](execution-topology-package-two-site-smart-farm.md) **.**
 

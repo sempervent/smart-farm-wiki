@@ -53,6 +53,8 @@ review_status: unreviewed
 - [`Reference architecture — 5-acre home base + 120-acre farm`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) — control-center vs field stack.
 - [`Execution dossier hub — Phase 0–1 — East Tennessee`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — sequencing when home base leads.
 - [`Claxton and Demory — missing data register`](../analyses/claxton-and-demory-missing-data-register.md) — parcel-level gaps.
+- [`Site inventory baseline — Claxton home base`](../analyses/site-inventory-baseline-claxton-home-base-east-tennessee.md) — field **inventory** tables (structures, access, storage); complements site intelligence.
+- [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — router for baselines + loads + field templates.
 
 ---
 

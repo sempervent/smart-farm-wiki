@@ -3,7 +3,7 @@ title: Off-grid degraded modes — power and connectivity (Demory farm)
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - degraded-modes
@@ -18,7 +18,19 @@ confidence: medium
 
 Extend **two-site** **degraded-mode** **thinking** **for** **`SITE_FARM`** **(Demory)** **when** **power** **and** **WAN** **fail** **independently** **or** **together** **—** **without** **duplicating** [`Manual fallback`](manual-fallback-degraded-modes-critical-operations.md) **prose** **.**
 
+**Doctrine package**: [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md).
+
 **Topology** **views** **:** [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md) **.**
+
+```mermaid
+stateDiagram-v2
+  [*] --> Nominal
+  Nominal --> N1 : WAN down only
+  Nominal --> Pstress : SOC / PV fault
+  N1 --> N2 : add power stress
+  Pstress --> N2 : add WAN loss
+  note right of N2 : N2 — paper rounds; battery-backed critical only
+```
 
 ---
 
@@ -53,5 +65,6 @@ Extend **two-site** **degraded-mode** **thinking** **for** **`SITE_FARM`** **(De
 
 ## Related
 
-- [`Off-grid operational decision rules — power and networking (Demory)`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md)
+- [`Connectivity dependency map — farm systems (Demory)`](connectivity-dependency-map-farm-systems-demory-farm.md)
+- [`Off-grid infrastructure stop rules — Demory`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md)
 - [`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md)

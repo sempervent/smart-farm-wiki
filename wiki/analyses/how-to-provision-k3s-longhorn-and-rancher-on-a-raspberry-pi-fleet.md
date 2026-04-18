@@ -23,7 +23,7 @@ confidence: medium
 
 Canonical operator runbook for standing up a small Raspberry Pi (or Pi-class ARM) fleet running k3s, Longhorn, and optionally Rancher, with either distributed Longhorn disks or central / multi-server storage—without assuming unbounded CPU, RAM, or disk IOPS on the nodes.
 
-**Strategy and tradeoffs** (why, not only how): [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md), [`Platform decision memo — phase, HA scope, deferrals`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md). **Per-node checklist**: [`Raspberry Pi fleet provisioning standard`](raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md). **Captures**: [`K3s / Longhorn / Rancher / Pi platform source note`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md).
+**Doctrine package** (what the platform is for, HA meaning, approved vs deferred): [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md). **Strategy and tradeoffs** (why, not only how): [`Platform strategy for farm and homestead services`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md), [`Platform decision memo — phase, HA scope, deferrals`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md). **Per-node checklist**: [`Raspberry Pi fleet provisioning standard`](raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md). **Captures**: [`K3s / Longhorn / Rancher / Pi platform source note`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md).
 
 ---
 

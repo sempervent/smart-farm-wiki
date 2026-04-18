@@ -8,10 +8,14 @@ source_ids:
   - raw/processed/2026/basement-dream-workshop-reddit.md
 tags:
   - workshop
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # Basement dream workshop — r/DIY thread
+
+**Authority**: **DIY community thread**—layout ideas only; not **building code** or **structural** guidance.
 
 **Raw**: [`raw/processed/2026/basement-dream-workshop-reddit.md`](../../raw/processed/2026/basement-dream-workshop-reddit.md)
 

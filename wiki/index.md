@@ -4,13 +4,45 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 ## Overview
 
+- [Start here — Smart Farm Wiki](topics/start-here-smart-farm-wiki.md) — **Onboarding**: fast paths to business plan, two-site ops, glossary, hubs.
+- [How to read this wiki](topics/how-to-read-this-wiki.md) — Layers, page types, vocabulary shortcuts, catalog vs log.
+- [Smart Farm Wiki glossary (hub)](glossary/smart-farm-wiki-glossary.md) — **Definition-first** index (two-site, gates, SoR, off-grid, platform, labor).
 - [Wiki overview](overview.md) — North-star summary of this vault’s purpose and rules.
 - [Repository analysis](analyses/repository-analysis.md) — This repo’s layout, tooling, CI, corpus scale, and design tradeoffs (meta; complements `docs/`).
 - [Domain content overview](analyses/domain-content-overview.md) — What this wiki is *about*: land, connectivity, power, data, business, and time/PNT strands.
 - [Structural audit — repository shape and canonical routing](analyses/structural-audit-repository-and-canonical-routing.md) — IA strengths, overlap risks, hub/entity gaps, merge policy; complements `AGENTS.md`.
 - [Structural audit — page ownership, entity gaps, and hub routing](analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) — Canonical clusters vs supporting analyses, entity backlog, hub routing; **anti–analysis-swamp** companion to `AGENTS.md`.
+- [Entity layer — operating objects gap audit](analyses/entity-layer-operating-objects-gap-audit.md) — **Entity** backlog resolved in-pass (node classes, gateways, WAN, storage, tiers, labor, markets, k8s roles).
+- [Source authority hardening audit](analyses/source-authority-hardening-audit.md) — **Provenance**: weak-source clusters, **official** replacement paths, canonical pages updated for evidence stance.
+
+**Package hubs** (navigation routers—canonical pages first, supporting analyses second):
+
+- [Wiki navigation and structural hubs](topics/wiki-navigation-and-structural-hubs.md) — **Meta router** + table of all five hubs.
+- [Platform doctrine package — homelab / farm edge](topics/platform-doctrine-package-homelab-farm-edge.md) — k3s / Longhorn / Pi **doctrine**.
+- [Backup and disaster recovery — doctrine hub](topics/backup-disaster-recovery-doctrine-hub.md) — farmOS / Postgres / cluster **backup & restore** entry.
+- [Off-grid power and field networking hub](topics/off-grid-power-and-field-networking-hub.md) — Demory off-grid + two-site WAN + field RF **routing**.
+- [Local site and county intelligence](topics/local-site-and-county-intelligence.md) — Claxton / Demory / counties / parcels.
+- [Business plan execution and pilot operations hub](topics/business-plan-execution-and-pilot-operations-hub.md) — Phase 0–1 **execution**, pilots, **V\*/G\***.
+
+**Operational standards** (repeatable norms—procedures stay in runbooks / guides):
+
+- [Operational standards — farm and homelab platform](topics/operational-standards-farm-homelab-platform.md) — **Catalog**: Pi, k3s bootstrap, scheduling/storage, secrets, observability, backup cadence, field naming, gateways, site boundaries.
+- [Raspberry Pi fleet provisioning standard — smart farm / homelab](analyses/raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md) — Every-node checklist (iSCSI, disk, hostname, time).
+- [k3s cluster bootstrap standard — smart farm / homelab](analyses/k3s-cluster-bootstrap-standard-smart-farm-homelab.md) — Bootstrap order and gates vs runbook.
+- [Kubernetes edge — scheduling, storage class, and Longhorn roles standard](analyses/kubernetes-edge-scheduling-storage-longhorn-standard.md) — Labels, taints, default **StorageClass**, Longhorn placement.
+- [Secrets and certificates — edge cluster standard](analyses/secrets-and-certificates-edge-cluster-standard.md) — No plaintext in Git; TLS; Rancher encryption config; break-glass.
+- [Monitoring and logging expectations — edge cluster standard](analyses/monitoring-and-logging-expectations-edge-cluster-standard.md) — Minimum metrics/logs/alert bar.
+- [Backup validation cadence — farm stack standard](analyses/backup-validation-cadence-standard-farm-stack.md) — Drill frequency vs pilot/production.
+- [Field node identity and naming standard](analyses/field-node-identity-and-naming-standard.md) — Stable IDs; **G/R/S/H/W** in names.
+- [Gateway naming and role assignment standard](analyses/gateway-naming-and-role-assignment-standard.md) — RF telemetry vs WAN CPE naming.
+- [Site-to-site network role boundaries standard](analyses/site-to-site-network-role-boundaries-standard.md) — Zones, **SITE_*** roles, local-first vs WAN.
+
+**Procedural guides** (how-tos, runbooks, maturity — all under `analyses/`; see strategy):
+
+- [Procedural guides package strategy — Smart Farm Wiki](topics/procedural-guides-package-strategy-smart-farm-wiki.md) — Where guides live, **vs** analyses/standards/runbooks, **`operational_maturity`**, links to architecture, standards, entities.
+
 - [Structural debt audit — wiki IA and operational maturity](analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md) — Analysis sprawl, guide/standard metadata, `operational_maturity`, flat-index pain; links implemented fixes.
-- [Wiki navigation and structural hubs](topics/wiki-navigation-and-structural-hubs.md) — Themed router: meta audits, ET two-site spine, homelab/k3s package, runbooks (complements the flat analyses list).
+- [Wiki navigation and structural hubs](topics/wiki-navigation-and-structural-hubs.md) — Themed router: meta audits, ET two-site spine, Demory off-grid doctrine, homelab/k3s package, runbooks (complements the flat analyses list).
 - [Execution readiness gap audit — East Tennessee operational knowledge](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — Missing execution-grade data, mixed-authority clusters, glossary/timeline/onboarding gaps, **recommended canonical updates** (no invented parcel facts).
 - [Evidence grade and canonical authority](concepts/evidence-grade-and-canonical-authority.md) — Vocabulary: **canonical** vs **supporting** vs **exploratory**; raw vs public intelligibility.
 - [Authoritative execution evidence cluster — East Tennessee (source index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — Hub for **agency/extension** ingests (soils, NASS, DOR, FSA, septic, farmOS docs, CISA, DC/Starlink batch).
@@ -22,15 +54,22 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 **First-class package** (~5 ac home base + ~120 ac production + phased strategy). Start at the **package hub**; the **planning framework** holds full rubrics, knowns/unknowns, and embedded tables.
 
 - [East Tennessee two-site farm business plan (package)](business-plan/east-tennessee-two-site-farm-business-plan.md) — **Navigation spine**: reading order, execution pilots, artifacts, finance layer, critique, Git/PR wiring.
-- **Site intelligence (Claxton + Demory anchors)**: [Claxton home base — Anderson County](analyses/claxton-home-base-site-intelligence.md), [Demory farm — Campbell County](analyses/demory-farm-site-intelligence.md) (**off-grid-first** **hub** **:** [off-grid power — Demory](analyses/off-grid-power-strategy-demory-farm-site.md), [mesh/field RF — Demory](analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md), [off-grid topology (Mermaid)](analyses/off-grid-farm-execution-topology-demory-mermaid.md)), [Anderson vs Campbell — operating implications](comparisons/anderson-county-vs-campbell-county-operating-implications.md).
+- **Site intelligence (Claxton + Demory anchors)**: [Claxton home base — Anderson County](analyses/claxton-home-base-site-intelligence.md), [Demory farm — Campbell County](analyses/demory-farm-site-intelligence.md) (**off-grid-first** **:** [off-grid systems doctrine package — Demory](topics/off-grid-systems-doctrine-package-demory-farm-site.md), [off-grid power doctrine — Demory](analyses/off-grid-power-strategy-demory-farm-site.md), [mesh/field RF — Demory](analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md), [off-grid topology (Mermaid)](analyses/off-grid-farm-execution-topology-demory-mermaid.md)), [Anderson vs Campbell — operating implications](comparisons/anderson-county-vs-campbell-county-operating-implications.md).
 - [Local site and county intelligence](topics/local-site-and-county-intelligence.md) — **Router** beside the package: Anderson/Campbell, Claxton/Demory entities, comparison, validation, missing-data register (ties **agency** evidence to **named places**).
 - [Authoritative execution evidence cluster — East Tennessee (source index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **Agency/extension catalog** (NASS, NRCS, FSA, septic, farmOS, CISA, …) grounded in `raw/processed/` via source-notes.
 - [Ingest visibility gap — authoritative evidence vs published wiki (East Tennessee)](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md) — **IA diagnosis**: why authoritative ingests felt quiet; remediation checklist.
 - [Parcel intelligence package — East Tennessee two-site](topics/parcel-intelligence-package-east-tennessee-two-site.md) — **Hub**: Claxton + Demory parcel worksheets, blank template, WSS ingest pointers.
+- [Local evidence package — East Tennessee two-site](topics/local-evidence-package-east-tennessee-two-site.md) — **Execution-grade intake**: site / infrastructure / utility / loads baselines, field templates, parcel evidence workflow (measured vs reported vs unknown).
 - [Parcel intelligence worksheet (blank template)](topics/parcel-intelligence-worksheet-template.md) — Reusable section order (soils, slope, hydrology, access, utilities, telemetry candidates, validation tasks).
 - [Parcel intelligence — Claxton home base](analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) — `SITE_HOME` worksheet (placeholders; WSS process ref ingested).
 - [Parcel intelligence — Demory farm site](analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) — `SITE_FARM` worksheet (Campbell WSS table from vault; AOI clip pending).
 - [Claxton and Demory — missing data register](analyses/claxton-and-demory-missing-data-register.md) — **Parcel gaps** still not knowable from vault sources; how to resolve; what **V\*/G\*** rows they affect.
+- [Site inventory baseline — Claxton home base](analyses/site-inventory-baseline-claxton-home-base-east-tennessee.md) — **Homestead** footprint tables (buildings, access, storage); placeholders until field evidence.
+- [Site inventory baseline — Demory farm site](analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) — **Production** footprint tables (fields, structures, water points); placeholders until field evidence.
+- [Infrastructure inventory baseline — both sites](analyses/infrastructure-inventory-baseline-two-sites-east-tennessee.md) — Fences, lanes, water movement, gates—cross-site matrix.
+- [Utility and service baseline — both sites](analyses/utility-and-service-baseline-two-sites-east-tennessee.md) — Electric, water, septic, comms, fuel—providers and unknowns (no invented account data).
+- [Loads register — known, estimated, unknown (two sites)](analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md) — Electrical / duty-cycled loads; ties to power budgeting.
+- [Parcel evidence intake and validation workflow — two-site](analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) — **raw → source-notes → worksheets** without breaking provenance.
 - [East Tennessee two-site farm business plan — planning framework](analyses/east-tennessee-two-site-farm-business-plan-framework.md) — Detailed hub and document tree.
 - [East Tennessee two-site farm business plan — executive summary](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) — One-page map.
 - [East Tennessee two-site farm business plan — vision, objectives, and constraints](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)
@@ -107,6 +146,22 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Farm on-site power system](entities/farm-on-site-power-system.md) — Grid/solar/gen/loads at farm scale; links runbooks and power topics.
 - [Field telemetry network — two-site](entities/field-telemetry-network-two-site.md) — End-to-end field telemetry stack (radios → broker → consumers → SoR).
 
+**Operating objects** (roles and categories—link targets for analyses):
+
+- [Entity layer — operating objects gap audit](analyses/entity-layer-operating-objects-gap-audit.md) — What was missing; what was added (meta).
+- [Field node classes (G/R/S/H/W) — off-grid farm roles](entities/field-node-classes-off-grid-farm-roles.md) — Gateway/spine, repeater, sensor, HaLow bridge, WAN edge **roles**.
+- [RF and telemetry gateway roles — field network](entities/rf-telemetry-gateway-roles-field-network.md) — RF → IP / MQTT aggregation (distinct from WAN CPE).
+- [WAN edge and backhaul roles — two-site and off-grid](entities/wan-edge-and-backhaul-roles.md) — Satellite/cellular/site-to-site **egress** roles.
+- [Field radio link classes — LPWAN, mesh, and IP bridges](entities/field-radio-link-classes.md) — LoRaWAN vs mesh vs HaLow vs Wi‑Fi **link layers**.
+- [Edge cluster storage roles — homelab / farm stack](entities/edge-cluster-storage-roles-homelab-farm.md) — Central store vs Longhorn vs backup repos (roles).
+- [Backup and restore tier labels — farm stack](entities/backup-restore-tier-labels-farm-stack.md) — Tier 0–3 **labels** for DR discussions.
+- [Kubernetes edge control-plane roles — k3s / etcd / management](entities/kubernetes-edge-control-plane-roles.md) — Cluster control vs app workloads.
+- [Edge service deployment classes — pilot vs production](entities/edge-service-deployment-classes.md) — Pilot / prod / deferred service posture.
+- [Labor roles — two-site farm operations](entities/labor-roles-two-site-farm-operations.md) — Primary, family, coverage buckets.
+- [Farm business legal entity model (placeholder)](entities/farm-business-legal-entity-model.md) — Pattern only; no named legal entity in-vault.
+- [Farm market channel categories](entities/farm-market-channel-categories.md) — Wholesale, direct, agritourism-class paths as **buckets**.
+- [Farm infrastructure system categories](entities/farm-infrastructure-system-categories.md) — Water, power, fence, structures, comms **taxonomy** for inventories.
+
 ## Concepts
 
 - [Smart Farm Wiki — mission, audience, and voice](concepts/smart-farm-wiki-mission-and-values.md) — Mission statement, vision, values, and prose style; domain “why” (complements `AGENTS.md`).
@@ -126,16 +181,27 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Topics
 
+- [Start here — Smart Farm Wiki](topics/start-here-smart-farm-wiki.md) — Onboarding and fast paths.
+- [How to read this wiki](topics/how-to-read-this-wiki.md) — Layers, page types, glossary shortcuts.
 - [Knowledge synthesis](topics/knowledge-synthesis.md) — Cross-cutting theme for how conclusions are built here.
 - [Two-site smart farm operations](topics/two-site-smart-farm-operations.md) — **Hub**: East TN 5 ac + 120 ac business plan, operational artifacts, telemetry, runbooks, comparisons.
 - [Wiki navigation and structural hubs](topics/wiki-navigation-and-structural-hubs.md) — **Meta router**: IA audits, canonical clusters, homelab guide entry, runbooks; escape hatch from flat `index.md` analyses list.
+- [Operational standards — farm and homelab platform](topics/operational-standards-farm-homelab-platform.md) — **Standards catalog** (Pi, k3s, storage, secrets, observability, backup cadence, field/WAN naming, site boundaries).
+- [Procedural guides package strategy — Smart Farm Wiki](topics/procedural-guides-package-strategy-smart-farm-wiki.md) — **How-tos and runbooks**: where they live (`analyses/`), **vs** standards/essays, **`operational_maturity`**, links to doctrine and entities.
+- [Backup and disaster recovery — doctrine hub](topics/backup-disaster-recovery-doctrine-hub.md) — **Router**: farmOS / Postgres / k3s / Longhorn backup & restore entry (links canonical DR package).
+- [Off-grid power and field networking hub](topics/off-grid-power-and-field-networking-hub.md) — **Router**: Demory off-grid doctrine + two-site WAN + field RF (links first-class Demory package).
+- [Business plan execution and pilot operations hub](topics/business-plan-execution-and-pilot-operations-hub.md) — **Router**: Phase 0–1 dossier, pilots, V*/G* (links business plan package).
 - [Local site and county intelligence](topics/local-site-and-county-intelligence.md) — **Router**: Anderson/Campbell context, Claxton/Demory site intel, comparison, missing-data register, validation plan.
 - [Parcel intelligence package — East Tennessee two-site](topics/parcel-intelligence-package-east-tennessee-two-site.md) — Parcel worksheets (Claxton/Demory), blank template, WSS pointers.
+- [Local evidence package — East Tennessee two-site](topics/local-evidence-package-east-tennessee-two-site.md) — Router: measured site/infra/utility/loads baselines + parcel workflow + field templates.
+- [Off-grid systems doctrine package — Demory farm site (SITE_FARM)](topics/off-grid-systems-doctrine-package-demory-farm-site.md) — First-class hub: power domains, battery tiers, field-node classes, WAN dependency map, local-first ops, degraded modes, stop rules (DR-*).
+- [Field observation template package — two-site](topics/field-observation-template-package-east-tennessee-two-site.md) — Copy-paste visit forms (fence walk, water, electrical audit, loads).
 - [Agritourism, tiny housing, and natural building sources](topics/agritourism-tiny-housing-and-natural-building.md) — Farm stays, natural building, agritourism listicles, news excerpts.
 - [Tennessee hobby farm and small-farm business sources](topics/tennessee-hobby-farm-and-small-farm-business-sources.md) — Hobby-farm primers, TN business guides, USDA BFR, revenue/licensing excerpts, startup PDFs.
 - [Backyard livestock and homestead animal sources](topics/backyard-livestock-and-homestead-animals.md) — Poultry/cattle guides, AI husbandry marketing, PDF papers.
 - [ESP32, ESPHome, and smart-farming builds](topics/esp32-iot-smart-farming-and-tooling.md) — MCU guides, smart-farming firmware README, ESPHome CYD.
 - [Docker, Kubernetes, Compose, and Bake (edge and homelab)](topics/docker-kubernetes-compose-and-bake.md) — Compose, Bake, k3s/RKE2, distro comparisons for self-hosted stacks.
+- [Platform doctrine package — homelab / farm edge](topics/platform-doctrine-package-homelab-farm-edge.md) — **First-class** hub: Pi + k3s + Longhorn + Rancher + storage topology; pilot vs production; **HA** semantics; ties to farmOS, telemetry, backup/DR.
 - [Farm data, farmOS, and agriculture lab builds](topics/farm-data-farmos-and-ag-lab-builds.md) — farmOS (Drupal), ag-lab automation thread, sensor integration hints.
 - [Field network IoT comparisons (HaLow, LoRa, NB-IoT)](topics/field-network-iot-comparisons.md) — Comparative articles on LPWAN / HaLow / cellular IoT.
 - [LoRa, MQTT, and gateway bridges](topics/lora-mqtt-and-gateway-bridges.md) — LoRaWAN app MQTT, OpenMQTTGateway, DIY gateways, Meshtastic MQTT thread, HA LoRa exploration.
@@ -156,7 +222,11 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Source notes
 
+- [Inbox batch — Tennessee farm policy, LoRaWAN field stack, ChirpStack, Meshtastic, Decentlab, HaLow (2026-04-18)](source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **Batch index**: TN hobby/business/tax captures; LoRaWAN spec + sensors; ChirpStack docs; Meshtastic docs; HaLowLink PDFs; machine PDF extracts.
 - [Authoritative execution evidence cluster — East Tennessee (index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **Hub**: soils, elevation, septic, NASS rents, TN tax/ag exemption, FSA, farmOS, CISA—links to ingested source-notes.
+- [Authoritative roads and driveways — source cluster (agency, extension, manuals)](source-notes/authoritative-roads-and-driveways-source-cluster.md) — **Primary-weight** unpaved-road / drainage index (NRCS, Penn State, USFS, BMPs; FHWA pointer).
+- [FHWA — Gravel Roads Construction and Maintenance Guide (official reference)](source-notes/fhwa-gravel-roads-maintenance-guide-official-reference.md) — Federal manual **URL** + ingest backlog (PDF not yet in `raw/`).
+- [PostgreSQL and PostGIS — official documentation primary cluster](source-notes/postgresql-and-postgis-official-documentation-primary-cluster.md) — **postgresql.org** / **postgis.net** entry points vs blog explainers.
 - [Campbell County — Web Soil Survey AOI soil map tab (capture)](source-notes/campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md) — Soil map units / AOI acres for Campbell WSS session (Demory farm intelligence).
 - [CISA — Guide to securing remote access software (PDF)](source-notes/cisa-guide-securing-remote-access-software-508-pdf.md) — Remote access hardening; foundation ingest 2026-04.
 - [CISA — Joint guide OT cybersecurity asset inventory (PDF)](source-notes/cisa-joint-guide-ot-cybersecurity-asset-inventory-508-pdf.md) — OT asset inventory process.
@@ -399,14 +469,18 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Execution readiness gap audit — East Tennessee operational knowledge](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — **Execution hardening**: missing site-evidence, weak entities, mixed-authority clusters, canonical routing recommendations.
 - [Ingest visibility gap — authoritative evidence vs published wiki (East Tennessee)](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md) — **IA / ingest workflow**: why authoritative `raw/` + source-notes felt quiet in the published wiki; routing fixes.
 - [Source gap audit — backup/DR vs sub-GHz Wi‑Fi (homelab + farm)](analyses/source-gap-audit-backup-dr-and-subghz-wifi-2026-04-18.md) — Evidence map for farmOS/homelab backup vs HaLow how-to; remaining gaps called out.
-- [Backup and disaster recovery package — smart farm stack](analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) — **DR spine**: farmOS/PostgreSQL, k3s/etcd, Longhorn, Rancher, secrets, edge scope; backup vs sync; restore-tested emphasis.
+- [Backup and disaster recovery package — smart farm stack](analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) — **DR spine**: scope table, read order, farmOS/PostgreSQL, k3s/etcd, Longhorn, Rancher, secrets, edge; backup vs sync; app-aware vs volume; restore-tested emphasis.
+- [Disaster recovery decision rules — farm edge stack](analyses/disaster-recovery-decision-rules-farm-edge-stack.md) — Failure classes, restore order, rebuild vs restore; ties to validation / Phase 0–1.
 - [Central vs local backup scope — farm edge stack](analyses/central-vs-local-backup-scope-farm-edge-stack.md) — What lands in central stores vs local queue; two-site notes.
 - [Runbook — backup validation and recovery drill](analyses/runbook-backup-validation-and-recovery-drill.md) — restic check, DB restore, Longhorn/k3s/Rancher drills; prove restores.
 - [Backup strategy comparison — farmOS, homelab, PostgreSQL, containers](analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md) — Granularity, restore complexity, encryption, infra assumptions; restic + Longhorn + compose patterns; backup vs sync.
 - [Restore and recovery tiers — homelab farm systems](analyses/restore-recovery-tiers-homelab-farm-systems.md) — Tier 0–3 labels (no fabricated RTO/RPO); drill checklist.
 - [Sub-GHz Wi‑Fi (HaLow) — farm sensors and IP backhaul (how-to outline)](analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md) — Operator checklist; cites HaLow PoC capture + segmentation/power links.
 - [Off-grid implications — backup and networking choices](analyses/off-grid-implications-backup-and-networking-choices.md) — Solar/battery vs backup jobs; WAN vs local queue.
-- [Homelab / edge Kubernetes platform strategy — Pi fleet, k3s, Longhorn, Rancher](analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) — Canonical stack narrative; farmOS/telemetry tie-in; anti-maximalism.
+- [Platform strategy for farm and homestead services](analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) — Canonical stack narrative (Pi, k3s, Longhorn, Rancher); farmOS/telemetry tie-in; anti-maximalism.
+- [k3s role in the homelab / farm platform](analyses/k3s-role-in-homelab-farm-platform.md) — Control plane, datastore assumptions, operational boundaries.
+- [Longhorn role in the homelab / farm platform](analyses/longhorn-role-in-homelab-farm-platform.md) — CSI block storage scope; what it does not replace.
+- [HA meaning and constraints — homelab / farm platform](analyses/ha-meaning-and-constraints-homelab-farm-platform.md) — k3s HA vs Longhorn vs app DR; two-site constraints.
 - [How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet](analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) — **Operator runbook hub**: mandatory vs optional HA, P0/P1 vs later, links to all sequence pages below.
 - [Raspberry Pi k3s fleet — prerequisites and assumptions](analyses/raspberry-pi-k3s-fleet-prerequisites-and-assumptions.md) — OS, skills, fleet size, phase scope.
 - [Raspberry Pi k3s fleet — hardware BOM and node roles](analyses/raspberry-pi-k3s-fleet-hardware-bom-and-node-roles.md) — Server/agent roles, disks, anti-patterns on Pi.
@@ -422,10 +496,16 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Raspberry Pi fleet provisioning standard — smart farm / homelab](analyses/raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md) — Hostnames, iSCSI, roles, pilot vs production bar.
 - [Longhorn vs central storage architecture — homelab / farm platform](analyses/longhorn-vs-central-storage-architecture-homelab-farm-platform.md) — PVC replication vs NAS/object; hybrid patterns.
 - [Rancher — role and timing (k3s homelab / farm platform)](analyses/rancher-role-and-timing-k3s-homelab-farm-platform.md) — Optional UI/CD; deferral guidance.
-- [Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn](analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md) — App dumps + Longhorn + etcd tracks; links to generic backup comparison.
+- [Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn](analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md) — **Integration**: parallel tracks (app, Longhorn, etcd, Rancher, secrets); links to generic backup comparison and DR decision rules.
 - [Claxton and Demory — missing data register](analyses/claxton-and-demory-missing-data-register.md) — **Parcel-level** unknowns vs desktop vs on-site; ties to **validation** tasks.
 - [Claxton home base — site intelligence (Anderson County, Tennessee)](analyses/claxton-home-base-site-intelligence.md) — `SITE_HOME` anchor (NASS county rent + planning assumptions).
+- [Site inventory baseline — Claxton home base](analyses/site-inventory-baseline-claxton-home-base-east-tennessee.md) — Field **inventory** layer (structures, access, storage)—complements site intelligence.
 - [Demory farm — site intelligence (Campbell County, Tennessee)](analyses/demory-farm-site-intelligence.md) — `SITE_FARM` anchor (NASS + Campbell WSS AOI soils capture).
+- [Site inventory baseline — Demory farm site](analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) — Field **inventory** layer for production site—complements site intelligence.
+- [Infrastructure inventory baseline — both sites](analyses/infrastructure-inventory-baseline-two-sites-east-tennessee.md) — Cross-site infrastructure matrix.
+- [Utility and service baseline — both sites](analyses/utility-and-service-baseline-two-sites-east-tennessee.md) — Service accounts and provider unknowns.
+- [Loads register — known, estimated, unknown (two sites)](analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md) — Power / energy loads register.
+- [Parcel evidence intake and validation workflow — two-site](analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) — Provenance workflow for parcel + operational facts.
 - [Parcel intelligence — Claxton home base (East Tennessee two-site)](analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) — Parcel worksheet: placeholders; WSS process source-note ingested.
 - [Parcel intelligence — Demory farm site (East Tennessee two-site)](analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) — Parcel worksheet: WSS soil map table from vault capture (AOI clip pending).
 - [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
@@ -438,11 +518,15 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — Logical stack, SPOFs, HA/farmOS/MQTT/TSDB roles; foundation for runbooks.
 - [Connectivity strategy — Claxton home base and Demory farm site](analyses/connectivity-strategy-for-claxton-and-demory.md) — **Canonical** Internet posture for **two named sites** (WAN roles, LTE fallback, local vs cloud, pilot vs scale); complements topology diagram.
 - [Execution topology package — two-site smart farm (Mermaid)](analyses/execution-topology-package-two-site-smart-farm.md) — **Ops-first** **three** diagrams: full reference, **Phase 0/1** pilot, **WAN-out** degraded; trust zones + runbook links.
-- [Off-grid power strategy — Demory farm site (Campbell County)](analyses/off-grid-power-strategy-demory-farm-site.md) — **Solar+battery** **default** **;** **continuous** **vs** **duty-cycled** **loads** **;** **networking** **as** **electrical** **load** **.**
+- [Off-grid power doctrine — Demory farm site (Campbell County)](analyses/off-grid-power-strategy-demory-farm-site.md) — **Solar+battery** **default** **;** **continuous** **vs** **duty-cycled** **loads** **;** **networking** **as** **electrical** **load** **.**
+- [Power domains and battery-backed infrastructure tiers — Demory farm site](analyses/off-grid-power-domains-and-battery-tiers-demory-farm.md) — **Pcrit** **/** **Popt** **;** **T0–T3** **tiers** **tied** **to** **gateway** **/** **mesh** **.**
+- [Field-node classes and communication roles — Demory farm site](analyses/field-node-classes-and-communication-roles-demory-farm.md) — **G** **/** **R** **/** **S** **/** **H** **/** **W** **roles** **(**architecture** **)** **.**
+- [Connectivity dependency map — farm systems (Demory farm site)](analyses/connectivity-dependency-map-farm-systems-demory-farm.md) — **What** **must** **work** **without** **WAN** **.**
+- [Local-first / WAN-optional operating model — Demory farm site](analyses/local-first-wan-optional-operating-model-demory-farm.md) — **Pilot** **vs** **scale** **;** **power–network** **coupling** **.**
 - [Mesh and field networking strategy — off-grid Demory farm](analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) — **Mesh-first** **;** **Meshtastic** **/** **HaLow** **/** **Wi‑Fi** **roles** **;** **WAN** **secondary** **.**
 - [Off-grid farm execution topology — Demory (Mermaid)](analyses/off-grid-farm-execution-topology-demory-mermaid.md) — **Reference** **/** **pilot** **/** **degraded** **;** **Pcrit** **/** **Popt** **power** **domains** **.**
 - [Off-grid degraded modes — power and connectivity (Demory)](analyses/off-grid-degraded-modes-power-and-connectivity-demory-farm.md) — **SOC** **+** **WAN** **failure** **classes** **.**
-- [Off-grid operational decision rules — power and networking (Demory)](analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) — **DR-*** gates; stacks with **CS-5** / **MV-8** on execution pages.
+- [Off-grid infrastructure stop rules — power and networking (Demory)](analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) — **DR-*** gates; simplification triggers; stacks with **CS-5** / **MV-8** on execution pages.
 - [Two-site smart farm — network topology and WAN/edge reference (Mermaid)](analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) — **Mermaid**: WAN, two sites, telemetry plane, DC context, HaLow vs mesh overlay. **Start with** [`Execution topology package`](analyses/execution-topology-package-two-site-smart-farm.md) for **trust/WAN/local** clarity. **Canonical integration** (Starlink/WAN **roles** per site): [`Connectivity strategy — Claxton & Demory`](analyses/connectivity-strategy-for-claxton-and-demory.md), [`Two-site operations model — 5 ac / 120 ac`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md) § Starlink, [`Smart technology and telemetry strategy`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) § Starlink, [`Reference architecture`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`Remote access / operational security`](analyses/remote-access-operational-security-model-two-site-smart-farm.md), [`Manual fallback / degraded modes`](analyses/manual-fallback-degraded-modes-critical-operations.md), [`Validation plan — 24 mo`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md), [`Capital plan`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md).
 - [Reference architecture — 5-acre home base + 120-acre farm](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) — **Smart-farm architecture package** hub: control center vs production, scenario design, links to SoR/security/instrumentation/degraded modes.
 - [Telemetry system of record — boundaries and authority](analyses/telemetry-system-of-record-boundaries-and-authority.md) — Records vs telemetry vs dashboards vs alerts vs manual verification.
@@ -495,9 +579,16 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Glossary
 
-- [Smart Farm Wiki glossary (hub)](glossary/smart-farm-wiki-glossary.md) — Index of definition-first entries for recurring operational terms.
+- [Smart Farm Wiki glossary (hub)](glossary/smart-farm-wiki-glossary.md) — **Categorized** index of definition-first entries (start here for vocabulary).
 - [Evidence grade](glossary/evidence-grade.md) — **Authority vocabulary** for decision-grade vs exploratory support.
 - [Synthesis layer](glossary/synthesis-layer.md) — Raw vs wiki durable model (repository pattern).
+- [Execution gate](glossary/execution-gate.md) — Phase milestones (**G***) vs validation tasks (**V***).
+- [Distance tax (two-site)](glossary/distance-tax-two-site.md) — Commute and batching cost across sites.
+- [Entity vs site role](glossary/entity-vs-site-role.md) — Entity, `SITE_*` role, named place.
+- [Labor and coverage (two-site)](glossary/labor-coverage-two-site.md) — Who can cover the farm when.
+- [Automation stop rules (terms)](glossary/automation-stop-rules-terms.md) — NS / MV / CS gates (short pointer).
+- [Off-grid site farm terms](glossary/off-grid-site-farm-terms.md) — Pcrit, Popt, local-first, DR-*.
+- [Edge homelab platform terms](glossary/edge-homelab-platform-terms.md) — k3s, Longhorn, backup tracks.
 - [Two-site sites (SITE_HOME / SITE_FARM)](glossary/two-site-sites.md)
 - [System of record (farm data)](glossary/system-of-record-farm-data.md)
 - [Validation gate](glossary/validation-gate.md)

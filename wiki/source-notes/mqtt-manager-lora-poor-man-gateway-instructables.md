@@ -10,10 +10,14 @@ tags:
   - lora
   - mqtt
   - esp32
+  - exploratory-social
 review_status: unreviewed
+confidence: low
 ---
 
 # MQTT Manager + LoRa ‘poor man’ gateway (Instructables)
+
+**Authority**: **DIY / hobby build**—not a substitute for **vendor docs**, **RF regulatory** compliance review, or **security** review of MQTT exposure.
 
 **Raw**: [`raw/processed/2026/mqtt-manager-lora-poor-man-gateway-instructables.md`](../../raw/processed/2026/mqtt-manager-lora-poor-man-gateway-instructables.md)
 

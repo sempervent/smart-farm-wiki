@@ -1,16 +1,18 @@
 ---
 title: Restore and recovery tiers — homelab farm systems
 page_type: analysis
+page_subtype: operational_guide
+operational_maturity: pilot_ready
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - disaster-recovery
   - farmos
   - homelab
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Restore and recovery tiers — homelab farm systems
@@ -18,6 +20,8 @@ confidence: medium
 ## Purpose
 
 Define **tiered recovery** expectations for **farm records** (farmOS / DB), **container hosts**, and **cluster storage**—using **labels** (Tier 0–3). **RPO/RTO** are **operator-defined** targets filled after **restore drills**, not invented by the wiki.
+
+**Doctrine role**: Canonical **tier vocabulary** for the package—pair with [`Disaster recovery decision rules`](disaster-recovery-decision-rules-farm-edge-stack.md) for **when** to invoke each tier.
 
 **Sources**: [`homelab backup stack — official captures`](../source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md).
 
@@ -66,6 +70,7 @@ Define **tiered recovery** expectations for **farm records** (farmOS / DB), **co
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md)
 - [`Central vs local backup scope — farm edge stack`](central-vs-local-backup-scope-farm-edge-stack.md)
 - [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md)

@@ -28,10 +28,10 @@ confidence: medium
 
 **Canonical synthesis** (operational guidance, not duplicate extracts):
 
-- [`Off-grid power strategy — Demory farm site`](../analyses/off-grid-power-strategy-demory-farm-site.md)
+- [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) · [`Off-grid power doctrine — Demory farm site`](../analyses/off-grid-power-strategy-demory-farm-site.md)
 - [`Mesh and field networking strategy — off-grid Demory farm`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md)
 - [`Off-grid degraded modes — power and connectivity (Demory)`](../analyses/off-grid-degraded-modes-power-and-connectivity-demory-farm.md)
-- [`Off-grid operational decision rules — power and networking (Demory)`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md)
+- [`Off-grid infrastructure stop rules — Demory`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md)
 - [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md)
 - [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md)
 
@@ -73,6 +73,12 @@ confidence: medium
 | Starlink Mini spec sheet | [`starlink-specifications-sheet-mini.pdf`](../../raw/processed/2026/starlink-specifications-sheet-mini.pdf) · [`*-extracted.md`](../../raw/processed/2026/starlink-specifications-sheet-mini-extracted.md) |
 | Starlink Standard kit | [`starlink-standard-4x-kit-specifications.pdf`](../../raw/processed/2026/starlink-standard-4x-kit-specifications.pdf) · [`*-extracted.md`](../../raw/processed/2026/starlink-standard-4x-kit-specifications-extracted.md) |
 | Farm WAN article captures | listed under **Starlink / farm WAN** in [`Electrical batch`](electrical-networking-starlink-inbox-batch-2026-04-23.md) |
+
+---
+
+## Mixed-corpus policy
+
+Secondary **articles** and **forums** may appear in topic hubs for **color**; they **do not** override **NREL**, **Victron**, **Meshtastic**, or **datasheet**-class material above for **power / RF** claims. See [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md).
 
 ---
 

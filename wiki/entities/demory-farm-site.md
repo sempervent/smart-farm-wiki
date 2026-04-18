@@ -53,6 +53,9 @@ review_status: unreviewed
 - [`Validation and pilot plan — first 24 months — East Tennessee two-site`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — **V1**/**V7** local gates.
 - [`Rural road and driveway erosion`](../topics/rural-road-and-driveway-erosion-sources.md) — context for lanes and sediment (topic hub).
 - [`Claxton and Demory — missing data register`](../analyses/claxton-and-demory-missing-data-register.md) — parcel-level gaps.
+- [`Site inventory baseline — Demory farm site`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) — field **inventory** tables (fields, structures, water points); complements site intelligence.
+- [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — router for baselines + loads + field templates.
+- [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) — off-grid-first power + local RF + WAN-optional overlay + degraded modes + stop rules.
 
 ---
 

@@ -1,0 +1,130 @@
+## Getting started
+
+These steps describe how to get started with ChirpStack Gateway OS *after* you have installed ChirpStack Gateway OS on your gateway (e.g. by writing the image to a SD card).
+
+**Important:** After the first boot, the gateway might reboot automatically to apply some changes. The **Full** image will setup the PostgreSQL database on its first boot. This could take a couple of minutes and during this time, the gateway will be less responsive.
+
+## Connecting
+
+### Obtaining gateway IP address
+
+#### Ethernet
+
+After your gateway has booted, it will use DHCP to obtain an IP address. Many internet routers provide a web-interface where you will find the IP addresses of connected devices.
+
+#### Wi-Fi
+
+If your gateway has Wi-Fi support, then the ChirpStack Gateway OS will create an access-point to which you can connect with the name `ChirpStackAP-XXXXXX` and password `ChirpStackAP`.
+
+Once connected with `ChirpStackAP` the IP of the gateway is `192.168.0.1`.
+
+**Notes:**
+
+- It is recommended to reconfigure the gateway to connect to your Wi-Fi network, or to disable the access-point mode if the gateway is connected using ethernet.
+- The `ChirpStackAP` access-point IP address `192.168.0.1` might conflict with your local network. If that is the case, please make sure you are disconnected from your local network before connecting to the `ChirpStackAP` access-point. Once you have re-configured the gateway to connect to your Wi-Fi network, you can re-connect your machine back to your local network.
+
+### Web-interface
+
+The ChirpStack Gateway OS provides a web-interface. You can connect to the web-interface by entering `http://GATEWAY-IP-ADDRESS/` in your browser. For example if the IP address of your gateway is `192.168.0.1`, then you need to enter `http://192.168.0.1`.
+
+Your browser might show you a warning about a self-signed certificate. Click proceed.
+
+The default credentials are:
+
+- Username: `root`
+- Password: *(not set)*
+
+## Set password
+
+Once you have logged in, it is recommended to set a password for the *root* user. In the left menu click **System**, then click **Administration**.
+
+This will provide you with a form to set the *Router Password*.
+
+## Configure Wi-Fi (optional)
+
+If your gateway has Wi-Fi support, then follow the next steps to connect over Wi-Fi (which will also disable the access-point mode).
+
+1. In the left menu click **Network**, then click **Wireless**.
+2. Click the **Scan** button, after a couple of seconds this will show the available Wi-Fi networks.
+3. Click the **Join Network** button of the network you want to join.
+4. In the Joining Network form, enter the following values and click **Submit**:
+	- *Replace wireless configuration*: **Selected**
+		- *WPA passphrase*: Enter the password of the selected Wi-Fi network
+		- *Create / Assign firewall-zone*: Select the dropdown item with the green background.
+5. Click **Save**
+6. Click **Save & Apply**
+
+After your gateway has connected to the Wi-Fi network, you need to obtain the IP address again and re-connect. Please see the *Connecting* steps.
+
+## Flash concentrator firmware (optional)
+
+In case you have a USB based concentrator module (USB based SX1302/3 module or 2.4GHz module), you must flash the MCU firmware of the module before it can be used.
+
+To upgrade the MCU firmware, click **System** and then **Custom Commands**. Click the **Run** button for the firmware upgrade option.
+
+## Configure Concentratord
+
+To configure the concentrator, click **ChirpStack** and then **Concentratord** in the left menu. The important settings that you must configure are:
+
+- Global configuration
+	- *Enabled chipset*: Set this to the chipset matching your gateway
+- SX1301, SX1302/SX1303, 2.4GHz tabs (matching the *Enabled chipset*)
+	- *Shield model*: Select the shield model.
+		- *Channel-plan*: Select the channel-plan. This will show an error if the channel-plan is not supported by the gateway or if the channel-plan has not been implemented yet.
+
+If all fields are correctly configured, click **Save & Apply**.
+
+Notes:
+
+- **Save & Apply** will automatically configure the ChirpStack MQTT Forwarder MQTT prefix.
+- If you are using the **Full** image, then this will also enable the region in ChirpStack.
+
+### Confirm configuration
+
+Once the Concentratord has been properly configured, the footer of the web-interface should change from:
+
+*Gateway ID: could not read gateway\_id*
+
+to (*0102030405060708* replaced by the ID of your gateway):
+
+*Gateway ID: 0102030405060708*
+
+**Note:** It might take a couple of seconds for the Concentratord to initialize. You might need to refresh the page a couple of times.
+
+## Configure ChirpStack MQTT Forwarder (optional)
+
+**Note:** If you are using the **Full** image, then ChirpStack MQTT Forwarder is already configured to forward to the local ChirpStack Network Server instance. In this case, no configuration is required.
+
+To configure the ChirpStack MQTT Forwarder to forward to a (remote) MQTT broker, click **ChirpStack** and then **MQTT Forwarder** in the left menu.
+
+The important settings that you must configure are:
+
+- *Topic prefix*: This must match the topic prefix as configured by ChirpStack. Note that this will be automatically set after the *Concentratord* configuration.
+- *Use JSON*: Only enable this option for debugging purposes.
+- *Server*: The address of the MQTT broker, e.g. `tcp://example.com:1883` or `ssl://example.com:8883` (TLS).
+
+Depending the configuration of the MQTT broker, you might also want to edit the *Username* / *Password* fields or *CA certificate* / *TLS certificate* and *TLS key-file* fields.
+
+To apply the changes, click **Save & Apply**.
+
+## Configure ChirpStack UDP Forwarder (optional)
+
+The ChirpStack UDP Forwarder makes it possible to connect your gateway to one or multiple Network Servers compatible with the Semtech UDP Packet-Forwarder [protocol](https://github.com/Lora-net/packet_forwarder/blob/master/PROTOCOL.TXT). This makes it possible to connect your gateway to multiple Network Servers simultaneously.
+
+To configure the ChirpStack UDP Forwarder, click **ChirpStack** and then **UDP Forwarder** in the left menu.
+
+Here you can configure multiple servers to which the ChirpStack UDP Forwarder will forward simultaneously. Per server you must configure:
+
+- *Server*: The hostname or IP address + port of the server, e.g. `example:1700`.
+
+To apply the changes, click **Save & Apply**.
+
+## Using ChirpStack LoRaWAN Network Server
+
+If you have properly configured your gateway and if you have installed the **Full** image (see [Image types](https://www.chirpstack.io/docs/chirpstack-gateway-os/image-types.html)), then you are ready to use the ChirpStack LoRaWAN Network Server.
+
+To open ChirpStack, click **Applications** in the left menu, and then click the **ChirpStack** logo. This will open the ChirpStack web-interface in a new window.
+
+Please refer to the [Connecting a device](https://www.chirpstack.io/docs/guides/connect-device.html) guide for connecting your first device.
+
+**Note:** ChirpStack has been configured to allow gateway data from unknown gateways, therefore it is not required to add your gateway to ChirpStack first.

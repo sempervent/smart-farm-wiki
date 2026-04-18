@@ -3,7 +3,7 @@ title: Structural audit — page ownership, entity gaps, and hub routing
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-17
+updated: 2026-04-23
 review_status: unreviewed
 tags:
   - meta
@@ -69,7 +69,7 @@ confidence: medium
 - [`Farm on-site power system`](../entities/farm-on-site-power-system.md)
 - [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md)
 
-**Still thin (future)**: Legal **operating entities** (LLC, etc.) until named; **specific** equipment instances; **named** market channels—use placeholders on economics pages until real.
+**Expanded (2026-04) — operating objects**: See [`Entity layer — operating objects gap audit`](entity-layer-operating-objects-gap-audit.md) and the **Entities** cluster in [`index.md`](../index.md) (node classes, gateways, WAN roles, storage/backup tiers, labor/market/legal **patterns**, infrastructure categories, field link classes, k8s control-plane roles). **Still thin or private**: **named** legal entities with filings; **specific** SKUs; **named** buyer relationships—keep on worksheets or future evidenced entity pages.
 
 ---
 

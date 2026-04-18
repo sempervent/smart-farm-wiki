@@ -3,7 +3,7 @@ title: Smart agriculture, Meshtastic, and LoRaWAN
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-20
+updated: 2026-04-18
 tags:
   - agriculture
   - meshtastic
@@ -22,6 +22,10 @@ For **radio stack comparisons** (HaLow vs LoRa vs NB-IoT) and **DePIN**-adjacent
 - [`Meshtastic`](../concepts/meshtastic.md)
 - [`LoRaWAN`](../concepts/lorawan.md)
 - [`Precision agriculture`](../concepts/precision-agriculture.md)
+
+**Source notes (ingested 2026-04-18)**
+
+- [`source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md`](../source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — LoRaWAN spec PDF, field sensor vendor pages (Decentlab / Dragino-class), ChirpStack doc captures, Meshtastic device/telemetry captures, HaLowLink PDFs + extracts.
 
 **Source notes (ingested 2026-04-17)**
 

@@ -91,8 +91,10 @@ Treat the wiki package as **operational** (not merely “written”) only when *
 ## Related
 
 - [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
+- [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — **site / infra / utility / loads** baselines + field templates; where **measured** facts land without scattering across analyses
 - [`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md)
 - [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md)
 - [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — **missing execution-grade data**, authority clusters, canonical update list
 - [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **indexed** agency/extension ingests
 - [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md), [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) — **county** evidence now **folded** into operating model, capital, validation, and execution slices above
+- [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) — **`SITE_FARM`** **off-grid-first** **:** power, local RF, WAN-optional, degraded modes, **DR-*** stop rules

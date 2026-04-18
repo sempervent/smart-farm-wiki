@@ -22,7 +22,7 @@ aliases:
 
 **Epistemic stance**: **County-level** NASS tables and **one** Campbell **Web Soil Survey** session ([`Demory site intelligence`](demory-farm-site-intelligence.md)) **improve** context; they **do not** replace **parcel** truth. **Uncertainty is explicit** until evidence is filed.
 
-**Anchors**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md) · [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) · [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) · [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md).
+**Anchors**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) · [`Parcel evidence intake and validation workflow`](parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) · [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md) · [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) · [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) · [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md).
 
 **Legend — site**: **C** = Claxton / Anderson · **D** = Demory / Campbell · **Both** = both sites.
 

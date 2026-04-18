@@ -25,6 +25,7 @@ This topic collects **comparative** material on long-range IoT links: **IEEE 802
 
 **Source notes**
 
+- [`source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md`](../source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **LoRaWAN** spec PDF; **HaLowLink** user-guide PDFs + extracts; Decentlab soil/weather LoRaWAN product pages (compare to HaLow / LoRa tradeoff topics).
 - [`source-notes/deep-look-wi-fi-halow-lorawan-newracom.md`](../source-notes/deep-look-wi-fi-halow-lorawan-newracom.md)
 - [`source-notes/experimental-halow-lora-smart-grid-sensors.md`](../source-notes/experimental-halow-lora-smart-grid-sensors.md)
 - [`source-notes/compare-wi-fi-halow-lora-morse-micro.md`](../source-notes/compare-wi-fi-halow-lora-morse-micro.md)

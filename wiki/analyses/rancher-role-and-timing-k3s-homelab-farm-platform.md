@@ -3,7 +3,7 @@ title: Rancher — role and timing (k3s homelab / farm platform)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - rancher
   - k3s
@@ -17,6 +17,8 @@ confidence: medium
 ## Purpose
 
 Define what Rancher adds to a k3s + Pi stack, when to install it, and what to avoid prematurely—grounded in captures, not a full Rancher install guide.
+
+**Doctrine package**: [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) (chapter **Rancher**).
 
 **Sources**: [`rancher-k3s product page`](../../raw/processed/2026/rancher-k3s-product-page-capture-inbox-2026-04-18.md) (positioning), [`Pi + Longhorn homelab`](../../raw/processed/2026/raspberry-pi-k3s-longhorn-rancher-homelab-capture-inbox-2026-04-18.md) (Helm / Apps install narrative). **Official install** (external): [Rancher on Kubernetes](https://rancher.com/docs/rancher/latest/en/installation/install-rancher-on-k8s/)—verify version pin at deploy time.
 
@@ -46,5 +48,7 @@ Define what Rancher adds to a k3s + Pi stack, when to install it, and what to av
 
 ## Related
 
+- [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
 - [`Platform decision memo`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md)
+- [`k3s role in the homelab / farm platform`](k3s-role-in-homelab-farm-platform.md)
 - [`Network segmentation — internet exposure`](network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md)

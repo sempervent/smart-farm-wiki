@@ -5,19 +5,19 @@ page_subtype: operational_guide
 operational_maturity: pilot_ready
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-24
 tags:
   - backup
   - disaster-recovery
   - runbook
   - homelab
-review_status: unreviewed
-confidence: medium
+review_status: reviewed
+confidence: high
 ---
 
 # Runbook — backup validation and recovery drill
 
-**Parent package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md).
+**Parent package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md). **Decision context**: [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md).
 
 **Principle**: A backup that has never been restored is a hypothesis. Prefer **restore-tested** evidence over job-success notifications alone.
 
@@ -99,5 +99,6 @@ After drills, update [`Restore and recovery tiers — homelab farm systems`](res
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md)
 - [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md)

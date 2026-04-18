@@ -3,7 +3,7 @@ title: Off-grid implications — backup and networking choices
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-24
 tags:
   - off-grid
   - backup
@@ -41,5 +41,6 @@ Connect **solar + battery** field reality to **(1)** where backups can run relia
 
 ## Related
 
+- [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)
 - [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md)
 - [`Sub-GHz Wi‑Fi (HaLow) — farm sensors deployment guide`](subghz-wi-fi-halow-farm-sensors-deployment-guide.md)

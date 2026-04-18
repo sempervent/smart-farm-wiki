@@ -3,7 +3,7 @@ title: Steep curved hill dirt road — erosion prevention summary (120-acre farm
 page_type: analysis
 status: active
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - erosion
@@ -17,6 +17,8 @@ confidence: medium
 **Question**: How do you **prevent erosion** on a **dirt road** that is **steep**, **curved**, and on a **hillside**, in the context of a **~120-acre** farm?
 
 **Disclaimer**: Planning synthesis from ingested articles and threads—not **engineering**, **survey**, or **legal** advice. **Culverts**, **cuts**, and **stream crossings** often need **permits** and professional design. On a large parcel, sediment from the **primary access** can affect **ponds**, **pastures**, and **downstream** neighbors.
+
+**Evidence ordering**: For **geometry, crown, and drainage** claims, prefer **agency / extension / federal manual** sources in [`Authoritative roads and driveways — source cluster`](../source-notes/authoritative-roads-and-driveways-source-cluster.md) and [`FHWA — Gravel Roads… (official reference)`](../source-notes/fhwa-gravel-roads-maintenance-guide-official-reference.md). Reddit and memoir captures below are **exploratory** (vocabulary and field color), not substitutes for design sign-off—see [`Source authority hardening audit`](source-authority-hardening-audit.md).
 
 ## Why this road type fails
 

@@ -31,6 +31,8 @@ review_status: unreviewed
 
 **Does not claim**: Your broker hostname, VLAN layout, or chosen radio—**placeholders** stay in architecture pages until deployed.
 
+**Operating-object entities** (roles, not vendors): [`RF and telemetry gateway roles`](rf-telemetry-gateway-roles-field-network.md), [`WAN edge and backhaul roles`](wan-edge-and-backhaul-roles.md), [`Field node classes (G/R/S/H/W)`](field-node-classes-off-grid-farm-roles.md), [`Field radio link classes`](field-radio-link-classes.md).
+
 **Related**
 
 - [`farmOS`](farmos.md) — agronomic **records** side of the same data story

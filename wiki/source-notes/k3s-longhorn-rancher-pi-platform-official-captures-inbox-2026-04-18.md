@@ -51,5 +51,5 @@ review_status: unreviewed
 
 ## Synthesis
 
-- [`Homelab / edge Kubernetes platform strategy — Pi fleet, k3s, Longhorn, Rancher`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md)
+- [`Platform strategy for farm and homestead services`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) · [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
 - [`Platform decision memo — phase, HA scope, deferrals (Pi / k3s / 2026)`](../analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md)

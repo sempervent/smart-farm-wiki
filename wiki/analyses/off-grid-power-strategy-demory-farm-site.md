@@ -1,9 +1,9 @@
 ---
-title: Off-grid power strategy — Demory farm site (Campbell County)
+title: Off-grid power doctrine — Demory farm site (Campbell County)
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - off-grid
@@ -14,17 +14,20 @@ tags:
 confidence: medium
 aliases:
   - Demory off-grid power strategy
+  - Off-grid power strategy Demory farm site
 ---
 
-# Off-grid power strategy — Demory farm site (Campbell County)
+# Off-grid power doctrine — Demory farm site (Campbell County)
 
 ## Purpose
 
 Give **canonical planning guidance** for **`SITE_FARM`** at **[Demory](demory-farm-site-intelligence.md)** (**Campbell County**) when the **business plan** treats the **production parcel** as **off-grid-first**: **solar + battery** as the **default** **electrical** **architecture**, **without** inventing **array kW**, **battery Ah**, or **NEC** **details** **—** those require **local** **engineering** **after** **measured** **loads** **.**
 
+**Doctrine package** (full map: tiers, field nodes, WAN deps, degraded modes, stop rules): [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md).
+
 **Sources (provenance)**: [`Off-grid power, field RF, and optional WAN — source index`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) (NREL modules 5–6, Victron *Wiring Unlimited*, captures).
 
-**Paired pages**: [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md), [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md) (**WAN** **secondary** **to** **local** **survivability** **at** **farm** **).**
+**Paired pages**: [`Power domains and battery-backed infrastructure tiers — Demory`](off-grid-power-domains-and-battery-tiers-demory-farm.md), [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md), [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md) (**WAN** **secondary** **to** **local** **survivability** **at** **farm** **).**
 
 ---
 
@@ -91,6 +94,7 @@ Give **canonical planning guidance** for **`SITE_FARM`** at **[Demory](demory-fa
 
 ## Related
 
+- [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md)
 - [`Manual fallback and degraded modes — critical operations`](manual-fallback-degraded-modes-critical-operations.md)
 - [`Runbook — power loss at remote site`](runbook-power-loss-remote-site.md)
 - [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
