@@ -7,6 +7,18 @@
 ## Steps
 
 1. **Drop or file raw content** under `raw/inbox/`; after triage, move to `raw/processed/...` with stable paths. Do not later rewrite processed text to “fix” meaning—add a new raw note if the source changes.
+
+### PDF → Markdown (text extraction)
+
+For **PDF** sources, generate a searchable Markdown extract beside the file (does **not** replace the PDF; no OCR for bitmap-only pages):
+
+```bash
+uv run python scripts/pdf_to_markdown.py raw/processed/2026/example.pdf
+# or every PDF under raw/:
+uv run python scripts/pdf_to_markdown.py --all-raw --force
+```
+
+Outputs `*-extracted.md` next to each `.pdf` with YAML frontmatter (`source_pdf`, `page_count`, `extracted` date) and per-page sections. **Verify** tables and layout against the PDF; link the extract from the matching `wiki/source-notes/` page if useful.
 2. **Create or update a source-note** in `wiki/source-notes/` with frontmatter `page_type: source_note` and `source_ids` pointing at the raw path.
 3. **Update entities, concepts, topics, analyses** as needed; add relative cross-links.
 4. **Update `wiki/index.md`** so every intentional page is listed.

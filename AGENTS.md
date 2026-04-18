@@ -280,6 +280,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 | `scripts/rebuild_index.py` | Audit or regenerate index sections |
 | `scripts/append_log.py` | Append a correctly formatted log entry |
 | `scripts/scaffold_page.py` | New page from `templates/` |
+| `scripts/pdf_to_markdown.py` | PDF text → `*-extracted.md` beside the file (PyMuPDF; not OCR) |
 
 ---
 
