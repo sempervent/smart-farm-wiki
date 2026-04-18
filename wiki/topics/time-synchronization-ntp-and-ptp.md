@@ -3,7 +3,7 @@ title: Time synchronization — NTP and PTP sources
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags:
   - ntp
   - ptp
@@ -39,3 +39,4 @@ This hub focuses on **distributing** and disciplining time over IP/Ethernet. For
 **Related topics**
 
 - [`Position, navigation, and timing alternatives`](position-navigation-and-timing-alternatives.md) — BPS/LORAN/non-GPS tracker framing
+- [`Timing on the farm — synthesis`](../analyses/timing-on-the-farm-synthesis.md) — How clock sync fits alongside seasonal and labor timing on-farm

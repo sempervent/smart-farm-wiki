@@ -32,9 +32,8 @@ Thumbs.db
 .vscode/
 *.code-workspace
 
-# Obsidian (optional local-only; do not commit large binaries)
-.obsidian/workspace*
-.obsidian/workspace.json
+# Obsidian — local vault UI/settings; not part of the published corpus
+.obsidian/
 
 # User scratch (optional)
 scratch/

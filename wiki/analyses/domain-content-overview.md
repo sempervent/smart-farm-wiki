@@ -123,6 +123,10 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 - [`Time synchronization — NTP and PTP sources`](../topics/time-synchronization-ntp-and-ptp.md)
 - [`Position, navigation, and timing alternatives`](../topics/position-navigation-and-timing-alternatives.md)
 
+**Synthesis**
+
+- [`Timing on the farm — synthesis`](timing-on-the-farm-synthesis.md) — Bridges agronomic/labor timing with technical clocking.
+
 **Concepts**
 
 - [`Network Time Protocol (NTP)`](../concepts/network-time-protocol.md), [`Precision Time Protocol (PTP)`](../concepts/precision-time-protocol.md)

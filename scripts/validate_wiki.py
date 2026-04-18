@@ -3,6 +3,11 @@
 Repository integrity checks for the LLM Wiki template.
 
 Exits non-zero on errors. Warnings do not fail unless --strict (warnings promoted).
+
+**Raw corpus links:** Markdown links pointing under ``raw/`` (e.g. ``../../raw/processed/...``)
+are **not** validated as existing files. The evidence corpus may be gitignored or absent in CI;
+provenance is still recorded in the wiki, and ``mkdocs.yml`` already relaxes missing targets for
+the static site build.
 """
 
 from __future__ import annotations
@@ -21,6 +26,7 @@ from wiki_common import (
     extract_markdown_links,
     infer_repo_root,
     is_kebab_md,
+    is_under_raw_dir,
     load_frontmatter,
     normalize_link_target,
     requires_frontmatter_schema,
@@ -36,7 +42,6 @@ REQUIRED_ROOT_FILES = [
     "wiki/index.md",
     "wiki/log.md",
     "wiki/overview.md",
-    "raw/README.md",
 ]
 
 MUTABLE_RAW_PATTERNS = [
@@ -84,6 +89,11 @@ def main() -> int:
     for rel in REQUIRED_ROOT_FILES:
         if not (root / rel).is_file():
             errors.append(f"Missing required file: {rel}")
+
+    if not (root / "raw").is_dir():
+        errors.append(
+            "Missing raw/ directory (expected per AGENTS.md; track raw/**/.gitkeep if the tree is empty in git)"
+        )
 
     wiki_dir = root / "wiki"
     if not wiki_dir.is_dir():
@@ -150,6 +160,8 @@ def main() -> int:
             if resolved is None:
                 continue
             if not resolved.is_file():
+                if is_under_raw_dir(resolved, root):
+                    continue
                 errors.append(f"Broken link in {rel}: target {norm!r} -> {resolved}")
             rel_resolved = resolved.resolve().relative_to(root)
             inbound[str(rel_resolved)].add(str(rel))

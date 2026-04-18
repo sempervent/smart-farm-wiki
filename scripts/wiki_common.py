@@ -82,6 +82,20 @@ def resolve_markdown_path(base_file: Path, target: str, root: Path) -> Path | No
     return resolved
 
 
+def is_under_raw_dir(resolved: Path, root: Path) -> bool:
+    """True if ``resolved`` is intended to live under ``raw/`` (immutable evidence corpus).
+
+    Used by the validator: citation targets under ``raw/`` may be absent in clones where
+    ``raw/**`` is not committed; those links are not treated as broken wiki links.
+    """
+    root = root.resolve()
+    try:
+        resolved.resolve().relative_to(root / "raw")
+    except ValueError:
+        return False
+    return True
+
+
 def is_kebab_md(name: str) -> bool:
     return bool(KEBAB_MD_PATTERN.match(name))
 

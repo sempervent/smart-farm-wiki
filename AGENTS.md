@@ -276,7 +276,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 | Script | Role |
 |--------|------|
 | `scripts/bootstrap.py` | Create missing dirs/files; optional rename placeholders |
-| `scripts/validate_wiki.py` | Repository integrity checks |
+| `scripts/validate_wiki.py` | Repository integrity checks; links under `raw/` need not resolve to existing files (corpus may be uncommitted) |
 | `scripts/rebuild_index.py` | Audit or regenerate index sections |
 | `scripts/append_log.py` | Append a correctly formatted log entry |
 | `scripts/scaffold_page.py` | New page from `templates/` |

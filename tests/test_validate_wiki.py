@@ -23,7 +23,6 @@ def test_validate_wiki_detects_broken_link(tmp_path: Path) -> None:
     (root / "README.md").write_text("# R\n", encoding="utf-8")
     (root / "LICENSE").write_text("BSD\n", encoding="utf-8")
     (root / "mkdocs.yml").write_text("site_name: t\n", encoding="utf-8")
-    (root / "raw" / "README.md").write_text("# raw\n", encoding="utf-8")
     (root / "wiki" / "overview.md").write_text(
         "---\ntitle: O\npage_type: overview\n---\n# O\n", encoding="utf-8"
     )
@@ -51,3 +50,40 @@ def test_validate_wiki_detects_broken_link(tmp_path: Path) -> None:
     )
     assert proc.returncode == 1
     assert "Broken link" in proc.stderr
+
+
+def test_validate_wiki_missing_raw_corpus_target_not_error(tmp_path: Path) -> None:
+    """Links under raw/ may point at files not present (e.g. CI without committed corpus)."""
+    root = tmp_path
+    (root / "wiki").mkdir(parents=True)
+    (root / "raw").mkdir(parents=True)
+    (root / "AGENTS.md").write_text("# A\n", encoding="utf-8")
+    (root / "README.md").write_text("# R\n", encoding="utf-8")
+    (root / "LICENSE").write_text("BSD\n", encoding="utf-8")
+    (root / "mkdocs.yml").write_text("site_name: t\n", encoding="utf-8")
+    (root / "wiki" / "overview.md").write_text(
+        "---\ntitle: O\npage_type: overview\n---\n# O\n", encoding="utf-8"
+    )
+    (root / "wiki" / "index.md").write_text(
+        "# I\n\n## Overview\n\n- [O](overview.md) — x\n", encoding="utf-8"
+    )
+    (root / "wiki" / "log.md").write_text(
+        "# L\n\n## [2026-01-01] lint | x\n\nok\n", encoding="utf-8"
+    )
+    (root / "wiki" / "note.md").write_text(
+        "---\ntitle: N\npage_type: source_note\n---\n"
+        "See [raw](../../raw/processed/2026/not-checked-in-yet.md).\n",
+        encoding="utf-8",
+    )
+    (root / "wiki" / "index.md").write_text(
+        "# I\n\n## Source notes\n\n- [N](note.md) — x\n\n## Overview\n\n- [O](overview.md) — x\n",
+        encoding="utf-8",
+    )
+    scripts = Path(__file__).resolve().parent.parent / "scripts"
+    proc = subprocess.run(
+        [sys.executable, str(scripts / "validate_wiki.py"), "--strict"],
+        cwd=root,
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0, proc.stderr + proc.stdout
