@@ -300,6 +300,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Dirt road erosion — shade, hill, and curve (planning synthesis)](analyses/dirt-road-erosion-shade-hill-curve.md) — Stacked failure modes; drainage-first actions; handbook PDF + thread refs.
 - [Steep curved hill dirt road — erosion prevention (120-acre farm)](analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) — Drainage-first prevention, traffic/sediment context, checklist.
 - [Timing on the farm — synthesis](analyses/timing-on-the-farm-synthesis.md) — Seasonal, rotation, labor, water/energy, and clock sync (NTP/PTP) as layers of “time.”
+- [Time and smart sensors — 120-acre field to 5-acre homestead](analyses/time-smart-sensors-120ac-to-5ac-homestead.md) — Two-site synthesis: commute vs E2E latency, clock correlation, staleness, sampling vs control-loop time.
 - [Smart mirror with ESP32 and Raspberry Pi — build analysis](analyses/smart-mirror-esp32-and-raspberry-pi-build.md) — Pi runs MagicMirror²; ESP32 for sensors/side HMI; parts sourcing and web references.
 - [Long 360 tractor — no-start troubleshooting (synthesis)](analyses/long-360-tractor-no-start-synthesis.md) — Diesel electrical vs fuel vs preheat; forum + web references (not a service manual).
 - [Why a synthesis layer](analyses/why-synthesis-layer.md) — Short analysis tying concepts to practice.

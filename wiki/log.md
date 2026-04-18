@@ -473,3 +473,10 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Added [`analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md`](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md): executive critique, **15** weaknesses, prioritized **real-world** **validation** list, **pages to revise**, **revised** **implementation** **order**, **do not finance yet** items; linked from [`index.md`](index.md) and [`planning framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md).
 
+---
+
+## [2026-04-17] query | Time and smart sensors — two-site (120 ac → 5 ac)
+
+- Captured synthesis in [`analyses/time-smart-sensors-120ac-to-5ac-homestead.md`](analyses/time-smart-sensors-120ac-to-5ac-homestead.md): operational time vs E2E latency, clock correlation, staleness/authority, sampling vs control-loop; links to existing two-site and telemetry pages.
+- Updated [`index.md`](index.md) (Analyses); [`timing-on-the-farm-synthesis.md`](analyses/timing-on-the-farm-synthesis.md) (related entry).
+

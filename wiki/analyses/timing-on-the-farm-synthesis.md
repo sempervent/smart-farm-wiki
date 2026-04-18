@@ -3,7 +3,7 @@ title: Timing on the farm — synthesis
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - time
@@ -96,6 +96,7 @@ When **GNSS** is **degraded**, **denied**, or **complemented** by other referenc
 
 ## 10. Related entry points
 
+- [`Time and smart sensors — 120-acre field to 5-acre homestead`](../analyses/time-smart-sensors-120ac-to-5ac-homestead.md) — Two-site framing: operational time vs telemetry delay, NTP/correlation, stale dashboards, sampling vs response.
 - [`Domain content overview`](../analyses/domain-content-overview.md) — strands **E** (energy), **G** (time/PNT), and **A** (land/water).
 - [`Knowledge synthesis`](../topics/knowledge-synthesis.md) — cross-cutting hub.
 
