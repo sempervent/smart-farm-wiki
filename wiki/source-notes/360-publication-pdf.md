@@ -3,7 +3,7 @@ title: "Source note: 360 (PDF import)"
 page_type: source_note
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 source_ids:
   - raw/processed/2026/360.pdf
 tags:
@@ -13,7 +13,8 @@ review_status: unreviewed
 
 # Source note: 360 (PDF import)
 
-**Raw path:** [`raw/processed/2026/360.pdf`](../../raw/processed/2026/360.pdf)
+**Raw PDF**: [`raw/processed/2026/360.pdf`](../../raw/processed/2026/360.pdf)  
+**Machine extract**: [`raw/processed/2026/360-extracted.md`](../../raw/processed/2026/360-extracted.md)
 
 **Summary**
 

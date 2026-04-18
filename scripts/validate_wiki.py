@@ -5,9 +5,10 @@ Repository integrity checks for the LLM Wiki template.
 Exits non-zero on errors. Warnings do not fail unless --strict (warnings promoted).
 
 **Raw corpus links:** Markdown links pointing under ``raw/`` (e.g. ``../../raw/processed/...``)
-are **not** validated as existing files. The evidence corpus may be gitignored or absent in CI;
+are **not** validated as existing files by default. The evidence corpus may be gitignored or absent in CI;
 provenance is still recorded in the wiki, and ``mkdocs.yml`` already relaxes missing targets for
-the static site build.
+the static site build. Use ``--raw-pdf-links`` (or ``scripts/validate_raw_pdf_links.py``) when the
+processed corpus is present locally to check PDF ↔ ``*-extracted.md`` pairing and raw link targets.
 """
 
 from __future__ import annotations
@@ -80,6 +81,14 @@ def main() -> int:
         type=Path,
         default=None,
         help="Repository root (default: parent of scripts/).",
+    )
+    parser.add_argument(
+        "--raw-pdf-links",
+        action="store_true",
+        help=(
+            "Also run PDF ↔ *-extracted.md checks and wiki links into raw/ "
+            "(see scripts/validate_raw_pdf_links.py). Missing raw targets follow --strict."
+        ),
     )
     args = parser.parse_args()
     root = infer_repo_root(args.root)
@@ -188,6 +197,23 @@ def main() -> int:
                 break
         if not has_inbound:
             warnings.append(f"Orphan page (not in index and no inbound wiki links): {p}")
+
+    if args.raw_pdf_links:
+        try:
+            from validate_raw_pdf_links import run_checks
+        except ImportError as e:  # pragma: no cover
+            errors.append(f"Could not import validate_raw_pdf_links: {e}")
+        else:
+            r_errors, r_warnings = run_checks(
+                root,
+                wiki_raw_targets=True,
+                source_note_extract_links=True,
+            )
+            errors.extend(r_errors)
+            if args.strict:
+                errors.extend(r_warnings)
+            else:
+                warnings.extend(r_warnings)
 
     return _finish(errors, warnings, args.strict)
 

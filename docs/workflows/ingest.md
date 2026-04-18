@@ -25,6 +25,16 @@ Outputs `*-extracted.md` next to each `.pdf` with YAML frontmatter (`source_pdf`
 5. **Append `wiki/log.md`** with an `ingest` entry (`scripts/append_log.py` helps).
 6. **Run** `uv run python scripts/validate_wiki.py --strict`.
 
+When the full processed corpus (PDFs and `*-extracted.md` files) is present locally, also run:
+
+```bash
+uv run python scripts/validate_raw_pdf_links.py --strict
+# or combined:
+uv run python scripts/validate_wiki.py --strict --raw-pdf-links
+```
+
+This checks every `raw/**/*.pdf` has a sibling `*-extracted.md`, that PDF-backed source-notes link the extract, and that wiki markdown links into `raw/` resolve. Default CI only runs `validate_wiki.py --strict` (without `--raw-pdf-links`) so clones without the full binary corpus stay green.
+
 ## Done definition
 
 Raw paths stable; source-notes and synthesis updated; index and log updated; validator clean.

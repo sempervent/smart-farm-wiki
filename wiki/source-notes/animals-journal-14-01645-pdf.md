@@ -3,7 +3,7 @@ title: "Source note: Animals journal PDF (animals-14-01645)"
 page_type: source_note
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 source_ids:
   - raw/processed/2026/animals-14-01645.pdf
 tags:
@@ -15,7 +15,8 @@ review_status: unreviewed
 
 # Source note: Animals journal PDF (animals-14-01645)
 
-**Raw path:** [`raw/processed/2026/animals-14-01645.pdf`](../../raw/processed/2026/animals-14-01645.pdf)
+**Raw PDF**: [`raw/processed/2026/animals-14-01645.pdf`](../../raw/processed/2026/animals-14-01645.pdf)  
+**Machine extract**: [`raw/processed/2026/animals-14-01645-extracted.md`](../../raw/processed/2026/animals-14-01645-extracted.md)
 
 **Summary**
 

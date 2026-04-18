@@ -3,7 +3,7 @@ title: Knowledge synthesis
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-19
 tags:
   - theme
 review_status: unreviewed
@@ -35,6 +35,7 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`Agritourism, tiny housing, and natural building sources`](agritourism-tiny-housing-and-natural-building.md) — see also [`Agritourism smart hobby farm — tiny-house rentals and guest farm work (query synthesis)`](../analyses/agritourism-smart-hobby-farm-tiny-houses-guest-work-stays.md)
 - [`Farm data, farmOS, and agriculture lab builds`](farm-data-farmos-and-ag-lab-builds.md)
 - [`Homelab, self-hosting, and edge narratives`](homelab-self-hosting-and-edge-narratives.md)
+- [`Home workshop, 3D printing, basement, off-grid smart home sources`](home-workshop-3d-printing-basement-offgrid-smart-home-sources.md) — maker space + off-grid HA ingests ([`3D printing in a workshop — summary`](../analyses/3d-printing-in-a-workshop-summary.md), [`basement workshop design`](../analyses/basement-workshop-design-summary.md), [`off-grid smart home setups`](../analyses/off-grid-smart-home-setups-summary.md))
 - [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](docker-kubernetes-compose-and-bake.md)
 - [`LoRa, MQTT, and gateway bridges`](lora-mqtt-and-gateway-bridges.md)
 - [`Tennessee hobby farm and small-farm business sources`](tennessee-hobby-farm-and-small-farm-business-sources.md)

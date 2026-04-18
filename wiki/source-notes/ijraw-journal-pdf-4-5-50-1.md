@@ -3,7 +3,7 @@ title: "Source note: IJRAW journal PDF (ijraw-4-5-50.1)"
 page_type: source_note
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 source_ids:
   - raw/processed/2026/ijraw-4-5-50.1.pdf
 tags:
@@ -15,7 +15,8 @@ review_status: unreviewed
 
 # Source note: IJRAW journal PDF (ijraw-4-5-50.1)
 
-**Raw path:** [`raw/processed/2026/ijraw-4-5-50.1.pdf`](../../raw/processed/2026/ijraw-4-5-50.1.pdf)
+**Raw PDF**: [`raw/processed/2026/ijraw-4-5-50.1.pdf`](../../raw/processed/2026/ijraw-4-5-50.1.pdf)  
+**Machine extract**: [`raw/processed/2026/ijraw-4-5-50.1-extracted.md`](../../raw/processed/2026/ijraw-4-5-50.1-extracted.md)
 
 **Summary**
 

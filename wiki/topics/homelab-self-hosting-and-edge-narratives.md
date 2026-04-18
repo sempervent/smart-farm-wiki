@@ -3,7 +3,7 @@ title: Homelab, self-hosting, and edge narratives
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 tags:
   - homelab
   - self-hosting
@@ -31,6 +31,7 @@ This topic is intentionally **ops- and story-forward**; for **Docker / Kubernete
 
 **Related**
 
+- [`Home workshop, 3D printing, basement, off-grid smart home sources`](home-workshop-3d-printing-basement-offgrid-smart-home-sources.md) — garage/basement maker space + off-grid **Home Assistant** ingests (adjacent to rack homelab).
 - [`Off-grid solar power and storage (special topic)`](off-grid-solar-power-and-storage.md) — PV/battery sizing vocabulary; partial-solar homelab is a **case study** in offsetting a constant rack load
 - [`Smart home — Matter, Thread, and Home Assistant AI (special topic)`](smart-home-matter-thread-and-home-assistant-ai.md) — HA energy integrations referenced in the partial-solar piece
 - [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](docker-kubernetes-compose-and-bake.md) — typical service packaging on homelab hosts

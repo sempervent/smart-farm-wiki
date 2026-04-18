@@ -3,7 +3,7 @@ title: Off-grid solar power and storage (special topic)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 tags:
   - solar
   - off-grid
@@ -15,6 +15,10 @@ review_status: unreviewed
 # Off-grid solar power and storage (special topic)
 
 Synthesis hub for **PV**, **charge control**, and **battery sizing** material aimed at **homesteads**, **off-grid homes**, and **unattended field / research stations**—overlaps with solar-powered **mesh/IoT** infrastructure in [`Smart agriculture, Meshtastic, and LoRaWAN`](smart-agriculture-meshtastic-and-lorawan.md) but focuses on **electrical design** rather than RF roles.
+
+**Related synthesis**
+
+- [`Off-grid setups for the smart home — summary`](../analyses/off-grid-smart-home-setups-summary.md) — automation tied to battery SOC (ingested forum/guides); complements PV/battery sizing notes below.
 
 **Source notes**
 

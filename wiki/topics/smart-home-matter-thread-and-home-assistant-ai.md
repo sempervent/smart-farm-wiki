@@ -3,7 +3,7 @@ title: Smart home — Matter, Thread, and Home Assistant AI (special topic)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-19
 tags:
   - matter
   - thread
@@ -24,6 +24,7 @@ Hub for **interoperability** (**Matter**, **Thread**) and **Home Assistant**-cen
 
 **Related**
 
+- [`Off-grid setups for the smart home — summary`](../analyses/off-grid-smart-home-setups-summary.md) — SOC-driven automations, local HA vs cloud (ingested DIY solar forum batch).
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md) — ESPHome + Home Assistant integration patterns
 - [`Smart mirror and e-paper display builds`](smart-mirror-and-e-paper-displays.md) — dashboard and mirror UIs that often sit beside HA
 - [`Homelab, self-hosting, and edge narratives`](homelab-self-hosting-and-edge-narratives.md) — HA energy dashboards and high-availability home stacks (e.g. partial-solar homelab)

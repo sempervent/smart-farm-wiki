@@ -3,7 +3,7 @@ title: "TN Smart Startup Guide (PDF import)"
 page_type: source_note
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-19
 source_ids:
   - raw/processed/2026/tn-smart-startup-guide.pdf
 tags:
@@ -15,7 +15,8 @@ review_status: unreviewed
 
 # TN Smart Startup Guide (PDF import)
 
-**Raw**: [`raw/processed/2026/tn-smart-startup-guide.pdf`](../../raw/processed/2026/tn-smart-startup-guide.pdf)
+**Raw PDF**: [`raw/processed/2026/tn-smart-startup-guide.pdf`](../../raw/processed/2026/tn-smart-startup-guide.pdf)  
+**Machine extract**: [`raw/processed/2026/tn-smart-startup-guide-extracted.md`](../../raw/processed/2026/tn-smart-startup-guide-extracted.md)
 
 **Summary**: Large **Tennessee** startup **PDF** import; extract edition/date and anchor claims to page/slide references when using in synthesis.
 
