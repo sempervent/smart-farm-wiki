@@ -3,7 +3,7 @@ title: Homestead and regional gardening sources
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - homesteading
   - gardening
@@ -23,6 +23,10 @@ Practical and historical **small-farm** and **regional gardening** references fi
 
 - [`source-notes/five-acres-and-independence-full-text.md`](../source-notes/five-acres-and-independence-full-text.md)
 - [`source-notes/tennessee-garden-beginners-willow-ridge.md`](../source-notes/tennessee-garden-beginners-willow-ridge.md)
+
+**Composting cluster**
+
+- [`Homestead composting and soil sources`](homestead-composting-and-soil-sources.md) — EPA, NRDC, Wikipedia, extension, Earth Easy, food-waste guide captures + synthesis.
 
 **Related**
 

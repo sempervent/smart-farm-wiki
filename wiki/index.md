@@ -16,6 +16,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Smart Farm Wiki — mission, audience, and voice](concepts/smart-farm-wiki-mission-and-values.md) — Mission statement, vision, values, and prose style; domain “why” (complements `AGENTS.md`).
 - [LLM Wiki pattern](concepts/llm-wiki-pattern.md) — Core ideas: raw vs wiki, synthesis, maintenance.
+- [Composting](concepts/composting.md) — Aerobic decomposition of organics into soil amendment; homestead synthesis cluster.
 - [Decentralized physical infrastructure networks (DePIN)](concepts/depin.md) — Token-incentivized physical/digital infrastructure framing (see sources).
 - [ESP32](concepts/esp32.md) — Espressif SoC family common in IoT, sensors, and displays.
 - [LoRa (radio)](concepts/lora-radio.md) — LoRa PHY vs LoRaWAN and mesh stacks.
@@ -38,8 +39,10 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Field network IoT comparisons (HaLow, LoRa, NB-IoT)](topics/field-network-iot-comparisons.md) — Comparative articles on LPWAN / HaLow / cellular IoT.
 - [LoRa, MQTT, and gateway bridges](topics/lora-mqtt-and-gateway-bridges.md) — LoRaWAN app MQTT, OpenMQTTGateway, DIY gateways, Meshtastic MQTT thread, HA LoRa exploration.
 - [Homestead and regional gardening sources](topics/homestead-and-regional-gardening-sources.md) — Small-farm book import and Tennessee gardening guide.
+- [Homestead composting and soil sources](topics/homestead-composting-and-soil-sources.md) — EPA, NRDC, Wikipedia, extension, Earth Easy captures; practical composting guide.
 - [Irrigation and water-wise farming sources](topics/irrigation-and-water-wise-farming-sources.md) — Solar pumping, drip/sprinkler tradeoffs, DIY homestead irrigation, sensor zones; ingested batch.
 - [Homelab, self-hosting, and edge narratives](topics/homelab-self-hosting-and-edge-narratives.md) — Homelab guides, Reddit threads, AI architecture, partial solar rack.
+- [Home workshop, 3D printing, basement, off-grid smart home sources](topics/home-workshop-3d-printing-basement-offgrid-smart-home-sources.md) — Shop/basement maker ingests; off-grid smart-home automation themes.
 - [Off-grid solar power and storage (special topic)](topics/off-grid-solar-power-and-storage.md) — PV, charge control, battery sizing: homestead, off-grid homes, field power.
 - [Ponds, water features, and homestead hydrology](topics/ponds-water-features-and-homestead-hydrology.md) — DIY ponds, biofilters, farm ponds, fountains, pumping.
 - [Rural road and driveway erosion sources](topics/rural-road-and-driveway-erosion-sources.md) — Unpaved road drainage, water bars, hillside sediment; ingested batch.
@@ -54,6 +57,27 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Erosion control on steep road — r/homestead](source-notes/erosion-control-steep-road-reddit-homestead.md) — Ditches, crown, water bars, outslope, rolling dips, handbook PDF link.
 - [Example LLM Wiki note (raw)](source-notes/example-llm-wiki-note.md) — Grounding note for `raw/processed/2026/example-llm-wiki-note.md`.
+- [3D printed workshop equipment — organizing (source)](source-notes/3d-printed-workshop-equipment-organizing.md) — Printed organizers; shop storage.
+- [Basement dream workshop — r/DIY (source)](source-notes/basement-dream-workshop-reddit.md) — Build thread: access, noise, dust, power.
+- [Beginner's guide — off-grid energy solutions (source)](source-notes/beginners-guide-off-grid-energy-solutions.md) — Energy tech overview.
+- [Build off-grid smart home — step-by-step (source)](source-notes/build-off-grid-smart-home-step-by-step.md) — Planning / automation themes.
+- [Choosing 3D printer types — deep dive (source)](source-notes/choosing-3d-printer-types-deep-dive.md) — FDM, SLA, SLS; materials.
+- [Craft room or workshop — basement remodel (source)](source-notes/craft-room-or-workshop-basement-remodel-hobbyists.md) — Hobbyist basement design.
+- [Do you have a 3D printer for your shop? — Garage Journal (source)](source-notes/do-you-have-3d-printer-for-your-shop.md) — Shop uses; jigs; molds.
+- [Finally time — 3D printer in garage (source)](source-notes/finally-time-3d-printer-in-garage.md) — Garage install expectations.
+- [Future of manufacturing — 3D printing deep dive (source)](source-notes/future-manufacturing-deep-dive-3d-printing.md) — Additive manufacturing survey.
+- [Off grid smart home (source)](source-notes/off-grid-smart-home.md) — Short consumer listicle capture.
+- [Off-grid tiny houses — complete guide (source)](source-notes/off-grid-tiny-houses-complete-guide.md) — Tiny off-grid systems.
+- [Organize workshop with 3D printer — online tools (source)](source-notes/organize-workshop-3d-printer-free-online-tools.md) — Digital + printable workflow.
+- [Smart home for off-grid — forum capture (source)](source-notes/smart-home-for-off-grid.md) — HA, battery SOC, load shedding.
+- [Take your home off-grid the smart way (source)](source-notes/take-home-off-grid-smart-way.md) — Planning article.
+- [12 shop layout tips (source)](source-notes/twelve-shop-layout-tips.md) — Layout listicle.
+- [Turn basement into DIY utopia (source)](source-notes/turn-basement-into-diy-utopia.md) — Remodel narrative.
+- [Turning basement into perfect workspace (source)](source-notes/turning-basement-into-perfect-workspace.md) — Workspace conversion.
+- [Ultimate guide — off-grid homes (source)](source-notes/ultimate-guide-off-grid-homes.md) — Broad off-grid housing primer.
+- [Ultimate woodworking workshop at home (source)](source-notes/ultimate-woodworking-workshop-at-home-step-by-step.md) — Home wood shop setup.
+- [Weekend project — basement workshop (source)](source-notes/weekend-project-basement-workshop.md) — Short basement shop project.
+- [Workshop layout options — pictures (source)](source-notes/workshop-layout-options-pictures-attached.md) — Layout photos / discussion.
 - [Backyard ponds — farm waterfall forum (short)](source-notes/backyard-ponds-farm-waterfall-forum-short.md) — Liner/stone/waterfall tips fragment.
 - [Beginning farmer resources (TN + USDA)](source-notes/beginning-farmer-resources-list.md) — Link hub for programs and manuals.
 - [Cover crops — sustainable rotations (article)](source-notes/cover-crops-sustainable-crop-rotations.md) — SARE-style cover crop piece.
@@ -145,6 +169,12 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Solar Meshtastic GPS ESP32 outdoor](source-notes/solar-meshtastic-gps-esp32-outdoor.md) — Power envelopes and informal multi-node GPS query behavior.
 - [Deep look Wi‑Fi HaLow vs LoRaWAN (Newracom)](source-notes/deep-look-wi-fi-halow-lorawan-newracom.md) — Vendor LPWAN comparison and claims.
 - [Experimental HaLow vs LoRa smart grid (Sensors 2023)](source-notes/experimental-halow-lora-smart-grid-sensors.md) — Peer-reviewed field performance study.
+- [Compost — Earth Easy complete home gardeners guide](source-notes/eartheasy-how-to-compost-complete-home-gardeners-guide.md) — Long how-to: ratios, systems, troubleshooting.
+- [Compost — EPA at home](source-notes/epa-composting-at-home.md) — Backyard composting, vermicomposting, rodent tips; appliance caveat.
+- [Compost — extension home backyard introduction](source-notes/extension-home-backyard-composting-introduction.md) — Intro + benefit list; NCSU-style video links.
+- [Compost — NRDC 101 guide](source-notes/nrdc-composting-101-guide.md) — Cold vs hot, C:N, landfill methane, community composting.
+- [Compost — ultimate guide food waste reduction](source-notes/composting-ultimate-guide-food-waste-reduction.md) — Food-waste framing; compostables and cautions.
+- [Compost — Wikipedia article](source-notes/compost-wikipedia-article.md) — Fundamentals, microbes, C:N, hot process.
 - [Compare Wi‑Fi HaLow and LoRa (Morse Micro)](source-notes/compare-wi-fi-halow-lora-morse-micro.md) — Short vendor positioning piece.
 - [DePIN Wikipedia excerpt](source-notes/depin-wikipedia.md) — Decentralized physical infrastructure snapshot.
 - [Five Acres and Independence full text](source-notes/five-acres-and-independence-full-text.md) — Large historical small-farm guide import.
@@ -205,6 +235,9 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
+- [3D printing in a workshop — summary](analyses/3d-printing-in-a-workshop-summary.md) — FDM/shop uses, jigs, forum culture; ingested batch.
+- [Basement workshop design — summary](analyses/basement-workshop-design-summary.md) — Layout, ingress, noise/dust, basement remodel sources.
+- [Off-grid setups for the smart home — summary](analyses/off-grid-smart-home-setups-summary.md) — Energy + Home Assistant / SOC automations; ingested guides and forum.
 - [Dirt road erosion — shade, hill, and curve (planning synthesis)](analyses/dirt-road-erosion-shade-hill-curve.md) — Stacked failure modes; drainage-first actions; handbook PDF + thread refs.
 - [Steep curved hill dirt road — erosion prevention (120-acre farm)](analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) — Drainage-first prevention, traffic/sediment context, checklist.
 - [Timing on the farm — synthesis](analyses/timing-on-the-farm-synthesis.md) — Seasonal, rotation, labor, water/energy, and clock sync (NTP/PTP) as layers of “time.”
@@ -217,6 +250,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Agritourism smart hobby farm — tiny houses and guest work stays](analyses/agritourism-smart-hobby-farm-tiny-houses-guest-work-stays.md) — Query synthesis: lodging + farm work, smart-farm links, risk framing.
 - [Starting and stocking a pond — beautiful water feature](analyses/starting-stocking-pond-beautiful-water-feature.md) — Query synthesis: build, stock legally, aesthetics, irrigation adjacency.
 - [Farm stocking — 120 acres vs 5 acres (research prompt)](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md) — Query brief: research prompt and methods for chickens, crops, animals; automation bias on larger holding.
+- [Homestead composting — practical guide](analyses/homestead-composting-guide.md) — Greens/browns, hot vs cold, systems, hygiene; ingested compost batch.
 - [East Tennessee — profitable crops matrix](analyses/east-tennessee-profitable-crops-matrix.md) — Query synthesis: commodity vs specialty profit signals, UT enterprise budgets, CPA specialty crops, NASS context.
 - [Multi-field crop rotation plan (template)](analyses/multi-field-crop-rotation-plan.md) — Field roles, family-based rotations, coordinated A–D year tables, perennial block notes.
 - [Agritourism business plan — guest hub on 120 acres, family home 35 min away](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md) — Working farm + lodging on 120 ac; private 5 ac residence; coverage and animal placement.

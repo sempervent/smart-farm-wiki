@@ -258,3 +258,24 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Moved six PDFs from `raw/inbox/` to `raw/processed/2026/` (management practices dirt roads, layman’s Appalachian guide, Penn State crown/cross-slope TB, USFS traveled way surface shape, low-volume roads BMP ch7, Kentucky EPSC protect slopes). Ran `pdf_to_markdown.py` → six `*-extracted.md` sidecars. Six new `source-notes/`; expanded [`analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md`](analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) with **Agency and extension PDFs** table; updated [`analyses/dirt-road-erosion-shade-hill-curve.md`](analyses/dirt-road-erosion-shade-hill-curve.md) and [`topics/rural-road-and-driveway-erosion-sources.md`](topics/rural-road-and-driveway-erosion-sources.md). Updated [`index.md`](index.md). Force-added `raw/processed/2026/*.pdf` and `*-extracted.md` under `raw/` ignore so corpus is tracked in git for this commit.
 
+---
+
+## [2026-04-19] ingest | Workshop, 3D printing, basement, off-grid smart home batch
+
+- Moved **21** imports from `raw/inbox/` to `raw/processed/2026/` (3D printing primers, shop/garage culture, basement workshop, off-grid + smart-home articles/forums). **21** new `source-notes/`; topic [`topics/home-workshop-3d-printing-basement-offgrid-smart-home-sources.md`](topics/home-workshop-3d-printing-basement-offgrid-smart-home-sources.md); analyses [`analyses/3d-printing-in-a-workshop-summary.md`](analyses/3d-printing-in-a-workshop-summary.md), [`analyses/basement-workshop-design-summary.md`](analyses/basement-workshop-design-summary.md), [`analyses/off-grid-smart-home-setups-summary.md`](analyses/off-grid-smart-home-setups-summary.md). Cross-linked [`topics/homelab-self-hosting-and-edge-narratives.md`](topics/homelab-self-hosting-and-edge-narratives.md), [`topics/off-grid-solar-power-and-storage.md`](topics/off-grid-solar-power-and-storage.md), [`topics/smart-home-matter-thread-and-home-assistant-ai.md`](topics/smart-home-matter-thread-and-home-assistant-ai.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md). Updated [`index.md`](index.md).
+
+---
+
+## [2026-04-19] lint | PDF ↔ extract and raw-link validation
+
+- Added [`scripts/validate_raw_pdf_links.py`](../../scripts/validate_raw_pdf_links.py); wired optional [`--raw-pdf-links`](../../scripts/validate_wiki.py) into `validate_wiki.py` (missing raw targets follow `--strict`).
+- Linked **Machine extract** lines on PDF source-notes that previously cited PDF only: [`source-notes/cover-crops-sustainable-crop-rotations-pdf.md`](source-notes/cover-crops-sustainable-crop-rotations-pdf.md), [`source-notes/tn-smart-startup-guide-pdf.md`](source-notes/tn-smart-startup-guide-pdf.md), [`source-notes/newbusiness-checklist-pdf.md`](source-notes/newbusiness-checklist-pdf.md), [`source-notes/360-publication-pdf.md`](source-notes/360-publication-pdf.md), [`source-notes/animals-journal-14-01645-pdf.md`](source-notes/animals-journal-14-01645-pdf.md), [`source-notes/ijraw-journal-pdf-4-5-50-1.md`](source-notes/ijraw-journal-pdf-4-5-50-1.md).
+- Documented local/CI split in [`docs/workflows/ingest.md`](../../docs/workflows/ingest.md) and [`AGENTS.md`](../../AGENTS.md) scripts table.
+
+---
+
+## [2026-04-20] ingest | Composting for homesteading (six guides)
+
+- Moved six imports from `raw/inbox/` to `raw/processed/2026/` (NRDC Composting 101, Wikipedia compost article, EPA composting at home, extension home/backyard intro, Earth Easy complete guide, ultimate food-waste reduction guide).
+- Six new `source-notes/`; concept [`concepts/composting.md`](concepts/composting.md); topic [`topics/homestead-composting-and-soil-sources.md`](topics/homestead-composting-and-soil-sources.md); analysis [`analyses/homestead-composting-guide.md`](analyses/homestead-composting-guide.md). Cross-linked [`topics/homestead-and-regional-gardening-sources.md`](topics/homestead-and-regional-gardening-sources.md), [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md); updated [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md). Updated [`index.md`](index.md).
+

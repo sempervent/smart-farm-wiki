@@ -3,7 +3,7 @@ title: Sustainable cropping, soil, and farm entry sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 tags:
   - crop-rotation
   - cover-crops
@@ -29,6 +29,7 @@ review_status: unreviewed
 
 **Related**
 
+- [`Homestead composting and soil sources`](homestead-composting-and-soil-sources.md) — composting for soil building alongside rotations and cover crops.
 - [`Multi-field crop rotation plan (template)`](../analyses/multi-field-crop-rotation-plan.md) — coordinated rotations across named fields (template).
 - [`Irrigation and water-wise farming sources`](irrigation-and-water-wise-farming-sources.md) — water application and solar pumping sources next to rotation planning.
 - [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md)

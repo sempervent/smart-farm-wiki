@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - domain
@@ -29,11 +29,12 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 ## Strand A — Land, water, and biological production
 
-**Themes**: Rotations and cover crops, sustainable cropping primers, hobby-farm and backyard livestock (poultry, cattle excerpts), pond construction and stocking, irrigation adjacency, horse-at-home basics.
+**Themes**: Rotations and cover crops, **composting** and soil amendments, sustainable cropping primers, hobby-farm and backyard livestock (poultry, cattle excerpts), pond construction and stocking, irrigation adjacency, horse-at-home basics.
 
 **Hubs**
 
 - [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md)
+- [`Homestead composting and soil sources`](../topics/homestead-composting-and-soil-sources.md)
 - [`Homestead and regional gardening sources`](../topics/homestead-and-regional-gardening-sources.md)
 - [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md)
 - [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md)
@@ -41,9 +42,11 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 **Concept anchor**
 
 - [`Precision agriculture`](../concepts/precision-agriculture.md) — formal PA framing vs smallholder practice (Wikipedia-sourced note).
+- [`Composting`](../concepts/composting.md) — aerobic soil-amendment process; homestead guide cluster.
 
 **Example analyses**
 
+- [`Homestead composting — practical guide`](homestead-composting-guide.md)
 - [`Starting and stocking a pond — beautiful water feature`](starting-stocking-pond-beautiful-water-feature.md)
 - [`Farm stocking — 120 acres vs 5 acres (research prompt)`](farm-stocking-120-acres-vs-5-acres-research-prompt.md) — forward-looking research brief, not settled doctrine.
 - [`Long 360 tractor — no-start troubleshooting (synthesis)`](long-360-tractor-no-start-synthesis.md) — diesel utility tractor; web-sourced forum/manual pointers
