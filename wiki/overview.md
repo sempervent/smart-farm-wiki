@@ -3,7 +3,7 @@ title: Wiki overview
 page_type: overview
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-23
 tags:
   - meta
   - llm-wiki
@@ -22,9 +22,10 @@ This vault is a **structured synthesis layer** on top of immutable **raw** sourc
 4. For **how this repository is built and published** (CI, scripts, corpus scale), read [`analyses/repository-analysis.md`](analyses/repository-analysis.md); for the operator handbook, see `docs/` at the repo root.
 5. For **what the domain content covers** (agriculture, networks, power, regional business, time sync), read [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md).
 6. For the **target information architecture** (decision-safe operational brain: dual-site spine, telemetry, spatial registry, SOPs), read [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md) together with [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md) and [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md).
-7. For the **East Tennessee two-site farm business plan** (5 ac home base + 120 ac production + phased grazing-led strategy), start at [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (package hub), then [`analyses/east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md); operations/telemetry hub: [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md). Repository wiring: [`analyses/smart-farm-wiki-repository-implementation-plan.md`](analyses/smart-farm-wiki-repository-implementation-plan.md).
+7. For the **East Tennessee two-site farm business plan** (5 ac home base + 120 ac production + phased grazing-led strategy), start at [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (package hub), then [`analyses/east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md); **local Anderson/Campbell + Claxton/Demory routing**: [`topics/local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md); operations/telemetry hub: [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md). Repository wiring: [`analyses/smart-farm-wiki-repository-implementation-plan.md`](analyses/smart-farm-wiki-repository-implementation-plan.md).
 8. For **repository shape** (overlapping analyses, hubs, entity gaps, merge policy), read [`analyses/structural-audit-repository-and-canonical-routing.md`](analyses/structural-audit-repository-and-canonical-routing.md) alongside [`AGENTS.md`](../AGENTS.md).
 9. For **page ownership** (which analysis owns durable scope, entity backlog, hub routing—**anti–analysis-swamp**), read [`analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md).
+10. For **execution readiness** (missing site-evidence, mixed-authority clusters, recommended canonical updates—**no invented parcel facts**), read [`analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md`](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md). **Agency/extension ingests** (NASS, NRCS, FSA, septic, …): [`source-notes/authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md). **Named counties/places + validation routing**: [`topics/local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md). **Why ingests can feel “quiet”** in the published site: [`analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md`](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md).
 
 **Principles**
 

@@ -3,7 +3,7 @@ title: farmOS
 page_type: entity
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 aliases:
   - farmOS project
 tags:
@@ -29,7 +29,7 @@ review_status: unreviewed
 - Topic: [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md)
 - Comparison: [`farmOS vs lightweight record stack for a two-site farm`](../comparisons/farmos-vs-lightweight-stack-two-site-farm.md)
 - Concept: [`Data storage (farm and edge stacks)`](../concepts/data-storage.md)
-- Source-notes: [`farmOS overview (farmOS.org)`](../source-notes/farmos-overview-farmos-org.md), [`farmOS model — Assets`](../source-notes/farmos-model-assets-documentation.md), [`farmOS model — Logs`](../source-notes/farmos-model-logs-documentation.md)
+- Source-notes: [`farmOS overview (farmOS.org)`](../source-notes/farmos-overview-farmos-org.md), [`farmOS model — Assets`](../source-notes/farmos-model-assets-documentation.md), [`farmOS model — Logs`](../source-notes/farmos-model-logs-documentation.md), [`farmOS — documentation captures (inbox)`](../source-notes/farmos-documentation-captures-inbox-2026-04-18.md) (User Guide, Assets, Logs, Location, Movements—**screenshot-era** captures; verify against current farmOS.org)
 - Analysis: [`Telemetry system of record — boundaries and authority`](../analyses/telemetry-system-of-record-boundaries-and-authority.md)
 
 **Epistemic note**: Hosting, backup, and upgrade burden are **operational** facts for deployers; the wiki does not prescribe a single hosting pattern.

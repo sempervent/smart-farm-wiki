@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-21
+updated: 2026-04-23
 review_status: unreviewed
 tags:
   - domain
@@ -18,6 +18,8 @@ This page is the **steering document** for the vault’s **domain** (not CI or M
 **Epistemic stance**: Claims about *your* operation require *your* data; the wiki holds **placeholders**, **source-notes**, and **synthesis**. This overview **does not** replace professionals (legal, tax, electrical, vet).
 
 **Canonical ownership & anti-sprawl**: Which **cluster** owns durable meaning (business plan, two-site ops, telemetry/SoR, validation, economics) and how **entities** and **hubs** should route readers—see [`Structural audit — page ownership, entity gaps, and hub routing`](structural-audit-page-ownership-entity-gaps-and-hub-routing.md). Prefer **extending** a canonical page over a parallel analysis; follow **`AGENTS.md`** (page ownership, canonicalization, entity-first).
+
+**Local site + county layer (two-site package)**: From the business plan into **Anderson** / **Campbell** context and **Claxton** / **Demory** anchors—[`Local site and county intelligence (topic)`](../topics/local-site-and-county-intelligence.md). **Durable entities** (roles vs places vs counties): [`SITE_HOME`](../entities/five-acre-home-base-site-home-et-two-site.md) / [`Claxton (place)`](../entities/claxton-home-base.md) / [`Anderson County (context)`](../entities/anderson-county-tennessee.md); [`SITE_FARM`](../entities/120-acre-production-farm-site-farm-et-two-site.md) / [`Demory (place)`](../entities/demory-farm-site.md) / [`Campbell County (context)`](../entities/campbell-county-tennessee.md). Complements Strand **B** (regional business) and Strand **A** (land/water) without a parallel “strategy” essay.
 
 ---
 
@@ -127,6 +129,7 @@ These **four** analyses connect strands that the map above used to only **gestur
 - **Business ↔ tech**: [`Business viability and farm economics — gap analysis`](business-viability-and-farm-economics-gap-analysis.md) — ROI and **instrumentation priority** still **methodology**-level.
 - **Security**: OT / remote-access **ingests** landed (CISA PDFs/excerpts); **farm cybersecurity hub** still to formalize as a **topic** page.
 - **NRCS**: Large **FY25 scenarios** PDF is **planning context**, not a substitute for site engineering—see [`source-notes/nrcs-fy25-conservation-scenarios-pdf.md`](../source-notes/nrcs-fy25-conservation-scenarios-pdf.md).
+- **Execution-grade site evidence (East Tennessee package)**: [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) names **missing** parcel-level data, **mixed-authority** clusters, and **canonical** update targets; [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) indexes **agency/extension** ingests (soils, NASS, DOR, FSA, septic, CISA). Does **not** replace **your** county office or professional advice.
 
 ---
 

@@ -3,7 +3,7 @@ title: Execution dossier — Phase 0–1 (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -87,3 +87,6 @@ Treat the wiki package as **operational** (not merely “written”) only when *
 - [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
 - [`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md)
 - [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md)
+- [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — **missing execution-grade data**, authority clusters, canonical update list
+- [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **indexed** agency/extension ingests
+- [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md), [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) — **county** evidence now **folded** into operating model, capital, validation, and execution slices above

@@ -3,7 +3,7 @@ title: Smart technology and telemetry strategy — control center on 5 acres
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -26,6 +26,8 @@ Define how **telemetry and automation** support a **two-site** operation where t
 **Architecture reference**: [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md).  
 **Registry / naming**: [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md).  
 **Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).
+
+**Local evidence (Demory / Campbell)**: **Steep** haul routes and **stock water** risk **favor** **tank/pump/gate** **observability** **before** **broad** sensor sprawl—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **broker** and **backups** stay **home-base**-biased **after** **power/ISP** verified ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)).
 
 ---
 

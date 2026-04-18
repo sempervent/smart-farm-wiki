@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — phase timeline
 page_type: timeline
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 tags:
   - business-plan
   - two-site
@@ -38,6 +38,7 @@ Calendar dates **slip**; **gates** in the validation backlog are authoritative f
 |-----------------|-----------|---------------------------|
 | Early Phase 0 | Written stop rules signed | [`Vision and constraints`](../analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) |
 | Phase 0–1 | Water points inventoried; comms baseline | [`Pilot plan`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) |
+| Phase 0–1 | **Authoritative evidence** paths identified (soils, rents, tax/ag, FSA, septic)—not “all numbers filled” | [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md), [`Evidence cluster`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) |
 | Phase 1→2 gate | Go on grazing scale **or** explicit pivot | [`Validation backlog`](../analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md) |
 | Phase 2+ | Records in chosen SoR | [`Telemetry system of record`](../analyses/telemetry-system-of-record-boundaries-and-authority.md) |
 

@@ -9,12 +9,25 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Domain content overview](analyses/domain-content-overview.md) — What this wiki is *about*: land, connectivity, power, data, business, and time/PNT strands.
 - [Structural audit — repository shape and canonical routing](analyses/structural-audit-repository-and-canonical-routing.md) — IA strengths, overlap risks, hub/entity gaps, merge policy; complements `AGENTS.md`.
 - [Structural audit — page ownership, entity gaps, and hub routing](analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) — Canonical clusters vs supporting analyses, entity backlog, hub routing; **anti–analysis-swamp** companion to `AGENTS.md`.
+- [Execution readiness gap audit — East Tennessee operational knowledge](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — Missing execution-grade data, mixed-authority clusters, glossary/timeline/onboarding gaps, **recommended canonical updates** (no invented parcel facts).
+- [Evidence grade and canonical authority](concepts/evidence-grade-and-canonical-authority.md) — Vocabulary: **canonical** vs **supporting** vs **exploratory**; raw vs public intelligibility.
+- [Authoritative execution evidence cluster — East Tennessee (source index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — Hub for **agency/extension** ingests (soils, NASS, DOR, FSA, septic, farmOS docs, CISA, DC/Starlink batch).
+- [Electrical, networking, and Starlink — inbox batch (2026-04-23)](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md) — Victron / NREL / Morse Micro / Starlink / UT PDFs + wiring & WAN captures.
 
 ## Business plan (East Tennessee two-site)
 
 **First-class package** (~5 ac home base + ~120 ac production + phased strategy). Start at the **package hub**; the **planning framework** holds full rubrics, knowns/unknowns, and embedded tables.
 
 - [East Tennessee two-site farm business plan (package)](business-plan/east-tennessee-two-site-farm-business-plan.md) — **Navigation spine**: reading order, execution pilots, artifacts, finance layer, critique, Git/PR wiring.
+- **Site intelligence (Claxton + Demory anchors)**: [Claxton home base — Anderson County](analyses/claxton-home-base-site-intelligence.md), [Demory farm — Campbell County](analyses/demory-farm-site-intelligence.md), [Anderson vs Campbell — operating implications](comparisons/anderson-county-vs-campbell-county-operating-implications.md).
+- [Local site and county intelligence](topics/local-site-and-county-intelligence.md) — **Router** beside the package: Anderson/Campbell, Claxton/Demory entities, comparison, validation, missing-data register (ties **agency** evidence to **named places**).
+- [Authoritative execution evidence cluster — East Tennessee (source index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **Agency/extension catalog** (NASS, NRCS, FSA, septic, farmOS, CISA, …) grounded in `raw/processed/` via source-notes.
+- [Ingest visibility gap — authoritative evidence vs published wiki (East Tennessee)](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md) — **IA diagnosis**: why authoritative ingests felt quiet; remediation checklist.
+- [Parcel intelligence package — East Tennessee two-site](topics/parcel-intelligence-package-east-tennessee-two-site.md) — **Hub**: Claxton + Demory parcel worksheets, blank template, WSS ingest pointers.
+- [Parcel intelligence worksheet (blank template)](topics/parcel-intelligence-worksheet-template.md) — Reusable section order (soils, slope, hydrology, access, utilities, telemetry candidates, validation tasks).
+- [Parcel intelligence — Claxton home base](analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) — `SITE_HOME` worksheet (placeholders; WSS process ref ingested).
+- [Parcel intelligence — Demory farm site](analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) — `SITE_FARM` worksheet (Campbell WSS table from vault; AOI clip pending).
+- [Claxton and Demory — missing data register](analyses/claxton-and-demory-missing-data-register.md) — **Parcel gaps** still not knowable from vault sources; how to resolve; what **V\*/G\*** rows they affect.
 - [East Tennessee two-site farm business plan — planning framework](analyses/east-tennessee-two-site-farm-business-plan-framework.md) — Detailed hub and document tree.
 - [East Tennessee two-site farm business plan — executive summary](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) — One-page map.
 - [East Tennessee two-site farm business plan — vision, objectives, and constraints](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)
@@ -79,6 +92,10 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Home Assistant](entities/home-assistant.md) — Open-source home automation platform; telemetry consumer / UI in two-site stack discussions.
 - [Five-acre home base (SITE_HOME) — ET two-site](entities/five-acre-home-base-site-home-et-two-site.md) — Homestead / control-center **role** (planning labels, not a deed).
 - [120-acre production farm (SITE_FARM) — ET two-site](entities/120-acre-production-farm-site-farm-et-two-site.md) — Production parcel **role** for the ET scenario.
+- [Claxton home base (place, Anderson County)](entities/claxton-home-base.md) — Named **geographic anchor** for `SITE_HOME` (not a deed).
+- [Demory farm site (place, Campbell County)](entities/demory-farm-site.md) — Named **geographic anchor** for `SITE_FARM` (not a deed).
+- [Anderson County, Tennessee (two-site context)](entities/anderson-county-tennessee.md) — County-level **operating object** (NASS + qualitative context for Claxton).
+- [Campbell County, Tennessee (two-site context)](entities/campbell-county-tennessee.md) — County-level **operating object** (NASS + WSS session discipline for Demory).
 - [Farm parcels and land units](entities/farm-parcels-and-land-units.md) — Parcels, paddocks, zones; ties to spatial registry + farmOS geometry.
 - [Farm water infrastructure system](entities/farm-water-infrastructure-system.md) — Water movement, storage, irrigation, livestock water as one system.
 - [Farm on-site power system](entities/farm-on-site-power-system.md) — Grid/solar/gen/loads at farm scale; links runbooks and power topics.
@@ -99,11 +116,14 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Precision agriculture](concepts/precision-agriculture.md) — Data-driven field management concept (Wikipedia-sourced note).
 - [Precision Time Protocol (PTP)](concepts/precision-time-protocol.md) — IEEE 1588 clock sync; hardware timestamping for tight discipline.
 - [Wi-Fi HaLow](concepts/wi-fi-halow.md) — IEEE 802.11ah sub-GHz Wi‑Fi for IoT range/power tradeoffs.
+- [Evidence grade and canonical authority](concepts/evidence-grade-and-canonical-authority.md) — How to read **canonical** pages vs **supporting** analyses vs **low-authority** sources.
 
 ## Topics
 
 - [Knowledge synthesis](topics/knowledge-synthesis.md) — Cross-cutting theme for how conclusions are built here.
 - [Two-site smart farm operations](topics/two-site-smart-farm-operations.md) — **Hub**: East TN 5 ac + 120 ac business plan, operational artifacts, telemetry, runbooks, comparisons.
+- [Local site and county intelligence](topics/local-site-and-county-intelligence.md) — **Router**: Anderson/Campbell context, Claxton/Demory site intel, comparison, missing-data register, validation plan.
+- [Parcel intelligence package — East Tennessee two-site](topics/parcel-intelligence-package-east-tennessee-two-site.md) — Parcel worksheets (Claxton/Demory), blank template, WSS pointers.
 - [Agritourism, tiny housing, and natural building sources](topics/agritourism-tiny-housing-and-natural-building.md) — Farm stays, natural building, agritourism listicles, news excerpts.
 - [Tennessee hobby farm and small-farm business sources](topics/tennessee-hobby-farm-and-small-farm-business-sources.md) — Hobby-farm primers, TN business guides, USDA BFR, revenue/licensing excerpts, startup PDFs.
 - [Backyard livestock and homestead animal sources](topics/backyard-livestock-and-homestead-animals.md) — Poultry/cattle guides, AI husbandry marketing, PDF papers.
@@ -129,6 +149,8 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Source notes
 
+- [Authoritative execution evidence cluster — East Tennessee (index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **Hub**: soils, elevation, septic, NASS rents, TN tax/ag exemption, FSA, farmOS, CISA—links to ingested source-notes.
+- [Campbell County — Web Soil Survey AOI soil map tab (capture)](source-notes/campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md) — Soil map units / AOI acres for Campbell WSS session (Demory farm intelligence).
 - [CISA — Guide to securing remote access software (PDF)](source-notes/cisa-guide-securing-remote-access-software-508-pdf.md) — Remote access hardening; foundation ingest 2026-04.
 - [CISA — Joint guide OT cybersecurity asset inventory (PDF)](source-notes/cisa-joint-guide-ot-cybersecurity-asset-inventory-508-pdf.md) — OT asset inventory process.
 - [CISA — Foundations for OT asset inventory (excerpt)](source-notes/cisa-joint-foundations-ot-asset-inventory-guidance-excerpt.md) — Markdown excerpt companion.
@@ -160,6 +182,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [farmOS — documentation captures (inbox)](source-notes/farmos-documentation-captures-inbox-2026-04-18.md)
 - [Tennessee — onsite sewage / septic (captures)](source-notes/tn-onsite-sewage-septic-captures-inbox-2026-04-18.md)
 - [Web Soil Survey & 3D Elevation — captures](source-notes/web-soil-survey-and-elevation-captures-inbox-2026-04-18.md)
+- [Web Soil Survey — product home page (capture)](source-notes/web-soil-survey-home-page-inbox-2026-04-18.md) — WSS app landing / how to run (process reference; not parcel soils).
 - [Tennessee General Assembly — bill information (capture)](source-notes/tennessee-general-assembly-bill-info-capture-inbox-2026-04-18.md)
 - [Erosion control on steep road — r/homestead](source-notes/erosion-control-steep-road-reddit-homestead.md) — Ditches, crown, water bars, outslope, rolling dips, handbook PDF link.
 - [Example LLM Wiki note (raw)](source-notes/example-llm-wiki-note.md) — Grounding note for `raw/processed/2026/example-llm-wiki-note.md`.
@@ -359,6 +382,13 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — **Steering doc**: strands, maturity matrix, gaps, supported vs unsupported decisions, backlog; target future-state.
+- [Execution readiness gap audit — East Tennessee operational knowledge](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — **Execution hardening**: missing site-evidence, weak entities, mixed-authority clusters, canonical routing recommendations.
+- [Ingest visibility gap — authoritative evidence vs published wiki (East Tennessee)](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md) — **IA / ingest workflow**: why authoritative `raw/` + source-notes felt quiet in the published wiki; routing fixes.
+- [Claxton and Demory — missing data register](analyses/claxton-and-demory-missing-data-register.md) — **Parcel-level** unknowns vs desktop vs on-site; ties to **validation** tasks.
+- [Claxton home base — site intelligence (Anderson County, Tennessee)](analyses/claxton-home-base-site-intelligence.md) — `SITE_HOME` anchor (NASS county rent + planning assumptions).
+- [Demory farm — site intelligence (Campbell County, Tennessee)](analyses/demory-farm-site-intelligence.md) — `SITE_FARM` anchor (NASS + Campbell WSS AOI soils capture).
+- [Parcel intelligence — Claxton home base (East Tennessee two-site)](analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) — Parcel worksheet: placeholders; WSS process source-note ingested.
+- [Parcel intelligence — Demory farm site (East Tennessee two-site)](analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) — Parcel worksheet: WSS soil map table from vault capture (AOI clip pending).
 - [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
 - [Implementation backlog — strategic audit (P0–P3)](analyses/implementation-backlog-strategic-audit.md) — Prioritized build list: templates, topics, SOPs, analyses; top 10 pages first.
 - [Information architecture — decision-safe operational brain (target design)](analyses/information-architecture-decision-safe-operations.md) — Target IA: hub layers, required pages, cross-links, orphan/integration gaps, migration phases.
@@ -367,6 +397,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Agentic wiki improvement prompts (staged, strategic audit)](analyses/agentic-wiki-improvement-prompts-strategic-audit.md) — Pre-prompt + Phase 1–4 copy-paste prompts: deliverables, acceptance criteria, files to create/update.
 - [Dual-site operations model — non-agritourism farm business](analyses/dual-site-operations-model-non-agritourism.md) — Production-led two-site logistics; batching, equipment home, coverage; connects strands.
 - [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — Logical stack, SPOFs, HA/farmOS/MQTT/TSDB roles; foundation for runbooks.
+- [Two-site smart farm — network topology and WAN/edge reference (Mermaid)](analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) — **Mermaid**: WAN, two sites, telemetry plane, DC context, HaLow vs mesh overlay.
 - [Reference architecture — 5-acre home base + 120-acre farm](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) — **Smart-farm architecture package** hub: control center vs production, scenario design, links to SoR/security/instrumentation/degraded modes.
 - [Telemetry system of record — boundaries and authority](analyses/telemetry-system-of-record-boundaries-and-authority.md) — Records vs telemetry vs dashboards vs alerts vs manual verification.
 - [Automation principles — two-site smart farm](analyses/automation-principles-two-site-smart-farm.md) — Automate early / late / never; distance and maintenance burden.
@@ -406,6 +437,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [farmOS vs lightweight record stack for a two-site farm](comparisons/farmos-vs-lightweight-stack-two-site-farm.md) — Ops weight vs glue code; team-size framing.
 - [Own equipment vs custom hire under two-site logistics](comparisons/own-equipment-vs-custom-hire-two-site-logistics.md) — Hauling time vs duplicate tools vs contractor scheduling.
 - [Fixed gateway tower vs mobile or vehicle gateway](comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md) — Always-on RF vs intermittent mobile backhaul.
+- [Anderson County vs Campbell County — two-site operating implications](comparisons/anderson-county-vs-campbell-county-operating-implications.md) — County NASS rents, home-base vs farm roles, over-generalization risks (Claxton / Demory anchors).
 - [Ducks vs chickens — meat raising](comparisons/ducks-vs-chickens-meat-raising.md) — Housing, water, processing, grow-out (ingested sources + vault poultry notes).
 
 ## Timelines
@@ -415,6 +447,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 ## Glossary
 
 - [Smart Farm Wiki glossary (hub)](glossary/smart-farm-wiki-glossary.md) — Index of definition-first entries for recurring operational terms.
+- [Evidence grade](glossary/evidence-grade.md) — **Authority vocabulary** for decision-grade vs exploratory support.
 - [Synthesis layer](glossary/synthesis-layer.md) — Raw vs wiki durable model (repository pattern).
 - [Two-site sites (SITE_HOME / SITE_FARM)](glossary/two-site-sites.md)
 - [System of record (farm data)](glossary/system-of-record-farm-data.md)

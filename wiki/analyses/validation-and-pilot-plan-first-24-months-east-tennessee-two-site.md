@@ -3,7 +3,7 @@ title: Validation and pilot plan — first 24 months (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -27,6 +27,10 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 **Fillable checklists**: [`Pilot and recon checklists — first 24 months`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md).
 
 **Execution dossier (Phase 0–1 — use first)**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md) · [`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) · [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
+
+**Local evidence (named counties)** — **V1** soil/slope: **Campbell** vault **WSS** AOI is **steep/gravelly** dominant ([`Demory site intelligence`](demory-farm-site-intelligence.md)); **clip** to **~120 ac** operating polygon and **walk**—AOI total **558.6 ac** in capture **≠** planning acreage. **Claxton** / **Anderson**: **no** WSS AOI in corpus—**run** WSS on **homestead** footprint. **V7** lease: **2024 NASS** **Anderson $28.50** vs **Campbell $27.50** / ac non-irrigated cropland **estimates**—**starting** comps only ([`Claxton`](claxton-home-base-site-intelligence.md), [`comparison`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md)).
+
+**What changed**: Validation tasks **gain county anchors**; **pass/fail** still **parcel**-level.
 
 ---
 

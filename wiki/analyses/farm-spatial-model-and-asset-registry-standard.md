@@ -3,7 +3,7 @@ title: Farm spatial model and asset registry standard
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-18
+updated: 2026-04-22
 aliases:
   - Spatial data and farm asset registry standard
 tags:
@@ -12,7 +12,7 @@ tags:
   - registry
   - postgis
 review_status: unreviewed
-confidence: low
+confidence: medium
 ---
 
 # Farm spatial model and asset registry standard
@@ -35,6 +35,9 @@ Define a **minimal, practical standard** so **parcels, paddocks, infrastructure,
 | You may use **PostGIS**, **farmOS geometries**, **KML**, or **even a paper map photo** initially—**discipline of IDs** matters more than software brand. |
 | **One “operating map”** should be agreed: *where is the current truth for boundaries?* **`MAP_AUTHORITY_LABEL`** = TBD (file name, farmOS layer, or GIS project). |
 | **CRS**: If you mix WGS84 and a projected CRS, **document** the rule (e.g. “store WGS84 lon/lat for points; use **EPSG:XXXX** for distance math in GIS”). Replace **`EPSG_PLACEHOLDER`**. |
+| **Campbell / Demory WSS** | Vault capture shows **558.6 ac** AOI **≠** **~120 ac** planning label—**operating** map must **clip** to **management** boundary ([`Demory site intelligence`](demory-farm-site-intelligence.md)). |
+
+**What changed**: Named **county** evidence **forces** explicit **AOI vs deed vs operating acres**—no silent conflation in IDs.
 
 ## Identity pattern (draft)
 
@@ -100,6 +103,20 @@ Define a **minimal, practical standard** so **parcels, paddocks, infrastructure,
 | **`device_id` ↔ `paddock_id` or `asset_id`** for every field endpoint | **Otherwise** dashboards are **unmoored** |
 | **One `MAP_AUTHORITY_LABEL`** | **Single** **operating** map—paper or GIS |
 | **Migration log** when **sensors** **move** | **Avoid** **silent** **history** **break** |
+
+---
+
+## Authoritative land-intelligence references (external)
+
+Use **official** soil and elevation products to **inform** map layers and **labels**—not as a substitute for **field verification** or **local permits**.
+
+| Source | Role in this wiki |
+|--------|-------------------|
+| **Web Soil Survey / SSURGO** | Map-unit capability, limiting factors; see [`Web Soil Survey & 3D Elevation — captures`](../source-notes/web-soil-survey-and-elevation-captures-inbox-2026-04-18.md) |
+| **3DEP / lidar-backed elevation** | Drainage / cut-fill context; same capture note |
+| **County septic / SSDS** | Buildability near structures; [`Tennessee onsite sewage / septic captures`](../source-notes/tn-onsite-sewage-septic-captures-inbox-2026-04-18.md) |
+
+**Index**: [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md). **Gap audit**: [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md).
 
 ---
 

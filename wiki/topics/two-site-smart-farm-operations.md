@@ -3,7 +3,7 @@ title: Two-site smart farm operations
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-23
 tags:
   - two-site
   - operations
@@ -31,6 +31,8 @@ review_status: unreviewed
 | **Telemetry + SoR** | [`Reference architecture`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`SoR boundaries`](../analyses/telemetry-system-of-record-boundaries-and-authority.md), [`Field telemetry ref arch`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md) | **Entity**: [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). |
 | **Land IDs** | [`Farm spatial model / asset registry`](../analyses/farm-spatial-model-and-asset-registry-standard.md) | **Entity**: [`Farm parcels and land units`](../entities/farm-parcels-and-land-units.md). |
 | **Water / power infra** | Topic hubs + runbooks (see tables below) | **Entities**: [`Farm water infrastructure system`](../entities/farm-water-infrastructure-system.md), [`Farm on-site power system`](../entities/farm-on-site-power-system.md). |
+| **Regulatory & site evidence (TN / federal)** | [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md), [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) | Soils, NASS rents, DOR/ag exemption, FSA captures, septic, CISA—**index**, not legal advice. |
+| **Named site anchors (Claxton / Demory)** | **Places**: [`Claxton (place)`](../entities/claxton-home-base.md), [`Demory (place)`](../entities/demory-farm-site.md); **intel**: [`Claxton — site intelligence`](../analyses/claxton-home-base-site-intelligence.md), [`Demory — site intelligence`](../analyses/demory-farm-site-intelligence.md); [`Anderson vs Campbell`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md) | County + vault sources; **parcel truth** still local. |
 
 ## Business plan (decision-grade)
 

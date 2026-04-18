@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan (package)
 page_type: topic
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-23
 tags:
   - business-plan
   - two-site
@@ -27,6 +27,10 @@ aliases:
 **Phase timeline (visual)**: [`East Tennessee two-site farm business plan — phase timeline`](../timelines/east-tennessee-two-site-farm-business-plan-phase-timeline.md)
 
 **Modeled sites & systems (entities)** — planning roles, not your deed: [`Five-acre home base (SITE_HOME)`](../entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre production farm (SITE_FARM)`](../entities/120-acre-production-farm-site-farm-et-two-site.md), [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). **Page ownership** (avoid analysis sprawl): [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md).
+
+**Authority & execution evidence** (regulatory / agency / extension — not parcel-specific facts): [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md). **Gap audit** (what is still missing for execution-grade clarity): [`Execution readiness gap audit — East Tennessee operational knowledge`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md). **Vocabulary** (canonical vs supporting vs exploratory): [`Evidence grade and canonical authority`](../concepts/evidence-grade-and-canonical-authority.md).
+
+**Site intelligence (named anchors)**: **Router** (county vs place vs validation vs gaps): [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md). **Analyses**: [`Claxton home base — Anderson County`](../analyses/claxton-home-base-site-intelligence.md) (`SITE_HOME`), [`Demory farm — Campbell County`](../analyses/demory-farm-site-intelligence.md) (`SITE_FARM`), [`Anderson vs Campbell — operating implications`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md). **Parcel worksheets** (structured fields; evidence-backed only): [`Parcel intelligence package — East Tennessee two-site`](../topics/parcel-intelligence-package-east-tennessee-two-site.md). **Folded into canonical chapters (2026-04-22)**: two-site operating model, recommended enterprise strategy, capital plan, revenue model, risk register, validation/pilot plan, execution dossier (90d/12m/24m), spatial model, labor model, smart-tech strategy—**no** duplicate package pages.
 
 ---
 

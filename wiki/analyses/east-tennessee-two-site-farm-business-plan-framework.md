@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — planning framework
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -39,6 +39,8 @@ This wiki holds a **decision-grade**, **phased** business plan for a future oper
 The **framework** (this page) defines **what pages exist**, **in what order to build them**, **how candidate 120-acre enterprises will be compared without premature commitment**, and **what is known vs assumed vs unknown**. Later edits **fill** the child pages with numbers, scenarios, and decisions.
 
 **Non-goals**: Single-enterprise prescription before validation; lifestyle branding; optimism without maintenance and degraded-mode costs.
+
+**Authority & evidence (execution)**: Which pages are **canonical** vs **supporting**, and which **ingested** sources back **TN / federal** operational claims—[`Evidence grade and canonical authority`](../concepts/evidence-grade-and-canonical-authority.md), [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md), [`Authoritative execution evidence cluster`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md).
 
 ---
 

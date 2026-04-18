@@ -3,7 +3,7 @@ title: Revenue model and milestones
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -64,7 +64,7 @@ Describe **how money is expected to enter** the farm business over **~10 years**
 | Item | Assumption placeholder | Validate by |
 |------|------------------------|-------------|
 | Cattle price | Trailing auction average | Sale bills |
-| Lease rate | County comps | Signed lease or comp sheet |
+| Lease rate | County comps | Signed lease or comp sheet; **starting** **2024 NASS** **non-irrigated cropland** county estimates: **Anderson $28.50/ac**, **Campbell $27.50/ac** ([`NASS source-note`](../source-notes/nass-cash-rents-tn-2024-surveys-pdf.md), [`Claxton`](claxton-home-base-site-intelligence.md), [`Demory`](demory-farm-site-intelligence.md))—**not** your rent |
 | Direct premium | +$/cwt hypothesis | **Trial** lot |
 
 ## Known facts

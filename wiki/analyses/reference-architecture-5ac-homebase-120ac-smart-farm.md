@@ -37,7 +37,7 @@ Give a **single first-draft** **logical** picture of the **smart-farm stack** fo
 | 6 | **Degraded modes** & manual fallback | [`Manual fallback and degraded modes — critical operations`](manual-fallback-degraded-modes-critical-operations.md) + [`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md) |
 | 7 | **Remote access** & operational security | [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) |
 
-**Deeper technical stack** (MQTT, broker, radio paths): [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md).
+**Deeper technical stack** (MQTT, broker, radio paths): [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md). **Mermaid topology** (WAN, sites, telemetry plane, DC context): [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](two-site-smart-farm-network-topology-and-wan-edge-reference.md).
 
 ---
 

@@ -3,7 +3,7 @@ title: First 12 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ confidence: medium
 **T0 → T0+12 months**: deepen **Phase 0–1** proofs **without** **scaling** into **Phase 2** **unless** **G1** **is** **actually** **green** (most families: **prepare** **G1** in **year** **1**, **pass** **in** **year** **2**).
 
 **Spine**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md).
+
+**Local evidence**: **Months 4–6** **fence/road** scoping on **Campbell** should assume **earthwork** and **drainage** may **co-own** the quote with **perimeter**—[`Demory site intelligence`](demory-farm-site-intelligence.md). **V7** comps: cite **2024 NASS** **Anderson** vs **Campbell** **cropland** rent **estimates** as **ballpark** ([`comparison`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md)).
 
 ---
 

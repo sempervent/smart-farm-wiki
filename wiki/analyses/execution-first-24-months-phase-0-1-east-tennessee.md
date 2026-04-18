@@ -3,7 +3,7 @@ title: First 24 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -21,6 +21,8 @@ confidence: medium
 **Entry**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md).
 
 **Detail layer**: [`Validation and pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) (full matrix + cheap proofs).
+
+**Local evidence**: By **T0+24mo**, **either** **parcel-true** soil/water maps exist for **Claxton** and **Demory**, **or** **G1** waivers **document** why not—county **NASS** + vault **WSS** **alone** are **not** **G1**.
 
 ---
 

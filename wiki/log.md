@@ -577,3 +577,97 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Source-notes** added under `wiki/source-notes/` (UT D32, NASS pair + survey page, TN exemption PDF + page, NRCS CEAP pair, PB1663, PC498, Livestock Companion, FSA batch, farmOS batch, septic batch, WSS/elevation, TN GA bill); [`index.md`](index.md) updated.
 - Validator: `validate_wiki.py --strict` and `--raw-pdf-links` (strict).
 
+---
+
+## [2026-04-22] query | Claxton/Demory missing-data register
+
+- New [`claxton-and-demory-missing-data-register.md`](analyses/claxton-and-demory-missing-data-register.md): eight sections (land, buildability/utilities, soils/hydro, access/roads, market/rent, infra recon, desktop vs field); each gap table includes **site** (C/D/Both), **why**, **resolve**, **blocks/informs**; links package, site intelligence, validation plan. [`index.md`](index.md) (business plan + analyses).
+
+---
+
+## [2026-04-22] refactor | Business plan tightened to Claxton/Anderson + Demory/Campbell evidence
+
+- **Package hub** [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md): one-line pointer to **which** chapters **fold** site intelligence (no new pages).
+- **Execution dossier hub** [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md): Related links to Claxton/Demory intelligence.
+- **Two-site operating model** [`two-site-operations-model-5ac-homebase-120ac-production.md`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md): named anchors, NASS rent refs, **Campbell** terrain → batching / CAPEX emphasis; **what changed** note.
+- **Recommended enterprise strategy** [`east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md): local evidence paragraph tying default thesis to **WSS** + **NASS**.
+- **Capital plan** [`east-tennessee-two-site-farm-business-plan-capital-and-financing.md`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md): **Campbell** earthwork/lane peer sequencing; **Anderson** homestead verify before broker scale.
+- **Revenue model** [`east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md`](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md): lease row + **2024 NASS** county numbers + caveats.
+- **Risk register** [`east-tennessee-two-site-farm-business-plan-risk-register.md`](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md): **R14** terrain/sediment, **R15** AOI mismatch.
+- **Validation / pilot plan** [`validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md): **V1**/**V7** county anchors.
+- **Execution dossier slices** [`execution-first-90-days-phase-0-1-east-tennessee.md`](analyses/execution-first-90-days-phase-0-1-east-tennessee.md), [`execution-first-12-months-phase-0-1-east-tennessee.md`](analyses/execution-first-12-months-phase-0-1-east-tennessee.md), [`execution-first-24-months-phase-0-1-east-tennessee.md`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md): local evidence bullets.
+- **Spatial model** [`farm-spatial-model-and-asset-registry-standard.md`](analyses/farm-spatial-model-and-asset-registry-standard.md): **Campbell** AOI acreage vs **~120 ac** assumption row.
+- **Labor** [`east-tennessee-two-site-farm-business-plan-labor-and-family-model.md`](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md), **Smart tech** [`east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md): surge + telemetry placement vs terrain.
+
+---
+
+## [2026-04-22] ingest | Campbell WSS AOI capture + Claxton/Demory site intelligence
+
+- **Raw**: [`web-soil-survey-campbell-county-aoi-soil-map-tab-capture-2026-04-18.md`](../raw/processed/2026/web-soil-survey-campbell-county-aoi-soil-map-tab-capture-2026-04-18.md) (moved from `raw/inbox/` Web Soil Survey capture); **source-note** [`campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md`](source-notes/campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md).
+- **Analyses**: [`claxton-home-base-site-intelligence.md`](analyses/claxton-home-base-site-intelligence.md) (Anderson / `SITE_HOME`), [`demory-farm-site-intelligence.md`](analyses/demory-farm-site-intelligence.md) (Campbell / `SITE_FARM`); **comparison** [`anderson-county-vs-campbell-county-operating-implications.md`](comparisons/anderson-county-vs-campbell-county-operating-implications.md). NASS 2024 county cash rent figures cited from [`nass-cash-rents-all-crops-tn-2024.pdf`](../raw/processed/2026/nass-cash-rents-all-crops-tn-2024.pdf).
+- **Entities** [`five-acre-home-base-site-home-et-two-site.md`](entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre-production-farm-site-farm-et-two-site.md`](entities/120-acre-production-farm-site-farm-et-two-site.md); package hub, [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md), [`index.md`](index.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-22] refactor | Execution readiness — gap audit, authority vocabulary, hub routing
+
+- New [`execution-readiness-gap-audit-east-tennessee-operational-knowledge.md`](analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md): missing **site-specific** execution data, mixed-authority clusters, thin glossary/timeline/onboarding, **canonical update** list (no invented parcel facts).
+- New [`evidence-grade-and-canonical-authority.md`](concepts/evidence-grade-and-canonical-authority.md), [`evidence-grade.md`](glossary/evidence-grade.md); source index [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (links existing ingests: soils, NASS, DOR, FSA, septic, farmOS, CISA).
+- **Canonical updates**: [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (authority block), [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`east-tennessee-two-site-farm-business-plan-capital-and-financing.md`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md) (FSA reference table), [`farm-spatial-model-and-asset-registry-standard.md`](analyses/farm-spatial-model-and-asset-registry-standard.md), [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md), [`domain-content-overview.md`](analyses/domain-content-overview.md); entities [`farm-parcels-and-land-units.md`](entities/farm-parcels-and-land-units.md), [`farmos.md`](entities/farmos.md); topic [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) (**Regulatory & site evidence** row); timeline [`east-tennessee-two-site-farm-business-plan-phase-timeline.md`](timelines/east-tennessee-two-site-farm-business-plan-phase-timeline.md); [`overview.md`](overview.md), [`smart-farm-wiki-glossary.md`](glossary/smart-farm-wiki-glossary.md), [`index.md`](index.md).
+
+---
+
+## [2026-04-23] refactor | Local site and county intelligence hub + navigation
+
+- New topic hub [`local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md): routes business plan readers to **county** context (comparison + evidence cluster), **Claxton** / **Demory** site intelligence, **validation plan**, **missing-data register**, and distinguishes county vs site vs execution analyses vs unresolved gaps.
+- [`overview.md`](overview.md) (how to read item 7): pointer to hub for Anderson/Campbell + Claxton/Demory routing alongside two-site operations.
+- [`domain-content-overview.md`](analyses/domain-content-overview.md): short **Local site + county layer** pointer after canonical ownership.
+- [`index.md`](index.md): Topics catalog entry for local site and county intelligence.
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-23] refactor | Place + county entities (Claxton, Demory, Anderson, Campbell)
+
+- New **place** entities: [`claxton-home-base.md`](entities/claxton-home-base.md), [`demory-farm-site.md`](entities/demory-farm-site.md) — role vs deed, known facts, assumptions, analyses, source-notes, decisions, unknowns; link [`farm water`](entities/farm-water-infrastructure-system.md) / [`on-site power`](entities/farm-on-site-power-system.md) / [`telemetry`](entities/field-telemetry-network-two-site.md) as patterns (no new utility-class pages).
+- New **county context** entities: [`anderson-county-tennessee.md`](entities/anderson-county-tennessee.md), [`campbell-county-tennessee.md`](entities/campbell-county-tennessee.md) — NASS rows + qualitative geography; Campbell ties WSS capture discipline to Demory thread.
+- **Role entities** [`five-acre-home-base-site-home-et-two-site.md`](entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre-production-farm-site-farm-et-two-site.md`](entities/120-acre-production-farm-site-farm-et-two-site.md): place + county anchors + router hub link; [`farm-parcels-and-land-units.md`](entities/farm-parcels-and-land-units.md) lists named places and counties.
+- **Analyses** [`claxton-home-base-site-intelligence.md`](analyses/claxton-home-base-site-intelligence.md), [`demory-farm-site-intelligence.md`](analyses/demory-farm-site-intelligence.md): role / place / county entity lines in header block.
+- **Hubs / nav**: [`local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`anderson-county-vs-campbell-county-operating-implications.md`](comparisons/anderson-county-vs-campbell-county-operating-implications.md), [`two-site-sites.md`](glossary/two-site-sites.md), [`index.md`](index.md).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-23] query | Ingest visibility — IA diagnosis + hub wiring
+
+- New [`ingest-visibility-gap-authoritative-evidence-east-tennessee.md`](analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md): **diagnosis** (raw vs source-notes vs synthesis vs MkDocs `raw/` neutralization vs dual entry points); **remediation** table; **smallest fix** list.
+- **Canonical wiring**: [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (“after ingest” spine), [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (site intelligence + **local router**), [`local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md) (pair with agency cluster), [`overview.md`](overview.md) item 10 split **agency** vs **named-place** routing, [`index.md`](index.md) (business-plan block + analyses line).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-23] ingest | WSS home capture + parcel intelligence worksheets (Claxton / Demory)
+
+- **Raw** (already under `raw/processed/2026/`): [`web-soil-survey-home-inbox-2026-04-18.md`](../raw/processed/2026/web-soil-survey-home-inbox-2026-04-18.md) — WSS product home / process reference (not parcel soils).
+- **Source-note**: [`web-soil-survey-home-page-inbox-2026-04-18.md`](source-notes/web-soil-survey-home-page-inbox-2026-04-18.md); **evidence cluster** [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) updated (WSS home row + parcel package pointer).
+- **Parcel intelligence package**: topic hub [`parcel-intelligence-package-east-tennessee-two-site.md`](topics/parcel-intelligence-package-east-tennessee-two-site.md); blank worksheet [`parcel-intelligence-worksheet-template.md`](topics/parcel-intelligence-worksheet-template.md); repo scaffold [`templates/parcel-intelligence-sheet.md`](../templates/parcel-intelligence-sheet.md).
+- **Worksheets**: [`parcel-intelligence-claxton-home-base-east-tennessee-two-site.md`](analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) (placeholders; no homestead WSS AOI in vault), [`parcel-intelligence-demory-farm-site-east-tennessee-two-site.md`](analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) (Campbell WSS table from existing capture; AOI vs ~120 ac explicit).
+- **Wiring**: [`campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md`](source-notes/campbell-county-wss-aoi-soil-map-tab-capture-2026-04-18.md), [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md), [`local-site-and-county-intelligence.md`](topics/local-site-and-county-intelligence.md), site intelligence analyses, place entities, [`farm-parcels-and-land-units.md`](entities/farm-parcels-and-land-units.md), [`index.md`](index.md).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-23] ingest | Electrical / networking / Starlink PDFs + captures; Mermaid topology analysis
+
+- **Raw**: moved **10 PDFs** from `raw/inbox/` → `raw/processed/2026/` (Victron *Wiring Unlimited*, NREL off-grid modules 5–6, Morse Micro MM6108/MM8108, UT PB1752 + SP434A, Starlink Mini + Standard 4× kit specs, technical information EN); **`pdf_to_markdown.py`** `*-extracted.md` for each.
+- **Web captures**: **33** Markdown files from `raw/inbox/` → `raw/processed/2026/*-inbox-2026-04-23.md` (Victron wiring series, Starlink/Meshtastic/HaLow/OpenWrt articles, etc.); inbox **cleared** for PDFs + MD.
+- **Source-note**: [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md); **evidence cluster** updated (DC/Starlink batch + topology link).
+- **Analysis**: [`two-site-smart-farm-network-topology-and-wan-edge-reference.md`](analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) — **Mermaid** diagrams (WAN/sites, telemetry data plane, DC bus pattern, HaLow vs mesh overlay).
+- **MkDocs**: `mkdocs-mermaid2-plugin` + `mermaid2.version` in [`mkdocs.yml`](../../mkdocs.yml); **docs** [`publishing.md`](../../docs/operations/publishing.md).
+- **Navigation**: [`index.md`](index.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md).
+- Validator: `validate_wiki.py --strict`; `mkdocs build --strict`.
+

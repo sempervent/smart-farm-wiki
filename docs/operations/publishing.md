@@ -24,4 +24,6 @@ uv run mkdocs build --strict
 
 Artifacts land in `site/` (gitignored).
 
+**Diagrams (Mermaid):** `mkdocs.yml` enables the **`mermaid2`** plugin (`mkdocs-mermaid2-plugin`). Pages can use fenced `mermaid` code blocks; the build loads Mermaid from CDN. Example: [`wiki/analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md`](../../wiki/analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md).
+
 **Raw links:** Markdown links into `raw/` are rewritten at build time by `scripts/mkdocs_neutralize_raw_links.py` (see [`raw-corpus-and-publishing.md`](raw-corpus-and-publishing.md)) so the public site does not expose broken URLs to omitted evidence files. Obsidian-authored sources stay unchanged.

@@ -3,7 +3,7 @@ title: Labor model and weekly operating rhythm
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -37,6 +37,8 @@ Make **family capacity** and **time** explicit for a **two-site** operation: **~
 - **Family-first** labor pool (father / son / grandson as **named** roles in your copy).
 - **No phantom hired hand**: if help is needed, **budget** and **insure** it in **Phase 3+**.
 - **Travel-time-aware**: batch **field** work; **do not** assume **daily** presence at **120** without **resident** labor or **hired** coverage.
+
+**Local evidence (Campbell / Demory)**: **Sloped**, **rough** ground (WSS AOI summary) **increases** **on-site** hours for **fence**, **water**, **stock movement**, and **road repair** vs flat row-crop imagery—**surge** planning must **absorb** that **before** adding enterprises ([`Demory site intelligence`](demory-farm-site-intelligence.md)).
 
 ## Roles (assign real names locally)
 

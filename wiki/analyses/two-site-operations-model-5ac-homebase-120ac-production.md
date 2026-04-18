@@ -3,7 +3,7 @@ title: Two-site operating model — 5-acre home base and 120-acre farm
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - two-site
@@ -54,6 +54,15 @@ For a **production-led** two-site layout **without** the East Tennessee plan’s
 |------|-----------------|------|
 | `SITE_HOME` | ~5 ac | **Residence**; long-run **smart operations center** (network, broker, backups, workshop/lab, development). **Not** the primary commercial production land. |
 | `SITE_FARM` | ~120 ac | **Primary production decision surface**: livestock, forage, crops, infrastructure tied to revenue. **All major enterprise bets** resolve here first. |
+
+**Named anchors (local evidence)** — `SITE_HOME` **Claxton** / **Anderson County**; `SITE_FARM` **Demory** / **Campbell County**. Detail: [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md), [`Demory farm — site intelligence`](demory-farm-site-intelligence.md), [`Anderson vs Campbell — operating implications`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md).
+
+| County / site | Plan implication (tightened from vault sources) |
+|-----------------|--------------------------------------------------|
+| **Anderson** (Claxton) | 2024 NASS **non-irrigated cropland** rent **$28.50/ac** county estimate—**ballpark** for lease comps only; **parcel** soils not in corpus—run WSS on **homestead** AOI. |
+| **Campbell** (Demory) | NASS **$27.50/ac** same category; processed **WSS** AOI shows **steep gravelly** map units dominant—**reinforces** **T0–T1** touch tiers for grazing vs **T3** row-crop primary, and **internal road / drainage** as early CAPEX peers with fence/water. |
+
+**What changed because of local evidence**: County **rent** rows and **Campbell** terrain signal **tighten** **V7** lease bands and **earthwork/lane** sequencing—they **do not** replace **P90** drive logs or **G1** soil/water proofs.
 
 ### Functions by location
 

@@ -3,7 +3,7 @@ title: Structural audit — page ownership, entity gaps, and hub routing
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - meta
@@ -51,8 +51,8 @@ confidence: medium
 | Hub | Issue | Fix direction |
 |-----|--------|----------------|
 | **`index.md`** | Long flat analyses list elsewhere | Business plan **section** already elevates ET package; **entities** need expansion (below). |
-| **`two-site-smart-farm-operations`** | Tables strong but no **ownership** row | Add **canonical ownership** subsection pointing to reference arch + SoR + business plan package. |
-| **`domain-content-overview`** | Strand map strong; **ownership** implicit | Add **canonical routing** pointer to this audit. |
+| **`two-site-smart-farm-operations`** | Tables strong but no **ownership** row | **Addressed** (2026-04): **Canonical ownership** table + **Regulatory & site evidence** row → [`Authoritative execution evidence cluster`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md), [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md). |
+| **`domain-content-overview`** | Strand map strong; **ownership** implicit | Add **canonical routing** pointer to this audit **and** [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md). |
 
 ---
 

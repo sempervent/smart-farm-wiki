@@ -3,7 +3,7 @@ title: First 90 days — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ confidence: medium
 **Actionable** first **90 days** after **T0** (execution start—[`dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md)). **Pilot-grounded** tasks only; **no** **scale** bets.
 
 **Boundaries**: [`Decision memo — Phase 0–1`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md). **Ordered tasks**: [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md).
+
+**Local evidence**: **Days 15–30** **V1** on **Demory** / **Campbell** must **reconcile** processed WSS AOI (large, **sloped**) with **~120 ac** **operating** map—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **open** **WSS** on **homestead** AOI; **no** vault substitute.
 
 ---
 

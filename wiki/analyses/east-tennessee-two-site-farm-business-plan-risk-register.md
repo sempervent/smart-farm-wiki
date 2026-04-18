@@ -3,7 +3,7 @@ title: Risk register and mitigation strategy
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -54,6 +54,10 @@ Maintain a **working risk register** for the **two-site**, **telemetry-heavy**, 
 | R11 | Regulatory / zoning surprise | Legal | 2 | 3 | County conversation early | 0–1 |
 | R12 | **Two-site delay cost** (slow response at 120) | Ops | 3 | 3 | Batch rules; water/gate telemetry priority | 0–4 |
 | R13 | **Theft / vandalism** at remote parcel | Ops | 2 | 3 | Access control, neighbor awareness; **not** camera-only | 2–4 |
+| R14 | **Terrain / road / sediment** (steep gravelly soils; lane erosion) | Ops | 3 | 4 | Earthwork + drainage **with** fence plan; **Campbell** evidence: [`Demory site intelligence`](demory-farm-site-intelligence.md) | 1–3 |
+| R15 | **Map / AOI mismatch** (WSS session ≠ deed or ≠ ~120 ac operating area) | Ops | 2 | 3 | Redraw AOI; clip map units to **fields**; label `MAP_AUTHORITY` | 0–1 |
+
+**What changed**: **R14**–**R15** added from **Campbell** WSS + **two-county** NASS context; **parcel** facts still **verify** locally.
 
 ## Mitigation themes
 

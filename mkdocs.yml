@@ -45,6 +45,8 @@ hooks:
 
 plugins:
   - search
+  - mermaid2:
+      version: "10.6.1"
 
 markdown_extensions:
   - admonition

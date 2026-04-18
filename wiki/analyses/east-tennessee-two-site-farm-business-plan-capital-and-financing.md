@@ -3,7 +3,7 @@ title: Capital plan and infrastructure sequencing
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - business-plan
@@ -50,6 +50,10 @@ Sequence **capital** (and selective **financing**) for a **grazing-led**, **two-
 | 4 | Handling **MVP** (sort, load, vet) | Marketing, welfare |
 | 5 | Truck/trailer class adequate for **chosen** exit | Revenue realization |
 | 6 | Telemetry **backbone** after **manual** proof | Trip reduction with accountability |
+
+**County-specific sequencing (Campbell `SITE_FARM` — Demory)** — Vault **WSS** capture shows **steep**, **gravelly** map units over much of a large AOI ([`Demory site intelligence`](demory-farm-site-intelligence.md)): treat **internal lanes**, **drainage**, **gate pads**, and **sediment control** as **Phase 1–2 peers** with fence/water—**not** “later prettification.” **Anderson `SITE_HOME` — Claxton**: prioritize **OSSS/power/ISP truth** before scaling **homelab/broker** CAPEX ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)); **parcel** verification still required.
+
+**What changed**: Local **terrain** evidence **raises** earthwork/lane priority on the **production** county; it does **not** authorize **fence herd scale** without **G1** gates.
 
 ## Phased capital posture
 
@@ -106,6 +110,18 @@ Sequence **capital** (and selective **financing**) for a **grazing-led**, **two-
 
 - Copy **phasing dollars** into [`Capital phasing table — years 0 to 10`](capital-phasing-table-years-0-10-two-site-smart-farm.md) when quotes exist.
 - Add **actual** debt covenants when signed.
+
+## Authoritative program references (FSA / USDA — not application advice)
+
+**Wiki role**: Point to **official** program descriptions and **beginning-farmer** entry pages so **Q1** above is answered with **primary** material, not forum lore.
+
+| Material | Source-note |
+|----------|-------------|
+| FSA loan and state program **pages** (captures) | [`USDA FSA — program pages (captures)`](../source-notes/fsa-program-pages-capture-inbox-2026-04-18.md) |
+| Beginning farmer **resource list** (TN + USDA links) | [`Beginning farmer resources (TN + USDA)`](../source-notes/beginning-farmer-resources-list.md) |
+| farmers.gov beginning farmers hub | [`Beginning farmers and ranchers (USDA farmers.gov)`](../source-notes/beginning-farmers-and-ranchers-usda-farmers-gov.md) |
+
+**Eligibility, deadlines, and forms** change—confirm with **your** FSA office. **Evidence cluster**: [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md).
 
 ## Related pages
 
