@@ -3,7 +3,7 @@ title: Demory farm — site intelligence (Campbell County, Tennessee)
 page_type: analysis
 status: active
 created: 2026-04-22
-updated: 2026-04-23
+updated: 2026-04-24
 tags:
   - two-site
   - site-farm
@@ -85,6 +85,23 @@ aliases:
 | **Labor / travel** | **Heavy** on-site hours; **justify** trips from Claxton with **batching**; **avoid** **daily-touch** enterprises that ignore **distance tax**. |
 | **Automation / telemetry** | **Gateway / backhaul** placement and **power** at **ridge or barn** points; **LoRa/Meshtastic** range and **vegetation** tied to **terrain**. |
 | **Business-plan sequencing** | **Phase 1**: **land intelligence** (soils, water, fence **plan**, **handling** MVP) before **herd scale**; **Phase 2** margin tied to **real** operating cadence—see [`Recommended enterprise strategy`](../analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md). |
+| **Off-grid-first** **power** **+** **field** **network** | **Planning** **default** **:** **solar** **+** **battery** **;** **local** **mesh** **/** **LPWAN** **before** **WAN** **dependency** **—** **see** **canonical** **hub** **below** **.** |
+
+---
+
+## Off-grid-first power and connectivity (canonical)
+
+When **`SITE_FARM`** **is** **modeled** **as** **off-grid-first** **(**solar** **+** **battery** **default** **;** **WAN** **optional** **)** **,** **use** **these** **pages** **(**not** **standalone** **essays** **)** **:**
+
+| Page | Role |
+|------|------|
+| [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) | **Continuous** **vs** **duty-cycled** **loads** **;** **networking** **as** **electrical** **load** **.** |
+| [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) | **Meshtastic** **/** **HaLow** **/** **Wi‑Fi** **roles** **;** **what** **must** **work** **without** **WAN** **.** |
+| [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) | **SOC** **+** **WAN** **failure** **classes** **.** |
+| [`Off-grid operational decision rules — power and networking`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) | **DR-*** **gates** **.** |
+| [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md) | **Reference** **/** **pilot** **/** **degraded** **diagrams** **.** |
+| [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) | **Operational** **comparison** **.** |
+| [`Off-grid power, field RF, and optional WAN — source index`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) | **Raw** **/** **PDF** **provenance** **.** |
 
 ---
 

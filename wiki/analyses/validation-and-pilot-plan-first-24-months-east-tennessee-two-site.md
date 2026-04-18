@@ -3,7 +3,7 @@ title: Validation and pilot plan — first 24 months (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -31,6 +31,51 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 **Local evidence (named counties)** — **V1** soil/slope: **Campbell** vault **WSS** AOI is **steep/gravelly** dominant ([`Demory site intelligence`](demory-farm-site-intelligence.md)); **clip** to **~120 ac** operating polygon and **walk**—AOI total **558.6 ac** in capture **≠** planning acreage. **Claxton** / **Anderson**: **no** WSS AOI in corpus—**run** WSS on **homestead** footprint. **V7** lease: **2024 NASS** **Anderson $28.50** vs **Campbell $27.50** / ac non-irrigated cropland **estimates**—**starting** comps only ([`Claxton`](claxton-home-base-site-intelligence.md), [`comparison`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md)).
 
 **What changed**: Validation tasks **gain county anchors**; **pass/fail** still **parcel**-level.
+
+<h3 id="connectivity-validation">Connectivity validation (Starlink / WAN — first 24 months)</h3>
+
+**Canonical strategy & diagrams**: [`Connectivity strategy — Claxton home base and Demory farm site`](connectivity-strategy-for-claxton-and-demory.md) · [`Execution topology package — two-site smart farm (Mermaid)`](execution-topology-package-two-site-smart-farm.md) · [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md) · [`Network segmentation, site-to-site connectivity, and internet exposure`](network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md) · [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md).
+
+**Sources (hardware facts, not field coverage)**: [`Electrical, networking, and Starlink — inbox batch (2026-04-23)`](../source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md); **supplementary** Mermaid: [`Two-site smart farm — network topology and WAN/edge reference`](two-site-smart-farm-network-topology-and-wan-edge-reference.md).
+
+| Execution deliverable | What “pass” looks like | Typical timing (vs T0) | Gates |
+|----------------------|-------------------------|------------------------|--------|
+| **Site survey / obstruction / placement** | **Sky** **view** **+** **mount** **candidates** **logged** **(photo/map)** **for** **each** **terminal** **or** **CPE** **site**; **re-check** **after** **leaf-on** **if** **trees** **matter** | **Start** **T0+14–30d**; **revisit** **≤** **12** **mo** | Feeds **V10**; **blocks** **“** **we** **mounted** **it** **wrong** **”** **surprises** |
+| **Power and grounding** | **Dedicated** **circuit** **/** **UPS** **plan** **for** **WAN** **CPE** **and** **edge** **router**; **surge/ground** **at** **demarc** **reviewed** **(checklist** **or** **electrician** **)** **before** **WAN** **is** **treated** **as** **production** | **Before** **telemetry** **/** **remote** **admin** **is** **operationally** **relied** **upon** | Ties **manual** **fallback** **power** **domain**; see [`Manual fallback and degraded modes`](manual-fallback-degraded-modes-critical-operations.md), [`Runbook — power loss at remote site`](runbook-power-loss-remote-site.md) |
+| **WAN reliability testing** | **Seasonal** **notebook** **or** **sheet**: **outages**, **rain** **fade**, **handoff** **LTE↔LEO** **(if** **dual** **path** **)** **at** **`SITE_HOME`** **and** **(if** **deployed)** **`SITE_FARM`** **pins** **in** [`pilot checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | **Ongoing** **from** **first** **production** **use**; **minimum** **one** **90-day** **summary** **in** **year** **1** | **V10** **pass** **requires** **honest** **log**, **not** **screenshots** **alone** |
+| **Remote access hardening before operational use** | **Admin** **path** **documented** **(VPN** **/** **outbound** **tunnel** **/** **scoped** **rendezvous** **)** **per** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md); **no** **new** **production** **reliance** **on** **dashboards** **until** **inventory** **complete** | **Before** **expanding** **pilot** **past** **one** **cluster** | Works with **MV-*** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
+
+**Rules — what may depend on Starlink (or any primary LEO/satellite WAN)**
+
+| Allowed WAN-dependent (non-safety) | Notes |
+|-----------------------------------|--------|
+| **Dashboards**, **convenience** **alerts**, **cloud** **MQTT** **egress**, **remote** **peek** **for** **trip** **batching** | **Degraded** **SOP** **required** **when** **WAN** **fades** ([`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md)) |
+| **Optional** **cloud** **history** | **Queue** **/** **buffer** **at** **edge** **where** **possible** |
+
+**Rules — what must remain functional without WAN**
+
+| Must work offline / without Internet | Notes |
+|-------------------------------------|--------|
+| **Physical** **welfare** **checks** **(water,** **escape** **)** | **G8** **manual** **baseline** **—** **MQTT** **silence** **≠** **“** **fine** **”** |
+| **Authoritative** **books** **export** **discipline** | **Cloud** **optional**; **offline** **copy** **policy** **per** **SoR** |
+| **Safe** **defaults** **on** **actuators** **/** **interlocks** | **No** **cloud** **required** **for** **safe** **fail** **state** |
+| **Local** **sensor** **→** **gateway** **path** | **May** **buffer** **uploads**; **field** **mesh** **can** **outlive** **WAN** |
+
+**Cost tracking and stop rules**
+
+| Practice | Stop / freeze trigger |
+|----------|------------------------|
+| **Separate** **ledger** **lines**: **ISP**, **LEO** **subscription**, **cell** **(pilot)**, **spares** | **Quarterly** **review**: **if** **recurring** **WAN** **+** **cell** **stack** **exceeds** **documented** **value** **proxy** **(trip** **$/labor** **saved** **or** **stated** **ops** **benefit** **)** **for** **two** **consecutive** **reviews** **→** **pause** **new** **WAN-dependent** **scope** **until** **fixed**, **downsized**, **or** **pivot** **(see** **CS-*** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) **)** |
+| **No** **second** **farm** **terminal** **/** **redundant** **WAN** **before** **Phase** **1** **proof** | Per [`Connectivity strategy`](connectivity-strategy-for-claxton-and-demory.md), [`Capital plan`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md) |
+
+| Gate | Starlink / LEO WAN angle |
+|------|---------------------------|
+| **V10** (cell/backhaul at critical points) | If **Starlink** **or** **LTE** **is** **the** **planned** **uplink**, **drive-test** **and** **log** **outage** **windows** **(weather,** **obstructions** **)** **—** **not** **just** **bars**. **Pass** = **documented** **“works/doesn’t”** **per** **pin** **+** **degraded** **procedure** **when** **WAN** **fades** **+** **rows** **above** **in** **motion**. |
+| **G8** / **manual baseline** | **Satellite** **WAN** **must not** **shortcut** **physical** **water** **checks**—**MQTT** **silence** **during** **fade** **is** **normal** **risk**. |
+
+**Must not silently become**: a **passed** **V10** **based** **only** **on** **vendor** **maps** **without** **seasonal** **logging** at **`SITE_HOME`** **and** **(if used)** **`SITE_FARM`** **;** **or** **production** **telemetry** **trust** **before** **remote** **access** **hardening** **checklist** **is** **done**.
+
+**What changed because of Starlink analysis**: **V10** **evidence** **can** **explicitly** **cite** **LEO** **uplink** **where** **chosen**; **connectivity** **validation** **is** **now** **a** **first-class** **execution** **track** **(survey,** **power,** **WAN** **log,** **security,** **cost** **stops** **)** **—** **not** **only** **a** **matrix** **row**.
 
 ---
 
@@ -71,7 +116,7 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 | **Processing / haul path** | **Shrink** **and** **slot** **risk** | **Calls** **to** **processors** **+** **distance** **/** **window** **notes**; **haul** **quote** **if** **needed** | $0–$ | 4–8 wk | **All-in** **per** **head** **placeholder** **filled** **(range)** | **Owned** **herd** **scale** **(with** **G1** **)** | V6 |
 | **Lease rate reality** | **Lease** **vs** **graze** **tradeoff** | **Comps** **(legal** **sources** **)** **+** **conversations** | $0–$ | 4–12 wk | **Comparable** **$/ac** **band** | **Lease** **pilot** **terms** | V7 |
 | **Insurance adequacy** | **One** **loss** **can** **wipe** **years** | **Farm** **+** **umbrella** **quotes**; **binder** **review** **checklist** | $–$$ | 2–6 wk | **Named** **perils** **understood**; **gaps** **closed** **or** **accepted** | **Phase** **2** **equipment** **/** **scale** **with** **eyes** **open** | V9 |
-| **Cell / backhaul** **at** **critical** **points** | **Telemetry** **and** **safety** **comms** | **Drive** **test** **+** **map** **screenshots** **at** **tanks** **/** **gates** | $0 | 2–4 wk | **Honest** **“** **works** **/** **doesn’t** **”** **per** **pin** | **Radio** **plan** **(LoRa** **vs** **LTE** **vs** **mesh** **)** | V10 |
+| **Cell / backhaul** **at** **critical** **points** | **Telemetry** **and** **safety** **comms** | **Drive** **test** **+** **map** **screenshots** **at** **tanks** **/** **gates** **;** **plus** [**Connectivity validation**](#connectivity-validation) **(obstruction,** **power,** **WAN** **log,** **remote** **access** **)** | $0 | 2–4 wk **+** **ongoing** | **Honest** **“** **works** **/** **doesn’t** **”** **per** **pin** **with** **seasonal** **WAN** **notes** | **Radio** **plan** **(LoRa** **vs** **LTE** **vs** **mesh** **)** **;** **WAN** **cost** **discipline** | V10 |
 | **Family labor + surge** | **Grid** **lies** **without** **stress** **week** | **8+** **week** **time** **log** **+** **one** **calving** **/** **hay** **/** **escape** **window** | $0 | 8–16 wk | **Surge** **hours** **≤** **policy** **cap** **or** **hire** **/ neighbor** **plan** **exists** | **Automation** **scope**; **enterprise** **breadth** | V11 |
 | **Debt / FSA** **(if** **used** **)** | **Covenant** **risk** | **Lender** **/ FSA** **conversation**; **write** **limits** | $0 | 4–8 wk | **Max** **payment** **and** **trigger** **rules** **in** **writing** | **Financed** **fence** **/** **water** **/** **equipment** | V12 |
 | **Telemetry** **≠** **welfare** **substitute** | **Automation** **fantasy** | **30d** **manual** **baseline** **for** **water** **check** **before** **remote** **actuation** | $0 | 6–8 wk | **Paper** **or** **simple** **log** **matches** **reality** | **Pilot** **sensors** **only** **after** **G8** **-style** **proof** | G8 |
@@ -116,6 +161,7 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 |------------|-------|-----------|---------------|
 | **One** **green** **path** **home** **↔** **field** | **Single** **uplink** **+** **one** **sensor** **class** **(e.g.** **tank** **)** | $–$$ | **No** **stable** **comms** **→** **fix** **comms** **before** **more** **sensors** |
 | **Manual** **before** **dashboard** | **Stick** **/** **schedule** **log** | $0 | **Triage** **hours** **>** **trip** **savings** **→** **stop** **adding** **alerts** |
+| **Connectivity** **validation** **track** | [Connectivity validation](#connectivity-validation) **(obstruction,** **power,** **WAN** **log,** **remote** **access,** **cost** **CS-*** **)** | $0–$$ | **CS-1** **/** **CS-2** **→** **freeze** **WAN-dependent** **scope** **per** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
 
 **Links**: [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md), [`Instrumentation ROI model`](instrumentation-roi-model-two-site-smart-farm.md), [`Telemetry system of record`](telemetry-system-of-record-boundaries-and-authority.md).
 
@@ -190,6 +236,7 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 
 ## Related pages
 
+- [`Automation stop rules` (CS-* / MV-7 — connectivity)](automation-stop-rules-two-site-smart-farm.md)
 - [`Execution dossier hub — Phase 0–1`](execution-dossier-hub-phase-0-1-east-tennessee.md)
 - [`East Tennessee two-site farm business plan — revenue model and milestones`](east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
 - [`Business plan source-ingest campaign`](business-plan-source-ingest-campaign-east-tennessee-two-site.md)

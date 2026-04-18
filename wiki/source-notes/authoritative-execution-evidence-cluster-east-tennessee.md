@@ -3,7 +3,7 @@ title: Authoritative execution evidence cluster — East Tennessee (index)
 page_type: source_note
 status: active
 created: 2026-04-21
-updated: 2026-04-23
+updated: 2026-04-24
 source_ids: []
 tags:
   - tennessee
@@ -93,7 +93,8 @@ confidence: high
 | Topic | Source-note |
 |-------|-------------|
 | Victron / Starlink / Morse Micro PDFs + web captures (2026-04-23) | [`Electrical, networking, and Starlink — inbox batch (2026-04-23)`](electrical-networking-starlink-inbox-batch-2026-04-23.md) |
-| **Topology synthesis** (Mermaid diagrams) | [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) |
+| **Off-grid Demory** — NREL / Victron / Meshtastic / HaLow / Starlink **index** | [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) |
+| **Topology synthesis** (Mermaid diagrams) | [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) · [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) |
 
 ---
 

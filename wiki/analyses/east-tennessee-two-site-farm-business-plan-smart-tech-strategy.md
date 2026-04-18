@@ -3,7 +3,7 @@ title: Smart technology and telemetry strategy — control center on 5 acres
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -28,6 +28,21 @@ Define how **telemetry and automation** support a **two-site** operation where t
 **Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).
 
 **Local evidence (Demory / Campbell)**: **Steep** haul routes and **stock water** risk **favor** **tank/pump/gate** **observability** **before** **broad** sensor sprawl—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **broker** and **backups** stay **home-base**-biased **after** **power/ISP** verified ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)).
+
+## Starlink / WAN role (canonical integration)
+
+**Standalone diagrams and sources** live in [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](two-site-smart-farm-network-topology-and-wan-edge-reference.md) and [`Electrical, networking, and Starlink — inbox batch`](../source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md)—this section only **binds** Starlink to **telemetry strategy**.
+
+| Location | Role | Telemetry implication |
+|----------|------|-------------------------|
+| **`SITE_HOME`** | **Primary or backup LEO WAN** (relative to any future wireline)—**document** which | **Broker**, backups, patch cadence, and **admin VPN** **prefer** stable uplink here; **do not** move “brain” CAPEX ahead of **power + ISP truth** ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)). |
+| **`SITE_FARM`** | **Conditional** when field gateways need **Internet**; **deferred** until **Phase 1** pilot scope is clear | **Observe-first** sensors and **MQTT egress** **depend** on **honest** backhaul planning—**LTE vs Starlink** is an **either/or** design choice, not both by default. |
+
+**Enables**: fewer **blind** nights when **batching** trips; **TLS** to cloud broker; **remote triage** of alerts **if** **safe-default** actuation rules hold.
+
+**Must not silently become**: **permission** to **remote-actuate** gates/pumps without [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md); **reason** to skip **G8**-style **manual baselines**; **default** that **MQTT** **equals** **system of record**—see [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md).
+
+**What changed because of Starlink analysis**: Spec **PDFs** and **captures** give **hardware-class** language (**Mini** vs **Standard / kit**) for **uplink planning**—strategy pages still **avoid** duplicating that prose; they **assign** Starlink to **WAN layer** above **MQTT/field RF**.
 
 ---
 

@@ -3,7 +3,7 @@ title: Electrical, networking, and Starlink — inbox batch (2026-04-23)
 page_type: source_note
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-24
 source_ids:
   - raw/processed/2026/victron-wiring-unlimited-43562-en.pdf
   - raw/processed/2026/nrel-off-grid-solar-module-5-design-modeling-89248.pdf
@@ -31,7 +31,7 @@ confidence: medium
 
 **Purpose**: Single **grounding note** for the **2026-04-23** ingest: **PDFs** (machine extracts beside each) plus **web/article captures** moved from `raw/inbox/` to `raw/processed/2026/`. Use for **provenance** on the **network topology analysis**—not a claim that every source is authoritative for **your** deployment.
 
-**Synthesis**: [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md).
+**Synthesis**: [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md). **Off-grid Demory** (solar+battery default, mesh-first, WAN optional): [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md).
 
 ---
 
@@ -92,4 +92,5 @@ confidence: medium
 
 ## Related
 
+- [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md)
 - [`Authoritative execution evidence cluster — East Tennessee`](authoritative-execution-evidence-cluster-east-tennessee.md)

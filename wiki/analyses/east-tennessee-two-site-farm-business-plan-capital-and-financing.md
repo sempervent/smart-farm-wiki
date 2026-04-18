@@ -3,7 +3,7 @@ title: Capital plan and infrastructure sequencing
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -73,8 +73,12 @@ Sequence **capital** (and selective **financing**) for a **grazing-led**, **two-
 | Livestock + feed | Purchase, mineral, vet |
 | Equipment | Fuel, maintenance, repairs |
 | Labor | Hired help (if any) |
-| Tech | ISP, cell, cloud, spares |
+| Tech | ISP, cell, cloud, spares; **LEO satellite (e.g. Starlink) service + spares** **when** **that** **is** **the** **WAN** |
 | Insurance | Farm, liability, equipment |
+
+**Starlink / farm WAN (sequencing discipline)**: **Defer** a **second** terminal or **redundant** **farm** **uplink** **until** **Phase 1** **comms** **proof**—see [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) **WAN** table and [`Smart technology and telemetry strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md). **Do not** **debt-fund** **gadget** **radios** before **fence/water** gates in this plan’s phasing.
+
+**What changed because of Starlink analysis**: Vault **spec PDFs** define **hardware classes** (**Mini** vs **Standard / kit**)—**OPEX** should **name** **subscription + spare cable/router**, not hide WAN under generic “tech.”
 
 ## Financing checklist (local thresholds)
 

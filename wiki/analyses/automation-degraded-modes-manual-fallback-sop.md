@@ -3,7 +3,7 @@ title: Automation degraded modes and manual fallback SOP
 page_type: analysis
 status: draft
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-24
 tags:
   - sop
   - automation
@@ -37,6 +37,7 @@ confidence: low
 | Class | Signs | Immediate mindset |
 |-------|-------|-------------------|
 | **A — Internet / broker down** | No MQTT messages; HA **unknown** state | **Do not** assume last command ran; **verify physical** |
+| **A2 — LEO satellite WAN impaired** (e.g. **Starlink** fade) | **Same** **symptoms** **as** **A** **if** **uplink** **is** **satellite**; **may** **recover** **without** **your** **action** | **Do not** **chase** **MQTT** **during** **storm**—**execute** **manual** **rounds** **per** [`Manual fallback`](manual-fallback-degraded-modes-critical-operations.md) |
 | **B — Sensor lying** | Tank reads empty but is full, or vice versa | **Disable auto** that acts on that sensor until recalibrated |
 | **C — Actuator stuck / partial** | Valve half, gate motor humming, pump cavitating | **Manual disconnect** per equipment **label**—**if not labeled, stop and label** |
 | **D — Logic bug / bad rule** | Water runs at wrong time; gate opens on schedule error | **Disable rule** at controller; not just “fix tomorrow” |

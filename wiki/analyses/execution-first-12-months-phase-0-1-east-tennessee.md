@@ -3,7 +3,7 @@ title: First 12 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ confidence: medium
 **T0 → T0+12 months**: deepen **Phase 0–1** proofs **without** **scaling** into **Phase 2** **unless** **G1** **is** **actually** **green** (most families: **prepare** **G1** in **year** **1**, **pass** **in** **year** **2**).
 
 **Spine**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md).
+
+**Connectivity validation (year 1)** — obstruction **re-check** **(leaf-on)**, **WAN** **90-day** **summary**, **remote** **access** **audit**, **quarterly** **WAN** **cost** **vs** **value**: [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
 
 **Local evidence**: **Months 4–6** **fence/road** scoping on **Campbell** should assume **earthwork** and **drainage** may **co-own** the quote with **perimeter**—[`Demory site intelligence`](demory-farm-site-intelligence.md). **V7** comps: cite **2024 NASS** **Anderson** vs **Campbell** **cropland** rent **estimates** as **ballpark** ([`comparison`](../comparisons/anderson-county-vs-campbell-county-operating-implications.md)).
 
@@ -41,6 +43,18 @@ Finish anything **open** from the **90-day** exit checklist. **Priority**: **V2*
 | **Labor** | **W1** **done**; **W3** **weekly** **rhythm** **rev** | **V11** |
 
 **Forbidden**: **Full** **perimeter** **fence** **CAPEX** **without** **G1**; **owned** **herd** **above** **proven** **capacity**; **financed** **equipment** **without** [`major-spend`](validation-backlog-before-major-spend-two-site-smart-farm.md) **gates**.
+
+---
+
+## Months 4–12 — Connectivity validation (WAN / Starlink)
+
+| Window | Do | Links |
+|--------|-----|--------|
+| **Months 4–6** | **Leaf-on** **obstruction** **re-pass** **for** **`SITE_HOME`** **terminal** **/** **CPE** **(if** **trees** **)**; **complete** **power** **/** **grounding** **checklist** **before** **declaring** **WAN** **“** **production** **”** | [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation) |
+| **Months 7–9** | **First** **90-day** **WAN** **reliability** **summary** **(outages,** **fade,** **LTE** **handoff** **)** **filed** **;** **V10** **evidence** **updated** **beyond** **screenshots** | **V10** **;** [`Runbook — broker or backhaul down`](runbook-broker-or-backhaul-down.md) **drill** **optional** |
+| **Months 10–12** | **Remote** **access** **hardening** **review**: **inventory** **matches** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **before** **any** **second** **sensor** **cluster** **;** **quarterly** **WAN** **cost** **vs** **value** **review** **(apply** **CS-*** **if** **needed** **)** | [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
+
+**Rules reminder**: **May** **depend** **on** **Starlink** **/** **WAN** **for** **convenience** **telemetry** **and** **egress** **;** **must** **not** **depend** **on** **it** **for** **welfare** **proof** **or** **books** **without** **offline** **discipline** **—** **tables** **on** [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
 
 ---
 

@@ -3,7 +3,7 @@ title: First 90 days — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ confidence: medium
 **Actionable** first **90 days** after **T0** (execution start—[`dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md)). **Pilot-grounded** tasks only; **no** **scale** bets.
 
 **Boundaries**: [`Decision memo — Phase 0–1`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md). **Ordered tasks**: [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md).
+
+**Connectivity validation (WAN / Starlink track)** — survey, power, reliability log, remote-access readiness, cost lines: [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation) · [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md). **Parallel** tasks below **overlap** **V10** **and** **G8**.
 
 **Local evidence**: **Days 15–30** **V1** on **Demory** / **Campbell** must **reconcile** processed WSS AOI (large, **sloped**) with **~120 ac** **operating** map—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **open** **WSS** on **homestead** AOI; **no** vault substitute.
 
@@ -74,6 +76,21 @@ confidence: medium
 
 ---
 
+## Days 1–90 — Connectivity validation (parallel)
+
+| Window | Focus | Pass (minimum) |
+|--------|--------|----------------|
+| **Days 1–30** | **Obstruction / placement**: **photo + map** **candidates** **for** **`SITE_HOME`** **WAN** **mount** **(Starlink** **/** **CPE** **)**; **note** **trees** **/** **roof** **line** | Log **exists** **before** **hardware** **commit** **(see** [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation) **)** |
+| **Days 31–60** | **Power / grounding**: **intent** **for** **dedicated** **branch** **/** **UPS** **for** **CPE** **+** **edge**; **surge** **at** **demarc** **on** **checklist** **or** **sparky** **visit** **scheduled** | **Two** **people** **know** **shutdown** **order** **for** **WAN** **gear** |
+| **Days 61–90** | **WAN reliability testing**: **start** **weekly** **honest** **up/down** **+** **weather** **notes** **(not** **only** **bar** **icons** **)** **toward** **V10** | **Notebook** **or** **sheet** **started** **;** **one** **bad-weather** **event** **captured** **if** **possible** |
+| **Before** **treating** **telemetry** **as** **trip** **input** | **Remote access hardening**: **inventory** **admin** **path** **per** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **(VPN** **/** **outbound** **tunnel** **)** | **No** **“** **inbound** **to** **field** **”** **shortcuts** **documented** **as** **production** |
+
+**Dependency rules (90-day horizon)** — **May** **depend** **on** **Starlink** **/** **WAN** **for**: **convenience** **dashboards**, **remote** **peek**, **non-welfare** **alerts**. **Must not** **depend** **on** **WAN** **for**: **welfare** **verification**, **books** **authority** **without** **offline** **export**, **safe** **defaults** **at** **edge** **—** **full** **tables**: [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
+
+**Cost**: **Tag** **ISP** **+** **LEO** **+** **cell** **(pilot)** **in** **books** **as** **separate** **lines** **;** **first** **quarterly** **WAN** **vs** **value** **review** **no** **later** **than** **T0+90d** **(see** **CS-*** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) **)**.
+
+---
+
 ## End of day 90 — “Done enough” checklist
 
 - [ ] **V8** **no** **fatal** **surprise** **or** **written** **path**
@@ -81,6 +98,7 @@ confidence: medium
 - [ ] **V5** **+** **V6** **have** **first** **evidence** **rows** **(not** **necessarily** **complete** **)**
 - [ ] **V11** **8-week** **log** **complete** **or** **in** **final** **week**
 - [ ] **G8** **manual** **baseline** **complete** **or** **scheduled** **to** **complete** **≤** **T0+120d**
+- [ ] **Connectivity**: **`SITE_HOME`** **placement** **/** **obstruction** **log** **started** **;** **WAN** **reliability** **notebook** **started** **(V10** **track** **)** **;** **CPE** **power** **/** **grounding** **plan** **or** **ticket** **open** **;** **remote** **access** **inventory** **started** **per** [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation)
 
 ---
 

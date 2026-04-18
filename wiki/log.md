@@ -671,3 +671,66 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Navigation**: [`index.md`](index.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md).
 - Validator: `validate_wiki.py --strict`; `mkdocs build --strict`.
 
+
+---
+
+## [2026-04-24] refactor | Starlink / LEO WAN — canonical integration (two-site ops, not standalone topology)
+
+- **Intent**: Fold **Starlink / satellite WAN posture** into the **owning** analyses so it is operationally actionable; keep [`two-site-smart-farm-network-topology-and-wan-edge-reference.md`](analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) as **diagram + detail** without duplicating its prose elsewhere.
+- **Updated** (per-site **primary / backup / conditional / deferred**, enables vs **must-not** silent dependencies, validation/capital hooks): [`two-site-operations-model-5ac-homebase-120ac-production.md`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md), [`east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`remote-access-operational-security-model-two-site-smart-farm.md`](analyses/remote-access-operational-security-model-two-site-smart-farm.md), [`manual-fallback-degraded-modes-critical-operations.md`](analyses/manual-fallback-degraded-modes-critical-operations.md), [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md), [`validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md), [`east-tennessee-two-site-farm-business-plan-capital-and-financing.md`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md).
+- **Hub / nav**: [`index.md`](index.md) (topology line → **canonical integration** link set), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) (Telemetry + SoR row: topology + ops/strategy ownership).
+- **Sources**: batch hub [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-24] query | Canonical connectivity strategy — Claxton & Demory (two-site WAN)
+
+- New [`connectivity-strategy-for-claxton-and-demory.md`](analyses/connectivity-strategy-for-claxton-and-demory.md): **Starlink/LTE/terrestrial** roles per **`SITE_HOME`** / **`SITE_FARM`**, local vs WAN-dependent systems, power/cost/security, WAN-required vs **WAN-loss-tolerant** farm functions, **pilot vs scale** expectations; links **topology** Starlink analysis, **reference architecture**, **degraded-mode** runbooks, **business plan** execution spine.
+- [`index.md`](index.md) (business-plan block + analyses), [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (operational artifacts), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) (Telemetry + SoR row), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) (business-plan links line).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-24] refactor | Execution topology package — reference, pilot, degraded Mermaid
+
+- New [`execution-topology-package-two-site-smart-farm.md`](analyses/execution-topology-package-two-site-smart-farm.md): **three** **execution-safe** diagrams (**full reference**, **Phase 0/1 pilot**, **WAN-out degraded**) with **legend** (Z1/Z2/Z3, WAN-dependent vs **local-only survivable**), interpretation under each, links to [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`connectivity-strategy-for-claxton-and-demory.md`](analyses/connectivity-strategy-for-claxton-and-demory.md), degraded pages, **runbooks** (`runbook-broker-or-backhaul-down`, `runbook-power-loss-remote-site`), [`remote-access-operational-security-model-two-site-smart-farm.md`](analyses/remote-access-operational-security-model-two-site-smart-farm.md). **Mermaid** already enabled in [`mkdocs.yml`](../../mkdocs.yml).
+- Wired: [`two-site-smart-farm-network-topology-and-wan-edge-reference.md`](analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) (pointer to execution package), [`connectivity-strategy-for-claxton-and-demory.md`](analyses/connectivity-strategy-for-claxton-and-demory.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) (package map row 1), [`index.md`](index.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md).
+- Validator: `validate_wiki.py --strict`; `mkdocs build --strict`.
+
+
+---
+
+## [2026-04-24] refactor | Connectivity validation in first-24-months execution plan
+
+- [`validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md): **`#connectivity-validation`** (survey/obstruction, power/grounding, WAN reliability testing, remote access hardening, Starlink **may**/**must-not**, cost + **CS-*** stops); **V10** matrix row; pilot **§2.4** row; Related → **Automation stop rules**.
+- Execution dossier: [`execution-first-90-days-phase-0-1-east-tennessee.md`](analyses/execution-first-90-days-phase-0-1-east-tennessee.md), [`execution-first-12-months-phase-0-1-east-tennessee.md`](analyses/execution-first-12-months-phase-0-1-east-tennessee.md), [`execution-first-24-months-phase-0-1-east-tennessee.md`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md).
+- [`automation-stop-rules-two-site-smart-farm.md`](analyses/automation-stop-rules-two-site-smart-farm.md): **CS-1–CS-4**, **MV-7**.
+- [`index.md`](index.md).
+- Validator: `validate_wiki.py --strict`; `mkdocs build --strict`.
+
+
+---
+
+## [2026-04-24] refactor | Network segmentation + hardened remote-access model (Starlink / WAN layer)
+
+- New [`network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md`](analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md): **site-to-site** assumptions (no flat L2 across commute, overlay, outbound-first field), **segmentation** by device class (user, admin, edge, gateway, telemetry, cameras), **VPN/overlay** policy, **internet** **reachable** vs **never** **directly** **exposed**, **Starlink** **home** **vs** **farm** security implications; ties to runbooks, degraded modes, [`validation plan` § Connectivity](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation), **business** **plan** **package**.
+- [`remote-access-operational-security-model-two-site-smart-farm.md`](analyses/remote-access-operational-security-model-two-site-smart-farm.md): **active** **canonical** **;** **Starlink** **as** **transport-not-trust** table **;** **Execution** **and** **validation** **hooks** **(MV-6,** **MV-7,** **CS-3,** **connectivity** **validation** **)** **;** **links** **segmentation** **page** **.**
+- [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) package map **row** **8** **;** [`connectivity-strategy-for-claxton-and-demory.md`](analyses/connectivity-strategy-for-claxton-and-demory.md) **;** [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) **;** [`index.md`](index.md).
+- Validator: `validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-24] ingest | Off-grid Demory — power, mesh, HaLow, Meshtastic, Starlink (canonical synthesis)
+
+- **Sources** (already under `raw/processed/2026/`; indexed, not re-ingested): NREL off-grid solar module 5 (design/modeling) and module 6 (installation, O&M); Victron *Wiring Unlimited* and numbered DC/AC wiring web captures; Morse Micro MM6108/MM8108 datasheets; Meshtastic getting started and power configuration captures; Wi‑Fi HaLow / sub‑GHz / OpenWrt article captures; Starlink spec PDFs and farm-WAN article captures. Full paths: [`off-grid-power-rf-wan-source-index-demory-planning-2026-04.md`](source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md), [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md).
+- **Source index / cluster**: [`off-grid-power-rf-wan-source-index-demory-planning-2026-04.md`](source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md); [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md); [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md).
+- **Analyses**: [`off-grid-power-strategy-demory-farm-site.md`](analyses/off-grid-power-strategy-demory-farm-site.md), [`mesh-and-field-networking-strategy-off-grid-demory-farm.md`](analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`off-grid-degraded-modes-power-and-connectivity-demory-farm.md`](analyses/off-grid-degraded-modes-power-and-connectivity-demory-farm.md), [`off-grid-operational-decision-rules-power-and-networking-demory-farm.md`](analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md), [`off-grid-farm-execution-topology-demory-mermaid.md`](analyses/off-grid-farm-execution-topology-demory-mermaid.md) (Mermaid reference / pilot / degraded, Pcrit/Popt).
+- **Comparison**: [`meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md`](comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md); [`lorawan-vs-meshtastic-fixed-farm-telemetry.md`](comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md) (cross-link).
+- **Hub / integration**: [`demory-farm-site-intelligence.md`](analyses/demory-farm-site-intelligence.md) (Off-grid-first section); [`connectivity-strategy-for-claxton-and-demory.md`](analyses/connectivity-strategy-for-claxton-and-demory.md); [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) package row 9; [`execution-topology-package-two-site-smart-farm.md`](analyses/execution-topology-package-two-site-smart-farm.md); [`manual-fallback-degraded-modes-critical-operations.md`](analyses/manual-fallback-degraded-modes-critical-operations.md); [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md); [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md); [`index.md`](index.md).
+- **Remaining unknowns**: metered Wh/day for field networking; exact PV kW and battery kWh; genset presence and policy; permit/AHJ for fixed towers; field RF map at Demory coordinates (not in vault).
+- Validator: `uv run python scripts/validate_wiki.py --strict`; `uv run mkdocs build --strict`.
+

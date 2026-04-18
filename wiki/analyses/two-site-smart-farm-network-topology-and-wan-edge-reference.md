@@ -3,7 +3,7 @@ title: Two-site smart farm — network topology and WAN/edge reference (Mermaid)
 page_type: analysis
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-24
 tags:
   - two-site
   - networking
@@ -23,6 +23,8 @@ review_status: unreviewed
 # Two-site smart farm — network topology and WAN/edge reference (Mermaid)
 
 **Purpose**: A **reference-only** view of how **WAN**, **two physical sites**, **field RF**, and **DC electrical context** fit together for the **East Tennessee two-site** scenario. **Not** a deployed design—labels are **logical**. **Diagrams** use **Mermaid** (enabled in [`mkdocs.yml`](../../mkdocs.yml) via `mkdocs-mermaid2-plugin`).
+
+**Execution-oriented topology (three views)** — **reference vs pilot vs degraded** with **trust boundaries** and **WAN vs local survivable** paths: [`Execution topology package — two-site smart farm (Mermaid)`](execution-topology-package-two-site-smart-farm.md). Use that page **first** for **ops** and **runbook** alignment; **this** page keeps **telemetry plane**, **DC**, and **HaLow vs mesh** **overlays**.
 
 **Provenance batch** (PDFs + captures): [`Electrical, networking, and Starlink — inbox batch (2026-04-23)`](../source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md). **Canonical stack narrative** (no diagrams): [`Reference architecture — 5-acre home base + 120-acre farm`](reference-architecture-5ac-homebase-120ac-smart-farm.md), [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md).
 

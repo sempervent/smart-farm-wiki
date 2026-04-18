@@ -3,7 +3,7 @@ title: First 24 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - business-plan
@@ -20,7 +20,7 @@ confidence: medium
 
 **Entry**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md).
 
-**Detail layer**: [`Validation and pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) (full matrix + cheap proofs).
+**Detail layer**: [`Validation and pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) (full matrix + cheap proofs). **Connectivity validation** (survey, power, WAN testing, remote access, Starlink **may/must-not**, cost stops): [`Validation plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
 
 **Local evidence**: By **T0+24mo**, **either** **parcel-true** soil/water maps exist for **Claxton** and **Demory**, **or** **G1** waivers **document** why not—county **NASS** + vault **WSS** **alone** are **not** **G1**.
 
@@ -48,6 +48,7 @@ confidence: medium
 | **T0+90d** | Continue **vs** **pause** **spend** **on** **recon** | **90-day** **exit** **checklist** ([`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md)) |
 | **T0+12mo** | **G1** **ready** **for** **formal** **review** **?** | **V1–V4** **+** **V8** **+** **V6** **path** |
 | **T0+18–24mo** | **Enter** **Phase** **2** **CAPEX** **?** | **G1** **PASS** **+** [`major-spend`](validation-backlog-before-major-spend-two-site-smart-farm.md) **rows** |
+| **T0+12mo** **and** **T0+24mo** **(review)** | **WAN** **/** **Starlink** **recurring** **cost** **vs** **documented** **value** **proxy** **—** **continue** **/** **trim** **/** **freeze** **scope** **?** | **Quarterly** **ledger** **lines** **+** **CS-*** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) **;** [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation) |
 
 ---
 
@@ -56,6 +57,8 @@ confidence: medium
 - **Financed** **loader** / **hay** **line** **without** **hours** **proof** **+** **hire** **quote** ([`Remediation` §3](east-tennessee-two-site-farm-business-plan-remediation-backlog.md))
 - **Second** **enterprise** **if** **V11** **surge** **uncovered**
 - **Telemetry** **fleet** **if** **triage** **>** **benefit** ([`Stop rules`](automation-stop-rules-two-site-smart-farm.md))
+- **Second** **farm** **WAN** **terminal** **/** **redundant** **uplink** **without** **Phase** **1** **connectivity** **proof** **and** **capital** **gate** ([`Connectivity strategy`](connectivity-strategy-for-claxton-and-demory.md), [`Capital plan`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md))
+- **Expanding** **cloud** **/** **WAN-dependent** **automation** **while** **CS-1** **/** **CS-2** **(connectivity** **stops** **)** **are** **red** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)
 
 ---
 

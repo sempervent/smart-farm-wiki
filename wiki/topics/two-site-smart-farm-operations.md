@@ -3,7 +3,7 @@ title: Two-site smart farm operations
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-23
+updated: 2026-04-24
 tags:
   - two-site
   - operations
@@ -28,7 +28,7 @@ review_status: unreviewed
 |---------|-----------------|--------|
 | **Business plan (ET)** | [`Package hub`](../business-plan/east-tennessee-two-site-farm-business-plan.md) + [`Planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) | Chapters are supporting; **not** parallel “strategy blogs.” |
 | **Two-site ops (named sites)** | [`Two-site operating model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) + [`Trip policy`](../analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md) + [`Disqualifiers`](../analyses/two-site-structure-disqualifiers-east-tennessee.md) | **35-min distance tax** is structural. Generic pattern: [`Dual-site — non-agritourism`](../analyses/dual-site-operations-model-non-agritourism.md). **Entities**: [`SITE_HOME`](../entities/five-acre-home-base-site-home-et-two-site.md), [`SITE_FARM`](../entities/120-acre-production-farm-site-farm-et-two-site.md). |
-| **Telemetry + SoR** | [`Reference architecture`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`SoR boundaries`](../analyses/telemetry-system-of-record-boundaries-and-authority.md), [`Field telemetry ref arch`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md) | **Entity**: [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). |
+| **Telemetry + SoR** | [`Execution topology package (Mermaid)`](../analyses/execution-topology-package-two-site-smart-farm.md), [`Connectivity strategy — Claxton & Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md), [`Remote access & security`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md), [`Network segmentation & internet exposure`](../analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md), [`Reference architecture`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`SoR boundaries`](../analyses/telemetry-system-of-record-boundaries-and-authority.md), [`Field telemetry ref arch`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`Network topology (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) | **Ops-first** diagrams + **WAN** + **Z1/Z2** **segmentation** **policy**; **WAN** detail also in [`Two-site operations model`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) + [`Smart tech strategy`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md). **Entity**: [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). |
 | **Land IDs** | [`Farm spatial model / asset registry`](../analyses/farm-spatial-model-and-asset-registry-standard.md) | **Entity**: [`Farm parcels and land units`](../entities/farm-parcels-and-land-units.md). |
 | **Water / power infra** | Topic hubs + runbooks (see tables below) | **Entities**: [`Farm water infrastructure system`](../entities/farm-water-infrastructure-system.md), [`Farm on-site power system`](../entities/farm-on-site-power-system.md). |
 | **Regulatory & site evidence (TN / federal)** | [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md), [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) | Soils, NASS rents, DOR/ag exemption, FSA captures, septic, CISA—**index**, not legal advice. |
@@ -68,7 +68,9 @@ review_status: unreviewed
 | [`Farm spatial model / asset registry`](../analyses/farm-spatial-model-and-asset-registry-standard.md) | IDs + map |
 | [`Instrumentation priority matrix`](../analyses/instrumentation-priority-matrix-two-site-smart-farm.md) | First acres/risks/systems + ROI ranking |
 | [`Automation principles`](../analyses/automation-principles-two-site-smart-farm.md) | Early / late / never |
-| [`Remote access and operational security model`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md) | Admin + zones |
+| [`Remote access and operational security model`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md) | Admin + zones + **MV**/**CS** hooks |
+| [`Network segmentation, site-to-site, internet exposure`](../analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md) | Cameras/gateways/telemetry/admin/user policy; exposure table |
+| **Off-grid `SITE_FARM` (Demory)** | [`Demory site intelligence`](../analyses/demory-farm-site-intelligence.md) **§** **Off-grid-first** **;** [`Off-grid power`](../analyses/off-grid-power-strategy-demory-farm-site.md) **;** [`Mesh/field RF`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) **;** [`Off-grid topology (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) **;** [`Meshtastic vs HaLow vs Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) |
 | [`Smart technology and telemetry strategy — control center on 5 acres`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) | **AA/AF/PA/SO** controls; execution-safe strategy |
 | [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md) | **NS/MV** no-scale gates; Phase 1 **observe-only** table |
 

@@ -3,7 +3,7 @@ title: Automation stop rules — two-site smart farm
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - automation
@@ -40,6 +40,23 @@ Freeze fleet expansion or roll back to pilot scope if **any** row below holds af
 
 ---
 
+## Connectivity and WAN stop rules (CS-*)
+
+Use when **Starlink**, **LTE**, **fiber**, or **any** **primary** **WAN** **path** **is** **part** **of** **the** **stack** **—** **see** [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation), [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md).
+
+**Freeze** new **WAN-dependent** **scope** (cloud integrations, second **sensor** **cluster**, **second** **farm** **uplink**, **tighter** **alert** **routing** **to** **phone**) **if** **any** **row** **holds** **after** **one** **documented** **remediation** **attempt**:
+
+| ID | Condition | Evidence |
+|----|-----------|----------|
+| **CS-1** | **Recurring** **WAN** **+** **cell** **(pilot)** **costs** **exceed** **stated** **value** **proxy** **(trip** **$/labor** **saved** **or** **written** **ops** **benefit** **)** **for** **two** **consecutive** **quarterly** **reviews** | **Separate** **ledger** **lines** **per** **connectivity** **validation** **;** **family** **decision** **to** **trim**, **pause**, **or** **pivot** |
+| **CS-2** | **Primary** **uplink** **in** **production** **use** **≥** **90** **days** **but** **no** **seasonal** **WAN** **reliability** **log** **(outages,** **fade,** **handoff** **)** | **V10** **incomplete** **—** **treat** **uplink** **as** **unproven** |
+| **CS-3** | **Remote** **access** **inventory** **does** **not** **match** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **(no** **inbound** **to** **field** **without** **controlled** **tunnel** **)** **before** **expanding** **pilot** | **Security** **stop** **—** **complete** **inventory** **first** |
+| **CS-4** | **Operational** **reliance** **on** **dashboards** **/** **MQTT** **for** **welfare** **or** **“** **should** **I** **drive** **?”** **while** **G8** **/** **WAN** **degraded** **drill** **not** **passed** | **Revert** **to** **manual** **rounds** **per** [`Manual fallback and degraded modes`](manual-fallback-degraded-modes-critical-operations.md) |
+
+**CS-*** **stack** **with** **NS-***: **connectivity** **fragility** **can** **justify** **a** **freeze** **even** **when** **false-positive** **rates** **look** **fine**.
+
+---
+
 ## What must be manually validated before rollout
 
 **Rollout** = production reliance on an instrument for operations, or first actuation enable.
@@ -52,6 +69,7 @@ Freeze fleet expansion or roll back to pilot scope if **any** row below holds af
 | **MV-4** | Degraded-mode drill: broker down / LTE only — document who drives and how often |
 | **MV-5** | Runbook link for this instrument class (triage, mute policy, escalation) |
 | **MV-6** | Cyber: remote surface inventoried for this cluster |
+| **MV-7** | **WAN** **outage** **/** **Starlink** **fade** **drill** **documented** **(seasonal** **or** **simulated** **)** **per** [`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md) **/** [`Runbook — broker or backhaul down`](runbook-broker-or-backhaul-down.md) **—** **who** **reverts** **to** **physical** **checks** **when** **WAN** **is** **impaired** |
 
 Missing **any** **MV-*** → no fleet rollout and no actuation.
 
@@ -77,6 +95,7 @@ Remote actuation (pump control, gate motor, irrigation writes) requires exiting 
 ## Related
 
 - [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md)
+- [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation)
 - [`Runbook — sensor false positive and alert triage`](runbook-sensor-false-positive-alert-triage.md)
 - [`Execution gates — financial thresholds`](execution-gates-financial-thresholds.md)
 - [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md)

@@ -3,7 +3,7 @@ title: Manual fallback and degraded modes — critical operations
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - operations
@@ -23,6 +23,10 @@ List **critical operations** for the **two-site** **grazing-led** **operation** 
 
 **Parent SOP**: [`Automation degraded modes and manual fallback`](automation-degraded-modes-manual-fallback-sop.md)
 
+**Starlink / LEO WAN**: Integrated **operating assumption**—see [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) (WAN table). **Outages** are **weather/obstruction**-sensitive; **degraded** behavior is **not** optional.
+
+**Off-grid farm (`SITE_FARM` / Demory)**: **Power** **and** **WAN** **can** **fail** **together** **or** **separately** **—** [`Off-grid degraded modes — power and connectivity (Demory)`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) **,** [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md) **.**
+
 ---
 
 ## Scenario model (explicit)
@@ -33,6 +37,7 @@ Design degraded behavior for travel, outages, sensor failure, comms failure, and
 |----------|-------------|----------------|-------------------|-----------|
 | `COMMUTE_ONE_WAY` too long for urgency | Time to site | Tier risk; neighbor / call tree | Reduce closed-loop dependence | Extra checks or hired relief |
 | Backhaul down (farm → hub internet) | Remote visibility | Assume stale data; physical round | Increase visit frequency (bounded) | Trip count ↑ |
+| **LEO satellite WAN impaired** (e.g. **Starlink** rain fade / obstruction / power at terminal) | Same as backhaul if **farm** or **home** **uplink** **is** satellite | Treat as **comms down** for **remote trust**; **verify** **physical** **water/gates** | **Paper** **rounds**; **defer** **non-critical** **cloud** **work** | Trip or **local** **operator** at **field** |
 | Broker / cloud down | MQTT / integrations | Disable auto acting on stale topics | Local safe defaults | Triage ↓ if alerts quiet (dangerous calm) |
 | Sensor wrong (Class B) | Bad input to logic | Triage runbook; manual measure | Remove sensor from control until fixed | Debug time |
 | Maintenance backlog (unpatched / dirty sensors) | Drift, false alarms | Mute is not fix—clean, calibrate, replace | Fewer channels until healthy | Ops hours or contract |
@@ -81,6 +86,8 @@ Add **O7+** for **your** **context** (loading, **hay** **barn**, **cold** **stor
 | **Known** | Vault **runbooks** **exist** **for** **broker**, **power**, **triage**, **water** **manual** |
 | **Assumed** | **Vehicle** **always** **available** **for** **emergency** **trip** |
 | **Open** | **Neighbor** **call** **list**; **vet** **after-hours** |
+
+**What changed because of Starlink analysis**: **Satellite WAN** is **named** as a **common** **uplink**—degraded-mode planning **must** include **LEO** **outage** behavior, not only **“broker down.”**
 
 ## Links
 

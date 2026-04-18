@@ -3,7 +3,7 @@ title: Two-site operating model — 5-acre home base and 120-acre farm
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-24
 review_status: unreviewed
 tags:
   - two-site
@@ -73,6 +73,21 @@ For a **production-led** two-site layout **without** the East Tennessee plan’s
 | Livestock handling, stored feed, equipment | `SITE_FARM` | Mass and mess stay off the 5 ac |
 | CAD, 3D printing for jigs/repair parts | `SITE_HOME` | Design at home; install at `SITE_FARM` |
 | Authoritative business records | Choose one: `SITE_HOME` + cloud, or cloud with **offline export** | Write the choice in [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) or farmOS policy |
+
+### Starlink / satellite WAN — where it sits (canonical)
+
+**Topology reference** (diagrams, not a bill of materials): [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](two-site-smart-farm-network-topology-and-wan-edge-reference.md).
+
+| Site | Starlink / LEO broadband **role** | Notes |
+|------|-------------------------------------|--------|
+| **`SITE_HOME`** | **Primary WAN candidate** *or* **backup** to fiber/cable | In many rural parcels, **satellite broadband is the first stable Internet**—treat wireline as **prove-it**. If **both** exist, define **which is primary** and **failover** in a private runbook. |
+| **`SITE_FARM`** | **Conditional** uplink **or** **deferred** | Often **no** trench-grade wireline: Starlink (or **LTE**) can be **primary farm Internet** **when** remote visibility and egress justify **hardware + subscription**. **Defer** a **second** terminal until **Phase 1** comms/traffic proof—avoid **duplicating** “brains” without labor ROI. |
+
+**Enables**: batched trips with **remote checks**, VPN paths for admin, cloud/TSDB egress from field gateways, voice/maps when driving.
+
+**Must not silently become**: a reason to skip **physical** water/fence checks; **assumed** bandwidth for **camera mesh everywhere**; **only** path for **books** without **offline export**; **unexamined** **single-SKU** dependency without **weather/outage** rehearsal.
+
+**What changed because of Starlink analysis**: WAN is **named** (Starlink **Mini vs Standard** spec PDFs in [`electrical batch source-note`](../source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md)) instead of a generic “internet TBD,” so **distance-tax** and **trip batching** can be tied to **honest uplink** expectations.
 
 ---
 

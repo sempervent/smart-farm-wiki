@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan (package)
 page_type: topic
 status: active
 created: 2026-04-21
-updated: 2026-04-23
+updated: 2026-04-24
 tags:
   - business-plan
   - two-site
@@ -71,6 +71,9 @@ aliases:
 Linked from the framework; same targets as [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md) **Operations & logistics** / **Resilience** tables.
 
 - [`Two-site operating model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
+- [`Connectivity strategy — Claxton home base and Demory farm site`](../analyses/connectivity-strategy-for-claxton-and-demory.md) — **Canonical WAN** (Starlink, LTE, terrestrial); pilot vs scale; security and degraded hooks.
+- [`Execution topology package — two-site smart farm (Mermaid)`](../analyses/execution-topology-package-two-site-smart-farm.md) — **Reference / pilot / degraded** diagrams; trust zones; runbook links.
+- **Demory / `SITE_FARM` off-grid-first** — [`Demory farm — site intelligence`](../analyses/demory-farm-site-intelligence.md) **§** **Off-grid-first** **;** [`Off-grid power strategy — Demory farm site`](../analyses/off-grid-power-strategy-demory-farm-site.md) **;** [`Mesh and field networking strategy — off-grid Demory farm`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) **;** [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) **;** [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md).
 - [`Family labor model and coverage matrix`](../analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md)
 - [`Instrumentation priority matrix`](../analyses/instrumentation-priority-matrix-two-site-smart-farm.md)
 - [`Capital phasing table — years 0–10`](../analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md)
