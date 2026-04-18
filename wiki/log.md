@@ -142,5 +142,47 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - `mkdocs.yml` sets `docs_dir: wiki` and relaxes MkDocs link validation for `raw/` URLs not present in the site tree; GitHub Pages workflow still runs `mkdocs build --strict`.
 - `.gitignore` keeps `raw/**` out of commits except `**/.gitkeep`; removed `raw/README.md` and the demo processed note from version control (files remain locally). Added `raw/processed/2026/.gitkeep` for directory layout.
-- Updated [`docs/operations/publishing.md`](docs/operations/publishing.md) and [`README.md`](README.md) to describe the split: published wiki vs in-repo `docs/` handbook.
+- Updated [`docs/operations/publishing.md`](../../docs/operations/publishing.md) and [`README.md`](../../README.md) to describe the split: published wiki vs in-repo `docs/` handbook.
+
+---
+
+## [2026-04-17] query | Stocking and enterprise mix for 120 acres vs 5 acres (automation on larger farm)
+
+- Research brief and copy-paste prompt in [`analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md`](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md); links to livestock, cropping, precision ag, and farm-data topic hubs for follow-up ingests.
+
+---
+
+## [2026-04-17] lint | Wiki link targets from `log.md`
+
+- Adjusted paths to [`docs/operations/publishing.md`](../../docs/operations/publishing.md) and [`README.md`](../../README.md) in [`log.md`](log.md) so `validate_wiki.py` resolves repo-root files from `wiki/`.
+
+---
+
+## [2026-04-18] refactor | Repository analysis wiki page
+
+- Added [`analyses/repository-analysis.md`](analyses/repository-analysis.md) (layout, tooling, CI, corpus counts, risks); linked from [`index.md`](index.md) **Overview** and **Analyses** and from [`overview.md`](overview.md) step 4.
+
+---
+
+## [2026-04-18] query | Domain content strands (synthesis)
+
+- Added [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md) mapping land/water, regional business, LPWAN/mesh, edge compute, solar, home automation overlap, and time/PNT to topic hubs; linked from [`index.md`](index.md) **Overview** and **Analyses** and [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md); [`overview.md`](overview.md) step 5. Adjusted counts in [`analyses/repository-analysis.md`](analyses/repository-analysis.md).
+
+---
+
+## [2026-04-18] query | Agritourism business plan — dual-site 5 ac and 120 ac (35 min apart)
+
+- Business plan analysis in [`analyses/agritourism-dual-site-business-plan-five-and-120-acres.md`](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md): site roles, realistic animal placement (small stock at hub; ruminants/batch poultry at large parcel), drive-time operations, revenue mix, risks; linked from [`index.md`](index.md). Updated corpus counts in [`analyses/repository-analysis.md`](analyses/repository-analysis.md).
+
+---
+
+## [2026-04-18] refactor | Agritourism plan — guest hub on farm, owners off-site
+
+- Revised [`analyses/agritourism-dual-site-business-plan-five-and-120-acres.md`](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md): **120 ac** = working farm + **guest lodging**; **5 ac** = **family residence** **35 min** away; all **business** animals and guest experiences on **120**; emphasis on **overnight coverage**, **caretaker/rotation**, **biosecurity** vs hobby animals at home; updated [`index.md`](index.md) blurb.
+
+---
+
+## [2026-04-18] policy | Mission and values in wiki; AGENTS pointer
+
+- Added [`concepts/smart-farm-wiki-mission-and-values.md`](concepts/smart-farm-wiki-mission-and-values.md) (mission statement, vision, audience, authoring values, voice). Updated [`AGENTS.md`](../../AGENTS.md) **Mission** section: domain prose lives in wiki; reasoning; canonical link; handbook/MkDocs clarification; agent checklist points to mission page. Updated [`overview.md`](overview.md) and [`index.md`](index.md).
 

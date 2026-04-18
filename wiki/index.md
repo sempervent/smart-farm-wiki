@@ -5,6 +5,8 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 ## Overview
 
 - [Wiki overview](overview.md) — North-star summary of this vault’s purpose and rules.
+- [Repository analysis](analyses/repository-analysis.md) — This repo’s layout, tooling, CI, corpus scale, and design tradeoffs (meta; complements `docs/`).
+- [Domain content overview](analyses/domain-content-overview.md) — What this wiki is *about*: land, connectivity, power, data, business, and time/PNT strands.
 
 ## Entities
 
@@ -12,6 +14,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 ## Concepts
 
+- [Smart Farm Wiki — mission, audience, and voice](concepts/smart-farm-wiki-mission-and-values.md) — Mission statement, vision, values, and prose style; domain “why” (complements `AGENTS.md`).
 - [LLM Wiki pattern](concepts/llm-wiki-pattern.md) — Core ideas: raw vs wiki, synthesis, maintenance.
 - [Decentralized physical infrastructure networks (DePIN)](concepts/depin.md) — Token-incentivized physical/digital infrastructure framing (see sources).
 - [ESP32](concepts/esp32.md) — Espressif SoC family common in IoT, sensors, and displays.
@@ -169,12 +172,16 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 ## Analyses
 
+- [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
+- [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
 - [Why a synthesis layer](analyses/why-synthesis-layer.md) — Short analysis tying concepts to practice.
 - [Concept relationships — summary objects](analyses/concept-relationships-overview.md) — Related concepts: narrative clusters, table, YAML graph.
 - [Tracking chickens — motion sensors over LoRa and MQTT](analyses/tracking-chickens-motion-lora-mqtt.md) — Query synthesis: coop/run architecture, MQTT paths, limits vs per-bird tracking.
 - [Agritourism, tiny houses, Tennessee hobby farms](analyses/agritourism-tiny-houses-tennessee-hobby-farm.md) — Query synthesis: diversification, TN business context, zoning caveat.
 - [Agritourism smart hobby farm — tiny houses and guest work stays](analyses/agritourism-smart-hobby-farm-tiny-houses-guest-work-stays.md) — Query synthesis: lodging + farm work, smart-farm links, risk framing.
 - [Starting and stocking a pond — beautiful water feature](analyses/starting-stocking-pond-beautiful-water-feature.md) — Query synthesis: build, stock legally, aesthetics, irrigation adjacency.
+- [Farm stocking — 120 acres vs 5 acres (research prompt)](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md) — Query brief: research prompt and methods for chickens, crops, animals; automation bias on larger holding.
+- [Agritourism business plan — guest hub on 120 acres, family home 35 min away](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md) — Working farm + lodging on 120 ac; private 5 ac residence; coverage and animal placement.
 
 ## Comparisons
 

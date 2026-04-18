@@ -18,6 +18,7 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`LLM Wiki pattern`](../concepts/llm-wiki-pattern.md)
 - [`Why a synthesis layer`](../analyses/why-synthesis-layer.md)
 - [`Concept relationships — summary objects`](../analyses/concept-relationships-overview.md) — How domain concepts link (table + YAML for agents)
+- [`Domain content overview`](../analyses/domain-content-overview.md) — Map of subject-matter strands (land, networks, power, data, business, time/PNT)
 
 **Domain entry points**
 

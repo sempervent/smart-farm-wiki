@@ -10,9 +10,17 @@ This repository implements an **LLM-maintained markdown wiki**: a persistent, co
 
 - **`raw/`** holds **immutable** source material (notes, imports, excerpts, files).
 - **`wiki/`** holds the **agent-authored synthesis** (entities, concepts, analyses, cross-links).
-- **`docs/`** holds the **published handbook** for humans and agents (MkDocs); it explains *how* the system works, not the domain knowledge itself.
+- **`docs/`** holds the **operator handbook** for humans and agents (read in-repo); it explains *how* the system works, not the domain knowledge itself. (In this fork, the **MkDocs site** is built from **`wiki/`** only; see `mkdocs.yml` and `docs/operations/publishing.md`.)
 
-The goal is **deterministic, inspectable, markdown-first** workflows: plain files, clear paths, validation scripts, and reproducible doc builds.
+The **mechanical goal** is **deterministic, inspectable, markdown-first** workflows: plain files, clear paths, validation scripts, and reproducible doc builds.
+
+### Domain mission and prose (Smart Farm Wiki)
+
+**Why not duplicate long mission prose here:** `AGENTS.md` must stay a **short, stable contract**—rules agents load every session. **Mission statements, audience, values, and voice** belong in the wiki so they **version with synthesis**, appear on the **published site**, and can evolve without bloating the contract file.
+
+**Canonical page:** [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) — mission, vision, audience, authoring values, and voice. Agents shaping **tone** or **scope** for new pages should read it alongside [`wiki/overview.md`](wiki/overview.md).
+
+**Reasoning summary:** Separation keeps **behavioral law** (this file) distinct from **intellectual purpose** (wiki)—reducing merge conflict on policy vs prose, and keeping “what we believe about small-scale ag and appropriate technology” **editable by the same ingest/query workflow** as other concepts.
 
 ---
 
@@ -244,7 +252,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 ## Agent session checklist
 
-1. Read `AGENTS.md` (this file) and `wiki/index.md`.
+1. Read `AGENTS.md` (this file) and `wiki/index.md`. When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment.
 2. Identify layer: raw vs wiki vs docs change.
 3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits.
 4. Update `wiki/index.md` when navigation should change.
