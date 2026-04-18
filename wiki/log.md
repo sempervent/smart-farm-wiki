@@ -325,7 +325,7 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 ## [2026-04-21] ingest | Five priority operational drafts from strategic audit
 
-- First-draft **`analyses/`** pages (placeholders, `status: draft`): [`dual-site-operations-model-non-agritourism.md`](analyses/dual-site-operations-model-non-agritourism.md), [`field-telemetry-reference-architecture-homestead-120ac.md`](analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`spatial-data-and-farm-asset-registry-standard.md`](analyses/spatial-data-and-farm-asset-registry-standard.md), [`weekly-coverage-matrix-two-site-farm-operations.md`](analyses/weekly-coverage-matrix-two-site-farm-operations.md), [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md). Linked from [`index.md`](index.md) and [`information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md).
+- First-draft **`analyses/`** pages (placeholders, `status: draft`): [`dual-site-operations-model-non-agritourism.md`](analyses/dual-site-operations-model-non-agritourism.md), [`field-telemetry-reference-architecture-homestead-120ac.md`](analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`farm-spatial-model-and-asset-registry-standard.md`](analyses/farm-spatial-model-and-asset-registry-standard.md), [`weekly-coverage-matrix-two-site-farm-operations.md`](analyses/weekly-coverage-matrix-two-site-farm-operations.md), [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md). Linked from [`index.md`](index.md) and [`information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md).
 
 ---
 
@@ -351,4 +351,52 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Delivered [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md): top-level logical layers, new topic hubs (two-site spine, telemetry, spatial, cybersecurity, civil systems), required analyses/comparisons/templates/SOPs/architecture docs/entities, cross-linking rules, orphan/integration gaps, phased migration plan; grounded in [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md).
 - Linked from [`overview.md`](overview.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md), [`index.md`](index.md).
+
+---
+
+## [2026-04-17] ingest | Steering overview, four foundation pages, narrow PDF campaign, comparisons, runbooks
+
+- **Raw**: Inbox PDFs and related captures moved under `raw/processed/2026/` (kebab-case); each PDF run through `scripts/pdf_to_markdown.py` → sibling `*-extracted.md`; **source-notes** with PDF + extract links and **Supports** pointers to the four foundation analyses (UT budgets/enterprise, NRCS conservation scenarios, farmOS model/API, CISA OT/remote access where filed).
+- **Steering doc**: Rewrote [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md) — strand map retained; added **future-state**, **maturity by strand**, **gaps**, **supported vs unsupported decisions**, **prioritized backlog**.
+- **Foundation spine**: Active analyses for dual-site ops, field telemetry (homestead + 120 ac), farm spatial model + asset registry, **CAPEX/OPEX and enterprise sequencing — two-site constraint**; cross-links between strands.
+- **Comparisons** (tradeoffs): [`lorawan-vs-meshtastic-fixed-farm-telemetry.md`](comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md), [`farmos-vs-lightweight-stack-two-site-farm.md`](comparisons/farmos-vs-lightweight-stack-two-site-farm.md), [`own-equipment-vs-custom-hire-two-site-logistics.md`](comparisons/own-equipment-vs-custom-hire-two-site-logistics.md), [`fixed-gateway-tower-vs-mobile-vehicle-gateway.md`](comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md).
+- **Runbooks** (after architecture): [`runbook-broker-or-backhaul-down.md`](analyses/runbook-broker-or-backhaul-down.md), [`runbook-power-loss-remote-site.md`](analyses/runbook-power-loss-remote-site.md), [`runbook-sensor-false-positive-alert-triage.md`](analyses/runbook-sensor-false-positive-alert-triage.md), [`runbook-manual-fallback-irrigation-gates-pumps.md`](analyses/runbook-manual-fallback-irrigation-gates-pumps.md); linked from [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md).
+- **Cross-links**: [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md), [`source-notes/ut-publication-w1268-pdf.md`](source-notes/ut-publication-w1268-pdf.md), [`index.md`](index.md).
+- **Validation**: `uv run python scripts/validate_wiki.py --strict` passes.
+
+---
+
+## [2026-04-17] query | East Tennessee two-site farm business plan — planning framework (skeleton)
+
+- Added **hub** [`analyses/east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md): page package, creation order, enterprise comparison steps (gates A–E), **weighted rubric** (0.45 / 0.35 / 0.20 profit / labor / resilience), knowns, unknowns, assumptions, pre-spend decisions.
+- Added **11 skeleton** child analyses (vision, two-site context, enterprise options, labor/family, smart-tech, capital/financing, revenue tranches, risk register, 10-year roadmap, validation backlog, executive summary last); linked to existing dual-site / telemetry / CAPEX / comparisons.
+- Updated [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md).
+
+---
+
+## [2026-04-17] query | Enterprise scenario analysis — 120 ac ET two-site
+
+- Filled [`analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md`](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md): per-path ops/labor/capital/automation/time/risk/infrastructure/skills/two-site fit; comparison table; **top 3** (phased mixed, commercial grazing, lease as stabilizer); **why others rank lower**; **phased strategy** Phase 0–3 + pivot triggers; explicit automation **helps vs burden**; canonical title *Enterprise options analysis — 120-acre East Tennessee two-site smart farm*.
+- Updated [`index.md`](index.md) entry line.
+
+---
+
+## [2026-04-17] query | Phased ET two-site business plan package (11 pages + hub)
+
+- **Filled** business plan analyses: [`vision`](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), [`two-site operating model`](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md), [`recommended enterprise strategy`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) (new), [`smart-tech`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`labor + weekly rhythm`](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md), [`capital + infrastructure sequencing`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md), [`revenue + milestones`](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md), [`risk + mitigation`](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md), [`10-year roadmap` Phases 0–4](analyses/east-tennessee-two-site-farm-business-plan-10-year-roadmap.md), [`validation backlog`](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md), [`executive summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md). Each page: **Known / Assumed / Open** sections.
+- **Phases**: 0 no-regret groundwork → 1 land intelligence + pilot telemetry → 2 first grazing business → 3 scale/optimization → 4 salary-replacement architecture.
+- Updated [`planning framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md) package table + status; [`index.md`](index.md); [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md); cross-link from [`enterprise options analysis`](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) to recommended strategy.
+
+---
+
+## [2026-04-17] query | Operational artifacts for ET two-site business plan
+
+- Added **eight** first-draft **operational** analyses: [`two-site-operations-model-5ac-homebase-120ac-production`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md), [`family-labor-model-and-coverage-matrix-two-site-smart-farm`](analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md), [`instrumentation-priority-matrix-two-site-smart-farm`](analyses/instrumentation-priority-matrix-two-site-smart-farm.md), [`capital-phasing-table-years-0-10-two-site-smart-farm`](analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md), [`revenue-milestone-model-supplemental-to-salary-replacement`](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md), [`business-risk-register-two-site-smart-farm`](analyses/business-risk-register-two-site-smart-farm.md), [`manual-fallback-degraded-modes-critical-operations`](analyses/manual-fallback-degraded-modes-critical-operations.md), [`validation-backlog-before-major-spend-two-site-smart-farm`](analyses/validation-backlog-before-major-spend-two-site-smart-farm.md). Each: purpose, **decisions supported**, fillable structure, **Known/assumed/open**, links to business-plan pages and runbooks.
+- Updated [`east-tennessee-two-site-farm-business-plan-framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md), [`executive summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md), [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md).
+
+---
+
+## [2026-04-17] query | Hostile internal review — ET two-site business plan
+
+- Added [`analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md`](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md): executive critique, **15** weaknesses, prioritized **real-world** **validation** list, **pages to revise**, **revised** **implementation** **order**, **do not finance yet** items; linked from [`index.md`](index.md) and [`planning framework`](analyses/east-tennessee-two-site-farm-business-plan-framework.md).
 

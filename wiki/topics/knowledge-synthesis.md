@@ -3,7 +3,7 @@ title: Knowledge synthesis
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-17
 tags:
   - theme
 review_status: unreviewed
@@ -19,13 +19,15 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`Why a synthesis layer`](../analyses/why-synthesis-layer.md)
 - [`Concept relationships — summary objects`](../analyses/concept-relationships-overview.md) — How domain concepts link (table + YAML for agents)
 - [`Domain content overview`](../analyses/domain-content-overview.md) — Map of subject-matter strands (land, networks, power, data, business, time/PNT)
+- [`East Tennessee two-site farm business plan — planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) — Decision-grade **business plan** (5 ac base + 120 ac ET; Phases **0–4**; [`executive summary`](../analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md)); **operational artifacts**: [`two-site ops 5/120`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md), [`instrumentation priority`](../analyses/instrumentation-priority-matrix-two-site-smart-farm.md), [`validation before major spend`](../analyses/validation-backlog-before-major-spend-two-site-smart-farm.md); **skeptical critique**: [`hostile internal review`](../analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md)
 - [`Information architecture — decision-safe operational brain (target design)`](../analyses/information-architecture-decision-safe-operations.md) — Target **wiki IA**: operations spine, telemetry/spatial hubs, SOPs/templates, cross-link rules, migration plan
 - [`Strategic audit — decision-safe operations for a two-site smart farm`](../analyses/strategic-audit-decision-safe-operations.md) — Backlog of gaps and artifacts for **decision-safe** split-site farm ops
 - [`Business viability and farm economics — gap analysis (strategic audit)`](../analyses/business-viability-and-farm-economics-gap-analysis.md) — **Economics & business** gaps only: revenue, enterprise, channels, staffing, insurance, accounting, CAPEX/OPEX, logistics, risk
 - [`Smart technology architecture audit (strategic audit)`](../analyses/smart-technology-architecture-audit.md) — **Smart stack**: telemetry, radios, edge, HA/farmOS/MQTT/TSDB, time, registry, alerting, observability, firmware, degraded modes, cybersecurity
 - [`Agentic wiki improvement prompts (staged, strategic audit)`](../analyses/agentic-wiki-improvement-prompts-strategic-audit.md) — **Pre-prompt** + phased **agent prompts** to build the wiki in order (P0→P3 alignment)
 - [`Implementation backlog — strategic audit (P0–P3)`](../analyses/implementation-backlog-strategic-audit.md) — **Prioritized** implementation list (dependencies, effort, top 10 first pages)
-- **Operational drafts (first pass)**: [`Dual-site operations model — non-agritourism`](../analyses/dual-site-operations-model-non-agritourism.md), [`Field telemetry reference architecture`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`Spatial data and farm asset registry standard`](../analyses/spatial-data-and-farm-asset-registry-standard.md), [`Weekly coverage matrix — two-site`](../analyses/weekly-coverage-matrix-two-site-farm-operations.md), [`Automation degraded modes SOP`](../analyses/automation-degraded-modes-manual-fallback-sop.md)
+- **Foundation analyses (two-site spine)**: [`Dual-site operations model — non-agritourism`](../analyses/dual-site-operations-model-non-agritourism.md), [`Field telemetry reference architecture — homestead + 120-acre farm`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`Farm spatial model and asset registry standard`](../analyses/farm-spatial-model-and-asset-registry-standard.md), [`CAPEX, OPEX, and enterprise sequencing — two-site constraint`](../analyses/capex-opex-enterprise-sequencing-two-site-constraint.md), [`Weekly coverage matrix — two-site`](../analyses/weekly-coverage-matrix-two-site-farm-operations.md), [`Automation degraded modes SOP`](../analyses/automation-degraded-modes-manual-fallback-sop.md)
+- **Runbooks (after architecture)**: [`Broker or backhaul down`](../analyses/runbook-broker-or-backhaul-down.md), [`Power loss at remote site`](../analyses/runbook-power-loss-remote-site.md), [`Sensor false positive / alert triage`](../analyses/runbook-sensor-false-positive-alert-triage.md), [`Manual fallback — irrigation, gates, pumps`](../analyses/runbook-manual-fallback-irrigation-gates-pumps.md)
 - [`Timing on the farm — synthesis`](../analyses/timing-on-the-farm-synthesis.md) — Seasonal, labor, water/energy, and clock-sync layers of “time”
 
 **Domain entry points**

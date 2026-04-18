@@ -80,6 +80,13 @@ confidence: low
 - **Mute noisy alerts** only **after** physical safe state—silencing **without** verification repeats audit **false positive** failure.
 - **Log** incidents in **`DEGRADED_MODE_LOG_REF`** (notebook, ticket, or wiki log entry)—**pattern** detection matters.
 
+## Specialized runbooks (same degraded-mode family)
+
+- [`Runbook — broker or backhaul down`](runbook-broker-or-backhaul-down.md)
+- [`Runbook — power loss at remote site`](runbook-power-loss-remote-site.md)
+- [`Runbook — sensor false positive and alert triage`](runbook-sensor-false-positive-alert-triage.md)
+- [`Runbook — manual fallback for irrigation, gates, and pumps`](runbook-manual-fallback-irrigation-gates-pumps.md)
+
 ## Links to related future or existing pages
 
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) — where **broker** and **gateways** sit.

@@ -81,7 +81,7 @@ Define **what “covered” means** in minutes and tasks:
 - [`Dual-site operations model — non-agritourism farm business`](dual-site-operations-model-non-agritourism.md) — **why** batching and equipment home base matter.
 - [`Agritourism business plan — guest hub on 120 acres, family home 35 min away`](agritourism-dual-site-business-plan-five-and-120-acres.md) — **contrast**: guest/caretaker model vs this matrix.
 - *Incident response — livestock emergency (owner remote)* — **not yet filed**; see **[P1 #8](implementation-backlog-strategic-audit.md)** in the implementation backlog.
-- [`Spatial data and farm asset registry standard`](spatial-data-and-farm-asset-registry-standard.md) — **where** checks apply (paddock, tank).
+- [`Spatial data and farm asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) — **where** checks apply (paddock, tank).
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) — what **remote** visibility can do.
 
 ## Open items

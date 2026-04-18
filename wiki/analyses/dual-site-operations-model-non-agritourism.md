@@ -1,9 +1,11 @@
 ---
 title: Dual-site operations model — non-agritourism farm business
 page_type: analysis
-status: draft
+status: active
 created: 2026-04-21
 updated: 2026-04-21
+aliases:
+  - Dual-site operations model (non-agritourism)
 tags:
   - two-site
   - operations
@@ -60,13 +62,24 @@ Give a **first-draft operational model** for running a farm business split acros
 
 **Contrast (explicit):** [`Agritourism business plan — guest hub on 120 acres, family home 35 min away`](agritourism-dual-site-business-plan-five-and-120-acres.md) optimizes **guests + animals + coverage** for a **lodging-led** model. This page assumes **production-led** economics; **do not** copy guest/caretaker logic without validating **animal and asset** needs.
 
+## Connects the strands
+
+| Strand | How this page connects |
+|--------|-------------------------|
+| **A (land/livestock)** | **Batch** vs **daily** presence drives **pasture** and **animal** placement; links [`Farm stocking…`](farm-stocking-120-acres-vs-5-acres-research-prompt.md). |
+| **B (business)** | **Cold chain**, **fuel**, **vendor routes**—inputs to [`CAPEX, OPEX, and enterprise sequencing — two-site constraint`](capex-opex-enterprise-sequencing-two-site-constraint.md). |
+| **C–D (telemetry/records)** | **Where** tools and **telemetry** live—feeds [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) and [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md). |
+| **E (power)** | **Generator** / **grid** at which site for **batch** work vs **remote** monitoring. |
+
+**Ingest (economics / planning)**: UT budget PDFs—[`source-notes/ut-extension-fm-boot-2017-budgets-velandia-pdf.md`](../source-notes/ut-extension-fm-boot-2017-budgets-velandia-pdf.md), [`ut-publication-w1348-pdf.md`](../source-notes/ut-publication-w1348-pdf.md)—support **sequencing** decisions, not **your** numbers until filled.
+
 ## Links to related future or existing pages
 
 - [`Strategic audit — decision-safe operations for a two-site smart farm`](strategic-audit-decision-safe-operations.md) — gap framing.
 - [`Farm stocking — 120 acres vs 5 acres (research prompt)`](farm-stocking-120-acres-vs-5-acres-research-prompt.md) — scale questions; **not** prescriptions.
 - [`Weekly coverage matrix — two-site farm operations`](weekly-coverage-matrix-two-site-farm-operations.md) — scheduling layer.
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) — what remote visibility **can** change about visit frequency (**cannot** replace welfare SOPs).
-- [`Spatial data and farm asset registry standard`](spatial-data-and-farm-asset-registry-standard.md) — where **equipment and gates** are known entities.
+- [`Spatial data and farm asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) — where **equipment and gates** are known entities.
 - [`Automation degraded modes and manual fallback SOP`](automation-degraded-modes-manual-fallback-sop.md) — when **automation is wrong or offline**.
 - Future: **CAPEX/OPEX and enterprise sequencing — two-site constraint** (see [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md)).
 

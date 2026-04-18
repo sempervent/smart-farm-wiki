@@ -1,9 +1,11 @@
 ---
-title: Spatial data and farm asset registry standard
+title: Farm spatial model and asset registry standard
 page_type: analysis
-status: draft
+status: active
 created: 2026-04-21
 updated: 2026-04-21
+aliases:
+  - Spatial data and farm asset registry standard
 tags:
   - gis
   - assets
@@ -13,11 +15,13 @@ review_status: unreviewed
 confidence: low
 ---
 
-# Spatial data and farm asset registry standard
+# Farm spatial model and asset registry standard
 
 ## Purpose
 
 Define a **minimal, practical standard** so **parcels, paddocks, infrastructure, equipment, and telemetry endpoints** share stable **IDs** and can sit on a **map** (GIS layer or simple sketch) without requiring a survey-grade cadastre on day one. This is **glue** between **land** and **digital** systems—[`Strategic audit`](strategic-audit-decision-safe-operations.md) calls this a **critical gap** when farmOS or sensors float without **earth-anchored** names.
+
+**farmOS alignment**: The **Asset** and **Log** abstractions in farmOS ([`Assets`](../source-notes/farmos-model-assets-documentation.md), [`Logs`](../source-notes/farmos-model-logs-documentation.md)) should **inform** how you name **equipment** and **sensor** assets in this registry—not mandatory software choice.
 
 ## Scope
 

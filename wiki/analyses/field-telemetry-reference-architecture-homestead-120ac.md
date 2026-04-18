@@ -1,7 +1,7 @@
 ---
 title: Field telemetry reference architecture — homestead + 120-acre farm
 page_type: analysis
-status: draft
+status: active
 created: 2026-04-21
 updated: 2026-04-21
 tags:
@@ -32,6 +32,25 @@ Provide a **single first-draft reference** for how **sensors, gateways, uplink, 
 | `SITE_FARM` | Larger parcel; may have **weak broadband**, **solar/battery field power**, **LoRa/Meshtastic/LoRaWAN** at edges. |
 | `BROKER_LABEL` | MQTT broker (self-hosted or cloud)—**TBD**. |
 | `SOR_TELEMETRY` | System that is **authoritative** for long-term sensor history—**TBD** (TSDB, DB, vendor cloud). |
+
+## Roles: Home Assistant, farmOS, MQTT, TSDB (draft binding)
+
+| Layer | Typical role | Conflicts when… |
+|-------|----------------|-------------------|
+| **MQTT broker** | **Transport** and pub/sub between devices and services | **Retained** vs **live** state misunderstood |
+| **Home Assistant** | **Automation**, dashboards, **consumer** device hub at homestead | Treated as **legal** record for **tax** or **certification** without export |
+| **farmOS** | **Structured** assets, logs, **geometry** (when used) | Out of **sync** with **field** reality if not updated |
+| **TSDB / PostgreSQL** | **Durable** telemetry history / joins to **map** | **Duplicate** writes from HA and **direct** ingest—**need SoR rules** (see backlog P0 #6). |
+
+**farmOS model refs**: [`farmOS Assets`](../source-notes/farmos-model-assets-documentation.md), [`farmOS Logs`](../source-notes/farmos-model-logs-documentation.md).
+
+## Connects the strands
+
+| Strand | Connection |
+|--------|------------|
+| **C** | Radio **choice** and **gateway** SPOFs—[`LoRaWAN vs Meshtastic`](../comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md), [`Fixed gateway tower vs mobile`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md). |
+| **D** | farmOS + HA + DB—[`farmOS vs lightweight`](../comparisons/farmos-vs-lightweight-stack-two-site-farm.md), [`Data storage`](../concepts/data-storage.md). |
+| **G** | **Time** for correlated logs—[`Time synchronization`](../topics/time-synchronization-ntp-and-ptp.md). |
 
 ## Reference diagram (logical, text)
 
@@ -83,7 +102,7 @@ Provide a **single first-draft reference** for how **sensors, gateways, uplink, 
 - [`Field network IoT comparisons (HaLow, LoRa, NB-IoT)`](../topics/field-network-iot-comparisons.md) — radio tradeoffs.
 - [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md) — records vs telemetry.
 - *Telemetry system of record — options and boundaries* — **not yet a standalone page**; see **[P0 #6](implementation-backlog-strategic-audit.md)** in the implementation backlog.
-- [`Spatial data and farm asset registry standard`](spatial-data-and-farm-asset-registry-standard.md) — bind **device IDs** to places.
+- [`Spatial data and farm asset registry standard`](farm-spatial-model-and-asset-registry-standard.md) — bind **device IDs** to places.
 - [`Automation degraded modes and manual fallback SOP`](automation-degraded-modes-manual-fallback-sop.md) — behavior when this architecture **breaks**.
 
 ## Open items

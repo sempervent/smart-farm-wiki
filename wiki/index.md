@@ -56,6 +56,24 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 ## Source notes
 
+- [CISA — Guide to securing remote access software (PDF)](source-notes/cisa-guide-securing-remote-access-software-508-pdf.md) — Remote access hardening; foundation ingest 2026-04.
+- [CISA — Joint guide OT cybersecurity asset inventory (PDF)](source-notes/cisa-joint-guide-ot-cybersecurity-asset-inventory-508-pdf.md) — OT asset inventory process.
+- [CISA — Foundations for OT asset inventory (excerpt)](source-notes/cisa-joint-foundations-ot-asset-inventory-guidance-excerpt.md) — Markdown excerpt companion.
+- [CISA — Modern approaches to network access security (excerpt)](source-notes/cisa-modern-approaches-network-access-security-excerpt.md)
+- [CISA — Primary mitigations for OT cyber threats (excerpt)](source-notes/cisa-primary-mitigations-ot-cyber-threats-excerpt.md)
+- [farmOS model — Assets (documentation)](source-notes/farmos-model-assets-documentation.md) — Asset types, UUIDs; ties to spatial registry.
+- [farmOS model — Logs (documentation)](source-notes/farmos-model-logs-documentation.md) — Log types; event→asset pattern.
+- [NRCS — FY25 conservation scenarios (PDF, large)](source-notes/nrcs-fy25-conservation-scenarios-pdf.md) — Practice scenarios; planning context.
+- [NRCS Tennessee — Grazing Lands GLCI (page excerpt)](source-notes/nrcs-tennessee-grazing-lands-glci-excerpt.md)
+- [UT Extension — FM Boot 2017 budgets (Velandia) (PDF)](source-notes/ut-extension-fm-boot-2017-budgets-velandia-pdf.md)
+- [UT — W1348 cut flower enterprise budgets (PDF)](source-notes/ut-publication-w1348-pdf.md)
+- [UT — W1268 sheep enterprise budget template (PDF)](source-notes/ut-publication-w1268-pdf.md)
+- [UT — D154 publication (PDF)](source-notes/ut-publication-d154-pdf.md)
+- [UT — D31 publication (PDF)](source-notes/ut-publication-d31-pdf.md)
+- [UT — D33 publication (PDF)](source-notes/ut-publication-d33-pdf.md)
+- [UT — D252A publication (PDF)](source-notes/ut-publication-d252a-pdf.md)
+- [UT — D252C publication (PDF)](source-notes/ut-publication-d252c-pdf.md)
+- [UT — D252D publication (PDF)](source-notes/ut-publication-d252d-pdf.md)
 - [Erosion control on steep road — r/homestead](source-notes/erosion-control-steep-road-reddit-homestead.md) — Ditches, crown, water bars, outslope, rolling dips, handbook PDF link.
 - [Example LLM Wiki note (raw)](source-notes/example-llm-wiki-note.md) — Grounding note for `raw/processed/2026/example-llm-wiki-note.md`.
 - [3D printed workshop equipment — organizing (source)](source-notes/3d-printed-workshop-equipment-organizing.md) — Printed organizers; shop storage.
@@ -253,18 +271,23 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 ## Analyses
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
-- [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
+- [Domain content overview](analyses/domain-content-overview.md) — **Steering doc**: strands, maturity matrix, gaps, supported vs unsupported decisions, backlog; target future-state.
 - [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
 - [Implementation backlog — strategic audit (P0–P3)](analyses/implementation-backlog-strategic-audit.md) — Prioritized build list: templates, topics, SOPs, analyses; top 10 pages first.
 - [Information architecture — decision-safe operational brain (target design)](analyses/information-architecture-decision-safe-operations.md) — Target IA: hub layers, required pages, cross-links, orphan/integration gaps, migration phases.
 - [Business viability and farm economics — gap analysis (strategic audit)](analyses/business-viability-and-farm-economics-gap-analysis.md) — Revenue, enterprise, channels, staffing, insurance, books, CAPEX/OPEX, logistics, risk; prioritized page list; decisions not yet supportable from the vault alone.
 - [Smart technology architecture audit (strategic audit)](analyses/smart-technology-architecture-audit.md) — Field stack, identity, alerting, security, fragmentation; reference page outline; required SOPs and diagrams.
 - [Agentic wiki improvement prompts (staged, strategic audit)](analyses/agentic-wiki-improvement-prompts-strategic-audit.md) — Pre-prompt + Phase 1–4 copy-paste prompts: deliverables, acceptance criteria, files to create/update.
-- [Dual-site operations model — non-agritourism farm business](analyses/dual-site-operations-model-non-agritourism.md) — First draft: batch work, equipment home, coverage questions; placeholders.
-- [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — First draft: logical blocks, SPOFs, broker/authority questions.
-- [Spatial data and farm asset registry standard](analyses/spatial-data-and-farm-asset-registry-standard.md) — First draft: IDs for paddocks, assets, devices; map authority.
-- [Weekly coverage matrix — two-site farm operations](analyses/weekly-coverage-matrix-two-site-farm-operations.md) — First draft: fillable grid; Tier A/B/C checks.
-- [Automation degraded modes and manual fallback SOP](analyses/automation-degraded-modes-manual-fallback-sop.md) — First draft: failure classes, manual safe states, per-system placeholders.
+- [Dual-site operations model — non-agritourism farm business](analyses/dual-site-operations-model-non-agritourism.md) — Production-led two-site logistics; batching, equipment home, coverage; connects strands.
+- [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — Logical stack, SPOFs, HA/farmOS/MQTT/TSDB roles; foundation for runbooks.
+- [Farm spatial model and asset registry standard](analyses/farm-spatial-model-and-asset-registry-standard.md) — Paddock/asset/device IDs; map authority; farmOS-aligned naming.
+- [CAPEX, OPEX, and enterprise sequencing — two-site constraint](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md) — Capital phasing and distance-driven OPEX; UT budget ingests.
+- [Weekly coverage matrix — two-site farm operations](analyses/weekly-coverage-matrix-two-site-farm-operations.md) — Fillable grid; Tier A/B/C checks.
+- [Automation degraded modes and manual fallback SOP](analyses/automation-degraded-modes-manual-fallback-sop.md) — Failure classes, manual safe states, per-system placeholders.
+- [Runbook — broker or backhaul down](analyses/runbook-broker-or-backhaul-down.md) — MQTT/uplink failure; verify physical; parent architecture required.
+- [Runbook — power loss at remote site](analyses/runbook-power-loss-remote-site.md) — Field hub power loss; safe order of recovery.
+- [Runbook — sensor false positive and alert triage](analyses/runbook-sensor-false-positive-alert-triage.md) — Corroborate before mute; observability discipline.
+- [Runbook — manual fallback for irrigation, gates, and pumps](analyses/runbook-manual-fallback-irrigation-gates-pumps.md) — Water movement manual safe states; specialization of degraded SOP.
 - [3D printing in a workshop — summary](analyses/3d-printing-in-a-workshop-summary.md) — FDM/shop uses, jigs, forum culture; ingested batch.
 - [Basement workshop design — summary](analyses/basement-workshop-design-summary.md) — Layout, ingress, noise/dust, basement remodel sources.
 - [Off-grid setups for the smart home — summary](analyses/off-grid-smart-home-setups-summary.md) — Energy + Home Assistant / SOC automations; ingested guides and forum.
@@ -284,10 +307,39 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [East Tennessee — profitable crops matrix](analyses/east-tennessee-profitable-crops-matrix.md) — Query synthesis: commodity vs specialty profit signals, UT enterprise budgets, CPA specialty crops, NASS context.
 - [Multi-field crop rotation plan (template)](analyses/multi-field-crop-rotation-plan.md) — Field roles, family-based rotations, coordinated A–D year tables, perennial block notes.
 - [Agritourism business plan — guest hub on 120 acres, family home 35 min away](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md) — Working farm + lodging on 120 ac; private 5 ac residence; coverage and animal placement.
+- [East Tennessee two-site farm business plan — planning framework](analyses/east-tennessee-two-site-farm-business-plan-framework.md) — **Hub**: rubric, knowns/unknowns, links to **phased business plan package** (Phases 0–4).
+- [East Tennessee two-site farm business plan — executive summary](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) — Distilled plan + document map.
+- [East Tennessee two-site farm business plan — vision, objectives, and constraints](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)
+- [East Tennessee two-site farm business plan — two-site operating model](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) — 5 ac control center; 35-min batching.
+- [Enterprise options analysis — 120-acre East Tennessee two-site smart farm](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) — Full scenario matrix; top paths; comparison table.
+- [East Tennessee two-site farm business plan — recommended enterprise strategy](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) — Grazing-led phased mixed family; branching logic.
+- [East Tennessee two-site farm business plan — smart technology, telemetry, and automation](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)
+- [East Tennessee two-site farm business plan — labor model and weekly operating rhythm](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md)
+- [East Tennessee two-site farm business plan — capital plan and phased infrastructure roadmap](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md)
+- [East Tennessee two-site farm business plan — revenue model and business milestones](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
+- [East Tennessee two-site farm business plan — risk register and mitigation strategy](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
+- [East Tennessee two-site farm business plan — 10-year roadmap](analyses/east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) — Phases 0–4.
+- [East Tennessee two-site farm business plan — validation backlog and next research tasks](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md)
+
+**Two-site smart farm — operational artifacts** (tables / matrices; fill over time):
+
+- [Two-site operations model — 5 ac home base, 120 ac production](analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
+- [Family labor model and coverage matrix — two-site smart farm](analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md)
+- [Instrumentation priority matrix — two-site smart farm](analyses/instrumentation-priority-matrix-two-site-smart-farm.md)
+- [Capital phasing table — years 0 to 10](analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md)
+- [Revenue milestone model — supplemental to salary replacement](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md)
+- [Business risk register — two-site smart farm](analyses/business-risk-register-two-site-smart-farm.md)
+- [Manual fallback and degraded modes — critical operations](analyses/manual-fallback-degraded-modes-critical-operations.md)
+- [Validation backlog — assumptions before major spend](analyses/validation-backlog-before-major-spend-two-site-smart-farm.md)
+- [East Tennessee two-site farm business plan — hostile internal review](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — Skeptical critique: top weaknesses, validation order, pages to revise, finance prohibitions.
 
 ## Comparisons
 
 - [Raw vs wiki](comparisons/raw-vs-wiki.md) — Side-by-side responsibilities and failure modes.
+- [LoRaWAN vs Meshtastic for fixed farm telemetry](comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md) — Star/gateway vs mesh; ops and SPOF tradeoffs.
+- [farmOS vs lightweight record stack for a two-site farm](comparisons/farmos-vs-lightweight-stack-two-site-farm.md) — Ops weight vs glue code; team-size framing.
+- [Own equipment vs custom hire under two-site logistics](comparisons/own-equipment-vs-custom-hire-two-site-logistics.md) — Hauling time vs duplicate tools vs contractor scheduling.
+- [Fixed gateway tower vs mobile or vehicle gateway](comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md) — Always-on RF vs intermittent mobile backhaul.
 - [Ducks vs chickens — meat raising](comparisons/ducks-vs-chickens-meat-raising.md) — Housing, water, processing, grow-out (ingested sources + vault poultry notes).
 
 ## Timelines

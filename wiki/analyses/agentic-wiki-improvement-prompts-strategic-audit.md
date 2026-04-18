@@ -67,7 +67,7 @@ OUTPUT
 ```text
 PHASE 1 — FOUNDATIONAL ARCHITECTURE
 
-Read first: AGENTS.md; wiki/analyses/strategic-audit-decision-safe-operations.md; wiki/analyses/implementation-backlog-strategic-audit.md (P0 section); wiki/analyses/information-architecture-decision-safe-operations.md; wiki/analyses/smart-technology-architecture-audit.md; wiki/concepts/data-storage.md; wiki/topics/farm-data-farmos-and-ag-lab-builds.md; wiki/topics/lora-mqtt-and-gateway-bridges.md; wiki/analyses/field-telemetry-reference-architecture-homestead-120ac.md; wiki/analyses/spatial-data-and-farm-asset-registry-standard.md.
+Read first: AGENTS.md; wiki/analyses/strategic-audit-decision-safe-operations.md; wiki/analyses/implementation-backlog-strategic-audit.md (P0 section); wiki/analyses/information-architecture-decision-safe-operations.md; wiki/analyses/smart-technology-architecture-audit.md; wiki/concepts/data-storage.md; wiki/topics/farm-data-farmos-and-ag-lab-builds.md; wiki/topics/lora-mqtt-and-gateway-bridges.md; wiki/analyses/field-telemetry-reference-architecture-homestead-120ac.md; wiki/analyses/farm-spatial-model-and-asset-registry-standard.md.
 
 DELIVERABLES
 1) wiki/analyses/parcel-paddock-asset-naming-conventions.md — template-style analysis: ID patterns for SITE_A/SITE_B, paddocks, structures, devices; placeholders only.
