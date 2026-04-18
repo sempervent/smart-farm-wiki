@@ -3,7 +3,7 @@ title: Dirt road erosion — shade, hill, and curve (planning synthesis)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-19
 review_status: unreviewed
 tags:
   - erosion
@@ -53,7 +53,12 @@ Together: you get **persistent moisture** + **high runoff energy** + **concentra
 
 The Reddit thread references Brad Lancaster’s **“Planting the Rain”** talk ([YouTube](https://youtu.be/D6_WZ789lpM))—useful **watershed** framing upstream of the road prism.
 
+## PDF cross-checks (crown, cross-slope, curves)
+
+Ingested **agency PDFs** support the same story: **surface drainage** controls erosion. The **Penn State** bulletin on [**crown and cross-slope**](../source-notes/penn-state-tb-crown-cross-slope-dirt-gravel-roads-pdf.md) explains **in-sloping** on **steep sidehills** and ties **superelevation** on curves to drainage; it also documents how **traffic** turns a crowned surface toward a **W-shape** that **ponds** water—often worse in **shade** where drying is slow. The **Southern Appalachian Layman’s Guide** ([PDF note](../source-notes/laymans-guide-private-access-road-appalachian-nrcs-2005-pdf.md)) explicitly warns against **steep grades in curves**. For the full farm-scale integration table, see [`Steep curved hill dirt road — erosion prevention (120-acre farm)`](steep-curved-hill-dirt-road-erosion-prevention-120-acres.md).
+
 ## Related wiki pages
 
+- [`Steep curved hill dirt road — erosion prevention summary (120-acre farm)`](steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) — prevention strategy and farm-scale operations
 - [`Rural road and driveway erosion sources`](../topics/rural-road-and-driveway-erosion-sources.md)
 - [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md)

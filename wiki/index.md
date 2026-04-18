@@ -74,10 +74,16 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [How to make water go uphill without electricity](source-notes/how-to-make-water-go-uphill-without-electricity.md) — Ram pumps, siphons, low-input lifts.
 - [How to start farming with no money](source-notes/how-to-start-farming-with-no-money.md) — Bootstrap listicle capture.
 - [Keeping your horse at home](source-notes/keeping-your-horse-at-home.md) — Small-farm horse basics.
+- [Kentucky EPSC — protecting slopes (PDF)](source-notes/kentucky-epsc-protect-slopes-guide-pdf.md) — Seed/mulch, blankets, contour rolls; construction slopes.
+- [Layman's guide — private access road, Appalachians (PDF)](source-notes/laymans-guide-private-access-road-appalachian-nrcs-2005-pdf.md) — NRCS 2005; grades, curves, waterbars.
+- [Low-volume roads BMPs — Chapter 7 roadway drainage (PDF)](source-notes/low-volume-roads-bmp-chapter7-roadway-drainage-pdf.md) — Surface drainage, rolling dips, cross-drains.
+- [Management practices for dirt roads — Culebra / Ridge to Reefs (PDF)](source-notes/management-practices-dirt-roads-culebra-ridge-to-reefs-2015-pdf.md) — Sediment reduction practices; rolling dips.
+- [Penn State TB — crown and cross-slope, dirt & gravel roads (PDF)](source-notes/penn-state-tb-crown-cross-slope-dirt-gravel-roads-pdf.md) — Crown vs in/out-slope; unpaved cross-slope %.
 - [Plant a fountain, dig a pond (Acreage Life)](source-notes/plant-a-fountain-dig-a-pond-acreage-life.md) — Farm pond sizing, liners, stocking, fountains.
 - [Pump pond water uphill — hose bib irrigation (Reddit)](source-notes/pond-pump-uphill-hose-bib-irrigation-reddit.md) — Forum advice thread.
 - [Pump water uphill](source-notes/pump-water-uphill.md) — Head/flow/pump primer.
 - [Designing a resilient smart irrigation system (solar, offline, modular)](source-notes/designing-resilient-smart-irrigation-solar-offline-modular.md) — r/solarpunk project; zones, soil moisture, offline.
+- [Dirt road stabilization techniques — Desert Mountain Corp style](source-notes/dirt-road-stabilization-techniques-long-term-durability-desertmtncorp.md) — Grading, aggregates, geotextiles, chemical options; FHWA gravel guide link.
 - [DIY garden irrigation](source-notes/diy-garden-irrigation.md) — Bottle drip, soaker hoses, small-plot ideas.
 - [Garden irrigation solutions — DIY, efficient, toxin-free (Homestead and Chill)](source-notes/garden-irrigation-solutions-diy-efficient-toxin-free.md) — Soaker, drip, ollas, rainwater, irrigation map.
 - [Solar-powered irrigation — sustainable solution for agriculture](source-notes/solar-powered-irrigation-sustainable-solution-agriculture.md) — PV pumps, surface vs submersible, irrigation types.
@@ -109,6 +115,10 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Homelab — AI life architecture deep dive](source-notes/homelab-runs-my-ai-life-architecture.md) — AI-centric homelab architecture article.
 - [Homelab server — getting started (2026)](source-notes/homelab-server-getting-started-2026.md) — 2026-era homelab server guide.
 - [Homelab underground culvert — Alaska off-grid](source-notes/homelab-underground-culvert-alaska-off-grid.md) — Extreme environment forum capture.
+- [How to control erosion in your yard — Lowe's](source-notes/how-to-control-erosion-in-your-yard-lowes.md) — Riprap, wattles, terraces, groundcover; residential slopes.
+- [How to improve a steep dirt road — r/OffGridCabins](source-notes/how-to-improve-steep-dirt-road-offgridcabins.md) — Angular gravel, crusher run, swales, rain walks.
+- [How to landscape a hillside slope — Las Pilitas](source-notes/how-to-landscape-hillside-slope-stabilize-erosion-laspilitas.md) — Native mix planting; slope drainage checklist.
+- [How to maintain a dirt road — Backwoods Home](source-notes/how-to-maintain-dirt-road-backwoodshome.md) — Outslope, grade dips, dragging, tractor blade.
 - [K3s or RKE2?](source-notes/k3s-or-rke2.md) — Short distro comparison.
 - [Kubernetes distributions overview](source-notes/kubernetes-distributions-overview-kubeadm-k3s-microk8s-minikube-talos-rke2.md) — kubeadm, k3s, MicroK8s, Minikube, Talos, RKE2.
 - [Mastering Docker Compose — multi-container apps](source-notes/mastering-docker-compose-multi-container-applications.md) — Practical multi-service Compose guide.
@@ -183,6 +193,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [MagicMirror² platform README](source-notes/magicmirror2-open-source-smart-mirror-platform.md) — Upstream project excerpt.
 - [NTP and GPS timing Raspberry Shake](source-notes/ntp-and-gps-timing-raspberry-shake.md) — Seismic logger UTC/NTP operational notes.
 - [Timeserver with GNSS (Pi forums)](source-notes/timeserver-with-gnss-receiver-raspberry-pi-forums.md) — Stratum-1 Pi discussion.
+- [USFS — traveled way surface shape, 1997 (PDF)](source-notes/usfs-traveled-way-surface-shape-1997-pdf.md) — Low-volume road cross-section geometry.
 - [360 publication PDF](source-notes/360-publication-pdf.md) — Large PDF import; confirm title inside file.
 - [Deep dive natural building Natalie Bogwalker](source-notes/deep-dive-natural-building-natalie-bogwalker-podcast.md) — Podcast page on slip straw / hempcrete.
 - [Deep dive tiny houses Medium](source-notes/deep-dive-tiny-houses-medium-casimir-curney.md) — Essay excerpt; Medium paywall.
@@ -195,6 +206,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
 - [Dirt road erosion — shade, hill, and curve (planning synthesis)](analyses/dirt-road-erosion-shade-hill-curve.md) — Stacked failure modes; drainage-first actions; handbook PDF + thread refs.
+- [Steep curved hill dirt road — erosion prevention (120-acre farm)](analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) — Drainage-first prevention, traffic/sediment context, checklist.
 - [Timing on the farm — synthesis](analyses/timing-on-the-farm-synthesis.md) — Seasonal, rotation, labor, water/energy, and clock sync (NTP/PTP) as layers of “time.”
 - [Smart mirror with ESP32 and Raspberry Pi — build analysis](analyses/smart-mirror-esp32-and-raspberry-pi-build.md) — Pi runs MagicMirror²; ESP32 for sensors/side HMI; parts sourcing and web references.
 - [Long 360 tractor — no-start troubleshooting (synthesis)](analyses/long-360-tractor-no-start-synthesis.md) — Diesel electrical vs fuel vs preheat; forum + web references (not a service manual).
