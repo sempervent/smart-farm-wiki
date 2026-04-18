@@ -42,20 +42,20 @@ Counts are from the `wiki/` tree (Markdown files only):
 | `source-notes/` | ~119 | Grounding notes pointing at `raw/processed/` (and related paths) |
 | `topics/` | ~19 | Thematic hubs spanning concepts and sources |
 | `concepts/` | ~11 | Definitions and term-of-art pages (includes mission/values) |
-| `analyses/` | 10 | Query syntheses, research prompts, repo + domain overviews, business plans |
+| `analyses/` | 12 | Query syntheses, research prompts, repo + domain overviews, business plans, timing + smart-mirror builds |
 | `entities/` | 1 | Named-subject template/demo |
 | `comparisons/` | 1 | Structured comparisons |
 | `timelines/` | 1 | Chronology demo |
 | `glossary/` | 1 | Definition-first entry |
 | Root | `index.md`, `log.md`, `overview.md` | Catalog, append-only log, north-star overview |
 
-**Total** wiki Markdown files: **~165** (including this page). The **bulk** of pages are **source-notes**, reflecting an ingest-heavy workflow.
+**Total** wiki Markdown files: **~168** (including this page). The **bulk** of pages are **source-notes**, reflecting an ingest-heavy workflow.
 
 ## Tooling and contracts
 
 - **`AGENTS.md`**: Highest-priority rules—ingest / query / lint, **`wiki/log.md`** append-only, immutability for processed raw, frontmatter and index expectations.
 - **`scripts/`** (Python, `uv run`):
-  - **`validate_wiki.py`** — Link resolution relative to repo root, index coverage, log heading format, orphan hints, kebab-case, frontmatter for taxonomy pages; **`--strict`** promotes warnings (CI uses strict).
+  - **`validate_wiki.py`** — Link resolution relative to repo root (wiki and repo-root files; links under **`raw/`** are not required to exist so CI works without the corpus), index coverage, log heading format, orphan hints, kebab-case, frontmatter for taxonomy pages; **`--strict`** promotes warnings (CI uses strict).
   - **`rebuild_index.py`** — Audit or regenerate index sections vs files on disk.
   - **`scaffold_page.py`** — New pages from `templates/`.
   - **`append_log.py`** — Correct `log.md` headings.

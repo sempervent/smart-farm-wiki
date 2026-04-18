@@ -174,6 +174,8 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
+- [Timing on the farm — synthesis](analyses/timing-on-the-farm-synthesis.md) — Seasonal, rotation, labor, water/energy, and clock sync (NTP/PTP) as layers of “time.”
+- [Smart mirror with ESP32 and Raspberry Pi — build analysis](analyses/smart-mirror-esp32-and-raspberry-pi-build.md) — Pi runs MagicMirror²; ESP32 for sensors/side HMI; parts sourcing and web references.
 - [Why a synthesis layer](analyses/why-synthesis-layer.md) — Short analysis tying concepts to practice.
 - [Concept relationships — summary objects](analyses/concept-relationships-overview.md) — Related concepts: narrative clusters, table, YAML graph.
 - [Tracking chickens — motion sensors over LoRa and MQTT](analyses/tracking-chickens-motion-lora-mqtt.md) — Query synthesis: coop/run architecture, MQTT paths, limits vs per-bird tracking.

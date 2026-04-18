@@ -3,7 +3,7 @@ title: Smart mirror and e-paper display builds
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags:
   - magic-mirror
   - e-ink
@@ -14,6 +14,10 @@ review_status: unreviewed
 # Smart mirror and e-paper display builds
 
 **MagicMirror²** ecosystem notes, project write-ups (including **reTerminal** / gesture ideas), and a broad **e-paper / E Ink** technology survey—useful when pairing **ambient displays** with home or farm dashboards.
+
+**Analysis**
+
+- [`Smart mirror with ESP32 and Raspberry Pi — build analysis`](../analyses/smart-mirror-esp32-and-raspberry-pi-build.md) — Pi vs ESP32 roles, parts checklist, official docs + web references
 
 **Related**
 

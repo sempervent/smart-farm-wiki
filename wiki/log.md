@@ -186,3 +186,21 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Added [`concepts/smart-farm-wiki-mission-and-values.md`](concepts/smart-farm-wiki-mission-and-values.md) (mission statement, vision, audience, authoring values, voice). Updated [`AGENTS.md`](../../AGENTS.md) **Mission** section: domain prose lives in wiki; reasoning; canonical link; handbook/MkDocs clarification; agent checklist points to mission page. Updated [`overview.md`](overview.md) and [`index.md`](index.md).
 
+---
+
+## [2026-04-18] query | Timing on the farm (synthesis)
+
+- Added [`analyses/timing-on-the-farm-synthesis.md`](analyses/timing-on-the-farm-synthesis.md) (seasonal/rotation, labor, water & solar rhythms, NTP/PTP/PNT); linked from [`index.md`](index.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/time-synchronization-ntp-and-ptp.md`](topics/time-synchronization-ntp-and-ptp.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md). Set [`.gitignore`](../../.gitignore) to ignore **`.obsidian/`** entirely (replaces workspace-only rules). Updated [`analyses/repository-analysis.md`](analyses/repository-analysis.md) counts.
+
+---
+
+## [2026-04-18] policy | Validator: optional `raw/` citation targets; `raw/` dir only
+
+- `scripts/validate_wiki.py` no longer requires `raw/README.md` or on-disk files for links under `raw/` (corpus may be absent in CI). Requires `raw/` directory. Helper `is_under_raw_dir` in `scripts/wiki_common.py`. Tests and [`docs/operations/validation.md`](../../docs/operations/validation.md) updated; [`analyses/repository-analysis.md`](analyses/repository-analysis.md) wording.
+
+---
+
+## [2026-04-18] query | Smart mirror with ESP32 and Raspberry Pi (build analysis)
+
+- Added [`analyses/smart-mirror-esp32-and-raspberry-pi-build.md`](analyses/smart-mirror-esp32-and-raspberry-pi-build.md) (architecture, parts sourcing table, MagicMirror² docs + web references); linked from [`index.md`](index.md) and [`topics/smart-mirror-and-e-paper-displays.md`](topics/smart-mirror-and-e-paper-displays.md). Updated [`analyses/repository-analysis.md`](analyses/repository-analysis.md) counts.
+
