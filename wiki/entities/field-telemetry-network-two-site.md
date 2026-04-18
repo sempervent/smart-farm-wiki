@@ -3,7 +3,7 @@ title: Field telemetry network — two-site
 page_type: entity
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-25
 tags:
   - telemetry
   - mqtt
@@ -25,6 +25,7 @@ review_status: unreviewed
 
 - Package map: [`Reference architecture — 5-acre home base + 120-acre farm`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md)
 - Stack detail: [`Field telemetry reference architecture — homestead + 120-acre farm`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md)
+- **`SITE_FARM` (Demory) sensor architecture**: [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) · [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](../comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md)
 - Authority: [`Telemetry system of record — boundaries and authority`](../analyses/telemetry-system-of-record-boundaries-and-authority.md)
 
 **Gateway classes** (tradeoffs, not one vendor): [`Fixed gateway tower vs mobile or vehicle gateway`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md), [`LoRaWAN vs Meshtastic for fixed farm telemetry`](../comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md).

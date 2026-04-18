@@ -3,7 +3,7 @@ title: RF and telemetry gateway roles — field network
 page_type: entity
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 tags:
   - gateway
   - lora
@@ -37,6 +37,7 @@ Separate **field** “gateway” ( **RF → IP** / **MQTT** aggregation, bufferi
 
 ## Related analyses
 
+- [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) · [`Gateway and controller patterns — Demory (~120 acres)`](../analyses/gateway-controller-patterns-demory-120-acre-farm.md)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md)
 - [`Telemetry system of record — boundaries and authority`](../analyses/telemetry-system-of-record-boundaries-and-authority.md)
 - [`Fixed gateway tower vs mobile or vehicle gateway`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md)

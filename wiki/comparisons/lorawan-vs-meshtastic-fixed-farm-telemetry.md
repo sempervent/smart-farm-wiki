@@ -3,7 +3,7 @@ title: LoRaWAN vs Meshtastic for fixed farm telemetry
 page_type: comparison
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - lora
   - lorawan
@@ -36,7 +36,8 @@ For **fixed** sensors and gateways on a **farm parcel** (not consumer mobile use
 
 ## Links
 
-- [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) — **Demory** **off-grid-first** **;** **IP** **throughput** **vs** **LPWAN** **.**
+- [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) — three-way sensing criteria for **~120 ac** + HaLow when IP throughput wins.
+- [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) — Demory off-grid-first; IP throughput vs LPWAN.
 - [`Smart agriculture, Meshtastic, and LoRaWAN`](../topics/smart-agriculture-meshtastic-and-lorawan.md)
 - [`LoRa, MQTT, and gateway bridges`](../topics/lora-mqtt-and-gateway-bridges.md)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md)

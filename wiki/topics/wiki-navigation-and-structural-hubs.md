@@ -3,7 +3,7 @@ title: Wiki navigation and structural hubs
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - meta
@@ -49,7 +49,7 @@ tags:
 |-----|----------|
 | [`Platform doctrine package — homelab / farm edge`](platform-doctrine-package-homelab-farm-edge.md) | k3s / Longhorn / Rancher / Pi **doctrine** and provisioning pointers |
 | [`Backup and disaster recovery — doctrine hub`](backup-disaster-recovery-doctrine-hub.md) | farmOS / Postgres / etcd / Longhorn **backup and restore** navigation |
-| [`Off-grid power and field networking hub`](off-grid-power-and-field-networking-hub.md) | **Demory** off-grid doctrine + two-site WAN + field RF **routing** |
+| [`Off-grid power and field networking hub`](off-grid-power-and-field-networking-hub.md) | **Demory** off-grid doctrine + two-site WAN + field RF **routing** + [`Farm sensor architecture — Demory`](../analyses/farm-sensor-architecture-demory-farm-site.md) |
 | [`Local site and county intelligence`](local-site-and-county-intelligence.md) | Claxton / Demory / Anderson / Campbell **evidence** and parcel gaps |
 | [`Business plan execution and pilot operations hub`](business-plan-execution-and-pilot-operations-hub.md) | Phase 0–1 **execution dossier**, pilots, **V\*/G\***—not the full strategy TOC |
 

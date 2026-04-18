@@ -3,7 +3,7 @@ title: Field telemetry reference architecture — homestead + 120-acre farm
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-18
+updated: 2026-04-25
 tags:
   - telemetry
   - architecture
@@ -20,6 +20,8 @@ confidence: low
 Provide a **single first-draft reference** for how **sensors, gateways, uplink, broker, and operator interfaces** could fit together across **`SITE_HOMESTEAD`** and **`SITE_FARM`**—without claiming this is your deployed stack. Use it to spot **single points of failure (SPOFs)**, **missing boundaries**, and **where truth lives** for events.
 
 **Package hub** (5 ac + 120 ac framing, SoR, security): [`Reference architecture — 5-acre home base + 120-acre farm`](reference-architecture-5ac-homebase-120ac-smart-farm.md).
+
+**Demory `SITE_FARM` sensor stack** (long-range RF, gateways, Starlink as WAN only): [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md).
 
 ## Scope
 

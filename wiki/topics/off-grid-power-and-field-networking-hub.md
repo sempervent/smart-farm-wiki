@@ -3,7 +3,7 @@ title: Off-grid power and field networking — hub
 page_type: topic
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - off-grid
   - field-network
@@ -32,6 +32,7 @@ confidence: high
 | **Off-grid-first production farm (`SITE_FARM` at Demory)** — solar/battery default, mesh/field RF, WAN optional, degraded modes | [`Off-grid systems doctrine package — Demory farm site`](off-grid-systems-doctrine-package-demory-farm-site.md) — **canonical doctrine map** |
 | **Two-site WAN / Starlink / LTE / pilot vs scale** (both named sites) | [`Connectivity strategy — Claxton home base and Demory farm site`](../analyses/connectivity-strategy-for-claxton-and-demory.md) |
 | **Field telemetry stack** (broker, SoR, gateways — both sites) | [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md) + [`Field telemetry reference architecture — homestead + 120-acre farm`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md) |
+| **Demory field sensors** (~120 ac, LoRaWAN / HaLow / mesh, Starlink = WAN only) | [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) |
 | **Provenance (NREL, Victron, Meshtastic, HaLow, Starlink captures)** | [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) |
 | **Homestead-scale solar vocabulary** (not Demory-specific) | [`Off-grid solar power and storage (special topic)`](off-grid-solar-power-and-storage.md) |
 
@@ -52,6 +53,8 @@ confidence: high
 | Page | Role |
 |------|------|
 | [`Mesh and field networking strategy — off-grid Demory`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) | Layering Meshtastic vs HaLow vs Wi‑Fi |
+| [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) | Reference / pilot / degraded Mermaid; Claxton visibility without Starlink as field RF |
+| [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](../comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) | Sensing-layer criteria for ~120 ac |
 | [`Meshtastic vs HaLow vs conventional Wi‑Fi — off-grid farm`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) | Tradeoff matrix |
 | [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) | Diagrams |
 | [`Automation stop rules — two-site`](../analyses/automation-stop-rules-two-site-smart-farm.md) | **CS-***, **MV-*** drills touching WAN/power |

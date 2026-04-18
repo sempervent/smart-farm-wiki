@@ -3,7 +3,7 @@ title: Local site and county intelligence (East Tennessee two-site)
 page_type: topic
 status: active
 created: 2026-04-22
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - two-site
   - tennessee
@@ -92,6 +92,7 @@ confidence: high
 | **Site intelligence** | [`Demory farm — site intelligence (Campbell County)`](../analyses/demory-farm-site-intelligence.md) |
 | **Site inventory baseline (field recon)** | [`Site inventory baseline — Demory farm site`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) |
 | **Parcel worksheet** | [`Parcel intelligence — Demory farm site`](../analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) |
+| **Farm sensor architecture (long-range, WAN-optional)** | [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md); [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) |
 
 ### Validation and gaps
 

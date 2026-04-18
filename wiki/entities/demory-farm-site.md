@@ -3,7 +3,7 @@ title: Demory farm site (place, Campbell County, Tennessee)
 page_type: entity
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 tags:
   - two-site
   - site-farm
@@ -56,6 +56,8 @@ review_status: unreviewed
 - [`Site inventory baseline — Demory farm site`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) — field **inventory** tables (fields, structures, water points); complements site intelligence.
 - [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — router for baselines + loads + field templates.
 - [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) — off-grid-first power + local RF + WAN-optional overlay + degraded modes + stop rules.
+- [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) — long-range field sensing (LoRaWAN / HaLow / mesh); Starlink as WAN only; reference/pilot/degraded diagrams.
+- [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) — planning matrix by use case (not parcel placements).
 
 ---
 

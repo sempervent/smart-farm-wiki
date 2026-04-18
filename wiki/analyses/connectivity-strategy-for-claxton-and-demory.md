@@ -3,7 +3,7 @@ title: Connectivity strategy — Claxton home base and Demory farm site
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - two-site
@@ -30,7 +30,9 @@ Give a **single canonical** statement of **how the two-site farm expects to reac
 
 **Raw / spec grounding** (PDFs and captures, not operational truth at coordinates): [`Electrical, networking, and Starlink — inbox batch (2026-04-23)`](../source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md).
 
-**`SITE_FARM` / Demory — off-grid-first planning stance**: **solar** **+** **battery** **default** **;** **local** **mesh** **/** **field** **RF** **before** **relying** **on** **Starlink** **/** **LTE** **for** **operations** **—** [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) **§** **Off-grid-first** **,** [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) **,** [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) **.**
+**`SITE_FARM` / Demory — off-grid-first planning stance**: solar + battery default; local mesh / field RF before relying on Starlink / LTE for operations—[`Demory farm — site intelligence`](demory-farm-site-intelligence.md) § Off-grid-first, [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md), [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md).
+
+**Field sensor plane** (LoRaWAN / HaLow / Meshtastic; **Starlink is not field RF**): [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md).
 
 ---
 

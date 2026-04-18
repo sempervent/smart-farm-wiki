@@ -3,7 +3,7 @@ title: Sub-GHz Wi‑Fi (802.11ah / HaLow) — farm sensors and IP backhaul (how-
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-25
 tags:
   - wi-fi-halow
   - 802-11ah
@@ -66,3 +66,4 @@ Structured **how-to outline** for using **802.11ah (Wi‑Fi HaLow)** across a fa
 
 - [`Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm field networking`](../comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md)
 - [`Meshtastic vs HaLow vs conventional Wi‑Fi — off-grid operations`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md)
+- [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](../comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) · [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md)

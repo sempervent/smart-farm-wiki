@@ -3,7 +3,7 @@ title: Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm f
 page_type: comparison
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-25
 tags:
   - halow
   - lorawan
@@ -24,7 +24,7 @@ How do **802.11ah (HaLow)**, **LoRaWAN**, **Meshtastic (LoRa mesh)**, and **conv
 
 **Scope**: **Field layer** (sensors, local IP, backhaul to gateway)—not **WAN** (Starlink/LTE) except as **egress** attachment point.
 
-**Related (off-grid ops framing)**: [`Meshtastic vs HaLow vs conventional Wi‑Fi — off-grid`](meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md). **LoRa stack detail**: [`LoRaWAN vs Meshtastic`](lorawan-vs-meshtastic-fixed-farm-telemetry.md).
+**Related (off-grid ops framing)**: [`Meshtastic vs HaLow vs conventional Wi‑Fi — off-grid`](meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md). **LoRa stack detail**: [`LoRaWAN vs Meshtastic`](lorawan-vs-meshtastic-fixed-farm-telemetry.md). **Demory `SITE_FARM` sensing layer** (~120 ac, sparse telemetry, Starlink = WAN only): [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md).
 
 ---
 

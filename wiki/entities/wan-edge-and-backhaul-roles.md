@@ -3,7 +3,7 @@ title: WAN edge and backhaul roles — two-site and off-grid
 page_type: entity
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 tags:
   - wan
   - starlink
@@ -38,6 +38,7 @@ Durable labels for **internet / site-to-site** paths: **WAN customer edge** (e.g
 
 ## Related analyses
 
+- [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) — Starlink as **WAN** only; field RF is LoRaWAN / HaLow / mesh.
 - [`Connectivity strategy — Claxton home base and Demory farm site`](../analyses/connectivity-strategy-for-claxton-and-demory.md)
 - [`Two-site smart farm network topology and WAN edge reference`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md)
 - [`Execution topology package — two-site smart farm (Mermaid)`](../analyses/execution-topology-package-two-site-smart-farm.md)

@@ -3,7 +3,7 @@ title: Field-node classes and communication roles — Demory farm site
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags:
   - mesh
   - meshtastic
@@ -75,5 +75,6 @@ flowchart TB
 
 ## Related
 
+- [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md) · [`Gateway and controller patterns — Demory (~120 acres)`](gateway-controller-patterns-demory-120-acre-farm.md)
 - [`Power domains and battery-backed infrastructure tiers — Demory`](off-grid-power-domains-and-battery-tiers-demory-farm.md)
 - [`Connectivity dependency map — farm systems (Demory)`](connectivity-dependency-map-farm-systems-demory-farm.md)

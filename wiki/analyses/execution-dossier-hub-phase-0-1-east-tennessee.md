@@ -3,7 +3,7 @@ title: Execution dossier — Phase 0–1 (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - business-plan
@@ -36,6 +36,8 @@ confidence: medium
 | 5 | [`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md) | Full arc + **G1** prep window |
 | 6 | [`Validation and pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) | **Full** validation matrix + **cheap proofs** table (detail) |
 | 7 | [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | **Copy-paste** rows into your tracker |
+
+**Demory `SITE_FARM` field sensors** (long-range RF, gateways, Starlink = WAN only—not field radio): [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md).
 
 ---
 

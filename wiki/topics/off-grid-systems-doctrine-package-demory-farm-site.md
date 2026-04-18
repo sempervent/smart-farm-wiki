@@ -3,7 +3,7 @@ title: Off-grid systems doctrine package — Demory farm site (SITE_FARM)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - off-grid
   - demory
@@ -60,6 +60,8 @@ confidence: high
 | 7 | [`Off-grid infrastructure stop rules — Demory`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) | **DR-*** **rules** **;** **simplification** **triggers** **;** **links** **CS-5** **/** **MV-8** |
 
 **Diagrams**: [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) · [`Mesh and field networking — off-grid Demory`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) · [`Connectivity strategy — Claxton & Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md).
+
+**Field sensing (`SITE_FARM`)** — long-range sensors, gateways, Starlink as WAN only: [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) · [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer`](../comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) · [`Demory farm sensor layer — official and operator-grade source cluster`](../source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md).
 
 **Loads register** (site-specific placeholders): [`Loads register — two sites`](../analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md).
 

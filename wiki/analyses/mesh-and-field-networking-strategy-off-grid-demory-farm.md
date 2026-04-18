@@ -3,7 +3,7 @@ title: Mesh and field networking strategy — off-grid Demory farm
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-17
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - mesh
@@ -88,6 +88,7 @@ Define **how** **`SITE_FARM`** **(Demory)** **should** **use** **local** **RF** 
 
 ## Related
 
+- [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) — reference / pilot / degraded diagrams; Starlink as WAN only
 - [`Off-grid power doctrine — Demory farm site`](off-grid-power-strategy-demory-farm-site.md)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md)
 - [`Execution topology package — two-site smart farm (Mermaid)`](execution-topology-package-two-site-smart-farm.md)

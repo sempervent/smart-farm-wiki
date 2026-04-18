@@ -223,6 +223,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 ## Source notes
 
 - [Inbox batch — Tennessee farm policy, LoRaWAN field stack, ChirpStack, Meshtastic, Decentlab, HaLow (2026-04-18)](source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **Batch index**: TN hobby/business/tax captures; LoRaWAN spec + sensors; ChirpStack docs; Meshtastic docs; HaLowLink PDFs; machine PDF extracts.
+- [Demory farm sensor layer — official and operator-grade source cluster](source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md) — LoRaWAN spec PDF, ChirpStack captures, HaLowLink guides, Meshtastic docs, vendor sensor pages, Starlink as WAN pointer.
 - [Authoritative execution evidence cluster — East Tennessee (index)](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) — **Hub**: soils, elevation, septic, NASS rents, TN tax/ag exemption, FSA, farmOS, CISA—links to ingested source-notes.
 - [Authoritative roads and driveways — source cluster (agency, extension, manuals)](source-notes/authoritative-roads-and-driveways-source-cluster.md) — **Primary-weight** unpaved-road / drainage index (NRCS, Penn State, USFS, BMPs; FHWA pointer).
 - [FHWA — Gravel Roads Construction and Maintenance Guide (official reference)](source-notes/fhwa-gravel-roads-maintenance-guide-official-reference.md) — Federal manual **URL** + ingest backlog (PDF not yet in `raw/`).
@@ -524,6 +525,11 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Connectivity dependency map — farm systems (Demory farm site)](analyses/connectivity-dependency-map-farm-systems-demory-farm.md) — **What** **must** **work** **without** **WAN** **.**
 - [Local-first / WAN-optional operating model — Demory farm site](analyses/local-first-wan-optional-operating-model-demory-farm.md) — **Pilot** **vs** **scale** **;** **power–network** **coupling** **.**
 - [Mesh and field networking strategy — off-grid Demory farm](analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) — **Mesh-first** **;** **Meshtastic** **/** **HaLow** **/** **Wi‑Fi** **roles** **;** **WAN** **secondary** **.**
+- [Farm sensor architecture — Demory farm site](analyses/farm-sensor-architecture-demory-farm-site.md) — **Canonical** Demory field sensing: LoRaWAN / HaLow / mesh layers; **Starlink = WAN only**; reference / pilot / degraded Mermaid; Claxton visibility.
+- [Sensor checklist matrix — Demory farm](analyses/sensor-checklist-matrix-for-demory-farm.md) — Use-case × protocol × power × pilot suitability (planning; not parcel placements).
+- [Gateway and controller patterns — Demory (~120 acres)](analyses/gateway-controller-patterns-demory-120-acre-farm.md) — LoRaWAN NS, mesh bridge, HaLow IP segment; controller at farm vs split SoR.
+- [Sensor degraded modes and failure rules — Demory farm site](analyses/sensor-degraded-modes-and-failure-rules-demory-farm.md) — D1–D5 failure classes; stale MQTT vs welfare truth.
+- [Sensor power and duty-cycle assumptions — Demory farm site](analyses/sensor-power-and-duty-cycle-assumptions-demory-farm.md) — Placeholder power cadence; validate before scale.
 - [Off-grid farm execution topology — Demory (Mermaid)](analyses/off-grid-farm-execution-topology-demory-mermaid.md) — **Reference** **/** **pilot** **/** **degraded** **;** **Pcrit** **/** **Popt** **power** **domains** **.**
 - [Off-grid degraded modes — power and connectivity (Demory)](analyses/off-grid-degraded-modes-power-and-connectivity-demory-farm.md) — **SOC** **+** **WAN** **failure** **classes** **.**
 - [Off-grid infrastructure stop rules — power and networking (Demory)](analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) — **DR-*** gates; simplification triggers; stacks with **CS-5** / **MV-8** on execution pages.
@@ -567,6 +573,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [LoRaWAN vs Meshtastic for fixed farm telemetry](comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md) — Star/gateway vs mesh; ops and SPOF tradeoffs.
 - [Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations](comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) — **Demory** off-grid-first; observational vs throughput; local vs WAN.
 - [Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm field networking](comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md) — Four-way throughput/range/power/IP/mesh/backhaul matrix; field layer focus.
+- [LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory farm sensor layer](comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) — **~120 ac** sensing-layer criteria; sparse telemetry vs IP throughput; local survivability.
 - [farmOS vs lightweight record stack for a two-site farm](comparisons/farmos-vs-lightweight-stack-two-site-farm.md) — Ops weight vs glue code; team-size framing.
 - [Own equipment vs custom hire under two-site logistics](comparisons/own-equipment-vs-custom-hire-two-site-logistics.md) — Hauling time vs duplicate tools vs contractor scheduling.
 - [Fixed gateway tower vs mobile or vehicle gateway](comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md) — Always-on RF vs intermittent mobile backhaul.

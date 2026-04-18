@@ -137,5 +137,6 @@ confidence: medium
 
 ## See also
 
+- [`Demory farm sensor layer — official and operator-grade source cluster`](demory-farm-sensor-layer-official-and-operator-source-cluster.md) — curated **operator** index for Demory field sensing (this batch + WAN role pointers)
 - [`Authoritative execution evidence cluster — East Tennessee`](authoritative-execution-evidence-cluster-east-tennessee.md) — agency index for two-site execution context
 - [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) — RF / power provenance spine
