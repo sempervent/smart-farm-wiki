@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — hostile internal review
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -128,6 +128,44 @@ This **reorders** **emotion**: **infrastructure** **that** **reduces** **catastr
 | **Large** **telemetry** **rollout** | **Pilot** **ROI** **+** **triage** **SOP** **+** **OPEX** **cap** |
 | **Cold** **chain** **/** **direct** **marketing** **assets** | **Repeated** **small** **sales** **with** **positive** **unit** **margin** |
 | **Anything** **with** **personal** **guarantee** **without** **written** **worst-case** **exit** | **Household** **budget** **stress** **test** |
+
+---
+
+## 7. Second-pass execution illusions (stricter than §2)
+
+These are **wishful narratives** that **still fit** between the lines of an otherwise disciplined package. **More skeptical than §2**: they attack **calendar faith**, **labor theater**, and **tech savior** stories.
+
+| # | Illusion | Where it persists | Anti-test (falsify the story) | Primary fix (canonical page) |
+|---|----------|-------------------|------------------------------|------------------------------|
+| 1 | **Gates track the calendar** (“by month 18–24 we’re Phase 2”) | [`First 24 months execution`](execution-first-24-months-phase-0-1-east-tennessee.md), [`validation/pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) | **G1** dated only when **evidence** passes—**not** when seasons turn | Add **explicit** “gates ≠ schedule” callout on **first 24 months** page (done in this pass) |
+| 2 | **The weekly DOW grid is how the farm will run** | [`Labor model`](east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) | One **logged** **surge** week **breaks** the grid—**hours** **must** **be** **measured** | **Labor model**: new subsection **template invalid until surge measured** (done) |
+| 3 | **Instrumentation reduces net labor** without proof | [`Vision` C6](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), [`Executive summary`](east-tennessee-two-site-farm-business-plan-executive-summary.md) | **Triage** **≥** **trip** **savings** **→** **net** **worse** ([`ROI`](instrumentation-roi-model-two-site-smart-farm.md)) | **Executive summary**: **explicit** “telemetry is not automatic labor savings” (done) |
+| 4 | **Off-farm income bridges Years 1–3** as a **given** | [`Vision` A3](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) | Job loss, birth, health—**bridge** **must** **be** **named** **sources** **not** **vibes** | **Vision**: **A3** **marked** **illusory** **until** **budget** **line** **exists** (done) |
+| 5 | **Stocker/grazing default ⇒ cash soon** | [`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) | **WC** **peaks**, **no** **slot**, **price** **dip** **before** **first** **sale** | **Recommended strategy**: **Execution** **friction** subsection—**cash** **≠** **calendar** (done) |
+| 6 | **Lease/custom fallback is “safe”** | [`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md), [`Enterprise options`](east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) | Bad tenant, **low** **rent** **trap**, **disputes** | **Recommended strategy**: **one** **paragraph** **tenant/contract** **risk** (done) |
+| 7 | **“Family can do surge”** without measurement | [`Vision` A2](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), **V11** | **V11** **log** **shows** **impossible** **week** | **Vision**: **A2** **illusory** **until** **V11** **+** **surge** **window** (done) |
+| 8 | **Homelab/NOC at 5 ac scales cleanly** with farm complexity | [`Smart tech`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`Two-site ops`](two-site-operations-model-5ac-homebase-120ac-production.md) | **Patch** **debt**, **spouse** **on-call**, **one** **sick** **operator** | Already partially remediated—**hostile** **table** **points** **to** **stop** **rules** |
+| 9 | **Checklist rows checked = validated reality** | [`Pilot/recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | **Independent** **evidence** **(file**, **third** **party** **)** | **Pilot checklists**: **warning** **callout** (done) |
+| 10 | **Phase 2 “first real business” sounds modest** | [`Executive summary`](east-tennessee-two-site-farm-business-plan-executive-summary.md), [`10-year roadmap`](east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) | **Phase** **2** **still** **=** **major** **irreversible** **bets** **if** **G1** **wrong** | **Executive summary**: **temper** **phase** **language** (done) |
+| 11 | **Profit intent will win over emotional scaling** | [`Vision`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), [`validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) | **Scale** **freeze** **ignored** **in** **stress** | **Vision**: **link** **stop** **rules** **to** **emotional** **scale** **(done)** |
+| 12 | **Insurance quoted = loss covered** | [`Validation backlog` V9](east-tennessee-two-site-farm-business-plan-validation-backlog.md) | **Binder** **exclusions**, **underinsured** **equipment** | **Decision memo**: **binder** **≠** **proof** **(done)** |
+
+---
+
+## 8. Exact canonical edits tied to §7 (implementation status)
+
+| §7 # | Page | Edit |
+|------|------|------|
+| 1 | [`execution-first-24-months…`](execution-first-24-months-phase-0-1-east-tennessee.md) | **Bold** reminder: **G1** **not** **promised** **by** **month** **24** |
+| 2 | [`labor model…`](east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) | Subsection: **weekly** **template** **invalid** **until** **surge** **measured** |
+| 3 | [`executive summary…`](east-tennessee-two-site-farm-business-plan-executive-summary.md) | **Telemetry** **≠** **labor** **savings** **by** **default** |
+| 4 | [`vision…`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) | **A3** **(and** **A2**) **marked** **unvalidated** **until** **evidence** |
+| 5–6 | [`recommended enterprise strategy…`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) | **Execution** **friction** + **lease** **risk** **paragraphs** |
+| 9 | [`pilot/recon checklists…`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | **Evidence** **quality** **warning** |
+| 10 | [`executive summary…`](east-tennessee-two-site-farm-business-plan-executive-summary.md) | **Phase** **2** **still** **heavy** |
+| 11 | [`vision…`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) | **Emotional** **scale** **callout** |
+| 12 | [`execution decision memo…`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md) | **Insurance** **row** **clarified** |
+| **All** | [`execution dossier hub…`](execution-dossier-hub-phase-0-1-east-tennessee.md) | **Ready** **for** **execution** **checklist** **(§** **below** **in** **that** **page** **)** |
 
 ---
 

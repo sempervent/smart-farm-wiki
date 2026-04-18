@@ -18,22 +18,31 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [East Tennessee two-site farm business plan — planning framework](analyses/east-tennessee-two-site-farm-business-plan-framework.md) — Detailed hub and document tree.
 - [East Tennessee two-site farm business plan — executive summary](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) — One-page map.
 - [East Tennessee two-site farm business plan — vision, objectives, and constraints](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)
-- [East Tennessee two-site farm business plan — two-site operating model](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) — 5 ac control center; 35-min batching.
+- [East Tennessee two-site farm business plan — two-site operating model](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) — 5 ac control center; **35-min distance tax** (structural).
+- [Trip batching and site visit policy — two-site smart farm](analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md) — **Justified trips**, batching, remote observability, **failure patterns**.
+- [Two-site structure disqualifiers — East Tennessee package](analyses/two-site-structure-disqualifiers-east-tennessee.md) — **Poor-fit** enterprises and **self-disqualifying** ops.
 - [Enterprise options analysis — 120-acre East Tennessee two-site smart farm](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) — Scenario matrix.
-- [Recommended enterprise strategy — phased East Tennessee path](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md)
-- [Smart technology and telemetry strategy — control center on 5 acres](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)
+- [Recommended enterprise strategy — phased East Tennessee path](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) — Phase 1–2 **default** (stocker-led beef) vs **fallback** (lease/custom), deferred paths, decision boundaries.
+- [Smart technology and telemetry strategy — control center on 5 acres](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) — **AA/AF/PA/SO** decision controls; links **stop rules**.
+- [Automation stop rules — two-site smart farm](analyses/automation-stop-rules-two-site-smart-farm.md) — **NS/MV** gates; **Phase 1** observational-only defaults.
 - [Labor model and weekly operating rhythm](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md)
 - [Capital plan and infrastructure sequencing](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md)
 - [Revenue model and milestones](analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
 - [Risk register and mitigation strategy](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
 - [East Tennessee two-site farm business plan — 10-year roadmap](analyses/east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) — Phases 0–4.
 - [Validation backlog and decision gates](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md)
-- [Validation and pilot plan — first 24 months (East Tennessee two-site)](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md)
+- [Execution dossier — Phase 0–1 (hub)](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — **Start here**: memo → 90d → checklist → 12m → 24m.
+- [First 90 days — Phase 0–1 execution](analyses/execution-first-90-days-phase-0-1-east-tennessee.md)
+- [First 12 months — Phase 0–1 execution](analyses/execution-first-12-months-phase-0-1-east-tennessee.md)
+- [First 24 months — Phase 0–1 execution](analyses/execution-first-24-months-phase-0-1-east-tennessee.md)
+- [Master checklist — Phase 0–1 execution](analyses/execution-dossier-master-checklist-phase-0-1-east-tennessee.md)
+- [Decision memo — Phase 0–1 execution](analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md)
+- [Validation and pilot plan — first 24 months (East Tennessee two-site)](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — matrix + T0 calendar windows
 - [Pilot and recon checklists — first 24 months (two-site smart farm)](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
 
 **Operational artifacts** (tables / matrices):
 
-- [Two-site operating model — 5-acre home base and 120-acre farm](analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
+- [Two-site operating model — 5-acre home base and 120-acre farm](analyses/two-site-operations-model-5ac-homebase-120ac-production.md) — **Authoritative distance-tax**; see also [`trip policy`](analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md) and [`disqualifiers`](analyses/two-site-structure-disqualifiers-east-tennessee.md).
 - [Family labor model and coverage matrix — two-site smart farm](analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md)
 - [Instrumentation priority matrix — two-site smart farm](analyses/instrumentation-priority-matrix-two-site-smart-farm.md)
 - [Capital phasing table — years 0 to 10](analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md)
@@ -47,7 +56,8 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [CAPEX, OPEX, and enterprise sequencing — two-site constraint](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md)
 - [Farm accounting baseline — chart of accounts and enterprise P&L structure](analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md)
 - [Revenue milestone model — supplemental to salary replacement](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md)
-- [Instrumentation ROI model — two-site smart farm](analyses/instrumentation-roi-model-two-site-smart-farm.md)
+- [Execution gates — financial thresholds (Phase 0→4)](analyses/execution-gates-financial-thresholds.md)
+- [Instrumentation ROI model — two-site smart farm](analyses/instrumentation-roi-model-two-site-smart-farm.md) — Triage, **FP** cost, upkeep, **DC-*** decommission.
 
 **Critique, remediation, source campaign:**
 

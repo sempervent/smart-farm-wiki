@@ -3,7 +3,7 @@ title: Enterprise options analysis — 120-acre East Tennessee two-site smart fa
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -28,7 +28,36 @@ This page **compares plausible enterprise paths** for the **~120-acre** producti
 
 **Not asserted**: Soil maps, fence/water condition, debt capacity, or market access—those remain **validation** items ([`validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md)). Numbers below are **pattern-level** (typical tradeoffs), not farm-specific pro formas.
 
-**Distance rule of thumb**: A 35-minute one-way leg consumes **~1.2 hours** round-trip plus task time. Models that need **daily eyes** without resident labor score worse unless **batchable**, **deferrable**, or **telemetrable** with honest alert burden.
+**Distance rule of thumb**: A **35-minute** one-way leg is **~70 minutes** in the vehicle **before** **`τ_ctx`** (gear, fuel, boots) and **before** **productive** `SITE_FARM` time. **Do not** soften this for optimism—**log P90** and plan to it ([`Two-site operating model — distance-tax rules`](two-site-operations-model-5ac-homebase-120ac-production.md#distance-tax-rules-explicit)).
+
+**Policy overlays**: [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md), [`Two-site structure disqualifiers`](two-site-structure-disqualifiers-east-tennessee.md).
+
+---
+
+## Split-site penalty model (structural, not negotiable)
+
+This section turns the commute into a **ranking machine**. It **does not** reduce the **35-minute** penalty—it makes **hidden trip load** visible before CAPEX and livestock commitments.
+
+### Touch-frequency classes (tie-breaker)
+
+Aligned with **distance-tax tiers** on the operating model (**T0–T3**):
+
+| Class | Meaning | Default stance for **~35 min** split |
+|-------|---------|--------------------------------------|
+| **T0 — Episodic** | Long gaps; predictable surges | **Eligible** **if** **batched** + **telemetry** |
+| **T1 — Weekly batch** | **1–3** non-emergency visit blocks / week | **Target band** for **family** baseline |
+| **T2 — Multi-touch** | **>3** weekly visits **or** **frequent** **unplanned** **extras** | **Pay** **full** **penalty** in **`R_SPLIT`**—often **needs** **redesign** |
+| **T3 — Daily physical** | **Eyes/hands** most days | **Disqualified** **as primary** **without** **resident** labor or **crew**—see [`disqualifiers`](two-site-structure-disqualifiers-east-tennessee.md) |
+
+### Incremental economics (worksheet)
+
+For enterprise **X**, incremental split-site burden **`Δ_OPEX_SPLIT_X`** and ratio **`R_SPLIT_X = Δ_OPEX_SPLIT_X / max(contribution margin_X, ε)`** are defined in [`Enterprise unit economics`](enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md). **SPLIT-1** fail (**`R_SPLIT_X > R_SPLIT_MAX`**) means **logistics eats margin**—**no** “scale into it” without **structural** change.
+
+### Structural tax score (comparison table column)
+
+**Split tax (1–5)**: **5** = **lowest** structural penalty (**batchable**, **telemetry-friendly**, **few** **forced** trips); **1** = **highest** (**daily** touch, **weather-hostage** peaks **without** sleep-near-field, **high** **junk-trip** risk). **This score is not** “profit”—it is **fit to the split**. A **profitable** enterprise can still be **tax score 1** (**will burn the family**).
+
+**Hard rule**: Any path whose **operating truth** is **T3** for the **baseline labor** plan is **not** a **Phase 1–2** **primary** candidate—rename it **deferred**, **hobby-scale**, or **staffed**.
 
 ---
 
@@ -566,20 +595,22 @@ Production + **sales** + often **regulatory** literacy.
 
 ## Comparison table
 
-Scores are **relative** for this **family**, **two-site**, **profit/low-labor/automation** brief—**not** universal truths. Scale **1–5** (5 = best fit).
+Scores are **relative** for this **family**, **two-site**, **profit/low-labor/automation** brief—**not** universal truths. Scale **1–5** (5 = best fit) on each column **except** **Split tax**, where **5 = lowest penalty**.
 
-| Path | Profit potential | Labor intensity (5=low) | Cap intensity (5=low) | Automation leverage | Time to revenue (5=fast) | Two-site fit | Resilience | Notes |
-|------|------------------|-------------------------|------------------------|---------------------|--------------------------|--------------|------------|-------|
-| A Beef grazing / cow-calf | 3–4 | 3 | 2 | 4 | 2 | 4 | 4 | Thin margins unless premium/direct |
-| B Small ruminants | 2–3 | 2 | 2 | 3 | 3 | 2 | 3 | Predator/labor/markets |
-| C Hay mechanical | 2–3 | 2 | 1 | 2 | 5 | 2 | 3 | Equipment trap |
-| D Mixed livestock | 3 | 2 | 2 | 3 | 3 | 3 | 4 | Complexity tax |
-| E Specialty crops | 3–5 | 1 | 2 | 3 | 4 | 1 | 3 | Channel-dependent |
-| F Orchard / perennial | 3–5* | 2 | 2 | 3 | 1 | 3 | 3 | *Years to bearing |
-| G Agritourism | 2–4 | 1 | 2 | 2 | 4 | 2 | 3 | Presence + regs |
-| H Phased mixed | 4 | 3 | 3 | 4 | 3 | 4 | 4 | **Meta-strategy** |
-| I Land-first | 2† | 3 | 2 | 3 | 1 | 4 | 4 | †Raises **future** profit |
-| J Lease / contract | 2–3 | 4 | 5 | 2 | 5 | 5 | 3 | Usually **partial** income |
+| Path | Profit potential | Labor intensity (5=low) | Cap intensity (5=low) | Automation leverage | Time to revenue (5=fast) | Split tax (5=lowest) | Two-site fit | Resilience | Notes |
+|------|------------------|-------------------------|------------------------|---------------------|--------------------------|---------------------|--------------|------------|-------|
+| A Beef grazing / cow-calf | 3–4 | 3 | 2 | 4 | 2 | **4** | 4 | 4 | Thin margins unless premium/direct; **batchable** if **stocking** **honest** |
+| B Small ruminants | 2–3 | 2 | 2 | 3 | 3 | **2** | 2 | 3 | **Higher** trip / handling load vs beef |
+| C Hay mechanical | 2–3 | 2 | 1 | 2 | 5 | **2** | 2 | 3 | **Weather peaks** + distance = **brutal** **without** **near-field** **presence** |
+| D Mixed livestock | 3 | 2 | 2 | 3 | 3 | **2** | 3 | 4 | **T2** risk **unless** **one** **dominant** **engine** |
+| E Specialty crops | 3–5 | 1 | 2 | 3 | 4 | **1** | 1 | 3 | **T3** **touch** **vs** **35 min** **unless** **crew** |
+| F Orchard / perennial | 3–5* | 2 | 2 | 3 | 1 | **3** | 3 | 3 | *Years to bearing; **less** **daily** than veg **once** mature |
+| G Agritourism | 2–4 | 1 | 2 | 2 | 4 | **2** | 2 | 3 | **Presence** / **events** **tax** |
+| H Phased mixed | 4 | 3 | 3 | 4 | 3 | **4** | 4 | 4 | **Meta-strategy** — **refuses** **premature** **T3** |
+| I Land-first | 2† | 3 | 2 | 3 | 1 | **4** | 4 | 4 | †Raises **future** profit; **batched** **improvement** visits |
+| J Lease / contract | 2–3 | 4 | 5 | 2 | 5 | **5** | 5 | 3 | **Reduces** **forced** **trips** for **cash** **flow** |
+
+**How to use Split tax**: If **Split tax** is **1–2**, the path **must** show **`R_SPLIT`** **PASS** **or** a **written** **structural** **remediation** (**resident**, **hire**, **lease-away**, **geometry** change)—not **hope**.
 
 ---
 
@@ -647,6 +678,9 @@ Start **one** **grazing** engine: **stockers** (faster cash cycle) **or** **smal
 
 - [`Planning framework — rubric`](east-tennessee-two-site-farm-business-plan-framework.md#weighted-evaluation-rubric)
 - [`Two-site operating context`](east-tennessee-two-site-farm-business-plan-two-site-operating-context.md)
+- [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) — **distance-tax** rules
+- [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md)
+- [`Two-site structure disqualifiers`](two-site-structure-disqualifiers-east-tennessee.md)
 - [`East Tennessee — profitable crops matrix`](east-tennessee-profitable-crops-matrix.md)
 - [`Dual-site operations model — non-agritourism`](dual-site-operations-model-non-agritourism.md)
 - [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md)

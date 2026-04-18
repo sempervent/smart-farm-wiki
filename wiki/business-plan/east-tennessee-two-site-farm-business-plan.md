@@ -18,6 +18,8 @@ aliases:
 
 **First-class entry** for the **decision-grade** business plan: **~5-acre** home base and **~120-acre** production in **East Tennessee**, **~35-minute** separation, **family labor**, **phased** enterprises, **telemetry as capital**, **10-year** horizon. Detailed rubric, knowns/unknowns, and full tables live in the **planning framework**; this page is the **stable navigation spine** for readers and agents.
 
+**Operational bar**: The package is **not** “live” until [`Ready for execution`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational) passes—see [`Hostile internal review` §7](../analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
+
 **Canonical detail hub**: [`East Tennessee two-site farm business plan — planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md)
 
 **Topic operations hub** (telemetry, runbooks, comparisons): [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md)
@@ -35,11 +37,14 @@ aliases:
 | 0 | [`Planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) |
 | * | [`Executive summary`](../analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md) — optional **first** read for the one-page map |
 | 1 | [`Vision, objectives, and constraints`](../analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) |
-| 2 | [`Two-site operating context`](../analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) |
+| 2 | [`Two-site operating context`](../analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md) — **35-min distance tax**; links **distance-tax** detail + **trip policy** |
+| 2b | [`Two-site operations model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) — **`DT-*` rules**, **`R_SPLIT`**; read **before** picking **daily-touch** enterprises |
+| 2c | [`Trip batching and site visit policy`](../analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md), [`Two-site structure disqualifiers`](../analyses/two-site-structure-disqualifiers-east-tennessee.md) |
 | 3 | [`Enterprise options analysis`](../analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md) |
 | 4 | [`Recommended enterprise strategy`](../analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) |
 | 5 | [`Labor model and weekly operating rhythm`](../analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) |
-| 6 | [`Smart technology and telemetry strategy`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) |
+| 6 | [`Smart technology and telemetry strategy`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) — **AA/AF/PA/SO** |
+| 6b | [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md) — **NS/MV**, Phase 1 **observe-only** |
 | 7 | [`Capital plan and infrastructure sequencing`](../analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md) |
 | 8 | [`Revenue model and milestones`](../analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md) |
 | 9 | [`Risk register and mitigation strategy`](../analyses/east-tennessee-two-site-farm-business-plan-risk-register.md) |
@@ -50,8 +55,10 @@ aliases:
 
 ## Execution, pilots, and first 24 months
 
-- [`Validation and pilot plan — first 24 months`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md)
-- [`Pilot and recon checklists`](../analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
+**Start here (Phase 0–1 dossier)**: [`Execution dossier hub`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — read order: [`Decision memo`](../analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md) → [`First 90 days`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md) → [`Master checklist`](../analyses/execution-dossier-master-checklist-phase-0-1-east-tennessee.md) → [`First 12 months`](../analyses/execution-first-12-months-phase-0-1-east-tennessee.md) → [`First 24 months`](../analyses/execution-first-24-months-phase-0-1-east-tennessee.md).
+
+- [`Validation and pilot plan — first 24 months`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — full validation matrix + cheap proofs (detail)
+- [`Pilot and recon checklists`](../analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) — copy-paste rows
 
 ---
 
@@ -75,7 +82,9 @@ Linked from the framework; same targets as [`Two-site smart farm operations`](..
 - [`CAPEX, OPEX, and enterprise sequencing`](../analyses/capex-opex-enterprise-sequencing-two-site-constraint.md)
 - [`Farm accounting baseline`](../analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md)
 - [`Revenue milestone model`](../analyses/revenue-milestone-model-supplemental-to-salary-replacement.md)
+- [`Execution gates — financial thresholds`](../analyses/execution-gates-financial-thresholds.md) — **Fin-G(0→1)** … **Fin-G(3→4)**; consolidates pass/fail vs **M0–M4**
 - [`Instrumentation ROI model`](../analyses/instrumentation-roi-model-two-site-smart-farm.md)
+- [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md)
 
 ---
 

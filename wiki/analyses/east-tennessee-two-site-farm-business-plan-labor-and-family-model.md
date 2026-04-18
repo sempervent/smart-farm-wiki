@@ -3,7 +3,7 @@ title: Labor model and weekly operating rhythm
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -59,6 +59,12 @@ Make **family capacity** and **time** explicit for a **two-site** operation: **~
 | Sun | Rest / exception | Calving or hay **override** |
 
 **Rule of thumb (Phase 2+ grazing)**: minimum **two** batched **120** visits per week—increase during **surge** ([`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md)).
+
+### Why the weekly template is usually wrong (until proven)
+
+The DOW grid is a **hypothesis**, not a promise. **Execution illusion**: the farm will follow the grid because it reads sensibly on paper.
+
+**Falsifier**: one **measured** surge week (calving, hay weather, processing squeeze, major escape) where **logged hours** exceed the template’s implied capacity. Until **V11** includes **at least one** such window and the **coverage matrix** shows **who absorbs overload**, treat the grid as **unproven**—especially under the **35-minute** split ([`distance-tax rules`](two-site-operations-model-5ac-homebase-120ac-production.md)).
 
 ## Seasonal surge (placeholders)
 

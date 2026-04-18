@@ -1,0 +1,82 @@
+---
+title: Automation stop rules — two-site smart farm
+page_type: analysis
+status: active
+created: 2026-04-21
+updated: 2026-04-21
+review_status: unreviewed
+tags:
+  - automation
+  - telemetry
+  - two-site
+  - governance
+confidence: medium
+---
+
+# Automation stop rules — two-site smart farm
+
+## Purpose
+
+Execution-safe **stop**, **freeze**, and **no-scale** rules for automation and telemetry on the East Tennessee two-site package. Aggressive automation stays allowed as **philosophy**—but **scaling stops** when failure rates, upkeep load, or operator burden exceed budgets, or when manual validation has not passed.
+
+This page does **not** assume instrumentation reduces labor by default ([`Smart technology strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`Instrumentation ROI`](instrumentation-roi-model-two-site-smart-farm.md)).
+
+---
+
+## When a system must not scale
+
+Freeze fleet expansion or roll back to pilot scope if **any** row below holds after a documented remediation attempt:
+
+| ID | Condition | Evidence |
+|----|-----------|----------|
+| **NS-1** | `FP_RATE > FP_RATE_MAX` for `T_FP_EVAL` consecutive weeks | [`ROI — false-positive cost fields`](instrumentation-roi-model-two-site-smart-farm.md#false-positive-cost-fields) |
+| **NS-2** | `H_TRIAGE_WK` for this cluster exceeds allocated `H_TRIAGE_BUDGET_WK`, **or** total triage exceeds `H_TRIAGE_MAX` | Time logs; [`Enterprise unit economics`](enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md) |
+| **NS-3** | Net labor hours ≤ 0 for **two** review periods per ROI worksheet | [`Instrumentation ROI`](instrumentation-roi-model-two-site-smart-farm.md) |
+| **NS-4** | Marginal OPEX + marginal triage per node ≥ marginal trip-$ benefit (rolling quarter) | Sublinear benefit curve broken |
+| **NS-5** | No named owner for patch/incident and `T_PATCH_MAX` elapsed | Security stop — [`Smart tech` § security](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md#security-obligations-non-negotiable) |
+| **NS-6** | Actuation enabled without **PA-*** proof rows met | Immediate revert to observe-only |
+
+**Scale** means more nodes, tighter alert thresholds, new integrations, or remote actuation beyond a proven pilot.
+
+---
+
+## What must be manually validated before rollout
+
+**Rollout** = production reliance on an instrument for operations, or first actuation enable.
+
+| Gate | Manual validation |
+|------|-------------------|
+| **MV-1** | Asset ID + location in registry matches physical install |
+| **MV-2** | Baseline manual procedure documented (normal vs alarm) |
+| **MV-3** | One season **or** `T_OBSERVE_MIN` weeks of observe-only data with labeled true vs false alerts |
+| **MV-4** | Degraded-mode drill: broker down / LTE only — document who drives and how often |
+| **MV-5** | Runbook link for this instrument class (triage, mute policy, escalation) |
+| **MV-6** | Cyber: remote surface inventoried for this cluster |
+
+Missing **any** **MV-*** → no fleet rollout and no actuation.
+
+---
+
+## Phase 1 observational only by default
+
+Per [`Smart tech` stack posture](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md#stack-posture-by-phase), these systems remain **observational only** unless **PA-1–PA-6** and **MV-1–MV-6** are explicitly satisfied for that asset:
+
+| System / class | Phase 1 default |
+|----------------|-----------------|
+| Stock water level / pump run / fault | Observe + alert only |
+| Power visibility at pump / gateway | Observe only |
+| Gate position sensor | Observe only — no remote latch release |
+| Irrigation valves / schedulers | Observe only or deferred (see **AF-3** on [`Smart tech`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)) |
+| Cameras | Observe only — no automated actions from CV |
+| Herd GPS / collars | Deferred or pilot one unit — not fleet |
+
+Remote actuation (pump control, gate motor, irrigation writes) requires exiting this table via proof gates **PA-*** on [`Smart technology strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md#proof-requirements-before-remote-actuation).
+
+---
+
+## Related
+
+- [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md)
+- [`Runbook — sensor false positive and alert triage`](runbook-sensor-false-positive-alert-triage.md)
+- [`Execution gates — financial thresholds`](execution-gates-financial-thresholds.md)
+- [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md)

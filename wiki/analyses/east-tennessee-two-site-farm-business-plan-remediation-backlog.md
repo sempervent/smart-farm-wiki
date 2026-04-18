@@ -3,7 +3,7 @@ title: Business plan remediation backlog
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -17,7 +17,7 @@ aliases:
 
 # Business plan remediation backlog
 
-**Source critique**: [`East Tennessee two-site farm business plan — hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — **not** superseded; this page **operationalizes** it into **repository changes** and **decision controls**.
+**Source critique**: [`East Tennessee two-site farm business plan — hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — **not** superseded; this page **operationalizes** it into **repository changes** and **decision controls**. **Second-pass execution illusions**: [§7](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
 
 **Authoritative sources** (minimum ingest set, category priorities, proposed source-note titles): [`Business plan source-ingest campaign — East Tennessee two-site`](business-plan-source-ingest-campaign-east-tennessee-two-site.md).
 
@@ -49,22 +49,25 @@ aliases:
 
 ---
 
-## 2. Revised priority order (implement / edit the plan **in this order**)
+## 2. Revised priority order (execution hardening — second pass, 2026)
 
-**Principle**: **Truth and liquidity** before **scale**; **manual** **competence** before **remote** **control**; **one** **financed** **bet** **at** **a** **time**.
+**Principle**: **Kill narrative optimism before capital optimism**—**labor truth** and **liquidity** before **scale**; **manual** competence before **remote** **control**; **one** financed bet at a time. **Supersedes** ad-hoc ordering if conflict: see [`Hostile internal review` §7](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
 
-| Rank | Do first | Do not advance until |
-|------|----------|----------------------|
-| 1 | **Legal / access / zoning** clarity (`V8`, deed) | **G1** **blocked** **on** **paper** |
-| 2 | **Water** truth (`V2`, `V4` band) | **Herd** **or** **fence** **at** **scale** |
-| 3 | **Market** **probe** + **processing** **path** (`V5`, `V6`) | **Owned** **inventory** **without** **exit** |
-| 4 | **Books** + **WC** **buffer** + **numeric** **stop** **rules** | **New** **term** **debt** |
-| 5 | **Conservative** **production** **or** **lease** **income** | **Second** **enterprise** |
-| 6 | **Telemetry** **pilot** **with** **measured** **trip** **and** **triage** **hours** | **Fleet** **rollout** |
-| 7 | **Margin** **years** **documented** | **Salary** **claim** |
-| 8 | **Scale** **herd** **or** **equipment** | **Salary** **replacement** **marketing** |
+**Ready-for-execution gate** (behavioral): [`Execution dossier hub — Ready for execution`](execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational).
 
-This **explicitly** **demotes** **dashboard** **work** **above** **water** **truth**—**correct** **for** **this** **critique**.
+| Rank | Harden first | Do not advance until |
+|------|--------------|----------------------|
+| 1 | **Stop rules + hour log** posted and used ([`Vision`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), **V11**) | **Scale** or **debt** **talk** **without** **labor** **truth** |
+| 2 | **Legal / access / zoning** (`V8`, deed) | **G1** **evidence** **on** **paper** |
+| 3 | **Water** truth (`V2`, conservative **V4**) | **Fence/water** **CAPEX** **or** **herd** |
+| 4 | **Market + processing** (`V5`, `V6`) + **WC** policy ([`Capital plan`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md)) | **Owned** **livestock** **scale** |
+| 5 | **Surge** measured; **coverage** **matrix** **non-fantasy** | **Second** **enterprise** **or** **“we’ll** **grind”** **weeks** |
+| 6 | **Books** + **numeric** **stop** **rules** **reconciled** **to** **behavior** | **New** **term** **debt** |
+| 7 | **Telemetry** pilot: **trip** + **triage** **hours** ([`ROI`](instrumentation-roi-model-two-site-smart-farm.md)) | **Fleet** **/** **cameras** **/** **actuation** |
+| 8 | **Margin** **years** **or** **honest** **subsidy** **line** | **Salary** **claim** (**G3**) |
+| 9 | **Insurance** **binder** **review** (**V9**) **not** **quote-only** | **Financed** **equipment** **(Phase** **2** **gear** **)** |
+
+**Demoted vs older drafts**: **dashboards** and **strategy** **essays** **after** **labor** **surge** **truth**—**correct** **for** **execution** **risk**.
 
 ---
 
@@ -86,6 +89,8 @@ This **explicitly** **demotes** **dashboard** **work** **above** **water** **tru
 ---
 
 ## 4. “Must validate in the real world first” checklist
+
+**Operational bar**: Also satisfy [`Ready for execution`](execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational) **before** treating the plan as **operational** (not just documented).
 
 **P0** — **no** **Phase** **2** **production** **bet** **without** **these** **as** **pass** **or** **written** **waive** **with** **date**:
 

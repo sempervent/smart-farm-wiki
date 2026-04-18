@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — planning framework
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -288,7 +288,8 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 - [`Hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — Skeptical critique, revised implementation order, **do not finance yet** list
 - [`Business plan remediation backlog`](east-tennessee-two-site-farm-business-plan-remediation-backlog.md) — Weakness→fix matrix, **decision controls**, P0/P1/P2 validation checklist
 - [`Business plan source-ingest campaign — East Tennessee two-site`](business-plan-source-ingest-campaign-east-tennessee-two-site.md) — **Extension/NRCS/market/insurance** priorities; proposed source-note titles; **raw vs synthesis** rules
-- [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — Validation matrix, **pilot** program (land, infra, business, telemetry, labor), **phase** gates, cheap proofs; [`checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
+- [`Execution dossier — Phase 0–1 (hub)`](execution-dossier-hub-phase-0-1-east-tennessee.md) — **Practical** first 24 months: memo, 90d/12m/24m, master checklist; **start here** for field execution
+- [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — Validation matrix, **pilot** program (land, infra, business, telemetry, labor), **phase** gates, cheap proofs, **T0** calendar; [`checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
 - [`Business plan wiki — Git-friendly execution sequence`](business-plan-wiki-git-execution-sequence.md) — How to **merge** the plan work in **coherent PRs** (navigation first, meta after core)
 - Comparisons: [`LoRaWAN vs Meshtastic`](../comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md), [`farmOS vs lightweight`](../comparisons/farmos-vs-lightweight-stack-two-site-farm.md), [`own vs hire`](../comparisons/own-equipment-vs-custom-hire-two-site-logistics.md), [`fixed vs mobile gateway`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md)
 

@@ -3,7 +3,7 @@ title: Validation backlog and decision gates
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -23,6 +23,8 @@ List **what must be proven** (with **evidence**) before **major spend**, **scale
 **Scenario context**: [`Enterprise options analysis — 120-acre East Tennessee two-site smart farm`](east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md).  
 **Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).  
 **24-month cadence**: [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — validation matrix, pilot streams, phase gates, cheap proofs; [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md).
+
+**Execution dossier (Phase 0–1)**: [`Hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) · [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
 
 ## Decisions supported by this page
 
@@ -66,13 +68,17 @@ List **what must be proven** (with **evidence**) before **major spend**, **scale
 
 **Align** with **G1–G8** in [`validation-backlog-before-major-spend`](validation-backlog-before-major-spend-two-site-smart-farm.md) for **major $** definition.
 
-## Next 90 days (placeholder)
+## Next 90 days (relative to T0)
 
-| Week | Action |
-|------|--------|
-| 1–2 | V11, V8; **numeric** stop rules in [`Vision`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) |
+Use [`First 90 days — Phase 0–1 execution`](execution-first-90-days-phase-0-1-east-tennessee.md) for week-by-week actions. At a minimum:
+
+| Week band (after T0) | Actions |
+|----------------------|---------|
+| 1–2 | V11, V8; numeric stop rules in [`Vision`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) |
 | 3–6 | V1, V3, V5 started |
-| 7–12 | V4, V7, V10; pilot telemetry scope locked |
+| 7–12 | V4, V7, V10; pilot telemetry scope locked (one cluster) |
+
+**T0** = execution start date (see [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md)).
 
 ## Known facts
 

@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — vision, objectives, and co
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -79,6 +79,12 @@ Build a **for-profit**, **two-site** farm business in **East Tennessee**: **~120
 | A1 | **35 min** is **typical** one-way for **batch** planning | Seasonal drive log |
 | A2 | **At least one** family member can do **surge** weeks (calving, hay weather) | Annual calendar |
 | A3 | **Off-farm income** bridges **Years 1–3** | Household budget |
+
+**Execution risk**: **A2** and **A3** are **wishful** until **evidence**. **A2** is **illusory** without **V11** time log **plus** **one** **documented** **surge** window and **coverage** that **does not** assume **heroics**. **A3** is **illusory** without **named** income sources and **stress** if **job** **loss** **or** **health** **event**—the “bridge” is **not** automatic.
+
+### Emotional scaling (explicit non-goal)
+
+**Profit intent** does **not** protect you from **scale-before-proof** under stress. If **stop rules** in this page would be **emotionally** “too harsh” to follow in public, **the plan is not operational**—it is **theater** ([`Ready for execution`](execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational)).
 
 ## Open questions
 

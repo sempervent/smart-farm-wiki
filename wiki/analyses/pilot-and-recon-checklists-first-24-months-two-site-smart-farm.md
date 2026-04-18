@@ -1,9 +1,9 @@
 ---
 title: Pilot and recon checklists — first 24 months (two-site smart farm)
 page_type: analysis
-status: draft
+status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - checklist
@@ -16,6 +16,10 @@ confidence: low
 # Pilot and recon checklists — first 24 months (two-site smart farm)
 
 **Parent plan**: [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md)
+
+**Execution dossier (read first)**: [`Hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) (priority **P0–P3**) · [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
+
+**Wishful-thinking trap**: Checking a row is **not** validation. **Evidence** means **verifiable** artifacts (file, letter, **third-party** **readout**, **dated** **photo** **set**) that **survive** **skepticism**—see [`hostile internal review` §7](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
 
 Use as **copy-paste** into a spreadsheet or print; **date** and **initial** each completed row in the field.
 

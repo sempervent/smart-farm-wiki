@@ -1,9 +1,9 @@
 ---
 title: Validation and pilot plan — first 24 months (East Tennessee two-site)
 page_type: analysis
-status: draft
+status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -26,15 +26,28 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 
 **Fillable checklists**: [`Pilot and recon checklists — first 24 months`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md).
 
+**Execution dossier (Phase 0–1 — use first)**: [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md) · [`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) · [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
+
 ---
 
-## Timeline vs phases (calendar slips; gates don’t)
+## Calendar windows (T0 = execution start date)
 
-| Calendar | Roadmap phase (approx.) | Focus |
-|----------|-------------------------|--------|
-| **Months 0–6** | **Phase 0** + **start** Phase 1 | Legal/access/books baseline; **cheap** land + market intel |
-| **Months 6–18** | **Phase 1** | Land intelligence, **recon**, **small** business + telemetry **pilots**, **labor** truth |
-| **Months 18–24** | **Phase 1** **complete** **or** **early** Phase 2 entry | **G1** **green** → **permission** for **fence/water/herd** MVP **if** **ready**; **not** **automatic** |
+**T0** is the day the family **declares execution start** (fill in your tracker). All windows below are **relative to T0**. **Gates do not slip** when the calendar does—**evidence** must pass before spend.
+
+| Window | Roadmap phase (approx.) | Focus |
+|--------|-------------------------|--------|
+| **T0 → T0+90d** | Phase 0 + start Phase 1 | Books, **V8** path, **V1/V3** started, **V11** log, **G8** manual baseline started; **no** major CAPEX |
+| **T0+3mo → T0+12mo** | Phase 1 | **V2/V4/V5/V6** evidence, fence repair tiers, **one** telemetry pilot cluster max |
+| **T0+12mo → T0+18mo** | Phase 1 | **G1** evidence packet complete or explicit waivers; pivot to lease if grazing path fails |
+| **T0+18mo → T0+24mo** | Phase 1 → possible early Phase 2 | **G1 PASS** → permission for fence/water/herd MVP per [`validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md)—**not automatic** by month 24 |
+
+**Quarter overlay (optional—align reviews to real calendar)**
+
+| Quarter after T0 | Review emphasis |
+|------------------|-----------------|
+| **Q1** (days 1–90) | Exit checklist in [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) |
+| **Q2–Q4** (months 4–12) | [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md) |
+| **Year 2** (months 13–24) | [`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md) + **G1** decision |
 
 ---
 
@@ -173,6 +186,7 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 
 ## Related pages
 
+- [`Execution dossier hub — Phase 0–1`](execution-dossier-hub-phase-0-1-east-tennessee.md)
 - [`East Tennessee two-site farm business plan — revenue model and milestones`](east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md)
 - [`Business plan source-ingest campaign`](business-plan-source-ingest-campaign-east-tennessee-two-site.md)
 - [`Reference architecture — 5 ac + 120 ac`](reference-architecture-5ac-homebase-120ac-smart-farm.md)

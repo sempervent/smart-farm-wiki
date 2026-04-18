@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — executive summary
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - business-plan
@@ -17,6 +17,8 @@ tags:
 ## What this is
 
 A **wiki-native**, **phased** business plan for an **East Tennessee** **two-site** operation: **~5 acres** = **home + control center** (smart house, workshop/lab, telemetry spine); **~120 acres** = **primary production**, **~35 minutes** away. **Objective order**: **profit** → **low labor** → **resilience**. **Horizon**: **10 years** from side income toward **possible** **salary replacement**—**not** **guaranteed**.
+
+**Operational honesty**: A filled wiki is **not** an operating farm. **Telemetry does not automatically reduce labor**—it may reduce trips while **triage and upkeep** consume hours ([`Instrumentation ROI`](instrumentation-roi-model-two-site-smart-farm.md), [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)). **Phase 2** still means **large, hard-to-reverse** bets if **G1** evidence is wrong—not a “modest next step.”
 
 ## Strategic choice (strategy family)
 

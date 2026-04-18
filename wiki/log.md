@@ -510,3 +510,61 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Entities** (planning roles, no fake deeds): [`five-acre-home-base-site-home-et-two-site.md`](entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre-production-farm-site-farm-et-two-site.md`](entities/120-acre-production-farm-site-farm-et-two-site.md), [`farm-parcels-and-land-units.md`](entities/farm-parcels-and-land-units.md), [`farm-water-infrastructure-system.md`](entities/farm-water-infrastructure-system.md), [`farm-on-site-power-system.md`](entities/farm-on-site-power-system.md), [`field-telemetry-network-two-site.md`](entities/field-telemetry-network-two-site.md); [`example-org.md`](entities/example-org.md) updated.
 - **Hubs / routing**: [`overview.md`](overview.md), [`index.md`](index.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md) (**Canonical ownership** table), [`analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md) (entity anchors), [`analyses/structural-audit-repository-and-canonical-routing.md`](analyses/structural-audit-repository-and-canonical-routing.md) (related link), [`glossary/two-site-sites.md`](glossary/two-site-sites.md), [`glossary/smart-farm-wiki-glossary.md`](glossary/smart-farm-wiki-glossary.md).
 
+---
+
+## [2026-04-21] refactor | Phase 1–2 execution thesis — recommended enterprise strategy
+
+- Rewrote [`analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md): **default** = **stocker/backgrounder-led beef** on grass; **single fallback** = **lease/custom/rent-heavy** minimal owned inventory; **deferred** theses table (cow-calf primary, small ruminants primary, specialty/orchard/agritourism/row primary); **decision boundaries** table (default alive / fallback / stop both) tied to **V1–V7** and **G1** + [`Vision` stop rules](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md); **“not now”** section; operational **what Phase 1–2 becomes** language. No invented economics.
+
+---
+
+## [2026-04-21] refactor | Financial layer → execution gates (methodology to pass/fail)
+
+- New [`analyses/execution-gates-financial-thresholds.md`](analyses/execution-gates-financial-thresholds.md): **Fin-G(0→1)** … **Fin-G(3→4)** consolidated criteria; links **M0–M4**, validation **G1–G3**, **FC*** family.
+- Revised [`revenue-milestone-model-supplemental-to-salary-replacement.md`](analyses/revenue-milestone-model-supplemental-to-salary-replacement.md): inputs, **M*** formulas, threshold placeholders, **no-salary-claim**, bridge-year rules, gate crosswalk.
+- Revised [`enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md`](analyses/enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md): **MVCM-1–3**, **SPLIT-1–2**, labor (`L_CHRG`, family shadow, **`H_TRIAGE`** caps).
+- Revised [`capex-opex-enterprise-sequencing-two-site-constraint.md`](analyses/capex-opex-enterprise-sequencing-two-site-constraint.md): **FD-1–6** forbidden debt cases, **infrastructure unlock** matrix, **SS-1–5** spend-stops; aligns with [`Vision`](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md) and [`Remediation` §3](analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md).
+- Navigation: [`index.md`](index.md) financial layer, [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-21] refactor | 35-minute split — tighten operating pages + policy overlays
+
+- [`two-site-operations-model-5ac-homebase-120ac-production.md`](analyses/two-site-operations-model-5ac-homebase-120ac-production.md): **Distance-tax rules** (**DT-0–DT-6**), **T0–T3** touch tiers, **`R_SPLIT`** / worksheet linkage; **no** softening of **`COMMUTE_ONE_WAY`**.
+- [`east-tennessee-two-site-farm-business-plan-two-site-operating-context.md`](analyses/east-tennessee-two-site-farm-business-plan-two-site-operating-context.md): **Package** two-site chapter aligned to **distance tax**, **trip policy**, **disqualifiers**; phased behavior **0–4** tightened.
+- [`east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md`](analyses/east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md): **Split-site penalty model** (**T0–T3**, **`R_SPLIT`**), **Split tax** column on comparison table (**1–5**, **1=highest** penalty).
+- New [`trip-batching-and-site-visit-policy-two-site-smart-farm.md`](analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md): **J1–J4** justification, **batching** rules, **remote** observability priority, **failure** signals.
+- New [`two-site-structure-disqualifiers-east-tennessee.md`](analyses/two-site-structure-disqualifiers-east-tennessee.md): **DQ-E**/**DQ-O**/**DQ-T** patterns + **remediation** table.
+- Navigation: [`index.md`](index.md), [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (reading order **2b–2c**), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-21] refactor | Automation / telemetry → execution controls
+
+- Revised [`east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md): **AA-*** allowed early, **AF-*** forbidden early, **PA-*** proof before actuation, **maintenance burden** assumptions, **SO-*** security obligations; aggressive automation allowed only under scrutiny; **no** default labor reduction from instrumentation.
+- Revised [`instrumentation-roi-model-two-site-smart-farm.md`](analyses/instrumentation-roi-model-two-site-smart-farm.md): **triage** fields (`H_TRIAGE_*`, `FP_RATE`), **false-positive cost** (`C_FP`, `FP_COST_YR`), **upkeep** (`H_PATCH_MO`, `UPKEEP_YR`, etc.), **DC-*** decommission criteria; net hours can be negative.
+- New [`automation-stop-rules-two-site-smart-farm.md`](analyses/automation-stop-rules-two-site-smart-farm.md): **NS-*** no-scale, **MV-*** pre-rollout manual gates, **Phase 1** observational-only table.
+- Navigation: [`index.md`](index.md), [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (reading order **6b**), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-21] refactor | Phase 0–1 execution dossier (first 24 months)
+
+- New [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md): **spine** — read order memo → 90d → checklist → 12m → 24m → validation plan detail.
+- New [`execution-first-90-days-phase-0-1-east-tennessee.md`](analyses/execution-first-90-days-phase-0-1-east-tennessee.md), [`execution-first-12-months-phase-0-1-east-tennessee.md`](analyses/execution-first-12-months-phase-0-1-east-tennessee.md), [`execution-first-24-months-phase-0-1-east-tennessee.md`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md): practical **T0-relative** windows; **pilot-grounded** only.
+- New [`execution-dossier-master-checklist-phase-0-1-east-tennessee.md`](analyses/execution-dossier-master-checklist-phase-0-1-east-tennessee.md): consolidated **P0–P3** bands (land, infra, business, telemetry, labor).
+- New [`execution-dossier-decision-memo-phase-0-1-east-tennessee.md`](analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md): **approved now** / **pilot only** / **forbidden until gates**.
+- Revised [`validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md): **T0** anchor, calendar windows, quarter overlay, links to dossier; status **active**.
+- Revised [`east-tennessee-two-site-farm-business-plan-validation-backlog.md`](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md): **Next 90 days** tied to **T0** + dossier links; [`pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md`](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) banner.
+- [`east-tennessee-two-site-farm-business-plan-framework.md`](analyses/east-tennessee-two-site-farm-business-plan-framework.md): execution dossier hub link in document tree.
+- Navigation: [`index.md`](index.md), [`business-plan/east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md), [`topics/two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md).
+
+---
+
+## [2026-04-21] lint | Execution risk — second-pass illusions + ready-for-execution bar
+
+- [`east-tennessee-two-site-farm-business-plan-hostile-internal-review.md`](analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md): **§7** second-pass **execution illusions** (12); **§8** canonical edit map.
+- [`east-tennessee-two-site-farm-business-plan-remediation-backlog.md`](analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md): **§2** replaced with **execution hardening** priority order; **§4** links **Ready for execution** checklist.
+- [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md): **Ready for execution** checklist (governance, labor, truth, tech, finance/insurance).
+- Direct edits: [`vision`](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), [`executive summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md), [`recommended enterprise strategy`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md), [`labor model`](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md), [`execution-first-24-months…`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md), [`pilot/recon checklists`](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md), [`execution decision memo`](analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md); [`business-plan package`](business-plan/east-tennessee-two-site-farm-business-plan.md) **operational bar** line.
+
