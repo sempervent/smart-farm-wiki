@@ -2,7 +2,7 @@
 
 ## What gets published
 
-- The **wiki** in `wiki/` is the MkDocs site (`mkdocs.yml` sets `docs_dir: wiki`). Navigation is generated from the wiki tree; start from `wiki/index.md` in the built site.
+- The **wiki** in `wiki/` is the MkDocs site (`mkdocs.yml` sets `docs_dir: wiki`). Navigation is generated from the wiki tree; start from `wiki/index.md` in the built site. **Synthesis** and **Evidence summaries** should remain **public-safe** (no secrets; claims cite authority when `raw/` links are neutralized—see `raw-corpus-and-publishing.md`).
 - The **operator handbook** in `docs/` is **not** included in the MkDocs build; it remains in-repo documentation for humans and agents (read in GitHub or your editor).
 
 ## GitHub Actions

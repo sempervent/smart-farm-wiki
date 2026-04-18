@@ -32,6 +32,25 @@ confidence: medium
 
 **RF / power / WAN index** (NREL, Victron, Meshtastic, HaLow articles, Starlink captures): [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md).
 
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | Curated **operator-grade** paths for **`SITE_FARM`** long-range sensing: LoRaWAN spec PDF, ChirpStack NS captures, HaLow guides, Meshtastic docs, vendor sensor pages, Starlink-as-WAN pointers—**not** a radio survey or permit package. |
+| **Authority mix** | **Standards** (LoRaWAN PDF) + **project/vendor** docs (ChirpStack, Meshtastic, HaLow, Decentlab) + **WAN** marketing/spec captures. |
+| **Decision relevance** | Field **protocol** mix, **gateway/NS** posture, **power** budgets for RF—supports [`Farm sensor architecture — Demory`](../analyses/farm-sensor-architecture-demory-farm-site.md) and comparison matrix; **does not** pick tower sites or certify Part 15 compliance. |
+| **Canonical wiki links** | [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) · [`LoRaWAN vs Wi‑Fi HaLow vs Meshtastic — Demory`](../comparisons/lorawan-wi-fi-halow-meshtastic-demory-farm-sensor-layer.md) · [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) |
+
+**Key claims** (public-safe):
+
+- LoRaWAN **L2 1.1** text is in-vault as PDF + extract for **normative** PHY/MAC framing—not deployment approval by itself.
+- **Starlink** in this cluster is **WAN/backhaul** context, not the **field RF** layer ([`WAN edge and backhaul roles`](../entities/wan-edge-and-backhaul-roles.md)).
+
+**Open questions / follow-ups**
+
+- Field **link budgets** and **antenna** choices per paddock—**site** work, not this cluster.
+- **ChirpStack** version drift vs captures—re-capture when NS upgrades for production.
+
 ---
 
 ## LoRaWAN — protocol (authoritative text)

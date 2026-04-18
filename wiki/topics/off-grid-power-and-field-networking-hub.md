@@ -23,6 +23,8 @@ confidence: high
 
 **What it does not own**: **kW**, **SKU**, or **permit** answers—those stay in site baselines, loads registers, and local engineering.
 
+**Integration / package boundary**: New **power / RF / WAN** ingests must **activate** beyond this router: update [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) (Evidence summary + `raw/` tables) and the relevant **canonical** page—[`Off-grid systems doctrine package — Demory`](off-grid-systems-doctrine-package-demory-farm-site.md), [`Connectivity strategy — Claxton & Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md), and/or [`Farm sensor architecture — Demory`](../analyses/farm-sensor-architecture-demory-farm-site.md) when **sensor** or **backhaul** claims shift. **This hub** stays a **router**, not the sole home for new evidence.
+
 ---
 
 ## Start here
@@ -71,6 +73,7 @@ confidence: high
 
 ## Related hubs
 
+- [`Sub-GHz field networking — synthesis`](subghz-field-networking-synthesis.md) — **Single-file** map of LoRaWAN / Meshtastic / HaLow + canonical links (sub-topic of this router)
 - [`Platform doctrine package — homelab / farm edge`](platform-doctrine-package-homelab-farm-edge.md)
 - [`Backup and disaster recovery — doctrine hub`](backup-disaster-recovery-doctrine-hub.md)
 - [`Business plan execution and pilot operations hub`](business-plan-execution-and-pilot-operations-hub.md)

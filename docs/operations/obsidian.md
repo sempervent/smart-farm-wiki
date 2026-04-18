@@ -19,3 +19,7 @@
 ## Graph view
 
 Cross-link entities, concepts, and analyses liberally. Prefer stable titles in frontmatter so the graph stays readable after refactors.
+
+## Source-note Evidence summaries
+
+For **cluster** / **batch** source-notes, consider the **Evidence summary** pattern (`wiki/concepts/source-note-abstract-and-evidence-pattern.md`) so the graph and **preview** surfaces stay scannable; it complements `AGENTS.md` ingest **activation** (capture alone is not always complete).

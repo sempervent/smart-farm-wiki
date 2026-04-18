@@ -93,6 +93,7 @@ confidence: high
 | **Site inventory baseline (field recon)** | [`Site inventory baseline — Demory farm site`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) |
 | **Parcel worksheet** | [`Parcel intelligence — Demory farm site`](../analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md) |
 | **Farm sensor architecture (long-range, WAN-optional)** | [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md); [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md) |
+| **Utility locate — Tennessee 811** | [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) (TN811 captures; **not** legal advice) |
 
 ### Validation and gaps
 

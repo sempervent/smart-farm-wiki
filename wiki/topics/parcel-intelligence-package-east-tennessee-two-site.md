@@ -3,7 +3,7 @@ title: Parcel intelligence package — East Tennessee two-site
 page_type: topic
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 tags:
   - two-site
   - parcel-intelligence
@@ -15,6 +15,10 @@ confidence: high
 # Parcel intelligence package — East Tennessee two-site
 
 **Purpose**: **Reusable parcel-level worksheets** for the **Claxton** (`SITE_HOME`) and **Demory** (`SITE_FARM`) anchors—same section order, **placeholders** until deeds, WSS AOIs clipped to **operating** polygons, and field visits fill gaps. **Does not** invent acre lines, map units, or utilities.
+
+**Package boundary**: **Canonical** **worksheet shell** and **section order** for **parcel** facts; **not** the full **local evidence** execution tables (those live under [`Local evidence package — East Tennessee two-site`](local-evidence-package-east-tennessee-two-site.md)). **Not** county **statistics** narrative—use [`Local site and county intelligence`](local-site-and-county-intelligence.md) and **site intelligence** analyses for context.
+
+**Integration**: New **deed**, **WSS**, **FEMA**, or **assessor** ingests must **fill worksheet rows** + [`Parcel evidence intake workflow`](../analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) + [`Authoritative execution evidence cluster`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) / [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md) as appropriate—**not** source-note-only when a **gate** (G\*/V\*) depends on the fact.
 
 **Blank worksheet (published)**: [`Parcel intelligence worksheet (blank template)`](parcel-intelligence-worksheet-template.md). **Repo file for scaffolding**: `templates/parcel-intelligence-sheet.md` (same sections; use for `scaffold_page` / agents).
 
@@ -28,3 +32,5 @@ confidence: high
 **Spine**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local site and county intelligence`](local-site-and-county-intelligence.md) · [`Local evidence package — East Tennessee two-site`](local-evidence-package-east-tennessee-two-site.md) (site/infra/utility/loads baselines + [`parcel evidence workflow`](../analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md)) · [`Claxton and Demory — missing data register`](../analyses/claxton-and-demory-missing-data-register.md) · [`Validation and pilot plan — first 24 months`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md).
 
 **Ingest note**: **Campbell** soils **for one WSS session** are filed under [`web-soil-survey-campbell-county-aoi-soil-map-tab-capture-2026-04-18.md`](../../raw/processed/2026/web-soil-survey-campbell-county-aoi-soil-map-tab-capture-2026-04-18.md) (not a substitute for an AOI clipped to **~120 ac**). **WSS product home** (how to run WSS): [`Web Soil Survey — product home page (capture)`](../source-notes/web-soil-survey-home-page-inbox-2026-04-18.md).
+
+**Desk tools (state + national, no embedded parcel results)**: [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md) — TN Property Viewer, county assessor GIS/search entry points, FEMA Map Service Center, NOAA climate normals, USGS elevation. **Evidence hardening audit**: [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md).

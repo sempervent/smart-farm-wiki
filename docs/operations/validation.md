@@ -20,6 +20,15 @@ uv run python scripts/validate_wiki.py --strict
 
 CI uses `--strict` so warnings fail the build.
 
+## Integration quality (not a separate script)
+
+`validate_wiki.py` checks **repository shape** and **link integrity** for the wiki tree. It does **not** automatically verify that:
+
+- an ingest was **activated** into canonical pages, matrices, or hubs (`AGENTS.md` — **Ingest activation rule**);
+- **Evidence summary** blocks exist on high-value **cluster** source-notes (`wiki/concepts/source-note-abstract-and-evidence-pattern.md`).
+
+Treat **structural green + missing activation** as **debt**: fix in a follow-up or note scope in `wiki/log.md`.
+
 ## Raw references (`scripts/validate_raw_pdf_links.py`)
 
 Validates PDF ↔ `*-extracted.md` pairing, wiki markdown links into `raw/`, and the source-note convention for PDFs. **Default (no `--strict`)**: missing local files under `raw/` are **warnings** only so public CI passes without the copyrighted corpus. **`--strict`**: treat those as **errors** when validating a full local tree.

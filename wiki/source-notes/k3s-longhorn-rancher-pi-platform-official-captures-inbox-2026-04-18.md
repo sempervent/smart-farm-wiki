@@ -3,7 +3,7 @@ title: K3s, Longhorn, Rancher, Raspberry Pi — platform captures (inbox 2026-04
 page_type: source_note
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-25
 source_ids:
   - raw/processed/2026/k3s-architecture-docs-capture-inbox-2026-04-18.md
   - raw/processed/2026/k3s-installation-index-docs-capture-inbox-2026-04-18.md
@@ -24,6 +24,23 @@ review_status: unreviewed
 # K3s, Longhorn, Rancher, Raspberry Pi — platform captures (inbox 2026-04)
 
 **Ingest**: Web captures from **docs.k3s.io**, **longhorn.io**, **rancher.com** product page, and one **homelab** narrative (GitHub-style article) for Pi + Longhorn + Rancher operational patterns.
+
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | **k3s** install/architecture/config captures, **Longhorn** CSI-on-k3s prerequisites, **Rancher** product positioning, plus a **Pi** homelab narrative—**operator** breadcrumbs for the farm edge **platform** doctrine. |
+| **Authority mix** | **Upstream** project docs (k3s, Longhorn) + **vendor** marketing (Rancher) + **community** homelab article (**supporting**). |
+| **Decision relevance** | **Bootstrap** order, **iSCSI**/kubelet paths, **HA** semantics—supports [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) and provisioning **guide**; **does not** certify **your** cluster. |
+| **Canonical wiki links** | [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) · [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](../analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) · [`Kubernetes platform backup / DR`](../analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md) |
+
+**Key claims** (public-safe):
+
+- Longhorn on k3s expects **`open-iscsi`** and correct **kubelet root** alignment—see capture tables in the body.
+
+**Open questions / follow-ups**
+
+- Re-capture when **k3s**/**Longhorn** **minor** versions jump for production.
 
 ## Official / primary operator docs (this batch)
 
@@ -46,6 +63,7 @@ review_status: unreviewed
 
 ## Related batches (already in vault)
 
+- Frigate / SOPS / Prometheus Alertmanager (+ TN811, NRCS, UT PDFs): [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md)
 - Longhorn system backup/restore: [`homelab backup stack — official captures`](homelab-backup-stack-official-captures-inbox-2026-04-18.md)
 - Distribution choice: [`k3s or RKE2`](k3s-or-rke2.md), [`when to use k3s and RKE2`](when-to-use-k3s-and-rke2.md), [`Kubernetes distributions overview`](kubernetes-distributions-overview-kubeadm-k3s-microk8s-minikube-talos-rke2.md)
 

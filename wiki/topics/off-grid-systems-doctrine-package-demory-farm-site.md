@@ -25,6 +25,8 @@ confidence: high
 
 **Umbrella router** (off-grid + field RF + two-site WAN—without replacing this page): [`Off-grid power and field networking hub`](off-grid-power-and-field-networking-hub.md).
 
+**Integration / package boundary**: New **off-grid** or **field RF** sources must **activate** into [`Off-grid power, field RF, and optional WAN — source index`](../source-notes/off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) and the **analyses** linked in the **Doctrine map** (power doctrine, mesh strategy, degraded modes, stop rules) when **`DR-*`** stop rules, **node-class**, or **WAN** assumptions change. **Sensors** specifics: [`Farm sensor architecture — Demory farm site`](../analyses/farm-sensor-architecture-demory-farm-site.md) + [`Sensor checklist matrix — Demory farm`](../analyses/sensor-checklist-matrix-for-demory-farm.md)—this doctrine page **routes** to them; it does **not** duplicate the full sensor matrix.
+
 ---
 
 ## What this hub owns

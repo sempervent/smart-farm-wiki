@@ -3,7 +3,7 @@ title: Demory farm — site intelligence (Campbell County, Tennessee)
 page_type: analysis
 status: active
 created: 2026-04-22
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - two-site
   - site-farm
@@ -23,6 +23,8 @@ aliases:
 **Role entity** (`SITE_FARM`): [`120-acre production farm (SITE_FARM) — ET two-site`](../entities/120-acre-production-farm-site-farm-et-two-site.md). **Place entity**: [`Demory farm site (place)`](../entities/demory-farm-site.md). **County context**: [`Campbell County, Tennessee (two-site context)`](../entities/campbell-county-tennessee.md). **Package**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md).
 
 **Epistemic rule**: **County** rent and **WSS AOI** statistics below are **evidence**, not proof that **every** acre matches the **~120 ac** planning figure or your deed. **Confirm** AOI ↔ operating boundary.
+
+**Desk portals** (TN Property Viewer, Campbell assessor hub, FEMA MSC, NOAA normals—**no** embedded parcel outcomes): [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md). **Hardening log**: [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md).
 
 ---
 

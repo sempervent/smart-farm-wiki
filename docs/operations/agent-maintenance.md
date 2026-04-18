@@ -11,8 +11,8 @@ Automation (Codex, Claude Code, Cursor agents, etc.) should treat [`AGENTS.md`](
 ## Session pattern
 
 1. Read `AGENTS.md` and `wiki/index.md`.
-2. Perform ingest/query/lint in small, verifiable steps.
-3. Run `scripts/validate_wiki.py` before commit.
+2. Perform ingest/query/lint in small, verifiable steps. On ingest: follow **capture + activation** (`AGENTS.md` — ingest steps, **Ingest activation rule**, Evidence summary guidance for high-value source-notes).
+3. Run `scripts/validate_wiki.py` before commit. **Structural** pass ≠ **integration** complete—confirm hubs/canonical pages were updated when the batch affects execution (see `docs/operations/validation.md`).
 4. Append `wiki/log.md` for substantive work.
 
 ## Pull requests

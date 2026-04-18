@@ -44,6 +44,7 @@ This topic collects **comparative** material on long-range IoT links: **IEEE 802
 
 **Related**
 
+- [`Sub-GHz field networking — synthesis`](subghz-field-networking-synthesis.md) — **One-page** index of LoRa / LoRaWAN / Meshtastic / HaLow pages in this wiki
 - [`Smart agriculture, Meshtastic, and LoRaWAN`](smart-agriculture-meshtastic-and-lorawan.md) — deployed farm mesh and LoRaWAN sensor narratives next to LPWAN comparisons
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md) — MCU + sensor UX stacks that often sit beside radio backhaul choices
 - [`Sub-GHz Wi‑Fi (HaLow) — farm sensors deployment guide`](../analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md) — How-to outline + checklist

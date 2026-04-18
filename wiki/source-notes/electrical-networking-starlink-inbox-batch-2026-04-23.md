@@ -33,6 +33,24 @@ confidence: medium
 
 **Synthesis**: [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md). **Off-grid Demory** (solar+battery default, mesh-first, WAN optional): [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md).
 
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | Large **2026-04-23** batch: Victron/NREL **PDFs** + extracts, Morse Micro **HaLow** datasheets, Starlink **spec** PDFs, UT Extension PDFs, and **web** captures (wiring series, Starlink farm articles, Meshtastic, HaLow explainers, OpenWrt notes). |
+| **Authority mix** | **Agency** (NREL) + **vendor** (Victron, Morse Micro, Starlink) + **extension** (UT) + **community** articles (**supporting** only). |
+| **Decision relevance** | DC **safety**, off-grid **solar** modules, **HaLow** chipset facts, **WAN** kit **electrical**—supports topology Mermaid and Demory **power/RF** index; **does not** size **your** array or **tower** without local engineering. |
+| **Canonical wiki links** | [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) · [`Off-grid power, field RF, and optional WAN — source index (Demory planning)`](off-grid-power-rf-wan-source-index-demory-planning-2026-04.md) · [`Connectivity strategy — Claxton and Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md) |
+
+**Key claims** (public-safe):
+
+- NREL off-grid **modules 5–6** are **curriculum-style** PDFs, not a site-specific design stamp.
+- Starlink **spec** sheets describe **CPE-class** **power** / **interface**—not **coverage at your coordinates**.
+
+**Open questions / follow-ups**
+
+- Align **OpenWrt**/driver captures with **chosen** HaLow **hardware** generation.
+
 ---
 
 ## PDFs + extracts

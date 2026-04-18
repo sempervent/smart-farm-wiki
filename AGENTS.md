@@ -55,6 +55,48 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
    - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. Source-notes for PDFs must cite **both** the `.pdf` and the `*-extracted.md` in the body (and `source_ids` includes the `.pdf` path). See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py` / `validate_wiki.py --raw-pdf-links` when the full corpus is local.
 2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths.
 3. Update relevant entity/concept/topic pages; add cross-links.
+
+### Ingest activation rule
+
+Ingestion is not complete when a source-note exists. Ingestion is complete only when the agent has evaluated whether the new source should also:
+
+- update a canonical page
+- update a comparison or matrix
+- update a guide, runbook, or standard
+- update a site-intelligence or entity page
+- update a hub or routing surface
+- add a new durable synthesis page when no canonical destination yet exists
+
+For every meaningful ingest batch, the agent should decide explicitly:
+
+1. **Source-note only**
+2. **Source-note + canonical page update**
+3. **Source-note + matrix/comparison/checklist update**
+4. **Source-note + new synthesis artifact**
+5. **Source-note + deferred follow-up note in `wiki/log.md`**
+
+If the source affects execution, architecture, business logic, risk, safety, infrastructure, or site intelligence, prefer updating canonical pages or operational artifacts rather than leaving the knowledge trapped in source-notes.
+
+### Source-note Evidence summary (integration, not CI)
+
+For **hub**, **batch**, and **official cluster** source-notes that back **execution** (business plan, parcels, off-grid, sensors, platform, backup/DR, observability), add an **Evidence summary** block per [`wiki/concepts/source-note-abstract-and-evidence-pattern.md`](wiki/concepts/source-note-abstract-and-evidence-pattern.md): **abstract**, **authority mix**, **decision relevance**, **canonical wiki links**, **public-safe key claims**, **open questions**. **Not** required for every minimal single-file note. A note may remain **capture-only** until activation—log deferrals when material.
+
+### When to add matrices, guides, standards, or checklists
+
+| Artifact | Prefer when |
+|----------|-------------|
+| **Matrix / comparison** | Readers repeatedly need **A vs B** or **many SKUs/classes** in one view; **extend** an existing comparison before creating a sibling. |
+| **Standard** (`page_subtype: standard`) | A **short norm** (“must be true”) with stable **gates**—link to **guides** for long sequences. |
+| **Guide** (`operational_guide`) | Ordered **steps** or **doctrine spine** with routing. |
+| **Checklist** | **Repeatable** field or ops verification—often a **section** inside a standard, guide, or **local evidence** template before a new page. |
+
+Package strategy for procedures: [`wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md`](wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md).
+
+### Structural validation vs integration quality
+
+- **Structural** (CI): `scripts/validate_wiki.py --strict`—required files, index coverage, resolvable wiki links, log headings, frontmatter on schema pages, kebab-case, duplicate titles / orphans (heuristic). Optional `validate_raw_pdf_links.py` / `--raw-pdf-links` when the full `raw/` tree is present.
+- **Integration** (policy, not automatically fail-able): ingest **activation** completed, Evidence summaries on **high-value** source-notes, **canonical** pages and **hubs** updated so evidence is not **trapped** in `source-notes/`. Treat **structural pass + missing activation** as **technical debt**—record in `wiki/log.md` when significant.
+
 4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
 5. **Update** `wiki/index.md` if new pages were added or titles changed.
 6. Run `uv run python scripts/validate_wiki.py` before commit.
@@ -380,6 +422,46 @@ Optional YAML frontmatter is encouraged. Common fields:
 | `scripts/pdf_to_markdown.py` | PDF text → `*-extracted.md` beside the file (PyMuPDF; not OCR) |
 
 ---
+
+## Structured derivative artifacts
+
+When new sources materially improve a repeatable decision surface, the agent should prefer creating or updating structured derivative artifacts such as:
+
+- comparison tables
+- checklist matrices
+- topology diagrams
+- standards
+- runbooks
+- procedural guides
+- decision-gate pages
+- site-intelligence pages
+
+Do not leave high-value operational knowledge only in narrative source-notes when it can be expressed more usefully as a structured artifact.
+
+Examples:
+- protocol sources → comparison page or sensor matrix
+- backup/restore docs → DR comparison and runbook
+- county/site evidence → site-intelligence page and missing-data register
+- platform docs → standards, provisioning guides, and topology pages
+
+--
+
+## Evidence routing after ingestion
+
+After ingesting important sources, the agent must check whether readers can actually find and use the resulting knowledge.
+
+At least one of the following should usually be updated for high-value ingest work:
+- a canonical page
+- a topic hub
+- `wiki/overview.md`
+- `wiki/index.md`
+- a business-plan package page
+- a local site/county intelligence page
+- a platform/off-grid/sensor hub
+
+If the source-note is valuable but not yet routed from a relevant hub or canonical page, ingestion is incomplete.
+
+--
 
 ## Non-goals
 

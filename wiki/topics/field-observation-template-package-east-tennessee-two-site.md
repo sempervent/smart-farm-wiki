@@ -3,7 +3,7 @@ title: Field observation template package — two-site
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags:
   - two-site
   - field-work
@@ -20,6 +20,8 @@ confidence: high
 **Package**: [`Local evidence package — East Tennessee two-site`](local-evidence-package-east-tennessee-two-site.md).
 
 **Targets**: [`Site inventory — Claxton`](../analyses/site-inventory-baseline-claxton-home-base-east-tennessee.md) · [`Site inventory — Demory`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) · [`Infrastructure baseline`](../analyses/infrastructure-inventory-baseline-two-sites-east-tennessee.md) · [`Utility baseline`](../analyses/utility-and-service-baseline-two-sites-east-tennessee.md) · [`Loads register`](../analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md).
+
+**Before digging or trenching**: review TN **811** process captures in [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — **ticket** + **Positive Response** are **project** artifacts, not wiki text.
 
 ---
 

@@ -3,7 +3,7 @@ title: Start here — Smart Farm Wiki
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-18
 tags:
   - meta
   - onboarding
@@ -29,6 +29,7 @@ confidence: high
 | **Repeated operating roles** (gateways, WAN, node classes, DR tiers—link instead of re-explaining) | [`Entity layer — operating objects gap audit`](../analyses/entity-layer-operating-objects-gap-audit.md) · [`index.md` Entities](../index.md#entities) |
 | **Whole-topic packages** (platform, backup, off-grid, sites, execution) without scanning analyses | [`Wiki navigation and structural hubs`](../topics/wiki-navigation-and-structural-hubs.md#five-package-hubs-start-here-for-whole-topics) |
 | **Procedural guides and runbooks** (where how-tos live, vs standards, maturity labels) | [`Procedural guides package strategy — Smart Farm Wiki`](procedural-guides-package-strategy-smart-farm-wiki.md) |
+| **Navigation health / index noise** (meta; for maintainers and confused readers) | [`Usability and navigation audit — 2026-04-18`](../analyses/usability-and-navigation-audit-2026-04-18.md) · [`Source-note abstract and evidence pattern`](../concepts/source-note-abstract-and-evidence-pattern.md) |
 
 **North-star narrative**: [`Wiki overview`](../overview.md) (short; links here and to domain strands).
 

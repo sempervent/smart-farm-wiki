@@ -5,7 +5,7 @@ page_subtype: standard
 operational_maturity: pilot_ready
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - observability
   - kubernetes
@@ -40,5 +40,7 @@ confidence: high
 
 ## Related
 
+- [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) — **Doctrine**: alert routing philosophy, trust bar for **remote** ops, optional **Grafana Alloy**.
+- [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — Prometheus **Alertmanager** overview + configuration doc captures (`raw/processed/2026/`).
 - [`Instrumentation priority matrix — two-site smart farm`](instrumentation-priority-matrix-two-site-smart-farm.md)
 - [`Operational standards — farm and homelab platform`](../topics/operational-standards-farm-homelab-platform.md)

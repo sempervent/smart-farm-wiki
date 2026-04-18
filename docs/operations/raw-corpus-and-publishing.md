@@ -37,6 +37,8 @@ Styling: `wiki/stylesheets/raw-source-refs.css`.
 
 Keep authoring **normal markdown links** to `raw/` as today. They remain clickable in Obsidian when the files exist locally. The published site shows italic/help-styled text instead of a broken hyperlink.
 
+**Evidence summary blocks** on source-notes should phrase **key claims** so they stay intelligible when `raw/` links are neutralized in HTML—cite **authority** (agency, vendor doc, statute) in prose, not only paths (`wiki/concepts/source-note-abstract-and-evidence-pattern.md`).
+
 ## Related
 
 - [`validation.md`](validation.md) — full validator reference  

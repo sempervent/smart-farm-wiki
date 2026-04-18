@@ -3,7 +3,7 @@ title: Evidence grade and canonical authority
 page_type: concept
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-18
 tags:
   - meta
   - epistemics
@@ -34,6 +34,7 @@ confidence: high
 
 ## See also
 
+- [`Source-note abstract and evidence pattern`](source-note-abstract-and-evidence-pattern.md) — Cluster source-notes: abstract, authority mix, canonical links, key claims
 - [`Evidence grade` (glossary)](../glossary/evidence-grade.md)
 - [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md) — where **low-authority** ingests remain, and which **official** clusters supersede them
 - [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md)

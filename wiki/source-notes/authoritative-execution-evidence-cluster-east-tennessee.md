@@ -16,6 +16,25 @@ confidence: high
 
 # Authoritative execution evidence cluster — East Tennessee (index)
 
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | One-page **router** from **agency, extension, and official-operator** ingests to the **East Tennessee two-site** business plan, parcel workflow, and security posture—grouped by theme (soils, rents, tax, FSA, farmOS, CISA, field ops). |
+| **Authority mix** | **Agency + Extension + vendor primary docs** (captures); **not** legal or engineering advice. |
+| **Decision relevance** | Informs **V\*/G\*** validation, **parcel** worksheets, **NASS** rent context, **septic/811** process pointers, **remote-access** hardening references, **off-grid / WAN** evidence indexes. |
+| **Canonical wiki links** | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) · [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) |
+
+**Key claims** (public-safe):
+
+- **USDA NASS** and **NRCS** publications in the vault support **county-level** and **practice** framing; **parcel-specific** soils and permits still require **WSS** sessions and **local** authority.
+- **TN Revenue** and **agritourism** captures are **time-stamped references**—verify current law before decisions.
+- **CISA** PDFs support **OT/remote-access** hygiene themes for **homelab/farm edge**—not a substitute for org-specific risk assessment.
+
+**Open questions / follow-ups**
+
+- **AOI** soils clip and **field-measured** loads remain **outside** this index—see **site intelligence** and **missing-data** pages.
+
 **Purpose**: **Single hub** listing **high-authority** ingested sources that **reduce uncertainty** for **operational, financial, and regulatory** questions in the **East Tennessee two-site** scenario. This page is an **index**, not a substitute for reading **primary** materials or engaging **professionals** (legal, tax, PE, vet).
 
 **After ingest — how this fits the spine** (agency/extension **catalog**; not parcel truth): **Package** [`East Tennessee two-site farm business plan`](../business-plan/east-tennessee-two-site-farm-business-plan.md) → **this cluster** (tables below) → **local router** [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) (named counties/places, validation, gaps) → **site intelligence** analyses (Claxton/Demory). **Diagnosis** of visibility gaps: [`Ingest visibility gap — authoritative evidence vs published wiki (East Tennessee)`](../analyses/ingest-visibility-gap-authoritative-evidence-east-tennessee.md).
@@ -81,6 +100,23 @@ confidence: high
 | farmOS model — Assets | [`farmOS model — Assets (documentation)`](farmos-model-assets-documentation.md) |
 | farmOS model — Logs | [`farmOS model — Logs (documentation)`](farmos-model-logs-documentation.md) |
 | farmOS documentation (inbox captures) | [`farmOS — documentation captures (inbox)`](farmos-documentation-captures-inbox-2026-04-18.md) |
+
+## Excavation, NRCS references, UT Extension, and edge-operator captures (2026-04-18)
+
+| Topic | Source-note |
+|-------|-------------|
+| **Tennessee 811** — one-call, ticket timing, Positive Response, safe-digging / tolerance zone | [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) |
+| **NRCS** — CPS **614** watering facility hub (PDF links); NEH **Part 652** *Irrigation Guide* (1997 PDF + extract) | same |
+| **UT Extension** — **PB1541** *Planning and Building Fences on the Farm*; **PB1641** *Alternative Livestock Watering Systems* (PDFs + extracts) | same |
+| **Homelab / k8s** — Frigate docs; Flux “manage secrets with SOPS”; SOPS project readme; Prometheus **Alertmanager** overview + configuration captures | same |
+
+## Tennessee parcel, GIS, flood, and climate portals (primary URL index)
+
+| Topic | Source-note |
+|-------|-------------|
+| **TN Property Viewer**, Anderson/Campbell **assessor** entry points, **WSS**, **USGS** elevation, **FEMA** MSC, **NOAA** climate normals | [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](tennessee-two-site-official-parcel-gis-flood-climate-portals.md) |
+| **Grafana Alloy** (optional collector) — official docs pointer | [`Grafana Alloy — official documentation (primary reference)`](grafana-alloy-official-documentation-primary-reference.md) |
+| **Evidence hardening audit** (2026-04) — what was added; open gaps | [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md) |
 
 ## Remote access / OT security
 

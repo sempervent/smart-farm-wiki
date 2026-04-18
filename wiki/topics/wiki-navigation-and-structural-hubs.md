@@ -3,7 +3,7 @@ title: Wiki navigation and structural hubs
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - meta
@@ -94,6 +94,8 @@ tags:
 
 | Page | Use when |
 |------|----------|
+| [`Usability and navigation audit — 2026-04-18`](../analyses/usability-and-navigation-audit-2026-04-18.md) | **Reader UX**: flat index pain, hub strength, source-note scanability; pairs with structural audits |
+| [`Source-note abstract and evidence pattern`](../concepts/source-note-abstract-and-evidence-pattern.md) | **Authoring**: optional Evidence summary block for cluster source-notes |
 | [`Domain content overview`](../analyses/domain-content-overview.md) | Strand map, maturity matrix, backlog |
 | [`Repository analysis`](../analyses/repository-analysis.md) | Repo layout, CI, MkDocs, validation |
 | [`Structural audit — repository shape and canonical routing`](../analyses/structural-audit-repository-and-canonical-routing.md) | Merge policy, index IA |
@@ -101,6 +103,8 @@ tags:
 | [`Structural debt audit — wiki IA and operational maturity`](../analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md) | Sprawl diagnosis, ops maturity taxonomy |
 | [`Execution readiness gap audit — East Tennessee`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) | ET execution evidence gaps |
 | [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md) | **Provenance**: forums/blogs vs **official** clusters; backlog |
+| [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md) | **Desk portals**, infra/observability **routing**, **open** **gaps**; complements execution readiness audit |
+| [`Package artifact backlog — canonical East Tennessee packages`](../analyses/package-artifact-backlog-canonical-packages-east-tennessee.md) | **Matrices / standards / runbooks / checklists** gaps + **Evidence summary** queue for remaining clusters |
 
 ---
 
@@ -121,6 +125,7 @@ tags:
 | Page | Role |
 |------|------|
 | [`Off-grid power and field networking hub`](off-grid-power-and-field-networking-hub.md) | **Umbrella router** (Demory doctrine + two-site WAN + field links) |
+| [`Sub-GHz field networking — synthesis`](subghz-field-networking-synthesis.md) | **Single-file** index: LoRaWAN / Meshtastic / HaLow, WAN vs field RF, links to comparisons and sources |
 | [`Off-grid systems doctrine package — Demory`](off-grid-systems-doctrine-package-demory-farm-site.md) | **First-class** hub: power domains, field-node classes, WAN deps, degraded modes, stop rules |
 | [`Off-grid power doctrine — Demory`](../analyses/off-grid-power-strategy-demory-farm-site.md) | Solar+battery default; always-on vs duty-cycled; networking as load |
 | [`Power domains and battery-backed infrastructure tiers — Demory`](../analyses/off-grid-power-domains-and-battery-tiers-demory-farm.md) | Pcrit / Popt; T0–T3 tiers |
@@ -139,6 +144,7 @@ tags:
 | Page | Role |
 |------|------|
 | [`Platform doctrine package — homelab / farm edge`](platform-doctrine-package-homelab-farm-edge.md) | **First-class** hub: strategy, HA semantics, k3s/Longhorn/Rancher **roles**, storage comparison, **approved vs deferred** |
+| [`Observability, secrets, and trust bar — homelab / farm edge`](../analyses/observability-secrets-and-trust-bar-homelab-farm-edge.md) | Alert routing, **SOPS/Flux**, optional **Alloy**, **remote** **trust** bar |
 | [`Platform strategy for farm and homestead services`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) | Canonical stack narrative (same file; **alias** old long title) |
 | [`Platform decision memo — phase, HA scope, deferrals`](../analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md) | Governance: Phase 0/1 vs deferred |
 | [`HA meaning and constraints — homelab / farm platform`](../analyses/ha-meaning-and-constraints-homelab-farm-platform.md) | What **HA** does / does not mean here |

@@ -3,7 +3,7 @@ title: Backup / DR — official documentation cluster (k3s, Longhorn, Rancher, P
 page_type: source_note
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 source_ids:
   - raw/processed/2026/backup-dr-official-documentation-links-batch-2026-04-17.md
 review_status: unreviewed
@@ -18,6 +18,24 @@ tags:
 ---
 
 # Backup / DR — official documentation cluster (k3s, Longhorn, Rancher, PostgreSQL, farmOS)
+
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | Curated **official-doc** link batch plus **vault captures** (restic, Longhorn, farmOS Docker era) that anchor the **backup/restore** narrative for the **homelab / farm** stack. |
+| **Authority mix** | **Vendor primary** (k3s, Longhorn, Rancher, PostgreSQL, farmOS upstream) + **project docs**; captures are **time-stamped**. |
+| **Decision relevance** | Informs **parallel restore tracks** (app vs etcd vs volumes), **restic** vs **volume** scope, and **DR drill** expectations—see DR package. |
+| **Canonical wiki links** | [`Backup and disaster recovery package — smart farm stack`](../analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) · [`Backup and disaster recovery — doctrine hub`](../topics/backup-disaster-recovery-doctrine-hub.md) · [`Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn`](../analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md) |
+
+**Key claims** (public-safe):
+
+- **etcd** and **control-plane** backup semantics are **distinct** from **Longhorn volume** replication; the DR package states **restore order** and **failure classes**.
+- **farmOS** backup posture depends on **DB + files**; captures may reflect an older **Docker** dev pattern—treat as **provenance**, not current deployment truth alone.
+
+**Open questions / follow-ups**
+
+- Re-validate **farmOS** backup against **your** deployment (version, storage, compose vs k8s) before production reliance.
 
 **Purpose**: **Provenance hub** for **official** backup and restore documentation **pointers** plus vault **captures** used by the **canonical DR package** in `wiki/analyses/`.
 

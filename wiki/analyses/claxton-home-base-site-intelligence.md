@@ -3,7 +3,7 @@ title: Claxton home base — site intelligence (Anderson County, Tennessee)
 page_type: analysis
 status: active
 created: 2026-04-22
-updated: 2026-04-23
+updated: 2026-04-25
 tags:
   - two-site
   - site-home
@@ -52,7 +52,7 @@ aliases:
 | **Exact map units, hydric flags, limiting factors** | WSS / SSURGO AOI on **homestead** polygon; field walk with county soil survey context. |
 | **Septic / SSDS class and setbacks** | County environmental health; **TDEC** rules—see septic source-notes. |
 | **Electric service size, transformer location, easements** | Utility provider; **not** wiki. |
-| **Floodplain / sink / karst** | FEMA maps + local overlays + walk (East TN variability). |
+| **Floodplain / sink / karst** | **Desk**: FEMA Map Service Center via [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md); **field**: local overlays + walk (East TN variability). |
 | **Drive time Claxton ↔ Demory farm** | **Business plan** uses **~35 min** one-way as structural default—**measure** with repeated real drives and seasonality. |
 
 ---

@@ -3,7 +3,7 @@ title: Platform doctrine package — homelab / farm edge compute
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - platform
   - k3s
@@ -28,6 +28,8 @@ confidence: high
 
 - **Doctrine** for **Pi / k3s / Longhorn / Rancher** on the **farm edge** and **homelab**: phases, **HA** meaning, storage topology, and **deferrals**.
 - **Pointers** to **provisioning** and **backup** tracks—**not** duplicate [`Backup and disaster recovery — doctrine hub`](backup-disaster-recovery-doctrine-hub.md) or raw **kubectl** recipes outside the linked runbook.
+
+**Integration / package boundary**: New **k3s / Longhorn / Rancher** captures should **activate** into [`K3s, Longhorn, Rancher, Raspberry Pi — platform captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md) (Evidence summary), [`Platform decision memo`](../analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md), and [`Operational standards — farm and homelab platform`](operational-standards-farm-homelab-platform.md) rows when **bars** change. **Observability** / **secrets** ingests route through [`Observability, secrets, and trust bar — homelab / farm edge`](../analyses/observability-secrets-and-trust-bar-homelab-farm-edge.md)—not a parallel platform essay.
 
 ## Start here
 
@@ -124,6 +126,9 @@ flowchart TB
 
 ## Related hubs
 
+- [`Observability, secrets, and trust bar — homelab / farm edge`](../analyses/observability-secrets-and-trust-bar-homelab-farm-edge.md) — **Alertmanager** philosophy, **SOPS/Flux**, optional **Grafana Alloy**, **remote** **trust** bar.
+- [`Local video / NVR — role and deferral boundaries (farm stack)`](../analyses/local-video-nvr-role-and-deferral-boundaries-farm-stack.md) — Frigate-class **NVR** **scope** and **explicit** **deferral** for **`SITE_FARM`** **production** **dependence**.
+- [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — **Operator captures** for Frigate NVR, SOPS/Flux secrets, Prometheus Alertmanager, plus TN811 / NRCS / UT Extension field references (see batch for `raw/` paths).
 - [`Procedural guides package strategy — Smart Farm Wiki`](procedural-guides-package-strategy-smart-farm-wiki.md) — how-tos and runbooks: where they live, **vs** standards, **`operational_maturity`**
 - [`Operational standards — farm and homelab platform`](operational-standards-farm-homelab-platform.md) — Pi, k3s, storage, secrets, field naming, site boundaries
 - [`Backup and disaster recovery — doctrine hub`](backup-disaster-recovery-doctrine-hub.md) — etcd / PVC / DB tracks

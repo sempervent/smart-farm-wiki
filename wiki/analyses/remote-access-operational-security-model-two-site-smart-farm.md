@@ -3,7 +3,7 @@ title: Remote access and operational security model — two-site smart farm
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-24
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - security
@@ -155,6 +155,8 @@ confidence: medium
 
 ## Links
 
+- [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) — **when** **dashboards** and **alerts** may justify **remote** **trust**
+- [`Local video / NVR — role and deferral boundaries (farm stack)`](local-video-nvr-role-and-deferral-boundaries-farm-stack.md) — **camera** **/ NVR** **scope** and **deferral**
 - [`Network segmentation, site-to-site connectivity, and internet exposure`](network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md)
 - [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md)
 - [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md)

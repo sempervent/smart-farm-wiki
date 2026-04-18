@@ -3,7 +3,7 @@ title: Infrastructure inventory baseline — both sites
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags:
   - two-site
   - infrastructure
@@ -67,6 +67,22 @@ confidence: medium
 | SITE_FARM | — | Unknown | Service → pump / barn TBD | Unknown | Solar tie-in point |
 
 **End-use loads**: [`Loads register`](loads-register-known-estimated-unknown-two-sites-east-tennessee.md).
+
+---
+
+## Evidence, excavation, and water-development references (national / state)
+
+**Use** for **design discipline** and **checklist** prompts—**not** a substitute for **site** engineering, **TDEC** / **local** **floodplain** **admin**, or **811** **locates** on **your** **routes**.
+
+| Topic | Vault grounding |
+|-------|-----------------|
+| **Excavation / utility locate (TN)** | TN **811** captures: [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) (`tenn811-*-capture-inbox-2026-04-18.md`). |
+| **Fencing** | UT Extension **PB1541** PDF + extract in same batch. |
+| **Livestock watering alternatives** | UT Extension **PB1641** PDF + extract in same batch. |
+| **NRCS watering practice (CPS 614) + irrigation guide** | CPS **614** hub page + NEH **Part 652** PDF + extract in same batch. |
+| **Flood hazard desk screening** | [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md) (FEMA MSC link). |
+
+**Field validation** (add rows to the master matrix as **measured**): white-lining dig lines per 811 guidance; **pressure**/**flow** at **troughs**; **evidence** of **unmarked** utilities → **second notice** per 811 process.
 
 ---
 

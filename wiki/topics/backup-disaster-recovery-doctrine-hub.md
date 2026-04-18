@@ -3,7 +3,7 @@ title: Backup and disaster recovery — doctrine hub
 page_type: topic
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - backup
   - disaster-recovery
@@ -21,6 +21,8 @@ confidence: high
 **What this hub owns**: **Navigation** (labels, read order, “which page is authoritative for X?”). It does **not** duplicate the DR package prose or invent RPO/RTO numbers.
 
 **What it does not own**: Per-site **cron schedules**, **bucket names**, or **restore drill dates**—those stay in operator runbooks and evidence.
+
+**Integration**: New **backup/DR** PDFs or doc captures should **activate** into this hub + [`Backup and disaster recovery package — smart farm stack`](../analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) and the [`Backup / DR — official documentation cluster`](../source-notes/backup-dr-official-documentation-cluster.md) Evidence summary—not **source-note-only** when they change restore order or tier labels.
 
 ---
 

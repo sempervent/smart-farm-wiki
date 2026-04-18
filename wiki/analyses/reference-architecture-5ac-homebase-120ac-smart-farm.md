@@ -3,7 +3,7 @@ title: Reference architecture — 5-acre home base + 120-acre farm
 page_type: analysis
 status: draft
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-25
 review_status: unreviewed
 tags:
   - architecture
@@ -85,6 +85,8 @@ Give a **single first-draft** **logical** picture of the **smart-farm stack** fo
 | **Alerts** | Phone / email / SMS | **Attention** routing—**not** a database |
 
 **Authority rules** (detail): [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md).
+
+**Video / NVR (explicit boundaries)**: IP **camera** stacks (e.g. **Frigate**) are **optional** and **not** **welfare**-grade proof alone; **`SITE_FARM`** **production** **dependence** is **deferred** per [`Local video / NVR — role and deferral boundaries (farm stack)`](local-video-nvr-role-and-deferral-boundaries-farm-stack.md). **Observability + secrets doctrine**: [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md).
 
 ---
 

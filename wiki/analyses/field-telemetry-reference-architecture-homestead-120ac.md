@@ -23,6 +23,8 @@ Provide a **single first-draft reference** for how **sensors, gateways, uplink, 
 
 **Demory `SITE_FARM` sensor stack** (long-range RF, gateways, Starlink as WAN only): [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md).
 
+**Integration / package boundary**: New RF/sensor/vendor ingests **activate** into the relevant **cluster source-notes** (Evidence summary) and the **Demory** pages above—not into this reference as a dump. **Platform** (broker, TSDB, k3s observability) routes through [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) and [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md). **WAN/power** scheduling ties to [`Off-grid power and field networking hub`](../topics/off-grid-power-and-field-networking-hub.md) and backup/DR when telemetry affects restore order.
+
 ## Scope
 
 - **In scope**: Logical blocks, data paths, **assumptions**, and **questions** for a split-site, partly instrumented farm.

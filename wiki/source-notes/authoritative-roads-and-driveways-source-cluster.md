@@ -3,7 +3,7 @@ title: Authoritative roads and driveways — source cluster (agency, extension, 
 page_type: source_note
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-18
 tags:
   - roads
   - drainage
@@ -15,6 +15,24 @@ confidence: high
 ---
 
 # Authoritative roads and driveways — source cluster (agency, extension, manuals)
+
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | **Primary-weight** index (FHWA, NRCS, Penn State, USFS, BMPs; FHWA pointer where PDF not in vault) for **unpaved road** geometry, **drainage**, and **erosion**—so supporting **topic** pages and **site** analyses can cite **manuals** before **forums**. |
+| **Authority mix** | **Federal manuals + extension/agency PDFs** in vault; **community** sources listed separately in-page. |
+| **Decision relevance** | Informs **driveway / internal road** maintenance and **erosion** mitigation framing for **120-acre** access and **steep** terrain discussions—**not** permit engineering. |
+| **Canonical wiki links** | [`Rural road and driveway erosion sources`](../topics/rural-road-and-driveway-erosion-sources.md) · [`Steep curved hill dirt road — erosion prevention (120-acre farm)`](../analyses/steep-curved-hill-dirt-road-erosion-prevention-120-acres.md) · [`Dirt road erosion — shade, hill, and curve (planning synthesis)`](../analyses/dirt-road-erosion-shade-hill-curve.md) |
+
+**Key claims** (public-safe):
+
+- **Drainage-first** maintenance (crown, cross-slope, water bars, rolling dips) **recurs** across **NRCS/USFS/Penn State** manuals—implementation is **site-specific**.
+- **FHWA gravel guide** is referenced as a **widely cited** manual; **URL** lives on the dedicated FHWA source-note when PDF is absent locally.
+
+**Open questions / follow-ups**
+
+- **County** ROW, **easement**, and **stormwater** rules still require **local** lookup.
 
 **Purpose**: **Primary-weight** index for **unpaved road** geometry, **drainage**, and **erosion control**—so [`Rural road and driveway erosion sources`](../topics/rural-road-and-driveway-erosion-sources.md) and road analyses can cite **standards/agency/extension** before **forums or vendor blogs**.
 

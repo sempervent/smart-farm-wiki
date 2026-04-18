@@ -3,7 +3,7 @@ title: Parcel evidence intake and validation workflow — two-site
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags:
   - two-site
   - parcel
@@ -44,6 +44,11 @@ confidence: high
 4. **Cross-link** **site inventory** / **infrastructure** / **utility** baselines when the fact is **operational** (gate width, easement width)—**not** duplicate legal description on every page.
 5. **Append** [`wiki/log.md`](../log.md) **`ingest`** entry.
 6. Run **`uv run python scripts/validate_wiki.py`**.
+
+**Desk tools (before field work)**
+
+- **State/county GIS and flood/climate portals** (primary URL table—**not** parcel outcomes): [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md).
+- **Utility excavation**: TN **811** process captures in [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — **ticket** / **Positive Response** are **project** records, not wiki defaults.
 
 ---
 

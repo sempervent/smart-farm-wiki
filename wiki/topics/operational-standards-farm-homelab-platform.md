@@ -3,7 +3,7 @@ title: Operational standards — farm and homelab platform
 page_type: topic
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - standards
   - operations
@@ -30,6 +30,7 @@ confidence: high
 | [`k3s cluster bootstrap standard — smart farm / homelab`](../analyses/k3s-cluster-bootstrap-standard-smart-farm-homelab.md) | Bootstrap order, prerequisites pointer, phase gates |
 | [`Kubernetes edge — scheduling, storage class, and Longhorn roles standard`](../analyses/kubernetes-edge-scheduling-storage-longhorn-standard.md) | Labels, taints, **StorageClass** defaults, Longhorn placement |
 | [`Secrets and certificates — edge cluster standard`](../analyses/secrets-and-certificates-edge-cluster-standard.md) | No plain secrets in Git, rotation, break-glass |
+| [`Observability, secrets, and trust bar — homelab / farm edge`](../analyses/observability-secrets-and-trust-bar-homelab-farm-edge.md) | Alert **philosophy**, **SOPS/Flux** context, **remote** **trust** bar (pairs with secrets + monitoring standards) |
 | [`Monitoring and logging expectations — edge cluster standard`](../analyses/monitoring-and-logging-expectations-edge-cluster-standard.md) | Minimum observability bar (metrics/logs) |
 | [`Backup validation cadence — farm stack standard`](../analyses/backup-validation-cadence-standard-farm-stack.md) | How often to **prove** restores |
 

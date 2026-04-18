@@ -3,7 +3,7 @@ title: Procedural guides package strategy — Smart Farm Wiki
 page_type: topic
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - meta
   - procedures
@@ -17,7 +17,9 @@ confidence: high
 
 **Purpose**: Treat **stepwise operator procedures** as **first-class** pages: one **place** they live, shared **metadata**, clear separation from **essays** and **standards**, and explicit **links** to **architecture**, **entities**, and **norms**.
 
-**Policy**: [`AGENTS.md`](../../AGENTS.md) — `page_subtype`, `operational_maturity`, **Guides vs runbooks vs standards** (below in this file mirrors the contract).
+**Policy**: [`AGENTS.md`](../../AGENTS.md) — `page_subtype`, `operational_maturity`, **Guides vs runbooks vs standards** (below in this file mirrors the contract), **ingest activation**, **Evidence summary** expectations on high-value **source-notes**, **structural vs integration** validation.
+
+**Integration**: New **procedure** pages should **attach** to an existing **guide hub** or **standard** (or extend the **backup DR package** / **platform doctrine** spine) so they are not **orphan runbooks**—see **Canonicalization** in `AGENTS.md`.
 
 ---
 

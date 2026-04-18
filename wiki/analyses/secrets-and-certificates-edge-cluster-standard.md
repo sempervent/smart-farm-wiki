@@ -5,7 +5,7 @@ page_subtype: standard
 operational_maturity: pilot_ready
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 tags:
   - secrets
   - tls
@@ -39,6 +39,8 @@ confidence: high
 
 ## Related
 
+- [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) — **SOPS/Flux** placement and **repo-safe** norms (complements this standard).
+- [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — Flux “manage secrets with SOPS” + **getsops/sops** readme captures (`raw/processed/2026/`).
 - [`Remote access and operational security model — two-site smart farm`](remote-access-operational-security-model-two-site-smart-farm.md)
 - [`Kubernetes platform backup / DR — Pi fleet, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md)
 - [`Disaster recovery decision rules — farm edge stack`](disaster-recovery-decision-rules-farm-edge-stack.md)

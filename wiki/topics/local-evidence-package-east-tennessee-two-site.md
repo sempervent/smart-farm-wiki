@@ -3,7 +3,7 @@ title: Local evidence package — East Tennessee two-site
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-25
 tags:
   - two-site
   - east-tennessee
@@ -18,6 +18,10 @@ confidence: high
 # Local evidence package — East Tennessee two-site
 
 **Purpose**: **Durable routing** for **measured and site-specific** execution data for **`SITE_HOME`** (Claxton, Anderson County) and **`SITE_FARM`** (Demory, Campbell County)—without scattering facts across unrelated analyses. **Does not** invent parcel lines, utilities, or loads; **tables** are **append-only friendly** (update rows as evidence lands in `raw/` + source-notes).
+
+**Package boundary**: **Canonical** **home** for **field-measured** and **desk-cited** **baselines** (inventory, infra, utility, loads, templates, workflow). **Not** the full **business plan** narrative—that stays on the **package** page and **planning framework**; **not** a duplicate of **site intelligence** essays (those synthesize county context; this package holds **tables** and **workflow**).
+
+**Integration**: New **measured** rows should **cross-link** [`Parcel intelligence package`](../topics/parcel-intelligence-package-east-tennessee-two-site.md) / **worksheets** when the fact is **parcel**-shaped, and **append** [`wiki/log.md`](../log.md) **`ingest`** when **batch**-sized—see [`Package artifact backlog — canonical East Tennessee packages`](../analyses/package-artifact-backlog-canonical-packages-east-tennessee.md) for **artifact** gaps (WAN log, energy worksheet, etc.).
 
 **Spine**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local site and county intelligence`](local-site-and-county-intelligence.md) · [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md) · [`Execution dossier — Phase 0–1 (hub)`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md).
 
@@ -43,6 +47,11 @@ confidence: high
 | 5 | [`Loads register — known, estimated, unknown (two sites)`](../analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md) | **Electrical** / **duty-cycled** loads; **power** **budget** **hooks** |
 | 6 | [`Field observation template package — two-site`](../topics/field-observation-template-package-east-tennessee-two-site.md) | **Repeatable** visit forms (date, route, observations) |
 | 7 | [`Parcel evidence intake and validation workflow — two-site`](../analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) | **How** evidence moves **raw → wiki** without breaking provenance |
+
+**Desk research (state + national; no parcel outcomes embedded on portal pages)**
+
+- **Official portal index**: [`Tennessee two-site — official parcel, GIS, flood, and climate portals`](../source-notes/tennessee-two-site-official-parcel-gis-flood-climate-portals.md) — TN Property Viewer, Anderson/Campbell assessor entry points, WSS, USGS elevation, FEMA MSC, NOAA normals.
+- **Evidence hardening audit** (what this pass added; open gaps): [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md).
 
 **Existing layers** (unchanged scope): [`Claxton home base — site intelligence`](../analyses/claxton-home-base-site-intelligence.md), [`Demory farm — site intelligence`](../analyses/demory-farm-site-intelligence.md), [`Parcel intelligence package`](parcel-intelligence-package-east-tennessee-two-site.md), [`Claxton and Demory — missing data register`](../analyses/claxton-and-demory-missing-data-register.md).
 

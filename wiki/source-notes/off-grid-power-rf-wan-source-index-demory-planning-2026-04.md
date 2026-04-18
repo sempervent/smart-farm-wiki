@@ -3,7 +3,7 @@ title: Off-grid power, field RF, and optional WAN — source index (Demory plann
 page_type: source_note
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-18
 source_ids:
   - raw/processed/2026/nrel-off-grid-solar-module-5-design-modeling-89248.pdf
   - raw/processed/2026/nrel-off-grid-solar-module-6-installation-operations-maintenance-89249.pdf
@@ -21,6 +21,25 @@ confidence: medium
 ---
 
 # Off-grid power, field RF, and optional WAN — source index (Demory planning)
+
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | Theme-based **index** into NREL/Victron **PDFs**, Meshtastic **operator captures**, HaLow **datasheets/articles**, and Starlink **spec** PDFs for **off-grid-first** `SITE_FARM` planning—paired with a **2026-04-23** electrical batch note. |
+| **Authority mix** | **Federal lab + vendor docs + captured operator docs**; Starlink/Morse as **vendor primary**. |
+| **Decision relevance** | Informs **power domain** doctrine, **field RF** layering (mesh vs HaLow vs Wi‑Fi), **WAN** as optional backhaul, and **validation** gates—**not** sizing without measured loads. |
+| **Canonical wiki links** | [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) · [`Off-grid power doctrine — Demory`](../analyses/off-grid-power-strategy-demory-farm-site.md) · [`Mesh and field networking strategy — off-grid Demory farm`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) |
+
+**Key claims** (public-safe):
+
+- **NREL** off-grid modules emphasize **design discipline** and **O&M**—not a substitute for **AHJ** electrical rules or **site-specific** shading/soiling.
+- **Meshtastic** captures document **power** and **roles** at **ingest time**—verify against current upstream docs before deploy.
+- **HaLow** and **Starlink** materials are **technology context** for range and **WAN**; **field** layout and **security** are **synthesis** pages.
+
+**Open questions / follow-ups**
+
+- **Measured** load inventory and **battery/SOC** targets remain on **site** baselines and **execution** phases—not in this index.
 
 **Purpose**: Durable **provenance index** for **`SITE_FARM`** **(Demory, Campbell County)** when the **business plan** treats the **production parcel** as **off-grid-first** (solar + battery default; WAN secondary). **Does not** assert **kW**, **Ah**, or **wire sizes** **—** those are **local** **engineering** **after** **loads** **are** **metered** **.**
 

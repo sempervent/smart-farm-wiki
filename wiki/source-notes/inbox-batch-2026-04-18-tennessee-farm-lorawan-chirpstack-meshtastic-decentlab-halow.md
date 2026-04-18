@@ -65,6 +65,24 @@ confidence: medium
 
 **Downstream hubs**: [`Tennessee hobby farm and small-farm business sources`](../topics/tennessee-hobby-farm-and-small-farm-business-sources.md) · [`Smart agriculture, Meshtastic, and LoRaWAN`](../topics/smart-agriculture-meshtastic-and-lorawan.md) · [`LoRa, MQTT, and gateway bridges`](../topics/lora-mqtt-and-gateway-bridges.md) · [`Field network IoT comparisons (HaLow, LoRa, NB-IoT)`](../topics/field-network-iot-comparisons.md) · [`Wi‑Fi HaLow`](../concepts/wi-fi-halow.md)
 
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | **Wide** ingest index: TN **farm policy** captures, **LoRaWAN** spec + ag articles, **ChirpStack** / **Meshtastic** docs, **Decentlab** vendor pages, **HaLow** PDFs, **W1266** PDF, farmers.gov **tax** deck—mixed **authority** bands in one drop. |
+| **Authority mix** | **Statute/extension** captures + **LoRa Alliance** spec PDF + **open-source** / **vendor** docs + **marketing** pages (**do not** treat as regulation). |
+| **Decision relevance** | Business **framing** and **RF stack literacy** for the two-site plan; **sensor** vendor **electrical** hints—[`Demory sensor layer cluster`](../source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md) narrows field-sensing scope. |
+| **Canonical wiki links** | [`Authoritative execution evidence cluster — East Tennessee`](authoritative-execution-evidence-cluster-east-tennessee.md) · [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Demory farm sensor layer — official and operator-grade source cluster`](../source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md) |
+
+**Key claims** (public-safe):
+
+- **LoRaWAN 1.1** PDF in vault is the **normative** reference for **protocol** questions—not a substitute for **country** radio rules and **site** RF planning.
+- **Greenbelt** / **hobby-farm** captures are **informational**—**tax classification** needs **your** CPA and **county** facts.
+
+**Open questions / follow-ups**
+
+- Split **policy** vs **RF** **sub-indexes** if the table becomes hard to scan (optional IA refactor).
+
 ---
 
 ## Tennessee — farm business, taxes, zoning, liability
