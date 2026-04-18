@@ -298,3 +298,57 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - Moved **eight** imports from `raw/inbox/` to `raw/processed/2026/` (PostGIS workflow, Futurice AI-native ops, Kotter dual operating excerpt, MSU precision soil mapping, RSE remote sensing crop-mapping review, UNL CropWatch soil sensing, Grit forage feeding guide, **UT Beef & Forage Center** forage menu).
 - Eight new `source-notes/`; cross-linked [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`topics/backyard-livestock-and-homestead-animals.md`](topics/backyard-livestock-and-homestead-animals.md), [`topics/farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`topics/smart-agriculture-meshtastic-and-lorawan.md`](topics/smart-agriculture-meshtastic-and-lorawan.md), [`topics/field-network-iot-comparisons.md`](topics/field-network-iot-comparisons.md), [`topics/tennessee-hobby-farm-and-small-farm-business-sources.md`](topics/tennessee-hobby-farm-and-small-farm-business-sources.md), [`concepts/precision-agriculture.md`](concepts/precision-agriculture.md), [`analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md`](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md), [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md) (P1 #12 partial ingests). Updated [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`index.md`](index.md).
 
+---
+
+## [2026-04-21] ingest | PostgreSQL / PostGIS captures and data storage concept
+
+- Confirmed **four** processed raw files under `raw/processed/2026/` (PostgreSQL system-design chapter, Medium query-flow deep dive, enterprise PostGIS deep dive, GiST spatial index explainer).
+- Added **four** `source-notes/` with `source_ids`; concept [`concepts/data-storage.md`](concepts/data-storage.md) with **official** links to [MQTT specification](https://mqtt.org/mqtt-specification/), [OASIS MQTT 5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html), [PostgreSQL docs](https://www.postgresql.org/docs/current/), and [PostGIS documentation](https://postgis.net/documentation/).
+- Cross-linked [`topics/farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`topics/lora-mqtt-and-gateway-bridges.md`](topics/lora-mqtt-and-gateway-bridges.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`source-notes/postgis-complete-workflow.md`](source-notes/postgis-complete-workflow.md); updated [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md) (Strand D); updated [`index.md`](index.md).
+
+---
+
+## [2026-04-21] ingest | Inbox PDF batch (soil PA, PostGIS slides, forage)
+
+- Moved **six** PDFs from `raw/inbox/` to `raw/processed/2026/` with kebab-case names; mislabeled `noaa_58706_DS1.pdf` renamed to [`raw/processed/2026/mdpi-agriculture-13091777-soil-ml-smart-farming.pdf`](../../raw/processed/2026/mdpi-agriculture-13091777-soil-ml-smart-farming.pdf) (content is MDPI *Agriculture* 2023 soil/ML article).
+- Ran `scripts/pdf_to_markdown.py` for each PDF → sibling `*-extracted.md`.
+- Six new `wiki/source-notes/*-pdf.md` (PDF + extract links); cross-linked [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`topics/backyard-livestock-and-homestead-animals.md`](topics/backyard-livestock-and-homestead-animals.md), [`topics/farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`concepts/precision-agriculture.md`](concepts/precision-agriculture.md), [`concepts/data-storage.md`](concepts/data-storage.md); updated [`index.md`](index.md).
+
+---
+
+## [2026-04-21] policy | PDFs explicit in ingest contract
+
+- [`AGENTS.md`](../../AGENTS.md): ingest workflow and definition-of-done now require **PDF** inbox drops to follow `docs/workflows/ingest.md` (stable path, **`pdf_to_markdown.py`** extract, source-note cites **PDF + `*-extracted.md`**); `raw/` layer table mentions PDFs.
+- [`docs/workflows/ingest.md`](../../docs/workflows/ingest.md): step 1 states **PDFs** are first-class alongside markdown.
+
+---
+
+## [2026-04-21] ingest | Five priority operational drafts from strategic audit
+
+- First-draft **`analyses/`** pages (placeholders, `status: draft`): [`dual-site-operations-model-non-agritourism.md`](analyses/dual-site-operations-model-non-agritourism.md), [`field-telemetry-reference-architecture-homestead-120ac.md`](analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`spatial-data-and-farm-asset-registry-standard.md`](analyses/spatial-data-and-farm-asset-registry-standard.md), [`weekly-coverage-matrix-two-site-farm-operations.md`](analyses/weekly-coverage-matrix-two-site-farm-operations.md), [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md). Linked from [`index.md`](index.md) and [`information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md).
+
+---
+
+## [2026-04-21] policy | Staged agentic prompts for wiki improvement
+
+- Added [`analyses/agentic-wiki-improvement-prompts-strategic-audit.md`](analyses/agentic-wiki-improvement-prompts-strategic-audit.md): **pre-prompt** (quality bar, non-goals, AGENTS-aligned writing standards) and **Phase 1–4** copy-paste prompts (foundational architecture → operational workflows → resilience/security → optimization/governance) with deliverables, acceptance criteria, constraints, and file lists; aligned to [`implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md). Linked from [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md); pointer in [`docs/index.md`](../../docs/index.md).
+
+---
+
+## [2026-04-21] query | Smart technology architecture audit
+
+- Added [`analyses/smart-technology-architecture-audit.md`](analyses/smart-technology-architecture-audit.md): coverage vs gaps by layer (field telemetry through remote access), **fragmentation** analysis, **reference architecture** page outline, prioritized **SOPs** and **diagrams** checklist. Linked from [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md).
+
+---
+
+## [2026-04-21] query | Business viability and farm economics — gap analysis
+
+- Added [`analyses/business-viability-and-farm-economics-gap-analysis.md`](analyses/business-viability-and-farm-economics-gap-analysis.md): dimension-by-dimension gap table (revenue, enterprise selection, market channels, staffing, insurance, accounting, CAPEX/OPEX, logistics, risk); prioritized **financial/business-planning** wiki pages; list of decisions **not** supportable from the repo alone; templates, calculators, comparisons. Linked from [`index.md`](index.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md).
+
+---
+
+## [2026-04-21] query | Target information architecture for decision-safe operational brain
+
+- Delivered [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md): top-level logical layers, new topic hubs (two-site spine, telemetry, spatial, cybersecurity, civil systems), required analyses/comparisons/templates/SOPs/architecture docs/entities, cross-linking rules, orphan/integration gaps, phased migration plan; grounded in [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md).
+- Linked from [`overview.md`](overview.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md), [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md), [`index.md`](index.md).
+

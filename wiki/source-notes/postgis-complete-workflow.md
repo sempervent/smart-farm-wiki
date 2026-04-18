@@ -3,7 +3,7 @@ title: "PostGIS — complete workflow (capture)"
 page_type: source_note
 status: active
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-21
 source_ids:
   - raw/processed/2026/postgis-complete-workflow.md
 tags:
@@ -21,5 +21,6 @@ review_status: unreviewed
 
 **Used by**
 
+- [`Data storage (farm and edge stacks)`](../concepts/data-storage.md)
 - [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md)
 - [`Implementation backlog — strategic audit (P0–P3)`](../analyses/implementation-backlog-strategic-audit.md)

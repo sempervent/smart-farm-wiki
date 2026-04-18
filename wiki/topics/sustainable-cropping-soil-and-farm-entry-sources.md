@@ -3,7 +3,7 @@ title: Sustainable cropping, soil, and farm entry sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-20
+updated: 2026-04-21
 tags:
   - crop-rotation
   - cover-crops
@@ -29,6 +29,11 @@ review_status: unreviewed
 - [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md)
 - [`source-notes/precision-agriculture-soil-mapping-msu.md`](../source-notes/precision-agriculture-soil-mapping-msu.md)
 - [`source-notes/soil-crop-sensing-cropwatch-unl.md`](../source-notes/soil-crop-sensing-cropwatch-unl.md)
+- [`source-notes/mdpi-agriculture-13091777-soil-ml-smart-farming-pdf.md`](../source-notes/mdpi-agriculture-13091777-soil-ml-smart-farming-pdf.md) — MDPI *Agriculture* 2023; ML + soil analysis system (PDF + extract).
+- [`source-notes/asa-publication-p1792-remote-ground-sensors-soil-pdf.md`](../source-notes/asa-publication-p1792-remote-ground-sensors-soil-pdf.md) — Remote/ground soil mapping sensors review (P1792 PDF).
+- [`source-notes/precision-agriculture-s11119-025-10274-w-pdf.md`](../source-notes/precision-agriculture-s11119-025-10274-w-pdf.md) — *Precision Agriculture* 2025; proximal sensors + crop model yield maps (PDF).
+- [`source-notes/usda-p2458-forage-yield-assessment-pdf.md`](../source-notes/usda-p2458-forage-yield-assessment-pdf.md) — USDA forage yield measurement (P2458 PDF).
+- [`source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md`](../source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md) — Farmers.gov forage–animal balance factsheet (PDF).
 
 **Related**
 

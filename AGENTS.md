@@ -28,7 +28,7 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
 
 | Layer | Purpose | Mutable by agent? |
 |-------|---------|-------------------|
-| `raw/` | Provenance-grounded sources; inbox → processed pipeline | **Append / file new sources only. Never edit processed or alter meaning of stored sources.** |
+| `raw/` | Provenance-grounded sources (markdown imports, **PDFs**, and other files); inbox → processed pipeline | **Append / file new sources only. Never edit processed or alter meaning of stored sources.** |
 | `wiki/` | Structured knowledge pages, index, log | **Yes**, following rules below |
 | `docs/` | Template handbook, architecture, workflows (MkDocs) | **Yes**, when improving operator documentation |
 | `scripts/` | Validation and scaffolding | **Yes**, with tests and clear CLI contracts |
@@ -52,6 +52,7 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
 ### Ingest
 
 1. Add or confirm raw material under `raw/inbox/` (or processed pipeline per `docs/workflows/ingest.md`).
+   - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. Source-notes for PDFs must cite **both** the `.pdf` and the `*-extracted.md` in the body (and `source_ids` includes the `.pdf` path). See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py` / `validate_wiki.py --raw-pdf-links` when the full corpus is local.
 2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths.
 3. Update relevant entity/concept/topic pages; add cross-links.
 4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
@@ -265,7 +266,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 | Task | Done when |
 |------|-----------|
-| **Ingest** | Raw filed; source-notes + synthesis updated; log + index updated; validator passes |
+| **Ingest** | Raw filed (for **PDFs**: sibling `*-extracted.md` + source-note cites both); source-notes + synthesis updated; log + index updated; validator passes; run `--raw-pdf-links` when the full `raw/` corpus is present locally |
 | **Query** | Answer cites wiki/raw; durable page created/updated if needed; log appended |
 | **Lint** | Validator clean (`--strict` in CI); orphans/titles addressed or explicitly deferred in log |
 

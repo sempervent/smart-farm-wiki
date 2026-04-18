@@ -17,6 +17,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Smart Farm Wiki — mission, audience, and voice](concepts/smart-farm-wiki-mission-and-values.md) — Mission statement, vision, values, and prose style; domain “why” (complements `AGENTS.md`).
 - [LLM Wiki pattern](concepts/llm-wiki-pattern.md) — Core ideas: raw vs wiki, synthesis, maintenance.
 - [Composting](concepts/composting.md) — Aerobic decomposition of organics into soil amendment; homestead synthesis cluster.
+- [Data storage (farm and edge stacks)](concepts/data-storage.md) — MQTT handoff vs PostgreSQL/PostGIS durable data; links to official docs.
 - [Decentralized physical infrastructure networks (DePIN)](concepts/depin.md) — Token-incentivized physical/digital infrastructure framing (see sources).
 - [ESP32](concepts/esp32.md) — Espressif SoC family common in IoT, sensors, and displays.
 - [LoRa (radio)](concepts/lora-radio.md) — LoRa PHY vs LoRaWAN and mesh stacks.
@@ -188,12 +189,22 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [AI animal husbandry (Ambiq)](source-notes/ai-animal-husbandry-ambiq.md) — Marketing survey of AI in livestock sectors.
 - [AI-native operating model (Futurice)](source-notes/ai-native-operating-model-futurice.md) — Culture, value streams, product ops beyond Agile.
 - [Dual operating system — Kotter excerpt](source-notes/dual-operating-system-kotter-excerpt.md) — Hierarchy vs network; strategic agility excerpt.
+- [Farmers.gov — small-scale forage–animal balance (PDF, 2022)](source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md) — Pasture supply vs demand; NRCS grazing math.
 - [Guide to livestock forage feeding — Grit](source-notes/guide-livestock-forage-feeding-grit.md) — Hay quality, grains vs forage primer.
 - [PostGIS — complete workflow](source-notes/postgis-complete-workflow.md) — Spatial DB modeling; app-oriented GIS pipeline.
+- [Geospatial PostgreSQL enterprise — PostGIS deep dive (Perry Robinson)](source-notes/geospatial-postgresql-enterprise-postgis-perry-robinson.md) — Enterprise PostGIS setup, fleet-style scenarios, tiles.
+- [GiST spatial index in PostGIS (Medium)](source-notes/postgis-gist-spatial-index-medium.md) — Bounding boxes, spatial index pruning explainer.
+- [MDPI Agriculture 2023 — soil ML smart farming (PDF)](source-notes/mdpi-agriculture-13091777-soil-ml-smart-farming-pdf.md) — Data-driven soil analysis; open-access article PDF + extract.
+- [PostGIS Day 2019 — PostGIS 3.0 slides (PDF)](source-notes/postgis-day-2019-postgis-3-pdf.md) — Paul Ramsey deep dive deck; complements PostGIS docs.
+- [PostgreSQL internals — query flow (Medium, part 1)](source-notes/postgresql-deep-dive-query-flow-medium-part-1.md) — DBMS layers; path of queries through PostgreSQL.
+- [PostgreSQL — system design interviews (Algomaster)](source-notes/postgresql-system-design-interviews-algomaster.md) — Interview-oriented PostgreSQL architecture and patterns capture.
 - [Precision agriculture — soil mapping (MSU)](source-notes/precision-agriculture-soil-mapping-msu.md) — Web Soil Survey, SSURGO, management zones.
+- [Precision Agriculture journal — mobile sensors and yield maps (Springer PDF)](source-notes/precision-agriculture-s11119-025-10274-w-pdf.md) — 2025; HERMES crop model case study.
 - [Remote sensing for crop mapping — RSE review](source-notes/remote-sensing-crop-mapping-rse-review.md) — Crop land-cover products; large academic review capture.
 - [Soil and crop sensing — CropWatch (UNL)](source-notes/soil-crop-sensing-cropwatch-unl.md) — On-the-go sensors; map-based prescriptions.
+- [Soil sensors — remote and ground-based mapping (ASA/CSSA P1792 PDF)](source-notes/asa-publication-p1792-remote-ground-sensors-soil-pdf.md) — Review; imagery vs on-the-go sensing.
 - [UT forage menu — Beef & Forage Center](source-notes/ut-forage-menu-beef-forage-center.md) — Extension forage planning; diversification.
+- [USDA — forage yield assessment (P2458 PDF)](source-notes/usda-p2458-forage-yield-assessment-pdf.md) — Pasture yield methods; clipping vs plate meter.
 - [Animals journal PDF (animals-14-01645)](source-notes/animals-journal-14-01645-pdf.md) — Peer-reviewed PDF import; confirm metadata in file.
 - [Cheap Yellow Display ESPHome beginners](source-notes/esphome-yellow-display-beginners.md) — ESP32-2432S028 + Home Assistant YAML.
 - [DIY PTP grandmaster Pi (Geerling)](source-notes/diy-ptp-grandmaster-pi-geerling.md) — Time Pi / TimeHAT stratum-1 NTP+PTP build.
@@ -245,6 +256,15 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
 - [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
 - [Implementation backlog — strategic audit (P0–P3)](analyses/implementation-backlog-strategic-audit.md) — Prioritized build list: templates, topics, SOPs, analyses; top 10 pages first.
+- [Information architecture — decision-safe operational brain (target design)](analyses/information-architecture-decision-safe-operations.md) — Target IA: hub layers, required pages, cross-links, orphan/integration gaps, migration phases.
+- [Business viability and farm economics — gap analysis (strategic audit)](analyses/business-viability-and-farm-economics-gap-analysis.md) — Revenue, enterprise, channels, staffing, insurance, books, CAPEX/OPEX, logistics, risk; prioritized page list; decisions not yet supportable from the vault alone.
+- [Smart technology architecture audit (strategic audit)](analyses/smart-technology-architecture-audit.md) — Field stack, identity, alerting, security, fragmentation; reference page outline; required SOPs and diagrams.
+- [Agentic wiki improvement prompts (staged, strategic audit)](analyses/agentic-wiki-improvement-prompts-strategic-audit.md) — Pre-prompt + Phase 1–4 copy-paste prompts: deliverables, acceptance criteria, files to create/update.
+- [Dual-site operations model — non-agritourism farm business](analyses/dual-site-operations-model-non-agritourism.md) — First draft: batch work, equipment home, coverage questions; placeholders.
+- [Field telemetry reference architecture — homestead + 120-acre farm](analyses/field-telemetry-reference-architecture-homestead-120ac.md) — First draft: logical blocks, SPOFs, broker/authority questions.
+- [Spatial data and farm asset registry standard](analyses/spatial-data-and-farm-asset-registry-standard.md) — First draft: IDs for paddocks, assets, devices; map authority.
+- [Weekly coverage matrix — two-site farm operations](analyses/weekly-coverage-matrix-two-site-farm-operations.md) — First draft: fillable grid; Tier A/B/C checks.
+- [Automation degraded modes and manual fallback SOP](analyses/automation-degraded-modes-manual-fallback-sop.md) — First draft: failure classes, manual safe states, per-system placeholders.
 - [3D printing in a workshop — summary](analyses/3d-printing-in-a-workshop-summary.md) — FDM/shop uses, jigs, forum culture; ingested batch.
 - [Basement workshop design — summary](analyses/basement-workshop-design-summary.md) — Layout, ingress, noise/dust, basement remodel sources.
 - [Off-grid setups for the smart home — summary](analyses/off-grid-smart-home-setups-summary.md) — Energy + Home Assistant / SOC automations; ingested guides and forum.

@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. **Drop or file raw content** under `raw/inbox/`; after triage, move to `raw/processed/...` with stable paths. Do not later rewrite processed text to “fix” meaning—add a new raw note if the source changes.
+1. **Drop or file raw content** under `raw/inbox/` — including **PDFs** and other binaries alongside markdown captures. After triage, move to `raw/processed/...` with stable **kebab-case** paths. Do not later rewrite processed text to “fix” meaning—add a new raw note if the source changes.
 
 ### PDF → Markdown (text extraction)
 

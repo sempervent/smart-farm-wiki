@@ -3,7 +3,7 @@ title: Wiki overview
 page_type: overview
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-21
 tags:
   - meta
   - llm-wiki
@@ -21,6 +21,7 @@ This vault is a **structured synthesis layer** on top of immutable **raw** sourc
 3. Use **source-notes** under `source-notes/` to ground claims in `raw/processed/`.
 4. For **how this repository is built and published** (CI, scripts, corpus scale), read [`analyses/repository-analysis.md`](analyses/repository-analysis.md); for the operator handbook, see `docs/` at the repo root.
 5. For **what the domain content covers** (agriculture, networks, power, regional business, time sync), read [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md).
+6. For the **target information architecture** (decision-safe operational brain: dual-site spine, telemetry, spatial registry, SOPs), read [`analyses/information-architecture-decision-safe-operations.md`](analyses/information-architecture-decision-safe-operations.md) together with [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md) and [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md).
 
 **Principles**
 

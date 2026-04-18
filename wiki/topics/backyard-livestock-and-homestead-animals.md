@@ -3,7 +3,7 @@ title: Backyard livestock and homestead animal sources
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-20
+updated: 2026-04-21
 tags:
   - livestock
   - poultry
@@ -34,6 +34,8 @@ Practical articles on **chickens**, **cattle**, dual-purpose flocks, and **AI-en
 - [`source-notes/deep-litter-chicken-tractor-pasture-systems.md`](../source-notes/deep-litter-chicken-tractor-pasture-systems.md)
 - [`source-notes/guide-livestock-forage-feeding-grit.md`](../source-notes/guide-livestock-forage-feeding-grit.md)
 - [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md)
+- [`source-notes/usda-p2458-forage-yield-assessment-pdf.md`](../source-notes/usda-p2458-forage-yield-assessment-pdf.md) — Measuring pasture/forage yield (USDA P2458 PDF).
+- [`source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md`](../source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md) — Forage–animal balance worksheet (Farmers.gov PDF).
 
 **Comparisons**
 

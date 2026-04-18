@@ -8,6 +8,8 @@ This site is the **operator handbook** for the template: architecture, workflows
 - [Architecture](architecture.md) — raw vs wiki vs docs layers
 - [Agent maintenance](operations/agent-maintenance.md) — how `AGENTS.md` governs automation
 
+**Staged agent prompts** (Smart Farm Wiki): copy-paste pre-prompt and phases from [`wiki/analyses/agentic-wiki-improvement-prompts-strategic-audit.md`](../wiki/analyses/agentic-wiki-improvement-prompts-strategic-audit.md) in the repository (MkDocs publishes `wiki/` only; open that path in the clone).
+
 **Environment**
 
 Dependencies are declared in `pyproject.toml` and locked in `uv.lock`. Run **`uv sync`** once per clone (or after lock changes), then invoke scripts with **`uv run`** (see [Quickstart](quickstart.md)).

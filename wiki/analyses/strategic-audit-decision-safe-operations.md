@@ -3,7 +3,7 @@ title: Strategic audit — decision-safe operations for a two-site smart farm
 page_type: analysis
 status: active
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - meta
@@ -22,6 +22,10 @@ confidence: medium
 
 **Related meta**
 
+- [`Information architecture — decision-safe operational brain (target design)`](information-architecture-decision-safe-operations.md) — **target IA**: top-level layers, hubs, cross-linking rules, orphans, migration plan.
+- [`Business viability and farm economics — gap analysis (strategic audit)`](business-viability-and-farm-economics-gap-analysis.md) — revenue, enterprise, channels, staffing, insurance, accounting, CAPEX/OPEX, logistics, risk; prioritized business pages; **under-modeled** decisions.
+- [`Smart technology architecture audit (strategic audit)`](smart-technology-architecture-audit.md) — telemetry, radios, edge, HA/farmOS/MQTT/TSDB, time, identity, registry, alerting, observability, firmware, degraded modes, security, remote access; **fragmentation**, reference outline, SOPs, diagrams.
+- [`Agentic wiki improvement prompts (staged, strategic audit)`](agentic-wiki-improvement-prompts-strategic-audit.md) — **Pre-prompt** + **Phase 1–4** agent prompts (foundational → operational → resilience → optimization) with deliverables and acceptance criteria.
 - [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md) — **prioritized** artifacts, effort, dependencies, and **top 10** pages to build first.
 - [`Domain content overview`](domain-content-overview.md) — strand map; this audit **extends** the “Gaps and growth directions” section with an actionable backlog.
 - [`Knowledge synthesis`](../topics/knowledge-synthesis.md) — entry points across the vault.

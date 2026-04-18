@@ -3,7 +3,7 @@ title: Farm data, farmOS, and agriculture lab builds
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-20
+updated: 2026-04-21
 tags:
   - farmos
   - agriculture
@@ -22,9 +22,15 @@ Together these sources connect **software** (farmOS hosting and extensibility) t
 - [`source-notes/farmos-overview-farmos-org.md`](../source-notes/farmos-overview-farmos-org.md)
 - [`source-notes/agriculture-lab-build-2023-homelab-reddit.md`](../source-notes/agriculture-lab-build-2023-homelab-reddit.md)
 - [`source-notes/postgis-complete-workflow.md`](../source-notes/postgis-complete-workflow.md) — PostGIS spatial DB workflow; background for **map-anchored** assets and queries.
+- [`source-notes/postgresql-system-design-interviews-algomaster.md`](../source-notes/postgresql-system-design-interviews-algomaster.md) — Relational DB patterns (system-design framing).
+- [`source-notes/postgresql-deep-dive-query-flow-medium-part-1.md`](../source-notes/postgresql-deep-dive-query-flow-medium-part-1.md) — PostgreSQL query path / internals primer.
+- [`source-notes/geospatial-postgresql-enterprise-postgis-perry-robinson.md`](../source-notes/geospatial-postgresql-enterprise-postgis-perry-robinson.md) — Enterprise PostGIS narrative and setup themes.
+- [`source-notes/postgis-gist-spatial-index-medium.md`](../source-notes/postgis-gist-spatial-index-medium.md) — GiST / bounding-box spatial indexing explainer.
+- [`source-notes/postgis-day-2019-postgis-3-pdf.md`](../source-notes/postgis-day-2019-postgis-3-pdf.md) — PostGIS 3.0 deep dive slides (PDF).
 
 **Related**
 
+- [`Data storage (farm and edge stacks)`](../concepts/data-storage.md) — MQTT vs PostgreSQL/PostGIS; canonical documentation links
 - [`Smart agriculture, Meshtastic, and LoRaWAN`](smart-agriculture-meshtastic-and-lorawan.md) — field sensors and gateways; farmOS as a **data sink** for records (distinct from LPWAN stacks)
 - [`Homelab, self-hosting, and edge narratives`](homelab-self-hosting-and-edge-narratives.md) — where the ag-lab OP posted; overlaps with automation skill-building
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md) — MCU prototypes the OP anticipated for devices feeding automation

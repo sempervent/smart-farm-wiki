@@ -3,7 +3,7 @@ title: Implementation backlog — strategic audit (P0–P3)
 page_type: analysis
 status: active
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - meta
@@ -16,6 +16,8 @@ confidence: medium
 # Implementation backlog — strategic audit (P0–P3)
 
 **Source of truth**: [`Strategic audit — decision-safe operations for a two-site smart farm`](strategic-audit-decision-safe-operations.md).
+
+**Target IA**: [`Information architecture — decision-safe operational brain (target design)`](information-architecture-decision-safe-operations.md) — how backlog items **fit the navigation model** (hubs, cross-links, migration).
 
 **Purpose**: Prioritized **implementation backlog** to convert the wiki from a **knowledge vault** into an **operational brain** for a **~5-acre homestead**, a **~120-acre farm business ~35 minutes away**, and a **heavy smart-tech / telemetry / automation** environment.
 

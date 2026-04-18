@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-20
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - domain
@@ -98,9 +98,10 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 - [`Homelab, self-hosting, and edge narratives`](../topics/homelab-self-hosting-and-edge-narratives.md)
 - [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](../topics/docker-kubernetes-compose-and-bake.md)
 
-**Concept**
+**Concepts**
 
 - [`ESP32`](../concepts/esp32.md)
+- [`Data storage (farm and edge stacks)`](../concepts/data-storage.md) — MQTT vs PostgreSQL/PostGIS; links to official manuals
 
 ## Strand E — Power and site energy
 
@@ -139,6 +140,9 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 ## Gaps and growth directions
 
 - **Strategic audit (actionable backlog)**: [`Strategic audit — decision-safe operations for a two-site smart farm`](strategic-audit-decision-safe-operations.md) — what must be added (data, synthesis, artifacts) before the wiki can support **decision-safe** two-site operations; complements this overview.
+- **Target information architecture**: [`Information architecture — decision-safe operational brain (target design)`](information-architecture-decision-safe-operations.md) — how hubs, analyses, SOPs, and cross-links should **compose** into an operational brain; migration from the current catalog.
+- **Business viability & economics (gap analysis)**: [`Business viability and farm economics — gap analysis (strategic audit)`](business-viability-and-farm-economics-gap-analysis.md) — revenue, enterprise, channels, staffing, insurance, accounting, CAPEX/OPEX, logistics, risk; what the vault **cannot** decide yet.
+- **Smart technology (architecture audit)**: [`Smart technology architecture audit (strategic audit)`](smart-technology-architecture-audit.md) — telemetry through security; **fragmentation**; reference outline; SOPs and diagrams checklist.
 - **Implementation backlog (prioritized)**: [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md) — phased build list; **forage** ingests (UT, Grit) support P1 **stocking/forage** synthesis.
 - **Integration pages** that explicitly tie **soil/crop decisions** to **sensor placement** or **data model** (farmOS fields vs real paddocks) are still sparse compared to the volume of **standalone source-notes**.
 - **Comparisons** beyond [`Raw vs wiki`](../comparisons/raw-vs-wiki.md) could grow (e.g. LoRaWAN vs Meshtastic for a fixed use case) when backed by new ingests.

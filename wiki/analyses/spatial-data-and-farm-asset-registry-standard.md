@@ -1,0 +1,104 @@
+---
+title: Spatial data and farm asset registry standard
+page_type: analysis
+status: draft
+created: 2026-04-21
+updated: 2026-04-21
+tags:
+  - gis
+  - assets
+  - registry
+  - postgis
+review_status: unreviewed
+confidence: low
+---
+
+# Spatial data and farm asset registry standard
+
+## Purpose
+
+Define a **minimal, practical standard** so **parcels, paddocks, infrastructure, equipment, and telemetry endpoints** share stable **IDs** and can sit on a **map** (GIS layer or simple sketch) without requiring a survey-grade cadastre on day one. This is **glue** between **land** and **digital** systems—[`Strategic audit`](strategic-audit-decision-safe-operations.md) calls this a **critical gap** when farmOS or sensors float without **earth-anchored** names.
+
+## Scope
+
+- **In scope**: Naming pattern, **minimum fields** for registry rows, **layer** ideas, and **coordinate assumptions**.
+- **Out of scope**: Legal boundary disputes; **subdivision**; professional surveying unless you later engage one.
+
+## Assumptions
+
+| Assumption | Notes |
+|------------|--------|
+| You may use **PostGIS**, **farmOS geometries**, **KML**, or **even a paper map photo** initially—**discipline of IDs** matters more than software brand. |
+| **One “operating map”** should be agreed: *where is the current truth for boundaries?* **`MAP_AUTHORITY_LABEL`** = TBD (file name, farmOS layer, or GIS project). |
+| **CRS**: If you mix WGS84 and a projected CRS, **document** the rule (e.g. “store WGS84 lon/lat for points; use **EPSG:XXXX** for distance math in GIS”). Replace **`EPSG_PLACEHOLDER`**. |
+
+## Identity pattern (draft)
+
+**Sites** (top level):
+
+- `SITE_A` = homestead placeholder code (e.g. `HMS`)
+- `SITE_B` = farm placeholder code (e.g. `F120`)
+
+**Land units** (examples—adjust vocabulary to your operation):
+
+| Unit type | Example ID | Notes |
+|-----------|------------|--------|
+| Parcel / property block | `SITE_B-PARCEL-01` | **Not** legal description—operating label only. |
+| Paddock / field | `SITE_B-F05` | Short, stable; no renaming seasonally unless you accept **broken history**. |
+| Structure | `SITE_B-BARN-01`, `SITE_A-SHED-01` | Point or footprint polygon when known. |
+| Linear | `SITE_B-LANE-N` | Roads, lanes—useful for **access** during mud/ice. |
+
+**Assets** (equipment and fixed infrastructure):
+
+| Field | Required? | Example |
+|-------|-----------|---------|
+| `asset_id` | Yes | `SITE_B-TR-001` |
+| `site` | Yes | `SITE_B` |
+| `category` | Yes | tractor, ATV, generator, pump, tank, gateway |
+| `make_model` | If known | free text |
+| `serial` | If known | **Redact** in shared copies if sensitive |
+| `primary_location` | Yes | paddock ID, barn bay, or “stored @ `SITE_A`” |
+| `power_source` | For field gear | solar/battery/grid/none |
+| `telemetry_device_id` | If any | must match **broker/GPS** naming—see telemetry architecture |
+
+**Telemetry endpoints** (must link to land or asset):
+
+| Field | Required? |
+|-------|-----------|
+| `device_id` | Yes (global uniqueness) |
+| `mounted_at` | `asset_id` **or** `lat/lon` **or** `paddock_id` |
+| `measurement` | e.g. tank depth, gate open, soil VWC |
+
+## Key questions
+
+1. **Who owns the polygon** for each paddock—same person who maintains **fence**?
+2. **When a sensor moves**, is it a **new** `device_id` or a **migration** event in a log?
+3. **farmOS / PostgreSQL / spreadsheet**: which is **canonical** for **asset list** vs **geometry**? (See future **telemetry system of record** analysis.)
+4. **Public sharing**: which layers are **never** exported (gates, cameras)?
+
+## Decision criteria
+
+| Situation | Recommendation |
+|-----------|----------------|
+| **Fewer than ~20** land units | Spreadsheet + map screenshot may suffice **if** IDs are stable. |
+| **Overlapping uses** (graze + hay + crop) | Prefer **seasonal management zones** as attributes, **not** new polygons every year—**or** accept versioning. |
+| **Telemetry scaling** | **Enforce** `device_id` ↔ `paddock_id` linkage **before** adding sensors—see audit **technology ↔ land** gap. |
+
+## Links to related future or existing pages
+
+- [`PostGIS — complete workflow (capture)`](../source-notes/postgis-complete-workflow.md) — workflow narrative.
+- [`Data storage (farm and edge stacks)`](../concepts/data-storage.md) — PostgreSQL/PostGIS docs.
+- [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md) — farmOS as possible **geometry + records** home.
+- [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md) — where **devices** sit in the stack.
+- [`Weekly coverage matrix — two-site farm operations`](weekly-coverage-matrix-two-site-farm-operations.md) — who is **on site** to verify map vs reality.
+- Future **entity pages** under `entities/` for **`SITE_A` / `SITE_B`** when real (see [`Implementation backlog`](implementation-backlog-strategic-audit.md)).
+
+## Open items
+
+- [ ] Choose **`MAP_AUTHORITY_LABEL`** and record path or URL (internal).
+- [ ] Create **empty** registry table (sheet or DB) with column headers above.
+- [ ] Walk fence lines once with **GPS track** or **marked waypoints**—even coarse—**before** trusting irrigation or animal partitions.
+
+---
+
+*First draft: naming convention is the product; software is secondary.*

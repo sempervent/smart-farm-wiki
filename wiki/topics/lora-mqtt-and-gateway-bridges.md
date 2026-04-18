@@ -3,7 +3,7 @@ title: LoRa, MQTT, and gateway bridges
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-21
 tags:
   - lora
   - mqtt
@@ -30,6 +30,7 @@ Together, these sources support designs where **battery nodes** in a **coop, run
 
 **Related**
 
+- [`Data storage (farm and edge stacks)`](../concepts/data-storage.md) — MQTT specification links and how messaging fits beside **PostgreSQL**/PostGIS
 - [`Smart agriculture, Meshtastic, and LoRaWAN`](smart-agriculture-meshtastic-and-lorawan.md) — LPWAN field context; distinct from **plain LoRa** bridges
 - [`Field network IoT comparisons (HaLow, LoRa, NB-IoT)`](field-network-iot-comparisons.md) — when LPWAN vs other backhauls
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md) — MCU nodes at the **sensor** side
