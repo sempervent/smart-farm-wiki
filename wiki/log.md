@@ -568,3 +568,12 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md): **Ready for execution** checklist (governance, labor, truth, tech, finance/insurance).
 - Direct edits: [`vision`](analyses/east-tennessee-two-site-farm-business-plan-vision-and-constraints.md), [`executive summary`](analyses/east-tennessee-two-site-farm-business-plan-executive-summary.md), [`recommended enterprise strategy`](analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md), [`labor model`](analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md), [`execution-first-24-months…`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md), [`pilot/recon checklists`](analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md), [`execution decision memo`](analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md); [`business-plan package`](business-plan/east-tennessee-two-site-farm-business-plan.md) **operational bar** line.
 
+---
+
+## [2026-04-17] ingest | raw/inbox batch — TN/UT/NASS/NRCS/FSA/farmOS + PDFs
+
+- **Moved to** `raw/processed/2026/`: **9 new PDFs** (UT D32, NASS corn + all-crops cash rents TN 2024, TN Revenue ag exemption Jan 2023, NRCS E472A/E528R FY2025, UT Beef & Forage PB1663 calendar, TN PC498 agritourism act, Livestock Companion Apr 2025) with **`*-extracted.md`** via `scripts/pdf_to_markdown.py`. **Skipped** duplicate inbox PDFs identical to existing `ut-publication-d31/d252c/d252d.pdf`.
+- **Web captures** (markdown) from inbox → `raw/processed/2026/*-inbox-2026-04-18.md` (FSA, farmOS docs, septic/SSDS, Web Soil Survey, 3D Elevation, TN GA bill info, USDA NASS page, Agricultural Exemption page). **`raw/inbox/` cleared** (PDFs + captures) after archival so strict PDF–extract pairing passes.
+- **Source-notes** added under `wiki/source-notes/` (UT D32, NASS pair + survey page, TN exemption PDF + page, NRCS CEAP pair, PB1663, PC498, Livestock Companion, FSA batch, farmOS batch, septic batch, WSS/elevation, TN GA bill); [`index.md`](index.md) updated.
+- Validator: `validate_wiki.py --strict` and `--raw-pdf-links` (strict).
+

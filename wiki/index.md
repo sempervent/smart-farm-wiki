@@ -147,6 +147,20 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [UT — D252A publication (PDF)](source-notes/ut-publication-d252a-pdf.md)
 - [UT — D252C publication (PDF)](source-notes/ut-publication-d252c-pdf.md)
 - [UT — D252D publication (PDF)](source-notes/ut-publication-d252d-pdf.md)
+- [UT — D32 publication (PDF)](source-notes/ut-publication-d32-pdf.md)
+- [USDA NASS — Tennessee cash rent surveys 2024 (PDF)](source-notes/nass-cash-rents-tn-2024-surveys-pdf.md)
+- [USDA NASS — Cash rents survey page (capture)](source-notes/usda-nass-cash-rents-survey-page-inbox-2026-04-18.md)
+- [Tennessee Revenue — Agricultural exemption Jan 2023 (PDF)](source-notes/tn-revenue-agricultural-exemption-jan2023-pdf.md)
+- [Agricultural exemption — page capture](source-notes/agricultural-exemption-page-inbox-2026-04-18.md)
+- [NRCS — CEAP E472A / E528R FY2025 (PDF)](source-notes/nrcs-ceap-e472a-e528r-fy2025-pdf.md)
+- [UT Beef & Forage Center — PB1663 resource calendar 2026 (PDF)](source-notes/ut-beef-forage-center-pb1663-resource-calendar-2026-pdf.md)
+- [Tennessee — Public Chapter 498 agritourism act (PDF)](source-notes/tn-public-chapter-498-agritourism-act-pdf.md)
+- [Livestock Companion — Vol. 17 Apr 2025 (PDF)](source-notes/livestock-companion-vol-17-2025-04-pdf.md)
+- [USDA FSA — program pages (captures)](source-notes/fsa-program-pages-capture-inbox-2026-04-18.md)
+- [farmOS — documentation captures (inbox)](source-notes/farmos-documentation-captures-inbox-2026-04-18.md)
+- [Tennessee — onsite sewage / septic (captures)](source-notes/tn-onsite-sewage-septic-captures-inbox-2026-04-18.md)
+- [Web Soil Survey & 3D Elevation — captures](source-notes/web-soil-survey-and-elevation-captures-inbox-2026-04-18.md)
+- [Tennessee General Assembly — bill information (capture)](source-notes/tennessee-general-assembly-bill-info-capture-inbox-2026-04-18.md)
 - [Erosion control on steep road — r/homestead](source-notes/erosion-control-steep-road-reddit-homestead.md) — Ditches, crown, water bars, outslope, rolling dips, handbook PDF link.
 - [Example LLM Wiki note (raw)](source-notes/example-llm-wiki-note.md) — Grounding note for `raw/processed/2026/example-llm-wiki-note.md`.
 - [3D printed workshop equipment — organizing (source)](source-notes/3d-printed-workshop-equipment-organizing.md) — Printed organizers; shop storage.
