@@ -3,7 +3,7 @@ title: Structural audit — page ownership, entity gaps, and hub routing
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - meta
@@ -40,7 +40,7 @@ confidence: medium
 
 | Pattern | Examples | Mitigation |
 |---------|----------|------------|
-| **Meta-audits** | Strategic audit, IA target design, implementation backlog, repository structural audit, **this page** | Keep **one question per audit title**; cross-link; do not copy/paste backlog tables between them—**pointer** instead. |
+| **Meta-audits** | Strategic audit, IA target design, implementation backlog, repository structural audit, [`Structural debt audit — wiki IA and operational maturity`](structural-debt-audit-wiki-ia-and-operational-maturity.md), **this page** | Keep **one question per audit title**; cross-link; do not copy/paste backlog tables between them—**pointer** instead. |
 | **Query syntheses** | `analyses/*query*` agritourism, stocking prompts, profitable crops matrix | Acceptable as **time-stamped answers**; if content becomes permanent doctrine, **fold** into topic hub or canonical analysis and add routing. |
 | **Duplicate “overview”** | Domain content overview vs strategic audit vs business plan executive summary | **Domain overview** = strands; **executive summary** = business plan only; **strategic audit** = gap list—readers should not see three competing “north stars” without labels. |
 
@@ -94,6 +94,8 @@ confidence: medium
 
 ## Related
 
-- [`AGENTS.md`](../../AGENTS.md) — Page ownership section; canonicalization; entity-first.  
+- [`AGENTS.md`](../../AGENTS.md) — Page ownership section; canonicalization; entity-first; `page_subtype` / `operational_maturity`.  
+- [`Structural debt audit — wiki IA and operational maturity`](structural-debt-audit-wiki-ia-and-operational-maturity.md) — Sprawl metrics, guide taxonomy, flat-index mitigations.  
+- [`Wiki navigation and structural hubs`](../topics/wiki-navigation-and-structural-hubs.md) — Themed router for canonical clusters.  
 - [`Domain content overview`](domain-content-overview.md) — Strand maturity.  
 - [`Knowledge synthesis`](../topics/knowledge-synthesis.md) — Entry points.

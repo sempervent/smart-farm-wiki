@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan (package)
 page_type: topic
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 tags:
   - business-plan
   - two-site
@@ -48,7 +48,8 @@ aliases:
 | 4 | [`Recommended enterprise strategy`](../analyses/east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md) |
 | 5 | [`Labor model and weekly operating rhythm`](../analyses/east-tennessee-two-site-farm-business-plan-labor-and-family-model.md) |
 | 6 | [`Smart technology and telemetry strategy`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) — **AA/AF/PA/SO** |
-| 6b | [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md) — **NS/MV**, Phase 1 **observe-only** |
+| 6b | [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md) — **NS/MV/CS** (incl. **CS-5**, **MV-8** for off-grid farm), Phase 1 **observe-only** |
+| 6c | [`Off-grid operational decision rules — Demory`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) + [`Capital plan` (Off-grid Demory sequencing)](../analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md#off-grid-demory-capital-sequencing) — **after** smart-tech + stop rules; **before** major field RF/WAN spend |
 | 7 | [`Capital plan and infrastructure sequencing`](../analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md) |
 | 8 | [`Revenue model and milestones`](../analyses/east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md) |
 | 9 | [`Risk register and mitigation strategy`](../analyses/east-tennessee-two-site-farm-business-plan-risk-register.md) |
@@ -73,7 +74,7 @@ Linked from the framework; same targets as [`Two-site smart farm operations`](..
 - [`Two-site operating model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md)
 - [`Connectivity strategy — Claxton home base and Demory farm site`](../analyses/connectivity-strategy-for-claxton-and-demory.md) — **Canonical WAN** (Starlink, LTE, terrestrial); pilot vs scale; security and degraded hooks.
 - [`Execution topology package — two-site smart farm (Mermaid)`](../analyses/execution-topology-package-two-site-smart-farm.md) — **Reference / pilot / degraded** diagrams; trust zones; runbook links.
-- **Demory / `SITE_FARM` off-grid-first** — [`Demory farm — site intelligence`](../analyses/demory-farm-site-intelligence.md) **§** **Off-grid-first** **;** [`Off-grid power strategy — Demory farm site`](../analyses/off-grid-power-strategy-demory-farm-site.md) **;** [`Mesh and field networking strategy — off-grid Demory farm`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) **;** [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) **;** [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md).
+- **Demory / `SITE_FARM` off-grid-first** (solar + battery; mesh-first; WAN optional): [`Demory farm — site intelligence`](../analyses/demory-farm-site-intelligence.md) (Off-grid-first section), [`Off-grid power strategy — Demory`](../analyses/off-grid-power-strategy-demory-farm-site.md), [`Mesh and field networking — off-grid Demory`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`Off-grid operational decision rules`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md), [`Off-grid farm execution topology (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md), [`Meshtastic vs HaLow vs Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md). Execution tie-in: [`First 90 days`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md) (Demory parallel rules), [`Validation plan` off-grid gates](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#off-grid-demory-validation-gates).
 - [`Family labor model and coverage matrix`](../analyses/family-labor-model-and-coverage-matrix-two-site-smart-farm.md)
 - [`Instrumentation priority matrix`](../analyses/instrumentation-priority-matrix-two-site-smart-farm.md)
 - [`Capital phasing table — years 0–10`](../analyses/capital-phasing-table-years-0-10-two-site-smart-farm.md)

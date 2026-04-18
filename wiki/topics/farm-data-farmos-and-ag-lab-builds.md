@@ -3,7 +3,7 @@ title: Farm data, farmOS, and agriculture lab builds
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-18
 tags:
   - farmos
   - agriculture
@@ -29,6 +29,13 @@ Together these sources connect **software** (farmOS hosting and extensibility) t
 - [`source-notes/geospatial-postgresql-enterprise-postgis-perry-robinson.md`](../source-notes/geospatial-postgresql-enterprise-postgis-perry-robinson.md) — Enterprise PostGIS narrative and setup themes.
 - [`source-notes/postgis-gist-spatial-index-medium.md`](../source-notes/postgis-gist-spatial-index-medium.md) — GiST / bounding-box spatial indexing explainer.
 - [`source-notes/postgis-day-2019-postgis-3-pdf.md`](../source-notes/postgis-day-2019-postgis-3-pdf.md) — PostGIS 3.0 deep dive slides (PDF).
+
+**Backup and recovery (homelab / self-hosted)**
+
+- [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](../analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md)
+- [`Restore and recovery tiers — homelab farm systems`](../analyses/restore-recovery-tiers-homelab-farm-systems.md)
+- [`Homelab backup stack — official captures`](../source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md) (restic, Longhorn, farmOS Docker capture)
+- [`Source gap audit — backup/DR vs sub-GHz Wi‑Fi`](../analyses/source-gap-audit-backup-dr-and-subghz-wifi-2026-04-18.md)
 
 **Related**
 

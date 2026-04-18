@@ -3,7 +3,7 @@ title: First 90 days — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -86,6 +86,8 @@ confidence: medium
 | **Before** **treating** **telemetry** **as** **trip** **input** | **Remote access hardening**: **inventory** **admin** **path** **per** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **(VPN** **/** **outbound** **tunnel** **)** | **No** **“** **inbound** **to** **field** **”** **shortcuts** **documented** **as** **production** |
 
 **Dependency rules (90-day horizon)** — **May** **depend** **on** **Starlink** **/** **WAN** **for**: **convenience** **dashboards**, **remote** **peek**, **non-welfare** **alerts**. **Must not** **depend** **on** **WAN** **for**: **welfare** **verification**, **books** **authority** **without** **offline** **export**, **safe** **defaults** **at** **edge** **—** **full** **tables**: [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
+
+**`SITE_FARM` / Demory (off-grid-first)** — **parallel** discipline (does not replace fence/water/G8): (1) **Capital**: no second farm WAN, HaLow segment, or always-on RF fleet until [`Capital plan` off-grid sequencing](east-tennessee-two-site-farm-business-plan-capital-and-financing.md#off-grid-demory-capital-sequencing) A–D and **DR-1** are addressed. (2) **Pilot**: one gateway + one RF class ([`Off-grid decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) **DR-5**). (3) **Stop rules**: **CS-5** freezes scope while networking load is unbudgeted vs battery. (4) **Before** remote ops are trusted at Demory: **MV-8** local-only / SOC-stressed drill ([`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)). Canonical detail: [`Off-grid power`](off-grid-power-strategy-demory-farm-site.md), [`Mesh/field networking`](mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`Validation plan` off-grid gates](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#off-grid-demory-validation-gates).
 
 **Cost**: **Tag** **ISP** **+** **LEO** **+** **cell** **(pilot)** **in** **books** **as** **separate** **lines** **;** **first** **quarterly** **WAN** **vs** **value** **review** **no** **later** **than** **T0+90d** **(see** **CS-*** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) **)**.
 

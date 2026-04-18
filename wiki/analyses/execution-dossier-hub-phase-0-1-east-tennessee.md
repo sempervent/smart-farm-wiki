@@ -47,6 +47,12 @@ confidence: medium
 
 ---
 
+## Homelab / edge stack (optional)
+
+When execution includes a **Pi + k3s** homelab or farm-edge gateway aligned with the smart-farm platform story: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) (stay in **P0/P1** scope unless gates justify HA).
+
+---
+
 ## Ready for execution: the plan is operational
 
 Treat the wiki package as **operational** (not merely “written”) only when **all** are true. This is stricter than having pages filled—it is **behavioral** and **evidence**-based. Cross-check: [`Hostile internal review` §7](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2), [`Remediation` §4 P0/P1](east-tennessee-two-site-farm-business-plan-remediation-backlog.md#4-must-validate-in-the-real-world-first-checklist).

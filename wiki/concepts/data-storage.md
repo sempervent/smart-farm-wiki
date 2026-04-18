@@ -3,7 +3,7 @@ title: Data storage (farm and edge stacks)
 page_type: concept
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-18
 tags:
   - data
   - mqtt
@@ -44,6 +44,8 @@ Background captures (not a substitute for the manuals above):
 - [`PostGIS — complete workflow (capture)`](../source-notes/postgis-complete-workflow.md)
 
 Farm management and lab-build context: [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md). **Product entity**: [`farmOS`](../entities/farmos.md).
+
+**Backup / restore (self-hosted stacks)** — compare granularities for PostgreSQL-class data and volumes: [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](../analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`Restore and recovery tiers — homelab farm systems`](../analyses/restore-recovery-tiers-homelab-farm-systems.md).
 
 ## Related
 

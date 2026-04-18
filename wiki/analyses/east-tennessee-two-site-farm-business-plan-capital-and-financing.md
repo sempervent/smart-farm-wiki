@@ -3,7 +3,7 @@ title: Capital plan and infrastructure sequencing
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -79,6 +79,21 @@ Sequence **capital** (and selective **financing**) for a **grazing-led**, **two-
 **Starlink / farm WAN (sequencing discipline)**: **Defer** a **second** terminal or **redundant** **farm** **uplink** **until** **Phase 1** **comms** **proof**—see [`Two-site operations model — 5 ac / 120 ac`](two-site-operations-model-5ac-homebase-120ac-production.md) **WAN** table and [`Smart technology and telemetry strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md). **Do not** **debt-fund** **gadget** **radios** before **fence/water** gates in this plan’s phasing.
 
 **What changed because of Starlink analysis**: Vault **spec PDFs** define **hardware classes** (**Mini** vs **Standard / kit**)—**OPEX** should **name** **subscription + spare cable/router**, not hide WAN under generic “tech.”
+
+<h3 id="off-grid-demory-capital-sequencing">Off-grid SITE_FARM (Demory) — sequencing discipline</h3>
+
+**Planning default** for the production parcel is **solar + battery** and **mesh-first / local survivable** telemetry—not grid-tied assumptions. That changes **what** gets funded **before** remote operations are trustworthy:
+
+| Order | Fund first | Defer / shed |
+|-------|------------|----------------|
+| **A** | **Water + fence + handling** truth (same grazing-led spine as §Infrastructure sequencing) | “Smart” layers that do not reduce blind spots |
+| **B** | **DC power domain** for **Pcrit**: inverter/charge control, **battery** protection, **labeled** **loads** for gateway and pump heads (per [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md)) | Second **farm** **WAN** terminal, **HaLow** backhaul, **fleet** mesh nodes |
+| **C** | **One** field **gateway** + **one** RF class (e.g. Meshtastic **or** one Wi‑Fi segment)—prove **local** path **without** **WAN** | Parallel stacks, always-on IP radios everywhere |
+| **D** | **Metering or bracket** for **network + always-on electronics** as **Wh/day** against **battery days** (placeholder until measured)—[`Off-grid operational decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) **DR-1** | New **always-on** **IP** **mesh** / **CPE** **until** **DR-1** **satisfied** |
+
+**Labor / OPEX**: Off-grid sites add **electrical O&M** (terminals, corrosion, **battery** **cycles**, **genset** policy if any) on top of **RF** **field** **maintenance** already in [`Smart technology strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)—book as **tech + infra** time, not only subscription lines.
+
+**Starlink at the farm** remains **optional backhaul**—sequence **after** B–C are **credible**, not as a substitute for **local** **gateway** **+** **power** **story** ([`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md)).
 
 ## Financing checklist (local thresholds)
 

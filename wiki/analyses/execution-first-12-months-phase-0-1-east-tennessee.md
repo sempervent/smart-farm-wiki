@@ -3,7 +3,7 @@ title: First 12 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -55,6 +55,8 @@ Finish anything **open** from the **90-day** exit checklist. **Priority**: **V2*
 | **Months 10–12** | **Remote** **access** **hardening** **review**: **inventory** **matches** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **before** **any** **second** **sensor** **cluster** **;** **quarterly** **WAN** **cost** **vs** **value** **review** **(apply** **CS-*** **if** **needed** **)** | [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
 
 **Rules reminder**: **May** **depend** **on** **Starlink** **/** **WAN** **for** **convenience** **telemetry** **and** **egress** **;** **must** **not** **depend** **on** **it** **for** **welfare** **proof** **or** **books** **without** **offline** **discipline** **—** **tables** **on** [`Validation plan` § Connectivity](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation).
+
+**Demory / off-grid (year 1)**: Treat **solar + battery + inverter headroom** as a **gating** input for field networking—**not** only WAN. By **T0+12mo**, either **DR-1** is satisfied (networking load bracketed) or **CS-5** keeps **new** always-on RF/WAN scope frozen. Schedule **MV-8** drill before declaring Demory telemetry **production-trusted** ([`Validation plan` off-grid subsection](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#off-grid-demory-validation-gates), [`Capital plan` off-grid sequencing](east-tennessee-two-site-farm-business-plan-capital-and-financing.md#off-grid-demory-capital-sequencing)).
 
 ---
 

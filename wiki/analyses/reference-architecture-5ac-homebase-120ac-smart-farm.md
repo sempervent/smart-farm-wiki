@@ -3,7 +3,7 @@ title: Reference architecture — 5-acre home base + 120-acre farm
 page_type: analysis
 status: draft
 created: 2026-04-18
-updated: 2026-04-24
+updated: 2026-04-18
 review_status: unreviewed
 tags:
   - architecture
@@ -40,6 +40,10 @@ Give a **single first-draft** **logical** picture of the **smart-farm stack** fo
 | 9 | **Off-grid** **`SITE_FARM`** **(Demory)** — **power** **+** **field** **RF** **+** **optional** **WAN** | [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md) · [`Mesh and field networking strategy — off-grid Demory farm`](mesh-and-field-networking-strategy-off-grid-demory-farm.md) · [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md) |
 
 **Deeper technical stack** (MQTT, broker, radio paths): [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md). **Mermaid topology** (WAN, sites, telemetry plane, DC context): [`Two-site smart farm — network topology and WAN/edge reference (Mermaid)`](two-site-smart-farm-network-topology-and-wan-edge-reference.md). **Off-grid Demory** (solar+battery default, mesh-first): [`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md).
+
+**Homelab backup / DR** (farmOS-class DB, containers, CSI volumes): [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md) · [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](backup-strategy-comparison-farmos-homelab-postgresql-containers.md) · [`Restore and recovery tiers — homelab farm systems`](restore-recovery-tiers-homelab-farm-systems.md) · [`Runbook — backup validation and recovery drill`](runbook-backup-validation-and-recovery-drill.md) · [`Kubernetes platform backup / DR — Pi, k3s, Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md) · [`Off-grid implications — backup and networking choices`](off-grid-implications-backup-and-networking-choices.md).
+
+**Homelab Kubernetes platform** (Pi fleet, k3s, Longhorn, optional Rancher): [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) · [`Platform decision memo`](platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md) · **Provisioning runbook**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md).
 
 ---
 

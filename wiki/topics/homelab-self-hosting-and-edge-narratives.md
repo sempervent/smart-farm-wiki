@@ -3,7 +3,7 @@ title: Homelab, self-hosting, and edge narratives
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-19
+updated: 2026-04-17
 tags:
   - homelab
   - self-hosting
@@ -16,6 +16,8 @@ review_status: unreviewed
 **Narrative**: **Homelab** sources here span **motivation** (career, curiosity, student setups), **getting-started** hardware/OS framing (2026-era server builds), **community wikis** (r/homelab), **personal architecture diaries** (AI-heavy stacks, “my home lab” inventories), **Reddit story threads** (what pulled people in), and **extreme edge** cases (off-grid **Alaska culvert** install). One long-form piece covers **partial solar** for a **high-draw rack** using **EcoFlow** portable power stations, pallet mounts, **UPS sandwiching** for switchover blips, and **Home Assistant** energy dashboards—bridging **homelab** to **electrical load** and **solar offset** practice.
 
 This topic is intentionally **ops- and story-forward**; for **Docker / Kubernetes** mechanics see [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](docker-kubernetes-compose-and-bake.md). For **farm record software** and an **agriculture lab** build thread, see [`Farm data, farmOS, and agriculture lab builds`](farm-data-farmos-and-ag-lab-builds.md).
+
+**Canonical Pi / k3s / Longhorn platform (wiki-native)** — first-class package: [`Homelab / edge Kubernetes platform strategy`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md), [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](../analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) (stepwise runbook), [`Platform decision memo`](../analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md), [`source captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md).
 
 **Source notes**
 

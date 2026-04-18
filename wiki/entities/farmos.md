@@ -3,7 +3,7 @@ title: farmOS
 page_type: entity
 status: active
 created: 2026-04-21
-updated: 2026-04-22
+updated: 2026-04-18
 aliases:
   - farmOS project
 tags:
@@ -31,5 +31,6 @@ review_status: unreviewed
 - Concept: [`Data storage (farm and edge stacks)`](../concepts/data-storage.md)
 - Source-notes: [`farmOS overview (farmOS.org)`](../source-notes/farmos-overview-farmos-org.md), [`farmOS model — Assets`](../source-notes/farmos-model-assets-documentation.md), [`farmOS model — Logs`](../source-notes/farmos-model-logs-documentation.md), [`farmOS — documentation captures (inbox)`](../source-notes/farmos-documentation-captures-inbox-2026-04-18.md) (User Guide, Assets, Logs, Location, Movements—**screenshot-era** captures; verify against current farmOS.org)
 - Analysis: [`Telemetry system of record — boundaries and authority`](../analyses/telemetry-system-of-record-boundaries-and-authority.md)
+- Analysis: [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](../analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`Restore and recovery tiers — homelab farm systems`](../analyses/restore-recovery-tiers-homelab-farm-systems.md)
 
 **Epistemic note**: Hosting, backup, and upgrade burden are **operational** facts for deployers; the wiki does not prescribe a single hosting pattern.

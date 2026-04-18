@@ -3,7 +3,7 @@ title: Docker, Kubernetes, Compose, and Bake (edge and homelab)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags:
   - docker
   - kubernetes
@@ -32,3 +32,4 @@ review_status: unreviewed
 
 - [`Homelab, self-hosting, and edge narratives`](homelab-self-hosting-and-edge-narratives.md) — where these tools usually run in practice
 - [`Farm data, farmOS, and agriculture lab builds`](farm-data-farmos-and-ag-lab-builds.md) — Drupal/farmOS hosting sometimes sits beside containerized stacks
+- **Pi fleet + k3s + Longhorn (canonical)**: [`Homelab / edge Kubernetes platform strategy`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) · [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](../analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) · [`K3s / Longhorn / Rancher captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md)

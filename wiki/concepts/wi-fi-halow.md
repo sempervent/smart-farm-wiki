@@ -3,7 +3,7 @@ title: Wi-Fi HaLow
 page_type: concept
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags:
   - ieee-802-11ah
   - lpwan
@@ -30,3 +30,5 @@ Use this wiki’s source-notes for provenance; treat vendor and forum figures (r
 
 - [`LoRa (radio)`](lora-radio.md), [`LoRaWAN`](lorawan.md)
 - [`Field network IoT comparisons (HaLow, LoRa, NB-IoT)`](../topics/field-network-iot-comparisons.md)
+- [`Sub-GHz Wi‑Fi (HaLow) — farm sensors deployment guide`](../analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md)
+- [`Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm field networking`](../comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md)

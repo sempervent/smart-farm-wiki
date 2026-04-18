@@ -3,7 +3,7 @@ title: Automation degraded modes and manual fallback SOP
 page_type: analysis
 status: draft
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 tags:
   - sop
   - automation
@@ -42,6 +42,7 @@ confidence: low
 | **C — Actuator stuck / partial** | Valve half, gate motor humming, pump cavitating | **Manual disconnect** per equipment **label**—**if not labeled, stop and label** |
 | **D — Logic bug / bad rule** | Water runs at wrong time; gate opens on schedule error | **Disable rule** at controller; not just “fix tomorrow” |
 | **E — Power loss** | Field battery dead; **generator** not started | Follow **cold start** steps for **`SITE_FARM`** (document in asset registry) |
+| **E2 — Off-grid SOC / PV headroom low** (solar + battery **`SITE_FARM`**) | Non-critical loads shed; mesh/gateway may brown out while WAN still looks fine from home | Do not trust remote dashboards for Demory; physical rounds per [`Off-grid degraded modes — Demory`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md); same welfare posture as A / A2 |
 
 ## Decision criteria: when to disable automation
 

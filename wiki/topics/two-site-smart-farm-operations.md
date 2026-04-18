@@ -3,7 +3,7 @@ title: Two-site smart farm operations
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-17
 tags:
   - two-site
   - operations
@@ -20,7 +20,7 @@ review_status: unreviewed
 
 **Meta plan**: [`Smart Farm Wiki — repository implementation plan (business plan integration)`](../analyses/smart-farm-wiki-repository-implementation-plan.md)
 
-**Structure / governance** (overlaps, hubs, entities): [`Structural audit — repository shape and canonical routing`](../analyses/structural-audit-repository-and-canonical-routing.md), [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md), and [`AGENTS.md`](../../AGENTS.md).
+**Structure / governance** (overlaps, hubs, entities): [`Structural audit — repository shape and canonical routing`](../analyses/structural-audit-repository-and-canonical-routing.md), [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md), [`Structural debt audit — wiki IA and operational maturity`](../analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md), [`Wiki navigation and structural hubs`](wiki-navigation-and-structural-hubs.md), and [`AGENTS.md`](../../AGENTS.md).
 
 ## Canonical ownership (durable scope)
 
@@ -70,9 +70,13 @@ review_status: unreviewed
 | [`Automation principles`](../analyses/automation-principles-two-site-smart-farm.md) | Early / late / never |
 | [`Remote access and operational security model`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md) | Admin + zones + **MV**/**CS** hooks |
 | [`Network segmentation, site-to-site, internet exposure`](../analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md) | Cameras/gateways/telemetry/admin/user policy; exposure table |
-| **Off-grid `SITE_FARM` (Demory)** | [`Demory site intelligence`](../analyses/demory-farm-site-intelligence.md) **§** **Off-grid-first** **;** [`Off-grid power`](../analyses/off-grid-power-strategy-demory-farm-site.md) **;** [`Mesh/field RF`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md) **;** [`Off-grid topology (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md) **;** [`Meshtastic vs HaLow vs Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) |
+| **Off-grid `SITE_FARM` (Demory)** | [`Demory site intelligence`](../analyses/demory-farm-site-intelligence.md), [`Off-grid power`](../analyses/off-grid-power-strategy-demory-farm-site.md), [`Mesh/field RF`](../analyses/mesh-and-field-networking-strategy-off-grid-demory-farm.md), [`Off-grid decision rules`](../analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) (**DR-1** / **CS-5**), [`Off-grid topology (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md), [`Meshtastic vs HaLow vs Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md). Gates: [`Validation plan` off-grid](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#off-grid-demory-validation-gates), [`First 90 days`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md). |
 | [`Smart technology and telemetry strategy — control center on 5 acres`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) | **AA/AF/PA/SO** controls; execution-safe strategy |
 | [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md) | **NS/MV** no-scale gates; Phase 1 **observe-only** table |
+| [`Backup and disaster recovery package — smart farm stack`](../analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) | **DR spine** (farmOS, PostgreSQL, k3s, Longhorn, Rancher, secrets); [`backup comparison`](../analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`restore tiers`](../analyses/restore-recovery-tiers-homelab-farm-systems.md), [`recovery drill runbook`](../analyses/runbook-backup-validation-and-recovery-drill.md) |
+| [`Sub-GHz Wi‑Fi (HaLow) — farm sensors deployment guide`](../analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md) | Operator checklist; bridge/AP pattern cites |
+| [`Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi`](../comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md) | Four-way throughput/range/power matrix |
+| [`Homelab / edge Kubernetes platform strategy`](../analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md) | Pi fleet, k3s, Longhorn, optional Rancher; [`platform decision memo`](../analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md); **runbook**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](../analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md); [`k3s/Longhorn captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md) |
 
 ## Resilience
 

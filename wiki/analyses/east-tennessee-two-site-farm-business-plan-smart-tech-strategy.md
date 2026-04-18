@@ -3,7 +3,7 @@ title: Smart technology and telemetry strategy — control center on 5 acres
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -25,7 +25,8 @@ Define how **telemetry and automation** support a **two-site** operation where t
 
 **Architecture reference**: [`Field telemetry reference architecture — homestead + 120-acre farm`](field-telemetry-reference-architecture-homestead-120ac.md).  
 **Registry / naming**: [`Farm spatial model and asset registry standard`](farm-spatial-model-and-asset-registry-standard.md).  
-**Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).
+**Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).  
+**Homelab / edge Kubernetes (when the control-center stack is Pi + k3s)**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) (operational runbook; phases P0/P1 vs later).
 
 **Local evidence (Demory / Campbell)**: **Steep** haul routes and **stock water** risk **favor** **tank/pump/gate** **observability** **before** **broad** sensor sprawl—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **broker** and **backups** stay **home-base**-biased **after** **power/ISP** verified ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)).
 
@@ -43,6 +44,17 @@ Define how **telemetry and automation** support a **two-site** operation where t
 **Must not silently become**: **permission** to **remote-actuate** gates/pumps without [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md); **reason** to skip **G8**-style **manual baselines**; **default** that **MQTT** **equals** **system of record**—see [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md).
 
 **What changed because of Starlink analysis**: Spec **PDFs** and **captures** give **hardware-class** language (**Mini** vs **Standard / kit**) for **uplink planning**—strategy pages still **avoid** duplicating that prose; they **assign** Starlink to **WAN layer** above **MQTT/field RF**.
+
+### `SITE_FARM` off-grid-first — business and labor consequences
+
+**Demory / `SITE_FARM`** is modeled **off-grid-first** (solar + battery default; WAN secondary). For telemetry strategy, that implies:
+
+| Consequence | Execution rule |
+|-------------|----------------|
+| Always-on networking is an energy load | Gateways, 24/7 Wi‑Fi, HaLow APs, and optional Starlink CPE compete with pumps and inverter headroom—budget Pcrit vs Popt per [`Off-grid power strategy — Demory farm site`](off-grid-power-strategy-demory-farm-site.md). Do not expand fleet RF while [`Off-grid operational decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) **DR-1** (metered network load vs battery autonomy) is still open. |
+| Mesh / LPWAN before WAN convenience | Meshtastic-class links for sparse telemetry first; HaLow only where throughput or IP semantics win per [`Meshtastic vs HaLow vs Wi‑Fi`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md). Pilot scope: one gateway + one RF class ([`Decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) **DR-5**). |
+| Maintenance burden rises | Add battery/BMS awareness, DC wiring discipline, and enclosure corrosion to **H_PATCH** / **H_FIELD** (maintenance burden § below). Keep broker/patch cadence at **`SITE_HOME`**; avoid duplicating a full “brain” stack at the farm. |
+| Remote trust | Starlink/LTE dashboards are optional; welfare checks and safe defaults must hold with WAN down and with field power stressed—same bar as [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) **CS-4**, **MV-7**, **MV-8**. |
 
 ---
 

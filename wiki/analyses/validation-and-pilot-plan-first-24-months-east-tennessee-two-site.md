@@ -3,7 +3,7 @@ title: Validation and pilot plan — first 24 months (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -76,6 +76,19 @@ Define what must be **proven cheaply** before **major infrastructure** or **ente
 **Must not silently become**: a **passed** **V10** **based** **only** **on** **vendor** **maps** **without** **seasonal** **logging** at **`SITE_HOME`** **and** **(if used)** **`SITE_FARM`** **;** **or** **production** **telemetry** **trust** **before** **remote** **access** **hardening** **checklist** **is** **done**.
 
 **What changed because of Starlink analysis**: **V10** **evidence** **can** **explicitly** **cite** **LEO** **uplink** **where** **chosen**; **connectivity** **validation** **is** **now** **a** **first-class** **execution** **track** **(survey,** **power,** **WAN** **log,** **security,** **cost** **stops** **)** **—** **not** **only** **a** **matrix** **row**.
+
+<h3 id="off-grid-demory-validation-gates">Off-grid SITE_FARM (Demory) — extra gates (mesh-first, solar + battery)</h3>
+
+When the production parcel is modeled **off-grid-first**, connectivity validation **also** covers **energy** and **local-only** paths—not only WAN behavior:
+
+| Gate / deliverable | What “pass” looks like | Ties to |
+|--------------------|-------------------------|---------|
+| **Dcrit / Pcrit narrative** | Written split of **must-stay-up** loads (gateway head, pump controls, critical sensing) vs **sheddable** (extra CPE, non-critical RF) | [`Off-grid power strategy — Demory`](off-grid-power-strategy-demory-farm-site.md) |
+| **DR-1 / CS-5** | Before second RF class, HaLow segment, or farm Starlink: networking load **bracketed** vs battery autonomy—or **explicit** waiver | [`Off-grid operational decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md), [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
+| **MV-8** | **Local-only** drill: mesh/LPWAN + gateway **without** relying on WAN; **SOC-stressed** behavior documented | [`Off-grid degraded modes — Demory`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md), [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) |
+| **Pilot scope** | **One** gateway + **one** RF class until **G8** / **V10** honest—**DR-5** | Same pages + [`Capital plan` off-grid sequencing](east-tennessee-two-site-farm-business-plan-capital-and-financing.md#off-grid-demory-capital-sequencing) |
+
+**Must not**: treat **Starlink at the farm** as proof of **safe** or **authoritative** ops when **local** power or **gateway** is the actual bottleneck.
 
 ---
 

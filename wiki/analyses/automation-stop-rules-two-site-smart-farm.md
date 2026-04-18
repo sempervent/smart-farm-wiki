@@ -3,7 +3,7 @@ title: Automation stop rules — two-site smart farm
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - automation
@@ -44,16 +44,17 @@ Freeze fleet expansion or roll back to pilot scope if **any** row below holds af
 
 Use when **Starlink**, **LTE**, **fiber**, or **any** **primary** **WAN** **path** **is** **part** **of** **the** **stack** **—** **see** [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation), [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md).
 
-**Freeze** new **WAN-dependent** **scope** (cloud integrations, second **sensor** **cluster**, **second** **farm** **uplink**, **tighter** **alert** **routing** **to** **phone**) **if** **any** **row** **holds** **after** **one** **documented** **remediation** **attempt**:
+Freeze new WAN-dependent scope (cloud integrations, second sensor cluster, second farm uplink, tighter alert routing to phone) **or** new **always-on** field RF at **`SITE_FARM`** if any row holds after one documented remediation attempt:
 
 | ID | Condition | Evidence |
 |----|-----------|----------|
-| **CS-1** | **Recurring** **WAN** **+** **cell** **(pilot)** **costs** **exceed** **stated** **value** **proxy** **(trip** **$/labor** **saved** **or** **written** **ops** **benefit** **)** **for** **two** **consecutive** **quarterly** **reviews** | **Separate** **ledger** **lines** **per** **connectivity** **validation** **;** **family** **decision** **to** **trim**, **pause**, **or** **pivot** |
-| **CS-2** | **Primary** **uplink** **in** **production** **use** **≥** **90** **days** **but** **no** **seasonal** **WAN** **reliability** **log** **(outages,** **fade,** **handoff** **)** | **V10** **incomplete** **—** **treat** **uplink** **as** **unproven** |
-| **CS-3** | **Remote** **access** **inventory** **does** **not** **match** [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) **(no** **inbound** **to** **field** **without** **controlled** **tunnel** **)** **before** **expanding** **pilot** | **Security** **stop** **—** **complete** **inventory** **first** |
-| **CS-4** | **Operational** **reliance** **on** **dashboards** **/** **MQTT** **for** **welfare** **or** **“** **should** **I** **drive** **?”** **while** **G8** **/** **WAN** **degraded** **drill** **not** **passed** | **Revert** **to** **manual** **rounds** **per** [`Manual fallback and degraded modes`](manual-fallback-degraded-modes-critical-operations.md) |
+| **CS-1** | Recurring WAN + cell (pilot) costs exceed stated value proxy (trip $/labor saved or written ops benefit) for two consecutive quarterly reviews | Separate ledger lines per connectivity validation; family decision to trim, pause, or pivot |
+| **CS-2** | Primary uplink in production use ≥ 90 days but no seasonal WAN reliability log (outages, fade, handoff) | V10 incomplete—treat uplink as unproven |
+| **CS-3** | Remote access inventory does not match [`Remote access and operational security model`](remote-access-operational-security-model-two-site-smart-farm.md) before expanding pilot | Security stop—complete inventory first |
+| **CS-4** | Operational reliance on dashboards / MQTT for welfare or “should I drive?” while G8 / WAN degraded drill not passed | Revert to manual rounds per [`Manual fallback and degraded modes`](manual-fallback-degraded-modes-critical-operations.md) |
+| **CS-5** | **`SITE_FARM`** off-grid: new always-on IP radios, HaLow segments, or farm Starlink CPE added while [`Off-grid operational decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md) **DR-1** is open (network + CPE load not bracketed against battery / Pcrit) | Freeze scope per DR-1; complete energy budget row or explicit waiver in writing |
 
-**CS-*** **stack** **with** **NS-***: **connectivity** **fragility** **can** **justify** **a** **freeze** **even** **when** **false-positive** **rates** **look** **fine**.
+**CS-*** stack with **NS-***: connectivity or **field-power** fragility can justify a freeze even when false-positive rates look fine.
 
 ---
 
@@ -69,15 +70,16 @@ Use when **Starlink**, **LTE**, **fiber**, or **any** **primary** **WAN** **path
 | **MV-4** | Degraded-mode drill: broker down / LTE only — document who drives and how often |
 | **MV-5** | Runbook link for this instrument class (triage, mute policy, escalation) |
 | **MV-6** | Cyber: remote surface inventoried for this cluster |
-| **MV-7** | **WAN** **outage** **/** **Starlink** **fade** **drill** **documented** **(seasonal** **or** **simulated** **)** **per** [`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md) **/** [`Runbook — broker or backhaul down`](runbook-broker-or-backhaul-down.md) **—** **who** **reverts** **to** **physical** **checks** **when** **WAN** **is** **impaired** |
+| **MV-7** | WAN outage / Starlink fade drill documented (seasonal or simulated) per [`Automation degraded modes SOP`](automation-degraded-modes-manual-fallback-sop.md) / [`Runbook — broker or backhaul down`](runbook-broker-or-backhaul-down.md)—who reverts to physical checks when WAN is impaired |
+| **MV-8** | For **`SITE_FARM`** off-grid: local-only drill passed—telemetry path without WAN and documented behavior when battery/SOC is stressed (queue-only, mesh-up, gateway-down scenarios per [`Off-grid degraded modes — Demory`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md)). Required before remote field visibility is treated as production-trusted at Demory. |
 
-Missing **any** **MV-*** → no fleet rollout and no actuation.
+Missing any **MV-*** → no fleet rollout and no actuation. For instruments on off-grid **`SITE_FARM`**, **MV-8** applies; **CS-5** freezes new always-on RF/WAN scope while **DR-1** is open ([`Off-grid operational decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md)).
 
 ---
 
 ## Phase 1 observational only by default
 
-Per [`Smart tech` stack posture](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md#stack-posture-by-phase), these systems remain **observational only** unless **PA-1–PA-6** and **MV-1–MV-6** are explicitly satisfied for that asset:
+Per [`Smart tech` stack posture](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md#stack-posture-by-phase), these systems remain **observational only** unless **PA-1–PA-6** and **MV-1–MV-7** are explicitly satisfied for that asset (**MV-8** as well for off-grid **`SITE_FARM`** field assets):
 
 | System / class | Phase 1 default |
 |----------------|-----------------|

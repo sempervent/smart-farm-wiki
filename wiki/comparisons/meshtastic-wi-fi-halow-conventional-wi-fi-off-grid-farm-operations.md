@@ -3,7 +3,7 @@ title: Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm ope
 page_type: comparison
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-18
 tags:
   - meshtastic
   - halow
@@ -62,6 +62,7 @@ For **`SITE_FARM`** **(Demory)** **off-grid-first**, **when** **does** **each** 
 
 ## Links
 
+- [`Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm field networking`](wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md) — **Four-way** matrix including **LoRaWAN**.
 - [`Off-grid power strategy — Demory farm site`](../analyses/off-grid-power-strategy-demory-farm-site.md)
 - [`Off-grid farm execution topology — Demory (Mermaid)`](../analyses/off-grid-farm-execution-topology-demory-mermaid.md)
 - [`Connectivity strategy — Claxton & Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md)

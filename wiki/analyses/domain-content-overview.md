@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-23
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - domain
@@ -17,7 +17,7 @@ This page is the **steering document** for the vault’s **domain** (not CI or M
 
 **Epistemic stance**: Claims about *your* operation require *your* data; the wiki holds **placeholders**, **source-notes**, and **synthesis**. This overview **does not** replace professionals (legal, tax, electrical, vet).
 
-**Canonical ownership & anti-sprawl**: Which **cluster** owns durable meaning (business plan, two-site ops, telemetry/SoR, validation, economics) and how **entities** and **hubs** should route readers—see [`Structural audit — page ownership, entity gaps, and hub routing`](structural-audit-page-ownership-entity-gaps-and-hub-routing.md). Prefer **extending** a canonical page over a parallel analysis; follow **`AGENTS.md`** (page ownership, canonicalization, entity-first).
+**Canonical ownership & anti-sprawl**: Which **cluster** owns durable meaning (business plan, two-site ops, telemetry/SoR, validation, economics) and how **entities** and **hubs** should route readers—see [`Structural audit — page ownership, entity gaps, and hub routing`](structural-audit-page-ownership-entity-gaps-and-hub-routing.md). **Structural tech debt & ops maturity policy** (sprawl diagnosis, `page_subtype`, `operational_maturity`): [`Structural debt audit — wiki IA and operational maturity`](structural-debt-audit-wiki-ia-and-operational-maturity.md). **Themed navigation** without mirroring the full analysis list: [`Wiki navigation and structural hubs`](../topics/wiki-navigation-and-structural-hubs.md). Prefer **extending** a canonical page over a parallel analysis; follow **`AGENTS.md`** (page ownership, canonicalization, entity-first).
 
 **Local site + county layer (two-site package)**: From the business plan into **Anderson** / **Campbell** context and **Claxton** / **Demory** anchors—[`Local site and county intelligence (topic)`](../topics/local-site-and-county-intelligence.md). **Durable entities** (roles vs places vs counties): [`SITE_HOME`](../entities/five-acre-home-base-site-home-et-two-site.md) / [`Claxton (place)`](../entities/claxton-home-base.md) / [`Anderson County (context)`](../entities/anderson-county-tennessee.md); [`SITE_FARM`](../entities/120-acre-production-farm-site-farm-et-two-site.md) / [`Demory (place)`](../entities/demory-farm-site.md) / [`Campbell County (context)`](../entities/campbell-county-tennessee.md). Complements Strand **B** (regional business) and Strand **A** (land/water) without a parallel “strategy” essay.
 
@@ -75,7 +75,7 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 **Themes**: ESP32, ESPHome, farmOS, ag-lab / homelab, containers.
 
-**Hubs**: [`ESP32, ESPHome, and smart-farming builds`](../topics/esp32-iot-smart-farming-and-tooling.md), [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md), [`Homelab, self-hosting, and edge narratives`](../topics/homelab-self-hosting-and-edge-narratives.md), [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](../topics/docker-kubernetes-compose-and-bake.md).
+**Hubs**: [`ESP32, ESPHome, and smart-farming builds`](../topics/esp32-iot-smart-farming-and-tooling.md), [`Farm data, farmOS, and agriculture lab builds`](../topics/farm-data-farmos-and-ag-lab-builds.md), [`Homelab, self-hosting, and edge narratives`](../topics/homelab-self-hosting-and-edge-narratives.md), [`Docker, Kubernetes, Compose, and Bake (edge and homelab)`](../topics/docker-kubernetes-compose-and-bake.md). **Pi / k3s / Longhorn platform package**: [`Homelab / edge Kubernetes platform strategy`](homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md); **provisioning runbook**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md). **Backup / DR package**: [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md).
 
 **Concepts**: [`ESP32`](../concepts/esp32.md), [`Data storage (farm and edge stacks)`](../concepts/data-storage.md).
 

@@ -734,3 +734,87 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Remaining unknowns**: metered Wh/day for field networking; exact PV kW and battery kWh; genset presence and policy; permit/AHJ for fixed towers; field RF map at Demory coordinates (not in vault).
 - Validator: `uv run python scripts/validate_wiki.py --strict`; `uv run mkdocs build --strict`.
 
+
+---
+
+## [2026-04-17] refactor | Off-grid Demory woven into business-plan execution package
+
+- **Capital sequencing**: [`east-tennessee-two-site-farm-business-plan-capital-and-financing.md`](analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md) — new subsection with explicit A–D order (water/fence → DC Pcrit domain → one gateway/RF class → metering vs DR-1); stable anchor `#off-grid-demory-capital-sequencing`.
+- **Smart tech + labor/OPEX**: [`east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md) — `SITE_FARM` off-grid-first consequences table (energy load, mesh-first, maintenance, remote trust).
+- **Stop rules + manual validation**: [`automation-stop-rules-two-site-smart-farm.md`](analyses/automation-stop-rules-two-site-smart-farm.md) — **CS-5** (DR-1 / always-on RF); **MV-8** (local-only + SOC-stressed drill); Phase 1 table notes MV-8 for off-grid farm assets.
+- **Validation gates**: [`validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md`](analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — `#off-grid-demory-validation-gates` (Dcrit/Pcrit, DR-1/CS-5, MV-8, pilot scope).
+- **Execution dossier**: [`execution-first-90-days-phase-0-1-east-tennessee.md`](analyses/execution-first-90-days-phase-0-1-east-tennessee.md), [`execution-first-12-months-phase-0-1-east-tennessee.md`](analyses/execution-first-12-months-phase-0-1-east-tennessee.md), [`execution-first-24-months-phase-0-1-east-tennessee.md`](analyses/execution-first-24-months-phase-0-1-east-tennessee.md) — Demory parallel rules; year-1 MV-8/CS-5; “do not” list extended.
+- **Degraded modes**: [`manual-fallback-degraded-modes-critical-operations.md`](analyses/manual-fallback-degraded-modes-critical-operations.md) (PV/battery stressed row); [`automation-degraded-modes-manual-fallback-sop.md`](analyses/automation-degraded-modes-manual-fallback-sop.md) (**E2**).
+- **Package + hub**: [`east-tennessee-two-site-farm-business-plan.md`](business-plan/east-tennessee-two-site-farm-business-plan.md) (reading order **6c**, operational artifacts tightened); [`execution-topology-package-two-site-smart-farm.md`](analyses/execution-topology-package-two-site-smart-farm.md) (pilot interpretation); [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md); [`off-grid-operational-decision-rules-power-and-networking-demory-farm.md`](analyses/off-grid-operational-decision-rules-power-and-networking-demory-farm.md) (prose cleanup); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-18] ingest | Homelab backup stack (restic, Longhorn, farmOS Docker) + backup/HaLow synthesis
+
+**Raw** (inbox → `raw/processed/2026/`): [`restic-backing-up-documentation-0-18-1-capture-inbox-2026-04-17.md`](../../raw/processed/2026/restic-backing-up-documentation-0-18-1-capture-inbox-2026-04-17.md), [`restic-removing-backup-snapshots-documentation-0-18-1-capture-inbox-2026-04-17.md`](../../raw/processed/2026/restic-removing-backup-snapshots-documentation-0-18-1-capture-inbox-2026-04-17.md), [`longhorn-backup-system-capture-inbox-2026-04-17.md`](../../raw/processed/2026/longhorn-backup-system-capture-inbox-2026-04-17.md), [`longhorn-restore-system-capture-inbox-2026-04-17.md`](../../raw/processed/2026/longhorn-restore-system-capture-inbox-2026-04-17.md), [`longhorn-documentation-hub-capture-inbox-2026-04-17.md`](../../raw/processed/2026/longhorn-documentation-hub-capture-inbox-2026-04-17.md), [`farmos-docker-developing-hosting-capture-inbox-2026-04-17.md`](../../raw/processed/2026/farmos-docker-developing-hosting-capture-inbox-2026-04-17.md) (v1.x/MariaDB dev pattern—verify current hosting for 2.x).
+
+**Source note**: [`homelab-backup-stack-official-captures-inbox-2026-04-18.md`](source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md).
+
+**Analyses**: [`source-gap-audit-backup-dr-and-subghz-wifi-2026-04-18.md`](analyses/source-gap-audit-backup-dr-and-subghz-wifi-2026-04-18.md), [`backup-strategy-comparison-farmos-homelab-postgresql-containers.md`](analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`restore-recovery-tiers-homelab-farm-systems.md`](analyses/restore-recovery-tiers-homelab-farm-systems.md), [`subghz-wi-fi-halow-farm-sensors-deployment-guide.md`](analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md), [`off-grid-implications-backup-and-networking-choices.md`](analyses/off-grid-implications-backup-and-networking-choices.md).
+
+**Comparison**: [`wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md`](comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md).
+
+**Hubs / integration**: [`farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`field-network-iot-comparisons.md`](topics/field-network-iot-comparisons.md), [`data-storage.md`](concepts/data-storage.md), [`wi-fi-halow.md`](concepts/wi-fi-halow.md), [`farmos.md`](entities/farmos.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md`](comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md), [`index.md`](index.md).
+
+**PDFs**: none in this inbox wave (markdown captures only).
+
+**Remaining gaps**: official farmOS backup chapter as dedicated capture; PostgreSQL vendor Barman/continuous archiving if cluster-scale; regulatory HaLow channel plan per jurisdiction—see gap audit.
+
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+
+---
+
+## [2026-04-18] ingest | K3s / Longhorn / Rancher / Pi platform (official docs + homelab narrative)
+
+**Raw** (`raw/processed/2026/`): [`k3s-architecture-docs-capture-inbox-2026-04-18.md`](../../raw/processed/2026/k3s-architecture-docs-capture-inbox-2026-04-18.md), [`k3s-installation-index-docs-capture-inbox-2026-04-18.md`](../../raw/processed/2026/k3s-installation-index-docs-capture-inbox-2026-04-18.md), [`k3s-quick-start-guide-docs-capture-inbox-2026-04-18.md`](../../raw/processed/2026/k3s-quick-start-guide-docs-capture-inbox-2026-04-18.md), [`k3s-configuration-options-docs-capture-inbox-2026-04-18.md`](../../raw/processed/2026/k3s-configuration-options-docs-capture-inbox-2026-04-18.md), [`longhorn-csi-on-k3s-docs-capture-inbox-2026-04-18.md`](../../raw/processed/2026/longhorn-csi-on-k3s-docs-capture-inbox-2026-04-18.md), [`rancher-k3s-product-page-capture-inbox-2026-04-18.md`](../../raw/processed/2026/rancher-k3s-product-page-capture-inbox-2026-04-18.md), [`raspberry-pi-k3s-longhorn-rancher-homelab-capture-inbox-2026-04-18.md`](../../raw/processed/2026/raspberry-pi-k3s-longhorn-rancher-homelab-capture-inbox-2026-04-18.md). **External**: [K3s requirements](https://docs.k3s.io/installation/requirements), [Rancher install on Kubernetes](https://rancher.com/docs/rancher/latest/en/installation/install-rancher-on-k8s/).
+
+**Source note**: [`k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md`](source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md).
+
+**Analyses**: [`homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md`](analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md), [`raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md`](analyses/raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md), [`longhorn-vs-central-storage-architecture-homelab-farm-platform.md`](analyses/longhorn-vs-central-storage-architecture-homelab-farm-platform.md), [`rancher-role-and-timing-k3s-homelab-farm-platform.md`](analyses/rancher-role-and-timing-k3s-homelab-farm-platform.md), [`kubernetes-platform-backup-dr-pi-k3s-longhorn.md`](analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md), [`platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md`](analyses/platform-decision-memo-phase-homelab-k3s-pi-fleet-2026-04-18.md).
+
+**Hubs**: [`domain-content-overview.md`](analyses/domain-content-overview.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`homelab-self-hosting-and-edge-narratives.md`](topics/homelab-self-hosting-and-edge-narratives.md), [`docker-kubernetes-compose-and-bake.md`](topics/docker-kubernetes-compose-and-bake.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`backup-strategy-comparison-farmos-homelab-postgresql-containers.md`](analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`homelab-backup-stack-official-captures-inbox-2026-04-18.md`](source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md), [`index.md`](index.md).
+
+**Remaining gaps**: processed capture for full K3s **Requirements** page; full Rancher requirements page capture; RKE2 evaluation if policy shifts ([`k3s or RKE2`](source-notes/k3s-or-rke2.md)).
+
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-17] policy | Structural IA debt audit + guide metadata (`page_subtype`, `operational_maturity`)
+
+- **Audit page**: [`structural-debt-audit-wiki-ia-and-operational-maturity.md`](analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md) — sprawl, ownership, flat-index pain, implemented mitigations.
+- **Router topic**: [`wiki-navigation-and-structural-hubs.md`](topics/wiki-navigation-and-structural-hubs.md) — themed entry points (meta, ET two-site, homelab k3s, runbooks).
+- **`AGENTS.md`**: analysis **`page_subtype`** (e.g. `operational_guide`, `standard`, `meta_audit`, `query_synthesis`); optional **`operational_maturity`** (`draft` / `pilot_ready` / `field_tested` / `superseded`); **Operational and guide-shaped content** subsection under canonicalization; index maintenance + session checklist point to navigation hub.
+- **Exemplar frontmatter**: [`how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md`](analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md), [`raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md`](analyses/raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md).
+- **Hubs updated**: [`domain-content-overview.md`](analyses/domain-content-overview.md), [`structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-18] ingest | Homelab / edge / networking inbox → processed (k3s, Longhorn, restic, ESPHome, WireGuard, OpenWrt PDF)
+
+- **Raw**: moved **37** markdown + **`openwrt.pdf`** from `raw/inbox/` → `raw/processed/2026/` (kebab-case basenames); **`pdf_to_markdown.py`** → `raw/processed/2026/openwrt-extracted.md` beside `raw/processed/2026/openwrt.pdf`.
+- **Source note**: [`homelab-edge-networking-inbox-batch-2026-04-18.md`](source-notes/homelab-edge-networking-inbox-batch-2026-04-18.md) — table of paths; synthesis links to DR package, k3s captures, homelab topics, MQTT/field network, remote access.
+- **`index.md`**: source-notes entry added.
+- **Note**: `raw/**` is **gitignored** by default; use **`git add -f`** for corpus files you intend to version (see repository `.gitignore`).
+
+## [2026-04-17] ingest | Backup / DR official link batch + canonical DR package (farmOS, k3s, Longhorn, Rancher)
+
+- **Raw**: [`backup-dr-official-documentation-links-batch-2026-04-17.md`](../../raw/processed/2026/backup-dr-official-documentation-links-batch-2026-04-17.md) — curated pointers (k3s etcd backup/restore, Rancher manager docs, PostgreSQL manual, cross-refs to existing Longhorn/restic captures).
+- **Source note**: [`backup-dr-official-documentation-cluster.md`](source-notes/backup-dr-official-documentation-cluster.md).
+- **Hub**: [`backup-and-disaster-recovery-package-smart-farm-stack.md`](analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) — package map, backup vs sync, volume vs app-aware, Mermaid scope.
+- **New analyses**: [`central-vs-local-backup-scope-farm-edge-stack.md`](analyses/central-vs-local-backup-scope-farm-edge-stack.md), [`runbook-backup-validation-and-recovery-drill.md`](analyses/runbook-backup-validation-and-recovery-drill.md).
+- **Updated**: [`backup-strategy-comparison-farmos-homelab-postgresql-containers.md`](analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`restore-recovery-tiers-homelab-farm-systems.md`](analyses/restore-recovery-tiers-homelab-farm-systems.md) (RPO/RTO worksheet), [`kubernetes-platform-backup-dr-pi-k3s-longhorn.md`](analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md) (Rancher + secrets tracks), Pi provisioning/DR cross-links, [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`wiki-navigation-and-structural-hubs.md`](topics/wiki-navigation-and-structural-hubs.md), [`homelab-backup-stack-official-captures-inbox-2026-04-18.md`](source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-17] refactor | Pi k3s + Longhorn + Rancher operational runbook package
+
+- **Canonical hub**: [`how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md`](analyses/how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) — stepwise sequences (prerequisites → BOM → network/power → storage model → bootstrap → Longhorn → Rancher → backup → validation → troubleshooting); **mandatory** vs **optional HA**, **P0/P1** vs **later**, Pi resource limits.
+- **Supporting pages**: `raspberry-pi-k3s-fleet-*.md` (10) under `wiki/analyses/`.
+- **Cross-links**: [`homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md`](analyses/homelab-edge-kubernetes-platform-strategy-pi-k3s-longhorn-rancher.md), [`reference-architecture-5ac-homebase-120ac-smart-farm.md`](analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`backup-strategy-comparison-farmos-homelab-postgresql-containers.md`](analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md), [`kubernetes-platform-backup-dr-pi-k3s-longhorn.md`](analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md), [`domain-content-overview.md`](analyses/domain-content-overview.md), [`two-site-smart-farm-operations.md`](topics/two-site-smart-farm-operations.md), [`docker-kubernetes-compose-and-bake.md`](topics/docker-kubernetes-compose-and-bake.md), [`homelab-self-hosting-and-edge-narratives.md`](topics/homelab-self-hosting-and-edge-narratives.md), [`east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md`](analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`execution-dossier-hub-phase-0-1-east-tennessee.md`](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md), [`longhorn-vs-central-storage-architecture-homelab-farm-platform.md`](analyses/longhorn-vs-central-storage-architecture-homelab-farm-platform.md), [`raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md`](analyses/raspberry-pi-fleet-provisioning-standard-smart-farm-homelab.md); [`index.md`](index.md) updated.
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+

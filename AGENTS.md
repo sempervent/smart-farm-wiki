@@ -78,7 +78,7 @@ Periodic hygiene: link integrity, orphan reduction, stale-claim review, duplicat
 ## Maintaining `wiki/index.md`
 
 - `index.md` is the **catalog and navigation surface** agents should read first.
-- Organize by **page category** (overview, **business plan packages**, entities, concepts, topics, source-notes, analyses, comparisons, timelines, glossary).
+- Organize by **page category** (overview, **business plan packages**, entities, concepts, topics, source-notes, analyses, comparisons, timelines, glossary). For **themed** entry points without splitting the full analyses list, link **[`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md)** from the overview or analyses intro.
 - Each entry: **relative link** + **one-line description**.
 - After adding/removing/renaming pages, update `index.md`. Run `uv run python scripts/rebuild_index.py` to compare index links to files on disk.
 
@@ -113,13 +113,27 @@ Standard directories under `wiki/`:
 | `entity` | `entities/` | Named subject (person, org, product, paper) |
 | `concept` | `concepts/` | Idea or term of art |
 | `topic` | `topics/` | Thematic bucket spanning entities/concepts |
-| `analysis` | `analyses/` | Argument, evaluation, synthesis |
+| `analysis` | `analyses/` | Argument, evaluation, synthesis, **or** procedure-shaped pages (runbooks, how-tos) that remain here for validation/tooling consistency |
 | `comparison` | `comparisons/` | Structured A vs B |
 | `timeline` | `timelines/` | Chronology |
 | `glossary` | `glossary/` | Definition-first entries |
 | `operating_doc` | (rare; or root) | How the repo itself is operated |
 
 **Business plan packages** (`wiki/business-plan/`): **first-class** navigation pages for a **named** business plan (e.g. East Tennessee two-site). They **do not replace** analysis chapters in `analyses/`—they provide a **stable spine** (reading order, artifact tables, links to critique and repo wiring). Use `page_type: topic` unless a dedicated type is introduced later.
+
+### Analysis subtypes and guide-shaped pages (`page_subtype`)
+
+Procedure runbooks, stepwise operator guides, and **standards** often live under `analyses/` because they share the same validation rules as other syntheses. To make them **first-class in metadata** without splitting directories, use optional YAML:
+
+| `page_subtype` | Typical content | Notes |
+|----------------|-----------------|--------|
+| *(omitted)* | Default analysis | Essay, audit, synthesis, matrix—no implied procedure. |
+| `operational_guide` | Checklist / sequence runbooks (e.g. Pi k3s provisioning **hub** + child sequence pages) | Opening section should state **mandatory** vs **optional HA** steps when applicable. |
+| `standard` | Operator **norms** (hostnames, iSCSI, roles)—short durable bar | Pair with **`operational_maturity`** when the standard has been exercised on real infra. |
+| `meta_audit` | IA / repository / ownership audits | Distinct from domain “essay” analyses; links **hubs**, does not replace them. |
+| `query_synthesis` | Time-stamped answers to ad-hoc questions | If doctrine becomes permanent, **fold** into a canonical page and add routing. |
+
+**Standards** may also be `topic` pages when they are purely narrative; use `page_type: analysis` + `page_subtype: standard` when the page is checklist-heavy and validated like other analyses.
 
 ---
 
@@ -165,6 +179,12 @@ See [raw/processed/2026/example.md](../../raw/processed/2026/example.md) — sec
 - **Extend** the canonical page with a dated subsection, a table row, or a “See also” block rather than spawning a **parallel essay** that overlaps scope. If overlap is unavoidable, add **`supersedes` / `superseded_by`** (or explicit “routing” sections pointing to the canonical home) and log the decision in `wiki/log.md`.
 - Meta and repository-structure audits belong in **`analyses/`** with clear titles; they should **link** to domain hubs rather than replacing them.
 
+### Operational and guide-shaped content
+
+- **One procedure owner per subject cluster** (e.g. Pi k3s: strategy page + one guide hub linking sequence pages). New checklists should attach to that hub or justify a new `page_subtype: operational_guide` scope in `wiki/log.md`.
+- **Standards** (short norms) **vs** **guides** (long sequences): prefer a standard page + guide hub pair over two guides with duplicated outlines.
+- Use [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) when `index.md` feels too flat—do **not** duplicate the full analysis list there.
+
 ---
 
 ## Entity-first rule (persistent real-world subjects)
@@ -207,7 +227,9 @@ Optional YAML frontmatter is encouraged. Common fields:
 |-------|---------|
 | `title` | Display title (should match index) |
 | `page_type` | One of the taxonomy types |
-| `status` | `draft` \| `active` \| `deprecated` |
+| `page_subtype` | Optional; see **Analysis subtypes** (e.g. `operational_guide`, `standard`, `meta_audit`, `query_synthesis`) |
+| `status` | `draft` \| `active` \| `deprecated` — **repository / editorial lifecycle** for the page |
+| `operational_maturity` | Optional; **`draft`** \| **`pilot_ready`** \| **`field_tested`** \| **`superseded`** — **how** **much** **real-world** **exercise** **the** **procedure** **has** **had** (orthogonal to `status`) |
 | `created` | ISO date |
 | `updated` | ISO date |
 | `source_count` | Integer (optional) |
@@ -222,6 +244,15 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 - `wiki/overview.md`, entity/concept/analysis/comparison/timeline pages: **must** include `title` and `page_type` for validation.
 - `wiki/log.md` and `wiki/index.md`: **no** required frontmatter.
+
+**Operational maturity (optional)**:
+
+- Use **`operational_maturity`** on **runbooks**, **standards**, and **guide hubs** where **deployment history** matters to readers.
+- **`draft`**: structure present; not yet validated against live systems.
+- **`pilot_ready`**: exercised in lab or constrained pilot; limitations documented.
+- **`field_tested`**: used on real farm/homelab edge under stated constraints; drills or incidents inform updates.
+- **`superseded`**: routing preserved for links; must pair with **`superseded_by`** (or explicit successor section) when replacing procedure content.
+- Do **not** conflate with **`review_status`** (editorial review) or **`confidence`** (source epistemics).
 
 ---
 
@@ -303,7 +334,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 ## Agent session checklist
 
-1. Read `AGENTS.md` (this file) and `wiki/index.md`. When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
+1. Read `AGENTS.md` (this file) and `wiki/index.md`. For **navigation / IA** context, see [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) and [`wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md`](wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md). When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
 2. Identify layer: raw vs wiki vs docs change.
 3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits.
 4. Update `wiki/index.md` when navigation should change.

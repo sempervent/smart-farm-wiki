@@ -3,7 +3,7 @@ title: Execution topology package — two-site smart farm (Mermaid)
 page_type: analysis
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - two-site
@@ -137,9 +137,10 @@ flowchart LR
 
 **Interpretation**
 
-- **Trust boundaries**: Same **Z1/Z2/Z3** **idea**—**pilot** **shrinks** **parts count**, **not** **trust**.
-- **WAN dependencies**: **One** **home** **uplink** **may** **be** **enough** **for** **Phase 0/1** **if** **farm** **egress** **goes** **through** **that** **tunnel** **or** **LTE** **on** **the** **gateway**—**document** **which** **you** **actually** **built** ([`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md)).
-- **Local-only survivable**: **Gateway + priority sensors** **still** **run** **offline** **for** **short** **intervals**; **do** **not** **declare** **pilot** **“done”** **without** **a** **logged** **WAN** **outage** **drill** **and** **manual** **round** **baseline** (**G8**).
+- **Trust boundaries**: Same Z1/Z2/Z3 idea—pilot shrinks parts count, not trust.
+- **WAN dependencies**: One home uplink may be enough for Phase 0/1 if farm egress goes through that tunnel or LTE on the gateway—document which you actually built ([`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md)).
+- **`SITE_FARM` off-grid (Demory)**: Pilot still uses Z2 + one gateway, but sequencing is local power + mesh/LPWAN before optional farm Starlink—[`Off-grid farm execution topology — Demory (Mermaid)`](off-grid-farm-execution-topology-demory-mermaid.md), [`Capital plan` off-grid sequencing](east-tennessee-two-site-farm-business-plan-capital-and-financing.md#off-grid-demory-capital-sequencing).
+- **Local-only survivable**: Gateway + priority sensors still run offline for short intervals; do not declare pilot “done” without a logged WAN outage drill and manual round baseline (**G8**). At Demory, pass **MV-8** (battery/SOC-stressed local-only drill) before production trust ([`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)).
 - **Links**: [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md) (observe-only defaults), [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md).
 
 ---

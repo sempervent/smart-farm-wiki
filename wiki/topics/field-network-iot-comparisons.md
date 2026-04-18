@@ -3,7 +3,7 @@ title: Field network IoT comparisons (HaLow, LoRa, NB-IoT)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-20
+updated: 2026-04-18
 tags:
   - lpwan
   - wi-fi-halow
@@ -36,7 +36,13 @@ This topic collects **comparative** material on long-range IoT links: **IEEE 802
 - [`source-notes/remote-sensing-crop-mapping-rse-review.md`](../source-notes/remote-sensing-crop-mapping-rse-review.md) — Satellite/crop **mapping** product landscape (peer-reviewed review capture).
 - [`source-notes/depin-wikipedia.md`](../source-notes/depin-wikipedia.md)
 
+**Comparisons (wiki)**
+
+- [`Wi‑Fi HaLow vs LoRaWAN vs Meshtastic vs conventional Wi‑Fi — farm field networking`](../comparisons/wi-fi-halow-lorawan-meshtastic-conventional-wi-fi-farm-field-networking.md) — Four-way operational matrix.
+- [`Meshtastic vs Wi‑Fi HaLow vs conventional Wi‑Fi — off-grid farm operations`](../comparisons/meshtastic-wi-fi-halow-conventional-wi-fi-off-grid-farm-operations.md) — Off-grid-first framing (`SITE_FARM`).
+
 **Related**
 
 - [`Smart agriculture, Meshtastic, and LoRaWAN`](smart-agriculture-meshtastic-and-lorawan.md) — deployed farm mesh and LoRaWAN sensor narratives next to LPWAN comparisons
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md) — MCU + sensor UX stacks that often sit beside radio backhaul choices
+- [`Sub-GHz Wi‑Fi (HaLow) — farm sensors deployment guide`](../analyses/subghz-wi-fi-halow-farm-sensors-deployment-guide.md) — How-to outline + checklist

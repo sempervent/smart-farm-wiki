@@ -3,7 +3,7 @@ title: First 24 months — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - business-plan
@@ -58,6 +58,8 @@ confidence: medium
 - **Second** **enterprise** **if** **V11** **surge** **uncovered**
 - **Telemetry** **fleet** **if** **triage** **>** **benefit** ([`Stop rules`](automation-stop-rules-two-site-smart-farm.md))
 - **Second** **farm** **WAN** **terminal** **/** **redundant** **uplink** **without** **Phase** **1** **connectivity** **proof** **and** **capital** **gate** ([`Connectivity strategy`](connectivity-strategy-for-claxton-and-demory.md), [`Capital plan`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md))
+- **Always-on** **field** **RF** **/** **HaLow** **/** **farm** **Starlink** **while** **DR-1** **open** **(**[`Off-grid decision rules`](off-grid-operational-decision-rules-power-and-networking-demory-farm.md)**)** **—** **CS-5** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)
+- **Production** **trust** **in** **remote** **Demory** **visibility** **without** **MV-8** **(**local-only** **+** **SOC-stressed** **drill** **)**
 - **Expanding** **cloud** **/** **WAN-dependent** **automation** **while** **CS-1** **/** **CS-2** **(connectivity** **stops** **)** **are** **red** **on** [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)
 
 ---

@@ -3,7 +3,7 @@ title: Manual fallback and degraded modes — critical operations
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - operations
@@ -38,6 +38,7 @@ Design degraded behavior for travel, outages, sensor failure, comms failure, and
 | `COMMUTE_ONE_WAY` too long for urgency | Time to site | Tier risk; neighbor / call tree | Reduce closed-loop dependence | Extra checks or hired relief |
 | Backhaul down (farm → hub internet) | Remote visibility | Assume stale data; physical round | Increase visit frequency (bounded) | Trip count ↑ |
 | **LEO satellite WAN impaired** (e.g. **Starlink** rain fade / obstruction / power at terminal) | Same as backhaul if **farm** or **home** **uplink** **is** satellite | Treat as **comms down** for **remote trust**; **verify** **physical** **water/gates** | **Paper** **rounds**; **defer** **non-critical** **cloud** **work** | Trip or **local** **operator** at **field** |
+| **PV / battery stressed** at off-grid **`SITE_FARM`** | Inverter cuts non-critical loads; gateway or mesh may drop before WAN fails | Assume stale or no telemetry; physical water/stock check | Shed Popt per [`Off-grid degraded modes — Demory`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md); manual rounds; no remote actuation trust | Often same or higher labor tax than comms down—drive may still be needed |
 | Broker / cloud down | MQTT / integrations | Disable auto acting on stale topics | Local safe defaults | Triage ↓ if alerts quiet (dangerous calm) |
 | Sensor wrong (Class B) | Bad input to logic | Triage runbook; manual measure | Remove sensor from control until fixed | Debug time |
 | Maintenance backlog (unpatched / dirty sensors) | Drift, false alarms | Mute is not fix—clean, calibrate, replace | Fewer channels until healthy | Ops hours or contract |
