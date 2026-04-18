@@ -3,7 +3,7 @@ title: Precision agriculture
 page_type: concept
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-20
 tags:
   - agriculture
   - pa
@@ -21,6 +21,8 @@ confidence: medium
 **Grounded sources**
 
 - [`source-notes/precision-agriculture-wikipedia.md`](../source-notes/precision-agriculture-wikipedia.md)
+- [`source-notes/precision-agriculture-soil-mapping-msu.md`](../source-notes/precision-agriculture-soil-mapping-msu.md) — Web Soil Survey, SSURGO, management zones (MSU/CANR capture).
+- [`source-notes/soil-crop-sensing-cropwatch-unl.md`](../source-notes/soil-crop-sensing-cropwatch-unl.md) — On-the-go soil sensors vs map-based prescriptions (UNL CropWatch).
 
 **Related**
 

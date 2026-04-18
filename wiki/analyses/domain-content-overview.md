@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-20
 review_status: unreviewed
 tags:
   - domain
@@ -29,7 +29,7 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 ## Strand A — Land, water, and biological production
 
-**Themes**: Rotations and cover crops, **composting** and soil amendments, sustainable cropping primers, hobby-farm and backyard livestock (poultry, cattle excerpts), pond construction and stocking, irrigation adjacency, horse-at-home basics.
+**Themes**: Rotations and cover crops, **composting** and soil amendments, **forage** and **precision soil mapping/sensing** captures, sustainable cropping primers, hobby-farm and backyard livestock (poultry, cattle excerpts), pond construction and stocking, irrigation adjacency, horse-at-home basics.
 
 **Hubs**
 
@@ -138,6 +138,8 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 ## Gaps and growth directions
 
+- **Strategic audit (actionable backlog)**: [`Strategic audit — decision-safe operations for a two-site smart farm`](strategic-audit-decision-safe-operations.md) — what must be added (data, synthesis, artifacts) before the wiki can support **decision-safe** two-site operations; complements this overview.
+- **Implementation backlog (prioritized)**: [`Implementation backlog — strategic audit (P0–P3)`](implementation-backlog-strategic-audit.md) — phased build list; **forage** ingests (UT, Grit) support P1 **stocking/forage** synthesis.
 - **Integration pages** that explicitly tie **soil/crop decisions** to **sensor placement** or **data model** (farmOS fields vs real paddocks) are still sparse compared to the volume of **standalone source-notes**.
 - **Comparisons** beyond [`Raw vs wiki`](../comparisons/raw-vs-wiki.md) could grow (e.g. LoRaWAN vs Meshtastic for a fixed use case) when backed by new ingests.
 - **Regional scope**: Several business and gardening notes skew **Tennessee / southeastern US**; other regions need parallel sources before generalizing.

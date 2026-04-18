@@ -3,7 +3,7 @@ title: Smart agriculture, Meshtastic, and LoRaWAN
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-20
 tags:
   - agriculture
   - meshtastic
@@ -32,6 +32,7 @@ For **radio stack comparisons** (HaLow vs LoRa vs NB-IoT) and **DePIN**-adjacent
 - [`source-notes/lorawan-farmers-money-yields-tektelic.md`](../source-notes/lorawan-farmers-money-yields-tektelic.md)
 - [`source-notes/semtech-lora-smart-agriculture-applications.md`](../source-notes/semtech-lora-smart-agriculture-applications.md)
 - [`source-notes/precision-agriculture-wikipedia.md`](../source-notes/precision-agriculture-wikipedia.md)
+- [`source-notes/remote-sensing-crop-mapping-rse-review.md`](../source-notes/remote-sensing-crop-mapping-rse-review.md) — RSE review: crop **land cover** products and remote sensing (large academic capture).
 
 **Related topics**
 

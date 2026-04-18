@@ -3,7 +3,7 @@ title: Sustainable cropping, soil, and farm entry sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-20
 tags:
   - crop-rotation
   - cover-crops
@@ -13,7 +13,7 @@ review_status: unreviewed
 
 # Sustainable cropping, soil, and farm entry sources
 
-**Narrative**: **Crop rotation** primers, **cover crops** (article + large **PDF** import), **SARE**-style **start farming** planning, short **investment** and **sustainable ag** opinion/essay captures, **no-money** startup listicle, compact **beginning farmer** resource list, and **horse-at-home** basics—clustered for **soil health** and **entry** reading next to **homestead** gardening and **pond/irrigation** hydrology.
+**Narrative**: **Crop rotation** primers, **cover crops** (article + large **PDF** import), **SARE**-style **start farming** planning, short **investment** and **sustainable ag** opinion/essay captures, **no-money** startup listicle, compact **beginning farmer** resource list, **horse-at-home** basics, **forage** extension (**UT Beef & Forage**), **precision soil mapping** (MSU), and **on-the-go soil sensing** (UNL CropWatch)—clustered for **soil health** and **entry** reading next to **homestead** gardening and **pond/irrigation** hydrology.
 
 **Source notes**
 
@@ -26,10 +26,14 @@ review_status: unreviewed
 - [`source-notes/how-to-start-farming-with-no-money.md`](../source-notes/how-to-start-farming-with-no-money.md)
 - [`source-notes/beginning-farmer-resources-list.md`](../source-notes/beginning-farmer-resources-list.md)
 - [`source-notes/keeping-your-horse-at-home.md`](../source-notes/keeping-your-horse-at-home.md)
+- [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md)
+- [`source-notes/precision-agriculture-soil-mapping-msu.md`](../source-notes/precision-agriculture-soil-mapping-msu.md)
+- [`source-notes/soil-crop-sensing-cropwatch-unl.md`](../source-notes/soil-crop-sensing-cropwatch-unl.md)
 
 **Related**
 
 - [`Homestead composting and soil sources`](homestead-composting-and-soil-sources.md) — composting for soil building alongside rotations and cover crops.
+- [`Implementation backlog — strategic audit (P0–P3)`](../analyses/implementation-backlog-strategic-audit.md) — P1 **forage** synthesis points at UT + Grit ingests.
 - [`Multi-field crop rotation plan (template)`](../analyses/multi-field-crop-rotation-plan.md) — coordinated rotations across named fields (template).
 - [`Irrigation and water-wise farming sources`](irrigation-and-water-wise-farming-sources.md) — water application and solar pumping sources next to rotation planning.
 - [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md)

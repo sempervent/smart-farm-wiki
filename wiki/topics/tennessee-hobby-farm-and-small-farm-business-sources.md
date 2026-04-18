@@ -3,7 +3,7 @@ title: Tennessee hobby farm and small-farm business sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-20
 tags:
   - tennessee
   - hobby-farm
@@ -29,6 +29,7 @@ See [`Agritourism, tiny houses, and Tennessee hobby farms (query synthesis)`](..
 - [`source-notes/kw-land-how-to-start-hobby-farm-beginners-guide.md`](../source-notes/kw-land-how-to-start-hobby-farm-beginners-guide.md)
 - [`source-notes/newbusiness-checklist-pdf.md`](../source-notes/newbusiness-checklist-pdf.md)
 - [`source-notes/tn-smart-startup-guide-pdf.md`](../source-notes/tn-smart-startup-guide-pdf.md)
+- [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md) — UT **Beef & Forage Center** forage primer (extension; not legal/business advice).
 
 **Related**
 

@@ -186,6 +186,14 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Wi‑Fi HaLow, LoRa, or NB‑IoT (WizzDev)](source-notes/wi-fi-halow-lora-nb-iot-wizzdev.md) — Three-way technology comparison.
 - [Tennessee garden beginners (Willow Ridge)](source-notes/tennessee-garden-beginners-willow-ridge.md) — East TN seasonal planting guide.
 - [AI animal husbandry (Ambiq)](source-notes/ai-animal-husbandry-ambiq.md) — Marketing survey of AI in livestock sectors.
+- [AI-native operating model (Futurice)](source-notes/ai-native-operating-model-futurice.md) — Culture, value streams, product ops beyond Agile.
+- [Dual operating system — Kotter excerpt](source-notes/dual-operating-system-kotter-excerpt.md) — Hierarchy vs network; strategic agility excerpt.
+- [Guide to livestock forage feeding — Grit](source-notes/guide-livestock-forage-feeding-grit.md) — Hay quality, grains vs forage primer.
+- [PostGIS — complete workflow](source-notes/postgis-complete-workflow.md) — Spatial DB modeling; app-oriented GIS pipeline.
+- [Precision agriculture — soil mapping (MSU)](source-notes/precision-agriculture-soil-mapping-msu.md) — Web Soil Survey, SSURGO, management zones.
+- [Remote sensing for crop mapping — RSE review](source-notes/remote-sensing-crop-mapping-rse-review.md) — Crop land-cover products; large academic review capture.
+- [Soil and crop sensing — CropWatch (UNL)](source-notes/soil-crop-sensing-cropwatch-unl.md) — On-the-go sensors; map-based prescriptions.
+- [UT forage menu — Beef & Forage Center](source-notes/ut-forage-menu-beef-forage-center.md) — Extension forage planning; diversification.
 - [Animals journal PDF (animals-14-01645)](source-notes/animals-journal-14-01645-pdf.md) — Peer-reviewed PDF import; confirm metadata in file.
 - [Cheap Yellow Display ESPHome beginners](source-notes/esphome-yellow-display-beginners.md) — ESP32-2432S028 + Home Assistant YAML.
 - [DIY PTP grandmaster Pi (Geerling)](source-notes/diy-ptp-grandmaster-pi-geerling.md) — Time Pi / TimeHAT stratum-1 NTP+PTP build.
@@ -235,6 +243,8 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
+- [Strategic audit — decision-safe operations for a two-site smart farm](analyses/strategic-audit-decision-safe-operations.md) — Gap analysis and backlog: what to add before the wiki is an operational brain (5 ac + 120 ac + telemetry).
+- [Implementation backlog — strategic audit (P0–P3)](analyses/implementation-backlog-strategic-audit.md) — Prioritized build list: templates, topics, SOPs, analyses; top 10 pages first.
 - [3D printing in a workshop — summary](analyses/3d-printing-in-a-workshop-summary.md) — FDM/shop uses, jigs, forum culture; ingested batch.
 - [Basement workshop design — summary](analyses/basement-workshop-design-summary.md) — Layout, ingress, noise/dust, basement remodel sources.
 - [Off-grid setups for the smart home — summary](analyses/off-grid-smart-home-setups-summary.md) — Energy + Home Assistant / SOC automations; ingested guides and forum.

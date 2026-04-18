@@ -3,7 +3,7 @@ title: Farm stocking — 120 acres vs 5 acres (research prompt)
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-20
 review_status: unreviewed
 tags:
   - farm-planning
@@ -21,6 +21,7 @@ confidence: low
 
 ## Existing wiki anchors (starting points)
 
+- **Forage primers (ingested)**: [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md) (UT extension), [`source-notes/guide-livestock-forage-feeding-grit.md`](../source-notes/guide-livestock-forage-feeding-grit.md) (popular press)—not carrying-capacity math; still need **AU**/pasture **methods** synthesis per [`Implementation backlog`](../analyses/implementation-backlog-strategic-audit.md) P1 #12.
 - Poultry and small livestock primers: [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md) (egg/meat flock, cattle intro, cited source-notes).
 - Cropping and soil entry: [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md) (rotations, cover crops, SARE-style planning).
 - Small-farm scale narrative: [`Five Acres and Independence full text`](../source-notes/five-acres-and-independence-full-text.md) — historical **small-farm** guide (verify modern practices against current extension).

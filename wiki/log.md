@@ -279,3 +279,22 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - Moved six imports from `raw/inbox/` to `raw/processed/2026/` (NRDC Composting 101, Wikipedia compost article, EPA composting at home, extension home/backyard intro, Earth Easy complete guide, ultimate food-waste reduction guide).
 - Six new `source-notes/`; concept [`concepts/composting.md`](concepts/composting.md); topic [`topics/homestead-composting-and-soil-sources.md`](topics/homestead-composting-and-soil-sources.md); analysis [`analyses/homestead-composting-guide.md`](analyses/homestead-composting-guide.md). Cross-linked [`topics/homestead-and-regional-gardening-sources.md`](topics/homestead-and-regional-gardening-sources.md), [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md); updated [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md). Updated [`index.md`](index.md).
 
+---
+
+## [2026-04-20] query | Strategic audit — decision-safe two-site operations
+
+- Captured ruthless **gap analysis** and prioritized **artifact backlog** (data, synthesis, SOPs, architecture) for making the vault **decision-safe** for **~5 ac homestead + ~120 ac farm + smart stack** in [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md). Linked from [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`index.md`](index.md).
+
+---
+
+## [2026-04-20] query | Implementation backlog (P0–P3) from strategic audit
+
+- Added [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md): **P0–P3** items with artifact type, rationale, **dependencies**, **S/M/L effort**, **foundational / integrative / optimization** orientation; split **missing knowledge vs synthesis vs operational structure**; **top 10** highest-leverage pages first. Linked from [`analyses/strategic-audit-decision-safe-operations.md`](analyses/strategic-audit-decision-safe-operations.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`index.md`](index.md).
+
+---
+
+## [2026-04-20] ingest | Forage, precision soil/sensing, PostGIS, remote sensing review, org-design captures
+
+- Moved **eight** imports from `raw/inbox/` to `raw/processed/2026/` (PostGIS workflow, Futurice AI-native ops, Kotter dual operating excerpt, MSU precision soil mapping, RSE remote sensing crop-mapping review, UNL CropWatch soil sensing, Grit forage feeding guide, **UT Beef & Forage Center** forage menu).
+- Eight new `source-notes/`; cross-linked [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`topics/backyard-livestock-and-homestead-animals.md`](topics/backyard-livestock-and-homestead-animals.md), [`topics/farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`topics/smart-agriculture-meshtastic-and-lorawan.md`](topics/smart-agriculture-meshtastic-and-lorawan.md), [`topics/field-network-iot-comparisons.md`](topics/field-network-iot-comparisons.md), [`topics/tennessee-hobby-farm-and-small-farm-business-sources.md`](topics/tennessee-hobby-farm-and-small-farm-business-sources.md), [`concepts/precision-agriculture.md`](concepts/precision-agriculture.md), [`analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md`](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md), [`analyses/implementation-backlog-strategic-audit.md`](analyses/implementation-backlog-strategic-audit.md) (P1 #12 partial ingests). Updated [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`topics/knowledge-synthesis.md`](topics/knowledge-synthesis.md), [`index.md`](index.md).
+

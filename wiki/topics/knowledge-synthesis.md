@@ -3,7 +3,7 @@ title: Knowledge synthesis
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-19
+updated: 2026-04-20
 tags:
   - theme
 review_status: unreviewed
@@ -19,6 +19,8 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`Why a synthesis layer`](../analyses/why-synthesis-layer.md)
 - [`Concept relationships — summary objects`](../analyses/concept-relationships-overview.md) — How domain concepts link (table + YAML for agents)
 - [`Domain content overview`](../analyses/domain-content-overview.md) — Map of subject-matter strands (land, networks, power, data, business, time/PNT)
+- [`Strategic audit — decision-safe operations for a two-site smart farm`](../analyses/strategic-audit-decision-safe-operations.md) — Backlog of gaps and artifacts for **decision-safe** split-site farm ops
+- [`Implementation backlog — strategic audit (P0–P3)`](../analyses/implementation-backlog-strategic-audit.md) — **Prioritized** implementation list (dependencies, effort, top 10 first pages)
 - [`Timing on the farm — synthesis`](../analyses/timing-on-the-farm-synthesis.md) — Seasonal, labor, water/energy, and clock-sync layers of “time”
 
 **Domain entry points**
@@ -40,4 +42,4 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`LoRa, MQTT, and gateway bridges`](lora-mqtt-and-gateway-bridges.md)
 - [`Tennessee hobby farm and small-farm business sources`](tennessee-hobby-farm-and-small-farm-business-sources.md)
 - [`Ponds, water features, and homestead hydrology`](ponds-water-features-and-homestead-hydrology.md)
-- [`Sustainable cropping, soil, and farm entry sources`](sustainable-cropping-soil-and-farm-entry-sources.md)
+- [`Sustainable cropping, soil, and farm entry sources`](sustainable-cropping-soil-and-farm-entry-sources.md) — forage (**UT Beef & Forage**, Grit), **soil mapping** (MSU), **soil sensing** (CropWatch) ingests toward **stocking/forage** backlog items

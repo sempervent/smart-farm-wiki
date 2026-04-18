@@ -3,7 +3,7 @@ title: Field network IoT comparisons (HaLow, LoRa, NB-IoT)
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-20
 tags:
   - lpwan
   - wi-fi-halow
@@ -33,6 +33,7 @@ This topic collects **comparative** material on long-range IoT links: **IEEE 802
 - [`source-notes/ieee-802-11ah-wikipedia.md`](../source-notes/ieee-802-11ah-wikipedia.md)
 - [`source-notes/lora-wikipedia.md`](../source-notes/lora-wikipedia.md)
 - [`source-notes/long-range-internet-lora-raspberry-pi-forums.md`](../source-notes/long-range-internet-lora-raspberry-pi-forums.md)
+- [`source-notes/remote-sensing-crop-mapping-rse-review.md`](../source-notes/remote-sensing-crop-mapping-rse-review.md) — Satellite/crop **mapping** product landscape (peer-reviewed review capture).
 - [`source-notes/depin-wikipedia.md`](../source-notes/depin-wikipedia.md)
 
 **Related**

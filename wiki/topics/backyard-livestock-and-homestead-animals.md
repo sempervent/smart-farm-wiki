@@ -3,7 +3,7 @@ title: Backyard livestock and homestead animal sources
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-20
 tags:
   - livestock
   - poultry
@@ -32,6 +32,8 @@ Practical articles on **chickens**, **cattle**, dual-purpose flocks, and **AI-en
 - [`source-notes/how-to-butcher-chicken-prairie-homestead.md`](../source-notes/how-to-butcher-chicken-prairie-homestead.md)
 - [`source-notes/chicken-tractor-plans-permies-forum.md`](../source-notes/chicken-tractor-plans-permies-forum.md)
 - [`source-notes/deep-litter-chicken-tractor-pasture-systems.md`](../source-notes/deep-litter-chicken-tractor-pasture-systems.md)
+- [`source-notes/guide-livestock-forage-feeding-grit.md`](../source-notes/guide-livestock-forage-feeding-grit.md)
+- [`source-notes/ut-forage-menu-beef-forage-center.md`](../source-notes/ut-forage-menu-beef-forage-center.md)
 
 **Comparisons**
 
