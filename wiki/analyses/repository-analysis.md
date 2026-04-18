@@ -39,17 +39,17 @@ Counts are from the `wiki/` tree (Markdown files only):
 
 | Area | Count | Role |
 |------|------:|------|
-| `source-notes/` | ~119 | Grounding notes pointing at `raw/processed/` (and related paths) |
+| `source-notes/` | ~126 | Grounding notes pointing at `raw/processed/` (and related paths) |
 | `topics/` | ~19 | Thematic hubs spanning concepts and sources |
 | `concepts/` | ~11 | Definitions and term-of-art pages (includes mission/values) |
 | `analyses/` | 13 | Query syntheses, research prompts, repo + domain overviews, equipment troubleshooting, timing + smart-mirror builds |
 | `entities/` | 1 | Named-subject template/demo |
-| `comparisons/` | 1 | Structured comparisons |
+| `comparisons/` | 2 | Structured comparisons |
 | `timelines/` | 1 | Chronology demo |
 | `glossary/` | 1 | Definition-first entry |
 | Root | `index.md`, `log.md`, `overview.md` | Catalog, append-only log, north-star overview |
 
-**Total** wiki Markdown files: **~169** (including this page). The **bulk** of pages are **source-notes**, reflecting an ingest-heavy workflow.
+**Total** wiki Markdown files: **~177** (including this page). The **bulk** of pages are **source-notes**, reflecting an ingest-heavy workflow.
 
 ## Tooling and contracts
 

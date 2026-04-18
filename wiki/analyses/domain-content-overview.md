@@ -47,6 +47,7 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 - [`Starting and stocking a pond — beautiful water feature`](starting-stocking-pond-beautiful-water-feature.md)
 - [`Farm stocking — 120 acres vs 5 acres (research prompt)`](farm-stocking-120-acres-vs-5-acres-research-prompt.md) — forward-looking research brief, not settled doctrine.
 - [`Long 360 tractor — no-start troubleshooting (synthesis)`](long-360-tractor-no-start-synthesis.md) — diesel utility tractor; web-sourced forum/manual pointers
+- [`Ducks vs chickens — meat raising`](../comparisons/ducks-vs-chickens-meat-raising.md) — meat poultry comparison (ingested inbox sources)
 
 ## Strand B — Regional business, diversification, and shelter
 

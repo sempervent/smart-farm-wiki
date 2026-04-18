@@ -30,7 +30,7 @@ This topic spans how conclusions are assembled from sources across the vault.
 - [`Time synchronization — NTP and PTP sources`](time-synchronization-ntp-and-ptp.md)
 - [`Position, navigation, and timing alternatives`](position-navigation-and-timing-alternatives.md)
 - [`ESP32, ESPHome, and smart-farming builds`](esp32-iot-smart-farming-and-tooling.md)
-- [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md) and [`Backyard livestock and homestead animal sources`](backyard-livestock-and-homestead-animals.md)
+- [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md) and [`Backyard livestock and homestead animal sources`](backyard-livestock-and-homestead-animals.md) — see [`Ducks vs chickens — meat raising`](../comparisons/ducks-vs-chickens-meat-raising.md)
 - [`Smart mirror and e-paper display builds`](smart-mirror-and-e-paper-displays.md)
 - [`Agritourism, tiny housing, and natural building sources`](agritourism-tiny-housing-and-natural-building.md) — see also [`Agritourism smart hobby farm — tiny-house rentals and guest farm work (query synthesis)`](../analyses/agritourism-smart-hobby-farm-tiny-houses-guest-work-stays.md)
 - [`Farm data, farmOS, and agriculture lab builds`](farm-data-farmos-and-ag-lab-builds.md)

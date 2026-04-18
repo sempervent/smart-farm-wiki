@@ -147,6 +147,13 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Raising backyard chickens (Wine & Country Life)](source-notes/raising-backyard-chickens.md) — Starting an egg flock (regional article).
 - [Raising cattle beginning farmers (Hobby Farms)](source-notes/raising-cattle-beginning-farmers-guide.md) — Fencing and small-scale beef framing.
 - [Raising chickens for meat](source-notes/raising-chickens-for-meat.md) — Broiler quick-facts and grow-out basics.
+- [Ducks for meat (Reddit r/homestead)](source-notes/ducks-for-meat-reddit-homestead.md) — Pekin vs Cornish anecdote; water, plucking, weights.
+- [Raising ducks for meat (Bramblewood Hill)](source-notes/raising-ducks-for-meat-bramblewood-hill.md) — Breeds, butcher timing, fat/dark meat.
+- [How to butcher a chicken (Abundant Permaculture)](source-notes/how-to-butcher-a-chicken-abundant-permaculture.md) — Home processing walkthrough; tools/skills.
+- [Butchering chickens first time — mental (Permies)](source-notes/butchering-chickens-first-time-mental-permies.md) — Forum on psychological barriers to slaughter.
+- [How to butcher a chicken (Prairie Homestead)](source-notes/how-to-butcher-chicken-prairie-homestead.md) — Import capture parallel to other butchering guides.
+- [Chicken tractor plans (Permies forum)](source-notes/chicken-tractor-plans-permies-forum.md) — Pasture tractor discussion.
+- [Deep litter, chicken tractor, pasture systems](source-notes/deep-litter-chicken-tractor-pasture-systems.md) — Housing/pasture patterns for meat birds.
 - [Sustainable egg & meat flock (forum)](source-notes/sustainable-egg-meat-flock.md) — Dual-purpose flock planning thread.
 - [ESP32 deep dive request (ESP32.com)](source-notes/tutorial-deep-dive-esp32-forum.md) — Forum ask for advanced Espressif training.
 - [Homestead chickens eggs or meat](source-notes/what-to-know-raising-homestead-chickens.md) — Layers vs broilers vs dual-purpose.
@@ -189,6 +196,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 ## Comparisons
 
 - [Raw vs wiki](comparisons/raw-vs-wiki.md) — Side-by-side responsibilities and failure modes.
+- [Ducks vs chickens — meat raising](comparisons/ducks-vs-chickens-meat-raising.md) — Housing, water, processing, grow-out (ingested sources + vault poultry notes).
 
 ## Timelines
 

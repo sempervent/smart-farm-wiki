@@ -216,3 +216,9 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Added [`analyses/long-360-tractor-no-start-synthesis.md`](analyses/long-360-tractor-no-start-synthesis.md): diesel troubleshooting (crank vs no-crank, battery/load, Thermostart, fuel bleed, forums); web reference list; linked from [`index.md`](index.md); updated [`analyses/repository-analysis.md`](analyses/repository-analysis.md) counts.
 
+---
+
+## [2026-04-18] ingest | Duck and chicken meat imports; comparison page
+
+- Moved seven imports from `raw/inbox/` to `raw/processed/2026/` (ducks-for-meat Reddit, Bramblewood duck meat, chicken butchering ×2, Permies mental hurdle, chicken tractor forum, deep litter/tractor/pasture). Seven new `source-notes/`; comparison [`comparisons/ducks-vs-chickens-meat-raising.md`](comparisons/ducks-vs-chickens-meat-raising.md). Updated [`topics/backyard-livestock-and-homestead-animals.md`](topics/backyard-livestock-and-homestead-animals.md), [`index.md`](index.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`analyses/repository-analysis.md`](analyses/repository-analysis.md).
+

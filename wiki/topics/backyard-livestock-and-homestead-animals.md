@@ -3,7 +3,7 @@ title: Backyard livestock and homestead animal sources
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-18
 tags:
   - livestock
   - poultry
@@ -25,6 +25,17 @@ Practical articles on **chickens**, **cattle**, dual-purpose flocks, and **AI-en
 - [`source-notes/ai-animal-husbandry-ambiq.md`](../source-notes/ai-animal-husbandry-ambiq.md)
 - [`source-notes/animals-journal-14-01645-pdf.md`](../source-notes/animals-journal-14-01645-pdf.md)
 - [`source-notes/ijraw-journal-pdf-4-5-50-1.md`](../source-notes/ijraw-journal-pdf-4-5-50-1.md)
+- [`source-notes/ducks-for-meat-reddit-homestead.md`](../source-notes/ducks-for-meat-reddit-homestead.md)
+- [`source-notes/raising-ducks-for-meat-bramblewood-hill.md`](../source-notes/raising-ducks-for-meat-bramblewood-hill.md)
+- [`source-notes/how-to-butcher-a-chicken-abundant-permaculture.md`](../source-notes/how-to-butcher-a-chicken-abundant-permaculture.md)
+- [`source-notes/butchering-chickens-first-time-mental-permies.md`](../source-notes/butchering-chickens-first-time-mental-permies.md)
+- [`source-notes/how-to-butcher-chicken-prairie-homestead.md`](../source-notes/how-to-butcher-chicken-prairie-homestead.md)
+- [`source-notes/chicken-tractor-plans-permies-forum.md`](../source-notes/chicken-tractor-plans-permies-forum.md)
+- [`source-notes/deep-litter-chicken-tractor-pasture-systems.md`](../source-notes/deep-litter-chicken-tractor-pasture-systems.md)
+
+**Comparisons**
+
+- [`Ducks vs chickens — meat raising`](../comparisons/ducks-vs-chickens-meat-raising.md)
 
 **Related**
 
