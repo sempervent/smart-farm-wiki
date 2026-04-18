@@ -38,9 +38,11 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Field network IoT comparisons (HaLow, LoRa, NB-IoT)](topics/field-network-iot-comparisons.md) — Comparative articles on LPWAN / HaLow / cellular IoT.
 - [LoRa, MQTT, and gateway bridges](topics/lora-mqtt-and-gateway-bridges.md) — LoRaWAN app MQTT, OpenMQTTGateway, DIY gateways, Meshtastic MQTT thread, HA LoRa exploration.
 - [Homestead and regional gardening sources](topics/homestead-and-regional-gardening-sources.md) — Small-farm book import and Tennessee gardening guide.
+- [Irrigation and water-wise farming sources](topics/irrigation-and-water-wise-farming-sources.md) — Solar pumping, drip/sprinkler tradeoffs, DIY homestead irrigation, sensor zones; ingested batch.
 - [Homelab, self-hosting, and edge narratives](topics/homelab-self-hosting-and-edge-narratives.md) — Homelab guides, Reddit threads, AI architecture, partial solar rack.
 - [Off-grid solar power and storage (special topic)](topics/off-grid-solar-power-and-storage.md) — PV, charge control, battery sizing: homestead, off-grid homes, field power.
 - [Ponds, water features, and homestead hydrology](topics/ponds-water-features-and-homestead-hydrology.md) — DIY ponds, biofilters, farm ponds, fountains, pumping.
+- [Rural road and driveway erosion sources](topics/rural-road-and-driveway-erosion-sources.md) — Unpaved road drainage, water bars, hillside sediment; ingested batch.
 - [Position, navigation, and timing alternatives](topics/position-navigation-and-timing-alternatives.md) — BPS, LORAN, resilient trackers beyond GPS.
 - [Smart agriculture, Meshtastic, and LoRaWAN](topics/smart-agriculture-meshtastic-and-lorawan.md) — Field networks: precision-ag LoRaWAN vs Meshtastic mesh deployments.
 - [Sustainable cropping, soil, and farm entry sources](topics/sustainable-cropping-soil-and-farm-entry-sources.md) — Rotations, cover crops, SARE, TN beginning-farmer links.
@@ -50,6 +52,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 ## Source notes
 
+- [Erosion control on steep road — r/homestead](source-notes/erosion-control-steep-road-reddit-homestead.md) — Ditches, crown, water bars, outslope, rolling dips, handbook PDF link.
 - [Example LLM Wiki note (raw)](source-notes/example-llm-wiki-note.md) — Grounding note for `raw/processed/2026/example-llm-wiki-note.md`.
 - [Backyard ponds — farm waterfall forum (short)](source-notes/backyard-ponds-farm-waterfall-forum-short.md) — Liner/stone/waterfall tips fragment.
 - [Beginning farmer resources (TN + USDA)](source-notes/beginning-farmer-resources-list.md) — Link hub for programs and manuals.
@@ -74,6 +77,16 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Plant a fountain, dig a pond (Acreage Life)](source-notes/plant-a-fountain-dig-a-pond-acreage-life.md) — Farm pond sizing, liners, stocking, fountains.
 - [Pump pond water uphill — hose bib irrigation (Reddit)](source-notes/pond-pump-uphill-hose-bib-irrigation-reddit.md) — Forum advice thread.
 - [Pump water uphill](source-notes/pump-water-uphill.md) — Head/flow/pump primer.
+- [Designing a resilient smart irrigation system (solar, offline, modular)](source-notes/designing-resilient-smart-irrigation-solar-offline-modular.md) — r/solarpunk project; zones, soil moisture, offline.
+- [DIY garden irrigation](source-notes/diy-garden-irrigation.md) — Bottle drip, soaker hoses, small-plot ideas.
+- [Garden irrigation solutions — DIY, efficient, toxin-free (Homestead and Chill)](source-notes/garden-irrigation-solutions-diy-efficient-toxin-free.md) — Soaker, drip, ollas, rainwater, irrigation map.
+- [Solar-powered irrigation — sustainable solution for agriculture](source-notes/solar-powered-irrigation-sustainable-solution-agriculture.md) — PV pumps, surface vs submersible, irrigation types.
+- [Six tips for road erosion control — SubStrata](source-notes/six-tips-road-erosion-control-substrata.md) — Seasonal erosion factors, construction/traffic, design checklist.
+- [Soil stabilization, erosion and dust control — Corrosion Technologies](source-notes/soil-stabilization-erosion-dust-control-corrosion-technologies.md) — Vendor page; Ground Glue–class stabilizers (claims).
+- [Sustainable farming — cultivating a water-wise future (CGIAR-style)](source-notes/sustainable-farming-cultivating-water-wise-future.md) — Global water stress, farmer-led irrigation themes.
+- [Sustainable irrigation — definition, importance, methods, systems](source-notes/sustainable-irrigation-definition-importance-methods-systems.md) — Drip vs spray, flood tradeoffs, AI, Keyline mention.
+- [Sustainable irrigation methods for farming](source-notes/sustainable-irrigation-methods-for-farming.md) — Irrigation types, pumping pipeline stages.
+- [Water Power Technologies Office R&D Deep Dive webinars](source-notes/water-power-technologies-office-rd-deep-dive-webinar-series.md) — WPTO hydropower/marine energy webinars (short blurb).
 - [Start farming — planning crop rotation (SARE)](source-notes/start-farming-planning-crop-rotation.md) — Rotation planning for new producers.
 - [Sustainable food & agriculture investment (short)](source-notes/sustainable-food-agriculture-investment-deep-dive.md) — High-level investment excerpt.
 - [Tyrant Farms — DIY pond + self-cleaning biofilter](source-notes/tyrant-farms-diy-backyard-pond-self-cleaning-biofilter.md) — Long build log, ecosystem + filtration.
@@ -181,6 +194,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — Subject-matter strands (land, connectivity, power, data, business, time/PNT) and how topic hubs map to them.
+- [Dirt road erosion — shade, hill, and curve (planning synthesis)](analyses/dirt-road-erosion-shade-hill-curve.md) — Stacked failure modes; drainage-first actions; handbook PDF + thread refs.
 - [Timing on the farm — synthesis](analyses/timing-on-the-farm-synthesis.md) — Seasonal, rotation, labor, water/energy, and clock sync (NTP/PTP) as layers of “time.”
 - [Smart mirror with ESP32 and Raspberry Pi — build analysis](analyses/smart-mirror-esp32-and-raspberry-pi-build.md) — Pi runs MagicMirror²; ESP32 for sensors/side HMI; parts sourcing and web references.
 - [Long 360 tractor — no-start troubleshooting (synthesis)](analyses/long-360-tractor-no-start-synthesis.md) — Diesel electrical vs fuel vs preheat; forum + web references (not a service manual).
@@ -191,6 +205,8 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Agritourism smart hobby farm — tiny houses and guest work stays](analyses/agritourism-smart-hobby-farm-tiny-houses-guest-work-stays.md) — Query synthesis: lodging + farm work, smart-farm links, risk framing.
 - [Starting and stocking a pond — beautiful water feature](analyses/starting-stocking-pond-beautiful-water-feature.md) — Query synthesis: build, stock legally, aesthetics, irrigation adjacency.
 - [Farm stocking — 120 acres vs 5 acres (research prompt)](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md) — Query brief: research prompt and methods for chickens, crops, animals; automation bias on larger holding.
+- [East Tennessee — profitable crops matrix](analyses/east-tennessee-profitable-crops-matrix.md) — Query synthesis: commodity vs specialty profit signals, UT enterprise budgets, CPA specialty crops, NASS context.
+- [Multi-field crop rotation plan (template)](analyses/multi-field-crop-rotation-plan.md) — Field roles, family-based rotations, coordinated A–D year tables, perennial block notes.
 - [Agritourism business plan — guest hub on 120 acres, family home 35 min away](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md) — Working farm + lodging on 120 ac; private 5 ac residence; coverage and animal placement.
 
 ## Comparisons

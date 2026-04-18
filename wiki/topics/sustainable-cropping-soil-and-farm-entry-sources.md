@@ -29,6 +29,8 @@ review_status: unreviewed
 
 **Related**
 
+- [`Multi-field crop rotation plan (template)`](../analyses/multi-field-crop-rotation-plan.md) — coordinated rotations across named fields (template).
+- [`Irrigation and water-wise farming sources`](irrigation-and-water-wise-farming-sources.md) — water application and solar pumping sources next to rotation planning.
 - [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md)
 - [`Backyard livestock and homestead animal sources`](backyard-livestock-and-homestead-animals.md)
 - [`Tennessee hobby farm and small-farm business sources`](tennessee-hobby-farm-and-small-farm-business-sources.md)

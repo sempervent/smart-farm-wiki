@@ -222,3 +222,27 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 - Moved seven imports from `raw/inbox/` to `raw/processed/2026/` (ducks-for-meat Reddit, Bramblewood duck meat, chicken butchering ×2, Permies mental hurdle, chicken tractor forum, deep litter/tractor/pasture). Seven new `source-notes/`; comparison [`comparisons/ducks-vs-chickens-meat-raising.md`](comparisons/ducks-vs-chickens-meat-raising.md). Updated [`topics/backyard-livestock-and-homestead-animals.md`](topics/backyard-livestock-and-homestead-animals.md), [`index.md`](index.md), [`analyses/domain-content-overview.md`](analyses/domain-content-overview.md), [`analyses/repository-analysis.md`](analyses/repository-analysis.md).
 
+---
+
+## [2026-04-18] query | East Tennessee profitable crops matrix
+
+- Added [`analyses/east-tennessee-profitable-crops-matrix.md`](analyses/east-tennessee-profitable-crops-matrix.md): enterprise-cluster matrix (row crops, forage, tobacco, vegetables, berries, cut flowers, CPA six-crop landscape, hemp caveat); cites UT AREC budgets, Vegetable Production hub, CPA/Farm Bureau article, USDA NASS TN overview; links vault pages on stocking research and TN/sustainable topics. Updated [`index.md`](index.md).
+
+---
+
+## [2026-04-18] query | Multi-field crop rotation plan
+
+- Added [`analyses/multi-field-crop-rotation-plan.md`](analyses/multi-field-crop-rotation-plan.md): field roles (intensive veg, mechanized annuals, soil-building, perennials), crop-family spacing table, coordinated four-year tables for Fields A–C, perennial/alley management notes, annual checklist; links SARE-style source-notes and sustainable cropping topic. Updated [`index.md`](index.md).
+
+---
+
+## [2026-04-18] ingest | Irrigation and water-wise farming inbox batch
+
+- Moved eight imports from `raw/inbox/` to `raw/processed/2026/` (solar irrigation, WPTO webinars, smart offline irrigation thread, DIY garden irrigation ×2, sustainable farming water-wise blog, sustainable irrigation methods, sustainable irrigation definition/methods systems). Eight new `source-notes/`; topic hub [`topics/irrigation-and-water-wise-farming-sources.md`](topics/irrigation-and-water-wise-farming-sources.md). Expanded [`analyses/multi-field-crop-rotation-plan.md`](analyses/multi-field-crop-rotation-plan.md) with **§1a acreage scenarios** (20 / 40 / 120 ac) and **§4 water-by-field** table tied to ingested sources; linked [`topics/ponds-water-features-and-homestead-hydrology.md`](topics/ponds-water-features-and-homestead-hydrology.md) and [`topics/sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md). Updated [`index.md`](index.md).
+
+---
+
+## [2026-04-18] ingest | Rural road erosion inbox batch; dirt road synthesis
+
+- Moved three imports from `raw/inbox/` to `raw/processed/2026/` (steep road Reddit thread, SubStrata six tips, Corrosion Technologies soil stabilization). Three new `source-notes/`; topic [`topics/rural-road-and-driveway-erosion-sources.md`](topics/rural-road-and-driveway-erosion-sources.md); analysis [`analyses/dirt-road-erosion-shade-hill-curve.md`](analyses/dirt-road-erosion-shade-hill-curve.md) (shade + hill + curve scenario). Linked [`topics/ponds-water-features-and-homestead-hydrology.md`](topics/ponds-water-features-and-homestead-hydrology.md). Updated [`index.md`](index.md).
+

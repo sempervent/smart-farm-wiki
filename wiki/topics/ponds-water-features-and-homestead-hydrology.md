@@ -29,6 +29,8 @@ Together these support the query synthesis [`Starting and stocking a pond as a b
 
 **Related**
 
+- [`Irrigation and water-wise farming sources`](irrigation-and-water-wise-farming-sources.md) — drip, solar pumping, homestead irrigation maps; pairs with pond-fed pumps.
+- [`Rural road and driveway erosion sources`](rural-road-and-driveway-erosion-sources.md) — unpaved road drainage, water bars, sediment from hillside drives.
 - [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md) — land and water in rural context
 - [`Off-grid solar power and storage (special topic)`](off-grid-solar-power-and-storage.md) — if pumps or aeration tie to solar loads
 - [`Sustainable cropping, soil, and farm entry sources`](sustainable-cropping-soil-and-farm-entry-sources.md) — irrigation demand from garden/field planning
