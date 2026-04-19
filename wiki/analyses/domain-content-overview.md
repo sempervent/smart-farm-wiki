@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-17
+updated: 2026-04-20
 review_status: unreviewed
 tags:
   - domain
@@ -53,9 +53,9 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 ### Strand A — Land, water, and biological production
 
-**Themes**: Rotations, cover crops, compost, forage, precision soil sensing, livestock, ponds, irrigation, horses.
+**Themes**: Rotations, cover crops, compost, forage, precision soil sensing, livestock, ponds, irrigation, horses, **woodland specialty** botanicals (e.g. **American ginseng** ingests + start plan).
 
-**Hubs**: [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`Homestead composting and soil sources`](../topics/homestead-composting-and-soil-sources.md), [`Homestead and regional gardening sources`](../topics/homestead-and-regional-gardening-sources.md), [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md), [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md).
+**Hubs**: [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`Homestead composting and soil sources`](../topics/homestead-composting-and-soil-sources.md), [`Homestead and regional gardening sources`](../topics/homestead-and-regional-gardening-sources.md), [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md), [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md) · **Synthesis**: [`American ginseng from seed — ASAP start plan`](../analyses/american-ginseng-from-seed-asap-start-plan.md) (ASAP + **TDEC** gates) · companion **site / planting / maintenance** guides in `analyses/` + [`PDF-heavy ginseng batch`](../source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md).
 
 **Concepts**: [`Precision agriculture`](../concepts/precision-agriculture.md), [`Composting`](../concepts/composting.md).
 

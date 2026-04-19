@@ -3,7 +3,7 @@ title: Authoritative execution evidence cluster — East Tennessee (index)
 page_type: source_note
 status: active
 created: 2026-04-21
-updated: 2026-04-18
+updated: 2026-04-19
 source_ids: []
 tags:
   - tennessee
@@ -85,6 +85,8 @@ confidence: high
 | Public Chapter 498 — agritourism act | [`Tennessee — Public Chapter 498 agritourism act (PDF)`](tn-public-chapter-498-agritourism-act-pdf.md) |
 | **2026-04-18 batch** — TN law / greenbelt / hobby-farm / IRS framing + UT insurance pub (index) | [`Inbox batch — Tennessee farm policy, LoRaWAN… (2026-04-18)`](inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) |
 | **TWRA** — hunting/trapping regs, FAQ, exemptions, license portal captures; third-party season blog + firearm refs (index) | [`TWRA — Tennessee hunting regulations and license captures (inbox batch 2026-04-18)`](twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) |
+| **American ginseng** — **TN TDEC** program + dealer list + **MTSU/TSU/UT** wild-simulated PDF; **VCE 354-313** forest-farming bulletin; vendor / handbook / popular captures (index) | [`American ginseng — seed and forest culture sources (inbox batch 2026-04-19)`](american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) |
+| **American ginseng** — **PDF-heavy** batch: site scorecards, Beyfuss test protocol, **VCE 354-312**, pathology decks, PB1799 hardwood site prep (index) | [`American ginseng — PDF-heavy inbox batch (2026-04-20)`](american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md) |
 
 ## FSA / financing / beginning farmer
 

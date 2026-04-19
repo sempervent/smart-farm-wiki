@@ -3,7 +3,7 @@ title: Local video / NVR — role and deferral boundaries (farm stack)
 page_type: analysis
 status: active
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-04-20
 tags:
   - video
   - nvr
@@ -21,6 +21,8 @@ confidence: high
 **Explicit** stance on **IP camera** + **NVR** software (e.g. **Frigate**) in the **two-site smart farm** architecture: **what** it is **good for**, **what** it must **not** replace, and **why** full deployment is **deferred** until **Phase 1** **field** and **power** **baselines** exist.
 
 **Source grounding**: Frigate **intro + configuration** captures in [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md); upstream [docs.frigate.video](https://docs.frigate.video/).
+
+**See also (woodland specialty)**: [`American ginseng — woodlot maintenance, pathology, and remote security`](american-ginseng-woodlot-maintenance-remote-security-and-trail-cameras.md) — **trail-camera Phase 0** before IP video on ginseng plots.
 
 ---
 

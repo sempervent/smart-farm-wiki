@@ -978,3 +978,28 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Cross-links**: [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (TN tax table row); [`tennessee-hobby-farm-and-small-farm-business-sources.md`](topics/tennessee-hobby-farm-and-small-farm-business-sources.md); [`index.md`](index.md).
 - Validator: `uv run python scripts/validate_wiki.py --strict`.
 
+## [2026-04-19] ingest | American ginseng — VCE PDF, web captures, seed-start analysis
+
+- **Moved** five `raw/inbox/*.md` + `2011ginsengforest.pdf` → `raw/processed/2026/` (**kebab-case**); **`scripts/pdf_to_markdown.py`** → `2011-ginseng-forest-farming-guide-usda-fs-ne-region-capture-inbox-2026-04-19-extracted.md` beside canonical PDF.
+- **Source-note**: [`american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md`](source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) — Evidence summary + provenance tables (**VCE 354-313** + vendor / NGO / popular captures).
+- **Analysis** (`page_subtype` **operational_guide**): [`american-ginseng-from-seed-asap-start-plan.md`](analyses/american-ginseng-from-seed-asap-start-plan.md) — **Start-ASAP** phased plan (fall planting window, site screen, establishment); **TN legal** deferral.
+- **Cross-links**: [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md); [`sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md); [`domain-content-overview.md`](analyses/domain-content-overview.md); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-19] ingest | Tennessee ginseng — TDEC program, MTSU wild-simulated PDF, dealer list, UT notes
+
+- **Moved** nine `raw/inbox` drops → `raw/processed/2026/` (**kebab-case**): **TDEC** program page + **UT Crops** ginseng capture + **Smart Yards** profile + Wilson County MG article + Appalachia article + four **PDFs** (2018 Andrea regulation deck, **2025** certified dealer list, TDEC brochure, **MTSU/TSU/UT** wild-simulated production guide).
+- **`scripts/pdf_to_markdown.py`** on each PDF → sibling **`*-extracted.md`** (brochure extract **empty** / image-heavy).
+- **Updated cluster**: [`american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md`](source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) — TN tables + `source_ids` expansion.
+- **Updated analysis**: [`american-ginseng-from-seed-asap-start-plan.md`](analyses/american-ginseng-from-seed-asap-start-plan.md) — **TDEC** harvest/dealer gates, **MTSU-region** seed/soil protocol hooks, **UT** N guidance; **no** dealer-table **PII** in wiki body.
+- **Cross-links**: [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-20] ingest | American ginseng — PDF-heavy batch + three operational guides
+
+- **Moved** 19 **PDFs** + 10 **markdown** captures from `raw/inbox/` → `raw/processed/2026/`; **`pdf_to_markdown.py`** on each PDF (planter comparison + some pages **image-only** in extracts).
+- **Source-note**: [`american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md`](source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md) — themed tables + `source_ids`.
+- **New analyses** (`operational_guide`): [`american-ginseng-site-evaluation-and-materials-checklist.md`](analyses/american-ginseng-site-evaluation-and-materials-checklist.md), [`american-ginseng-planting-and-cultivation-guide.md`](analyses/american-ginseng-planting-and-cultivation-guide.md), [`american-ginseng-woodlot-maintenance-remote-security-and-trail-cameras.md`](analyses/american-ginseng-woodlot-maintenance-remote-security-and-trail-cameras.md) (trail-camera **Phase 0** + **Frigate** deferral pointers).
+- **Updated**: [`american-ginseng-from-seed-asap-start-plan.md`](analyses/american-ginseng-from-seed-asap-start-plan.md) (**four-part suite** link); [`american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md`](source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md); [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md); [`sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+

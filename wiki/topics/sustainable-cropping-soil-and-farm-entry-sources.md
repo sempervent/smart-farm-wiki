@@ -3,7 +3,7 @@ title: Sustainable cropping, soil, and farm entry sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-21
+updated: 2026-04-19
 tags:
   - crop-rotation
   - cover-crops
@@ -13,7 +13,7 @@ review_status: unreviewed
 
 # Sustainable cropping, soil, and farm entry sources
 
-**Narrative**: **Crop rotation** primers, **cover crops** (article + large **PDF** import), **SARE**-style **start farming** planning, short **investment** and **sustainable ag** opinion/essay captures, **no-money** startup listicle, compact **beginning farmer** resource list, **horse-at-home** basics, **forage** extension (**UT Beef & Forage**), **precision soil mapping** (MSU), and **on-the-go soil sensing** (UNL CropWatch)—clustered for **soil health** and **entry** reading next to **homestead** gardening and **pond/irrigation** hydrology.
+**Narrative**: **Crop rotation** primers, **cover crops** (article + large **PDF** import), **SARE**-style **start farming** planning, short **investment** and **sustainable ag** opinion/essay captures, **no-money** startup listicle, compact **beginning farmer** resource list, **horse-at-home** basics, **forage** extension (**UT Beef & Forage**), **precision soil mapping** (MSU), **on-the-go soil sensing** (UNL CropWatch), and **forest-grown specialty** botanical capture (**American ginseng**)—clustered for **soil health** and **entry** reading next to **homestead** gardening and **pond/irrigation** hydrology.
 
 **Source notes**
 
@@ -34,6 +34,7 @@ review_status: unreviewed
 - [`source-notes/precision-agriculture-s11119-025-10274-w-pdf.md`](../source-notes/precision-agriculture-s11119-025-10274-w-pdf.md) — *Precision Agriculture* 2025; proximal sensors + crop model yield maps (PDF).
 - [`source-notes/usda-p2458-forage-yield-assessment-pdf.md`](../source-notes/usda-p2458-forage-yield-assessment-pdf.md) — USDA forage yield measurement (P2458 PDF).
 - [`source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md`](../source-notes/farmersgov-small-scale-forage-balance-factsheet-2022-pdf.md) — Farmers.gov forage–animal balance factsheet (PDF).
+- [`source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md`](../source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) — **American ginseng** — **TDEC** program + **MTSU/TSU/UT** wild-simulated PDF + **UT Crops** note + **VCE** forest-farming PDF + seed-culture captures; pairs with [`American ginseng from seed — ASAP start plan`](../analyses/american-ginseng-from-seed-asap-start-plan.md).
 
 **Related**
 
@@ -41,6 +42,8 @@ review_status: unreviewed
 - [`Implementation backlog — strategic audit (P0–P3)`](../analyses/implementation-backlog-strategic-audit.md) — P1 **forage** synthesis points at UT + Grit ingests.
 - [`Multi-field crop rotation plan (template)`](../analyses/multi-field-crop-rotation-plan.md) — coordinated rotations across named fields (template).
 - [`Irrigation and water-wise farming sources`](irrigation-and-water-wise-farming-sources.md) — water application and solar pumping sources next to rotation planning.
+- [`American ginseng from seed — ASAP start plan (Appalachian hardwood context)`](../analyses/american-ginseng-from-seed-asap-start-plan.md) — Woodland **specialty crop** sequence; **legal** deferral to **TN** program pages.
+- [`American ginseng — site evaluation and materials checklist`](../analyses/american-ginseng-site-evaluation-and-materials-checklist.md) · [`American ginseng — planting and cultivation guide`](../analyses/american-ginseng-planting-and-cultivation-guide.md) · [`American ginseng — woodlot maintenance, pathology, and remote security`](../analyses/american-ginseng-woodlot-maintenance-remote-security-and-trail-cameras.md) — **Four-part** ginseng ops suite + [`PDF-heavy source batch`](../source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md).
 - [`Homestead and regional gardening sources`](homestead-and-regional-gardening-sources.md)
 - [`Backyard livestock and homestead animal sources`](backyard-livestock-and-homestead-animals.md)
 - [`Tennessee hobby farm and small-farm business sources`](tennessee-hobby-farm-and-small-farm-business-sources.md)
