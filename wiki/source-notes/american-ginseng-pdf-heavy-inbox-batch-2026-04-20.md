@@ -66,7 +66,29 @@ confidence: medium
 
 ## Machine extracts (pair with each PDF)
 
-For every **`.pdf`** below, a sibling **`*-extracted.md`** exists under `raw/processed/2026/` (same basename).
+Each **`.pdf`** in `source_ids` has a sibling **`*-extracted.md`** under `raw/processed/2026/` (machine text; verify tables and figures against the **PDF**).
+
+**Extract index** (searchable text companions):
+
+- [`ginseng-site-selection-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-site-selection-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-visual-site-assessment-matrix-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-visual-site-assessment-matrix-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-testing-potential-woodland-sites-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-testing-potential-woodland-sites-capture-inbox-2026-04-20-extracted.md)
+- [`vce-pub-354-312-ginseng-forest-farming-hankins-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/vce-pub-354-312-ginseng-forest-farming-hankins-capture-inbox-2026-04-20-extracted.md)
+- [`vce-growing-american-ginseng-in-forestlands-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/vce-growing-american-ginseng-in-forestlands-capture-inbox-2026-04-20-extracted.md)
+- [`mtsu-from-mtsu-to-your-farm-ginseng-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/mtsu-from-mtsu-to-your-farm-ginseng-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-overview-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-overview-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-culture-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-culture-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-fact-sheet-revised-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-fact-sheet-revised-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-planter-comparisons-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-planter-comparisons-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-pest-management-presentation-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-pest-management-presentation-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-fungicide-tables-organic-conventional-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-fungicide-tables-organic-conventional-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-cost-guides-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-cost-guides-capture-inbox-2026-04-20-extracted.md)
+- [`ginseng-ginfs-publication-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ginseng-ginfs-publication-capture-inbox-2026-04-20-extracted.md)
+- [`springer-s10457-021-00705-8-ginseng-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/springer-s10457-021-00705-8-ginseng-capture-inbox-2026-04-20-extracted.md)
+- [`an14ff03-academic-ginseng-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/an14ff03-academic-ginseng-capture-inbox-2026-04-20-extracted.md)
+- [`ut-extension-pb1799-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ut-extension-pb1799-capture-inbox-2026-04-20-extracted.md)
+- [`ut-extension-pb1919-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/ut-extension-pb1919-capture-inbox-2026-04-20-extracted.md)
+- [`tn-fruit-vegetable-calendar-2025-capture-inbox-2026-04-20-extracted.md`](../../raw/processed/2026/tn-fruit-vegetable-calendar-2025-capture-inbox-2026-04-20-extracted.md)
 
 ## Site evaluation and testing tools
 
