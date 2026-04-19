@@ -3,7 +3,7 @@ title: Platform doctrine package — homelab / farm edge compute
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-17
 tags:
   - platform
   - k3s
@@ -126,6 +126,7 @@ flowchart TB
 
 ## Related hubs
 
+- [`Raw corpus vs wiki synthesis — evidence surfacing audit (2026)`](../analyses/raw-corpus-evidence-surfacing-audit-2026.md) — Where **`raw/processed/`** depth exceeds visible synthesis; **MQTT/WireGuard/homelab** batch routing.
 - [`Observability, secrets, and trust bar — homelab / farm edge`](../analyses/observability-secrets-and-trust-bar-homelab-farm-edge.md) — **Alertmanager** philosophy, **SOPS/Flux**, optional **Grafana Alloy**, **remote** **trust** bar.
 - [`Local video / NVR — role and deferral boundaries (farm stack)`](../analyses/local-video-nvr-role-and-deferral-boundaries-farm-stack.md) — Frigate-class **NVR** **scope** and **explicit** **deferral** for **`SITE_FARM`** **production** **dependence**.
 - [`Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — **Operator captures** for Frigate NVR, SOPS/Flux secrets, Prometheus Alertmanager, plus TN811 / NRCS / UT Extension field references (see batch for `raw/` paths).

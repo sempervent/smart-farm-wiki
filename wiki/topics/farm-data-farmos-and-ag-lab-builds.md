@@ -3,7 +3,7 @@ title: Farm data, farmOS, and agriculture lab builds
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-24
+updated: 2026-04-17
 tags:
   - farmos
   - agriculture
@@ -20,6 +20,8 @@ Together these sources connect **software** (farmOS hosting and extensibility) t
 **Canonical entity**: [`farmOS`](../entities/farmos.md)
 
 **PostgreSQL / PostGIS (official first)**: [`PostgreSQL and PostGIS — official documentation primary cluster`](../source-notes/postgresql-and-postgis-official-documentation-primary-cluster.md) — use for **release-accurate** SQL and spatial behavior; Medium/blog primers below are **pedagogy only**.
+
+**farmOS doc captures (batch)**: [`farmOS — documentation captures (inbox 2026-04)`](../source-notes/farmos-documentation-captures-inbox-2026-04-18.md) — Assets, logs, location, services, user guide (Evidence summary + `raw/` tables).
 
 **Source notes**
 

@@ -104,6 +104,7 @@ tags:
 | [`Execution readiness gap audit — East Tennessee`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) | ET execution evidence gaps |
 | [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md) | **Provenance**: forums/blogs vs **official** clusters; backlog |
 | [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md) | **Desk portals**, infra/observability **routing**, **open** **gaps**; complements execution readiness audit |
+| [`Raw corpus vs wiki synthesis — evidence surfacing audit (2026)`](../analyses/raw-corpus-evidence-surfacing-audit-2026.md) | **`raw/processed/`** depth vs **visible** synthesis; theme gaps + Evidence-summary priorities |
 | [`Package artifact backlog — canonical East Tennessee packages`](../analyses/package-artifact-backlog-canonical-packages-east-tennessee.md) | **Matrices / standards / runbooks / checklists** gaps + **Evidence summary** queue for remaining clusters |
 
 ---

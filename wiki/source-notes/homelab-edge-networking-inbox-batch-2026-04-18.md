@@ -3,7 +3,7 @@ title: Homelab, edge, and networking — inbox batch (2026-04-18)
 page_type: source_note
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-17
 source_ids:
   - raw/processed/2026/openwrt.pdf
   - raw/processed/2026/openwrt-extracted.md
@@ -20,6 +20,23 @@ review_status: unreviewed
 ---
 
 # Homelab, edge, and networking — inbox batch (2026-04-18)
+
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | Large **inbox wave**: **k3s/Longhorn/restic** duplicates, **homelab culture** essays, **ESPHome/Mosquitto** MQTT broker docs, **WireGuard** captures, **OpenWrt** PDF—**one** provenance note so operators know **overlap** with [`K3s, Longhorn, Rancher, Pi — platform captures`](k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md) is **expected**. |
+| **Authority mix** | **Mixed**: upstream docs + **community** essays + **Arch Wiki** / unofficial WireGuard compendium—use **official** rows for **truth**, essays for **motivation** only. |
+| **Decision relevance** | **MQTT broker** config and **WireGuard** patterns support [`Field telemetry reference architecture`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`Network segmentation…`](../analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md), [`Remote access and operational security model`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md)—**not** a mandate to adopt every import. |
+| **Canonical wiki links** | [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md) · [`Operational standards — farm and homelab platform`](../topics/operational-standards-farm-homelab-platform.md) · [`Sub-GHz field networking — synthesis`](../topics/subghz-field-networking-synthesis.md) (field RF **separate** from this MQTT/VPN batch) |
+
+**Key claims** (public-safe):
+
+- **Duplicate** k3s/Longhorn/restic markdown files in `raw/` are **supplementary captures**, not a second **canonical** stack definition.
+
+**Open questions / follow-ups**
+
+- Deduplicate **operator** reading paths in runbooks—cite **one** upstream doc version per component.
 
 **Purpose**: **Provenance** for a **single** **inbox** **wave** moved from `raw/inbox/` to `raw/processed/2026/` (2026-04-18) with **kebab-case** basenames. **Epistemic**: Many pages **overlap** **prior** **captures** (e.g. k3s quick-start, restic 0.18.1, Longhorn)—treat as **alternate** **imports** **or** **supplementary** **reading**, not a second authority.
 

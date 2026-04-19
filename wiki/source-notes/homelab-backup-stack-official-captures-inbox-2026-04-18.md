@@ -22,6 +22,24 @@ review_status: unreviewed
 
 # Homelab backup stack — official captures (restic, Longhorn, farmOS Docker)
 
+## Evidence summary
+
+| Field | Content |
+|-------|---------|
+| **Abstract** | **Official** captures for **restic** 0.18.1 semantics, **Longhorn** backup/restore/system docs, and a **farmOS.org** Docker/hosting page—parallel **homelab** track to [`Backup / DR — official documentation cluster`](backup-dr-official-documentation-cluster.md). |
+| **Authority mix** | **Upstream project docs** (restic, Longhorn) + **farmOS** web capture (**version** must be confirmed against current hosting docs). |
+| **Decision relevance** | **Parallel paths**: app/DB backups vs **Longhorn volume** backup vs **etcd**—see [`Kubernetes platform backup / DR — Pi, k3s, Longhorn`](../analyses/kubernetes-platform-backup-dr-pi-k3s-longhorn.md). farmOS Docker capture reflects **historical v1.x** compose patterns—**not** sole authority for **farmOS 2.x / PostgreSQL** backup design. |
+| **Canonical wiki links** | [`Backup and disaster recovery package — smart farm stack`](../analyses/backup-and-disaster-recovery-package-smart-farm-stack.md) · [`Backup strategy comparison — farmOS, homelab, PostgreSQL, containers`](../analyses/backup-strategy-comparison-farmos-homelab-postgresql-containers.md) · [`Restore and recovery tiers — homelab farm systems`](../analyses/restore-recovery-tiers-homelab-farm-systems.md) |
+
+**Key claims** (public-safe):
+
+- restic docs emphasize **correct** stdin/command failure semantics—relevant when scripting **app-aware** dumps into restic.
+- Longhorn docs distinguish **system backup** bundles vs **volume** backup targets—do not conflate with **etcd** snapshots alone.
+
+**Open questions / follow-ups**
+
+- Confirm **farmOS major version** and **Postgres** backup path against live deployment before treating Docker capture as **restore-order** truth.
+
 **Ingest wave**: moved from `raw/inbox/` to stable `raw/processed/2026/*-inbox-2026-04-17.md` (2026-04-18).
 
 ## What each file is

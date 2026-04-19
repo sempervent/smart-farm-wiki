@@ -14,12 +14,13 @@ review_status: unreviewed
 
 # Tennessee hobby farm and small-farm business sources
 
-**Narrative**: This hub pairs **hobby-farm** intros (definitions, tips, step-by-step lifestyle framing) with **Tennessee-specific** business formation and **state revenue** licensing snippets, plus **USDA** beginning-farmer entry points. It supports readers asking whether **diversified income** (e.g. **agritourism**, **short-term rental** of a **tiny** dwelling) fits a **TN** **hobby** operation—always alongside **county zoning**, **building codes**, and professional advice.
+**Narrative**: This hub pairs **hobby-farm** intros (definitions, tips, step-by-step lifestyle framing) with **Tennessee-specific** business formation and **state revenue** licensing snippets, plus **USDA** beginning-farmer entry points. It supports readers asking whether **diversified income** (e.g. **agritourism**, **short-term rental** of a **tiny** dwelling, **hunting lease** where compatible with land goals) fits a **TN** **hobby** operation—always alongside **county zoning**, **building codes**, and professional advice.
 
 See [`Agritourism, tiny houses, and Tennessee hobby farms (query synthesis)`](../analyses/agritourism-tiny-houses-tennessee-hobby-farm.md) for a cross-source take on **tiny-house farm stays** in this frame.
 
 **Source notes**
 
+- [`source-notes/twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md`](../source-notes/twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) — **TWRA / hunting access** captures (regs, FAQ, exemptions, license portal) + lower-authority blog / firearm pages; use for **landowner** context, not as **legal** substitute.
 - [`source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md`](../source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **2026-04-18 ingest batch**: TN ag exemption, greenbelt, hobby-farm articles, IRS/federal tax framing, UT extension pubs, TN statute PDF + extracts (provenance index).
 - [`source-notes/beginning-farmers-and-ranchers-usda-farmers-gov.md`](../source-notes/beginning-farmers-and-ranchers-usda-farmers-gov.md)
 - [`source-notes/tennessee-business-tax-registration-licensing-tntap.md`](../source-notes/tennessee-business-tax-registration-licensing-tntap.md)

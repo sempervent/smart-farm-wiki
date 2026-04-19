@@ -963,3 +963,18 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **New topic**: [`subghz-field-networking-synthesis.md`](topics/subghz-field-networking-synthesis.md) — One-page map: scope (LoRa/LoRaWAN/Meshtastic/HaLow), WAN vs field RF, reader goals, comparisons, analyses, entities, standards, source clusters, runbooks; does not replace canonical doctrine pages.
 - **Routing**: [`index.md`](index.md) (Topics); [`off-grid-power-and-field-networking-hub.md`](topics/off-grid-power-and-field-networking-hub.md); [`field-network-iot-comparisons.md`](topics/field-network-iot-comparisons.md) Related; [`wiki-navigation-and-structural-hubs.md`](topics/wiki-navigation-and-structural-hubs.md) (Off-grid systems table).
 
+## [2026-04-17] ingest | Evidence surfacing pass — raw corpus audit + Evidence summaries + AGENTS
+
+- **New analysis**: [`raw-corpus-evidence-surfacing-audit-2026.md`](analyses/raw-corpus-evidence-surfacing-audit-2026.md) — `raw/processed/2026/` (~449 files) vs wiki synthesis by theme; prioritized backlog (no per-file spam).
+- **Evidence summaries added/standardized**: [`homelab-backup-stack-official-captures-inbox-2026-04-18.md`](source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md), [`farmos-documentation-captures-inbox-2026-04-18.md`](source-notes/farmos-documentation-captures-inbox-2026-04-18.md), [`postgresql-and-postgis-official-documentation-primary-cluster.md`](source-notes/postgresql-and-postgis-official-documentation-primary-cluster.md), [`homelab-edge-networking-inbox-batch-2026-04-18.md`](source-notes/homelab-edge-networking-inbox-batch-2026-04-18.md).
+- **Policy**: [`AGENTS.md`](../AGENTS.md) — new **Capture, activation, and summarization** subsection; ingest steps **4–6** reunited under **Ingest** (append log, index, validate).
+- **Routing**: [`overview.md`](overview.md), [`index.md`](index.md) (Overview + Analyses), [`wiki-navigation-and-structural-hubs.md`](topics/wiki-navigation-and-structural-hubs.md), [`platform-doctrine-package-homelab-farm-edge.md`](topics/platform-doctrine-package-homelab-farm-edge.md), [`farm-data-farmos-and-ag-lab-builds.md`](topics/farm-data-farmos-and-ag-lab-builds.md), [`domain-content-overview.md`](analyses/domain-content-overview.md) (gaps bullet); [`source-note-abstract-and-evidence-pattern.md`](concepts/source-note-abstract-and-evidence-pattern.md) examples + See also.
+- Validator: `uv run python scripts/validate_wiki.py --strict`; `uv run mkdocs build --strict`.
+
+## [2026-04-18] ingest | Inbox — TWRA hunting regulations, licenses, third-party season guide, Remington captures
+
+- **Moved** eight `raw/inbox/*.md` files → `raw/processed/2026/` with **kebab-case** basenames (`twra-*`, `tennessee-hunting-season-guide-third-party-*`, `remington-*`).
+- **Source-note**: [`twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md`](source-notes/twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) — Evidence summary + `source_ids` table (TWRA-heavy batch; blog + gun pages labeled **lower authority**).
+- **Cross-links**: [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (TN tax table row); [`tennessee-hobby-farm-and-small-farm-business-sources.md`](topics/tennessee-hobby-farm-and-small-farm-business-sources.md); [`index.md`](index.md).
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+

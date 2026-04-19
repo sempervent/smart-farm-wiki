@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-25
+updated: 2026-04-17
 review_status: unreviewed
 tags:
   - domain
@@ -131,7 +131,7 @@ These **four** analyses connect strands that the map above used to only **gestur
 - **Business ↔ tech**: [`Business viability and farm economics — gap analysis`](business-viability-and-farm-economics-gap-analysis.md) — ROI and **instrumentation priority** still **methodology**-level.
 - **Security**: OT / remote-access **ingests** landed (CISA PDFs/excerpts); **farm cybersecurity hub** still to formalize as a **topic** page.
 - **NRCS**: Large **FY25 scenarios** PDF is **planning context**, not a substitute for site engineering—see [`source-notes/nrcs-fy25-conservation-scenarios-pdf.md`](../source-notes/nrcs-fy25-conservation-scenarios-pdf.md).
-- **Execution-grade site evidence (East Tennessee package)**: [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) names **missing** parcel-level data, **mixed-authority** clusters, and **canonical** update targets; [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) indexes **agency/extension** ingests (soils, NASS, DOR, FSA, septic, CISA). **2026-04 evidence hardening pass** (desk **portal** URLs, infra/observability **doctrine** links—**no** invented parcel facts): [`Tennessee two-site — evidence hardening audit (2026-04)](evidence-hardening-audit-east-tennessee-two-site-2026-04.md). Does **not** replace **your** county office or professional advice.
+- **Execution-grade site evidence (East Tennessee package)**: [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) names **missing** parcel-level data, **mixed-authority** clusters, and **canonical** update targets; [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) indexes **agency/extension** ingests (soils, NASS, DOR, FSA, septic, CISA). **2026-04 evidence hardening pass** (desk **portal** URLs, infra/observability **doctrine** links—**no** invented parcel facts): [`Tennessee two-site — evidence hardening audit (2026-04)](evidence-hardening-audit-east-tennessee-two-site-2026-04.md). **Raw vs visible synthesis** (corpus-wide theme gaps): [`Raw corpus vs wiki synthesis — evidence surfacing audit (2026)](raw-corpus-evidence-surfacing-audit-2026.md). Does **not** replace **your** county office or professional advice.
 
 ---
 

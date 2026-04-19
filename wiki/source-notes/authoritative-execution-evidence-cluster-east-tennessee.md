@@ -84,6 +84,7 @@ confidence: high
 | Agricultural exemption (page capture) | [`Agricultural exemption — page capture`](agricultural-exemption-page-inbox-2026-04-18.md) |
 | Public Chapter 498 — agritourism act | [`Tennessee — Public Chapter 498 agritourism act (PDF)`](tn-public-chapter-498-agritourism-act-pdf.md) |
 | **2026-04-18 batch** — TN law / greenbelt / hobby-farm / IRS framing + UT insurance pub (index) | [`Inbox batch — Tennessee farm policy, LoRaWAN… (2026-04-18)`](inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) |
+| **TWRA** — hunting/trapping regs, FAQ, exemptions, license portal captures; third-party season blog + firearm refs (index) | [`TWRA — Tennessee hunting regulations and license captures (inbox batch 2026-04-18)`](twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) |
 
 ## FSA / financing / beginning farmer
 

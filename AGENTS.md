@@ -55,6 +55,9 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
    - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. Source-notes for PDFs must cite **both** the `.pdf` and the `*-extracted.md` in the body (and `source_ids` includes the `.pdf` path). See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py` / `validate_wiki.py --raw-pdf-links` when the full corpus is local.
 2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths.
 3. Update relevant entity/concept/topic pages; add cross-links.
+4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
+5. **Update** `wiki/index.md` if new pages were added or titles changed.
+6. Run `uv run python scripts/validate_wiki.py` before commit.
 
 ### Ingest activation rule
 
@@ -77,6 +80,10 @@ For every meaningful ingest batch, the agent should decide explicitly:
 
 If the source affects execution, architecture, business logic, risk, safety, infrastructure, or site intelligence, prefer updating canonical pages or operational artifacts rather than leaving the knowledge trapped in source-notes.
 
+### Capture, activation, and summarization
+
+**Complete** ingest for high-impact material is **three decisions**: (1) **capture** stable `raw/` paths; (2) **activate** into hubs, standards, or canonical analyses where claims change routing or gates; (3) when the note is a **batch**, **cluster**, or **official** reference, add or refresh a short **Evidence summary** so MkDocs readers can use the source **without** opening every raw file. **CI** validates structure (links, frontmatter where required)—**not** the presence of an Evidence summary on every page. Prefer **one** well-routed cluster note over **many** thin summaries. Corpus vs synthesis gaps: [`wiki/analyses/raw-corpus-evidence-surfacing-audit-2026.md`](wiki/analyses/raw-corpus-evidence-surfacing-audit-2026.md).
+
 ### Source-note Evidence summary (integration, not CI)
 
 For **hub**, **batch**, and **official cluster** source-notes that back **execution** (business plan, parcels, off-grid, sensors, platform, backup/DR, observability), add an **Evidence summary** block per [`wiki/concepts/source-note-abstract-and-evidence-pattern.md`](wiki/concepts/source-note-abstract-and-evidence-pattern.md): **abstract**, **authority mix**, **decision relevance**, **canonical wiki links**, **public-safe key claims**, **open questions**. **Not** required for every minimal single-file note. A note may remain **capture-only** until activation—log deferrals when material.
@@ -96,10 +103,6 @@ Package strategy for procedures: [`wiki/topics/procedural-guides-package-strateg
 
 - **Structural** (CI): `scripts/validate_wiki.py --strict`—required files, index coverage, resolvable wiki links, log headings, frontmatter on schema pages, kebab-case, duplicate titles / orphans (heuristic). Optional `validate_raw_pdf_links.py` / `--raw-pdf-links` when the full `raw/` tree is present.
 - **Integration** (policy, not automatically fail-able): ingest **activation** completed, Evidence summaries on **high-value** source-notes, **canonical** pages and **hubs** updated so evidence is not **trapped** in `source-notes/`. Treat **structural pass + missing activation** as **technical debt**—record in `wiki/log.md` when significant.
-
-4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
-5. **Update** `wiki/index.md` if new pages were added or titles changed.
-6. Run `uv run python scripts/validate_wiki.py` before commit.
 
 ### Query
 

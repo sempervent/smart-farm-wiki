@@ -3,7 +3,7 @@ title: Source-note abstract and evidence pattern
 page_type: concept
 status: active
 created: 2026-04-18
-updated: 2026-04-25
+updated: 2026-04-17
 tags:
   - meta
   - source-notes
@@ -80,11 +80,16 @@ Notes **updated** to demonstrate the pattern (non-exhaustive):
 - [`Inbox batch — Tennessee farm policy, LoRaWAN… (2026-04-18)`](../source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md)
 - [`K3s, Longhorn, Rancher, Raspberry Pi — platform captures`](../source-notes/k3s-longhorn-rancher-pi-platform-official-captures-inbox-2026-04-18.md)
 - [`Grafana Alloy — official documentation (primary reference)`](../source-notes/grafana-alloy-official-documentation-primary-reference.md)
+- [`Homelab backup stack — official captures (restic, Longhorn, farmOS Docker)`](../source-notes/homelab-backup-stack-official-captures-inbox-2026-04-18.md)
+- [`farmOS — documentation captures (inbox)`](../source-notes/farmos-documentation-captures-inbox-2026-04-18.md)
+- [`PostgreSQL and PostGIS — official documentation primary cluster`](../source-notes/postgresql-and-postgis-official-documentation-primary-cluster.md)
+- [`Homelab, edge, and networking — inbox batch (2026-04-18)`](../source-notes/homelab-edge-networking-inbox-batch-2026-04-18.md)
 
 ---
 
 ## See also
 
+- [`Raw corpus vs wiki synthesis — evidence surfacing audit (2026)`](../analyses/raw-corpus-evidence-surfacing-audit-2026.md) — corpus depth vs synthesis backlog
 - [`Usability and navigation audit — 2026-04-18`](../analyses/usability-and-navigation-audit-2026-04-18.md)
 - [`Source authority hardening audit`](../analyses/source-authority-hardening-audit.md)
 - [`Glossary — Evidence grade`](../glossary/evidence-grade.md)

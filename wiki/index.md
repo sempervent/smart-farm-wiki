@@ -16,6 +16,7 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Wiki overview](overview.md) — North-star summary of this vault’s purpose and rules (**lane table** + deep links).
 - [Usability and navigation audit — 2026-04-18](analyses/usability-and-navigation-audit-2026-04-18.md) — Reader friction, index noise, hub strength, source-note usability; pairs with structural audits.
 - [Tennessee two-site — evidence hardening audit (2026-04)](analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md) — Evidence-rich pass record: desk portals, infra ingests, observability; gaps and canonical updates.
+- [Raw corpus vs wiki synthesis — evidence surfacing audit (2026)](analyses/raw-corpus-evidence-surfacing-audit-2026.md) — Where **`raw/processed/`** depth exceeds visible routing; Evidence summaries + activation priorities.
 - [Package artifact backlog — canonical East Tennessee packages](analyses/package-artifact-backlog-canonical-packages-east-tennessee.md) — Ranked **artifact** gaps (matrices, standards, runbooks, checklists) + **Evidence summary** queue for remaining clusters.
 - [Repository analysis](analyses/repository-analysis.md) — This repo’s layout, tooling, CI, corpus scale, and design tradeoffs (meta; complements `docs/`).
 - [Domain content overview](analyses/domain-content-overview.md) — What this wiki is *about*: land, connectivity, power, data, business, and time/PNT strands.
@@ -237,6 +238,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Source notes
 
+- [TWRA — Tennessee hunting regulations and license captures (inbox batch 2026-04-18)](source-notes/twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) — **TWRA** hunting/trapping **captures** + license portal text; third-party season blog + Remington **Wikipedia** / build article (**exploratory**).
 - [Inbox batch — Tennessee farm policy, LoRaWAN field stack, ChirpStack, Meshtastic, Decentlab, HaLow (2026-04-18)](source-notes/inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) — **Batch index**: TN hobby/business/tax captures; LoRaWAN spec + sensors; ChirpStack docs; Meshtastic docs; HaLowLink PDFs; machine PDF extracts.
 - [Inbox batch — Frigate, SOPS, Prometheus, TN811, NRCS/UT (2026-04-18)](source-notes/inbox-batch-2026-04-18-frigate-sops-prometheus-alertmanager-tenn811-nrcs-ut-extension.md) — Edge stack captures + TN811 + NRCS/UT PDFs (see batch for `raw/` paths).
 - [Demory farm sensor layer — official and operator-grade source cluster](source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md) — LoRaWAN spec PDF, ChirpStack captures, HaLowLink guides, Meshtastic docs, vendor sensor pages, Starlink as WAN pointer.
@@ -484,6 +486,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 - [Usability and navigation audit — 2026-04-18](analyses/usability-and-navigation-audit-2026-04-18.md) — Reader friction, index noise, canonical vs supporting, source-note usability; complements structural debt / ownership audits.
 - [Tennessee two-site — evidence hardening audit (2026-04)](analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md) — Evidence-rich pass record: desk portals, infra ingests, observability; gaps and canonical updates.
+- [Raw corpus vs wiki synthesis — evidence surfacing audit (2026)](analyses/raw-corpus-evidence-surfacing-audit-2026.md) — **`raw/processed/`** vs visible wiki; theme gaps + backlog.
 - [Package artifact backlog — canonical East Tennessee packages](analyses/package-artifact-backlog-canonical-packages-east-tennessee.md) — Ranked **artifact** gaps + **Evidence summary** queue (packages: off-grid, platform, sensors, backup, parcel/local evidence).
 - [Repository analysis](analyses/repository-analysis.md) — Structure, validation, publishing, and content profile of **smart-farm-wiki**.
 - [Domain content overview](analyses/domain-content-overview.md) — **Steering doc**: strands, maturity matrix, gaps, supported vs unsupported decisions, backlog; target future-state.
