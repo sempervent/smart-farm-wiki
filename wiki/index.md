@@ -238,6 +238,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 
 ## Source notes
 
+- [SX1302 gateway — Waveshare HAT captures and Lora-net sx1302_hal (inbox batch 2026-04-20)](source-notes/sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md) — Upstream **HAL/packet forwarder** readme; **Waveshare** EU868 **Pi HAT** wiki + product page; **ingest descriptions** per `raw/` path.
 - [American ginseng — PDF-heavy inbox batch (site tools, pathology) 2026-04-20](source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md) — Cornell/Mid-Atlantic **site matrices**, Beyfuss **test plots**, **VCE 354-312**, MTSU pathology deck + fungicide tables, **UT PB1799** hardwood site prep.
 - [American ginseng — seed and forest culture sources (inbox batch 2026-04-19)](source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) — **TDEC** ginseng program + **MTSU/TSU/UT** wild-simulated PDF; **VCE 354-313**; UT Crops soil note; Smart Yards profile; dealer list PDF (**PII in raw**).
 - [TWRA — Tennessee hunting regulations and license captures (inbox batch 2026-04-18)](source-notes/twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) — **TWRA** hunting/trapping **captures** + license portal text; third-party season blog + Remington **Wikipedia** / build article (**exploratory**).

@@ -3,7 +3,7 @@ title: Smart agriculture, Meshtastic, and LoRaWAN
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-20
 tags:
   - agriculture
   - meshtastic
@@ -22,6 +22,10 @@ For **radio stack comparisons** (HaLow vs LoRa vs NB-IoT) and **DePIN**-adjacent
 - [`Meshtastic`](../concepts/meshtastic.md)
 - [`LoRaWAN`](../concepts/lorawan.md)
 - [`Precision agriculture`](../concepts/precision-agriculture.md)
+
+**Source notes (ingested 2026-04-20)**
+
+- [`source-notes/sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md`](../source-notes/sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md) — **Semtech/Lora-net** `sx1302_hal` readme capture; **Waveshare** SX1302 Pi **HAT** wiki + product page (EU868, GNSS, TTS-oriented gateway bring-up).
 
 **Source notes (ingested 2026-04-18)**
 

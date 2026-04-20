@@ -1003,3 +1003,17 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 - **Updated**: [`american-ginseng-from-seed-asap-start-plan.md`](analyses/american-ginseng-from-seed-asap-start-plan.md) (**four-part suite** link); [`american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md`](source-notes/american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md); [`authoritative-execution-evidence-cluster-east-tennessee.md`](source-notes/authoritative-execution-evidence-cluster-east-tennessee.md); [`sustainable-cropping-soil-and-farm-entry-sources.md`](topics/sustainable-cropping-soil-and-farm-entry-sources.md); [`index.md`](index.md).
 - Validator: `uv run python scripts/validate_wiki.py --strict`.
 
+## [2026-04-20] ingest | SX1302 — Waveshare HAT captures, Lora-net sx1302_hal readme
+
+- **Moved** three `raw/inbox/*.md` → `raw/processed/2026/` (**kebab-case**): `lora-net-sx1302-hal-readme-packet-forwarder-tools.md`, `waveshare-sx1302-lorawan-gateway-hat-wiki.md`, `waveshare-sx1302-lorawan-gateway-hat-product-page-eu868-gnss.md`.
+- **Source-note**: [`sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md`](source-notes/sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md) — **Evidence summary** + **per-source ingest descriptions** (table).
+- **Hub**: [`smart-agriculture-meshtastic-and-lorawan.md`](topics/smart-agriculture-meshtastic-and-lorawan.md); [`demory-farm-sensor-layer-official-and-operator-source-cluster.md`](source-notes/demory-farm-sensor-layer-official-and-operator-source-cluster.md) (**ChirpStack** § gateway chip pointer); [`index.md`](index.md).
+- **Policy**: [`AGENTS.md`](../AGENTS.md) **Ingest** step 2 — explicit **ingest descriptions** requirement.
+- Validator: `uv run python scripts/validate_wiki.py --strict`.
+
+## [2026-04-20] ingest | Raw processed 2026 summary-gap cleanup
+
+- **Audit ledger**: [`PROCESSED-CHECKLIST.md`](../PROCESSED-CHECKLIST.md) — deterministic checklist of `raw/processed/2026/` files that lacked any explicit wiki summary text at review time.
+- **Source-note updated**: [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md) — added **per-source descriptions** for the 14 previously unmentioned 2026-04-23 files (Victron wiring chapters plus Starlink/farm-networking supporting captures).
+- **Activation decision**: kept this work as **source-note + deferred follow-up note** rather than spawning new standalone notes because the gap set was a single batch already routed from canonical WAN/off-grid pages.
+- Validator: `uv run python scripts/validate_wiki.py`.

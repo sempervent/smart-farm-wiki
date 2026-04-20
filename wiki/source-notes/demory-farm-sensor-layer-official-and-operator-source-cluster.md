@@ -2,8 +2,8 @@
 title: Demory farm sensor layer — official and operator-grade source cluster
 page_type: source_note
 status: active
-created: 2026-04-25
-updated: 2026-04-25
+created: 2026-04-18
+updated: 2026-04-20
 source_ids:
   - raw/processed/2026/lorawan-specification-v1-1.pdf
   - raw/processed/2026/architecture-chirpstack-open-source-lorawan-network-server-documentation.md
@@ -71,6 +71,8 @@ confidence: medium
 | Getting started | [`getting-started-chirpstack-open-source-lorawan-network-server-documentation.md`](../../raw/processed/2026/getting-started-chirpstack-open-source-lorawan-network-server-documentation.md) |
 | Connecting a gateway | [`connecting-a-gateway-chirpstack-open-source-lorawan-network-server-documentation.md`](../../raw/processed/2026/connecting-a-gateway-chirpstack-open-source-lorawan-network-server-documentation.md) |
 | Introduction (two captures) | [`introduction-chirpstack-…`](../../raw/processed/2026/introduction-chirpstack-open-source-lorawan-network-server-documentation.md) · [`introduction-chirpstack-…-1.md`](../../raw/processed/2026/introduction-chirpstack-open-source-lorawan-network-server-documentation-1.md) |
+
+**Gateway chip / concentrator bring-up (vendor + upstream readme captures)** — **SX1302-class** Pi HAT and **`sx1302_hal`** packet-forwarder context: [`SX1302 gateway — Waveshare HAT captures and Lora-net sx1302_hal (inbox batch 2026-04-20)`](sx1302-waveshare-hat-and-lora-net-sx1302-hal-inbox-2026-04-20.md).
 
 ---
 

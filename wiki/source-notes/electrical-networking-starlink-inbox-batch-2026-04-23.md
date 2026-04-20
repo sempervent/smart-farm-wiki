@@ -3,7 +3,7 @@ title: Electrical, networking, and Starlink — inbox batch (2026-04-23)
 page_type: source_note
 status: active
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-23
 source_ids:
   - raw/processed/2026/victron-wiring-unlimited-43562-en.pdf
   - raw/processed/2026/nrel-off-grid-solar-module-5-design-modeling-89248.pdf
@@ -105,6 +105,27 @@ confidence: medium
 - [`specifications-inbox-2026-04-23.md`](../../raw/processed/2026/specifications-inbox-2026-04-23.md)
 - [`technology-inbox-2026-04-23.md`](../../raw/processed/2026/technology-inbox-2026-04-23.md)
 - [`list-of-wlan-channels-wikipedia-inbox-2026-04-23.md`](../../raw/processed/2026/list-of-wlan-channels-wikipedia-inbox-2026-04-23.md)
+
+## Per-source descriptions for previously unsummarized files
+
+The files below were present in `raw/processed/2026/` but had no explicit wiki summary text before this cleanup pass. They remain **supporting** material inside this batch rather than standalone canonical notes.
+
+| Raw path | What it is / what it covers |
+|----------|-----------------------------|
+| [`2-theory-inbox-2026-04-23.md`](../../raw/processed/2026/2-theory-inbox-2026-04-23.md) | Victron *Wiring Unlimited* chapter on basic electrical theory: Ohm's law, power, conductivity, cable resistance, voltage drop, and why current calculations drive cable and fuse sizing. |
+| [`3-battery-bank-wiring-inbox-2026-04-23.md`](../../raw/processed/2026/3-battery-bank-wiring-inbox-2026-04-23.md) | Victron battery-bank wiring chapter covering series/parallel layouts, balanced parallel takeoff, midpoint monitoring, battery balancers, and failure modes from uneven string wiring. |
+| [`4-dc-wiring-inbox-2026-04-23.md`](../../raw/processed/2026/4-dc-wiring-inbox-2026-04-23.md) | Victron DC wiring chapter on cable selection, busbars, crimping, cable runs, DC fuses/breakers, isolation switches, shunts, and voltage-sensing practices for inverter and battery systems. |
+| [`5-communication-wiring-inbox-2026-04-23.md`](../../raw/processed/2026/5-communication-wiring-inbox-2026-04-23.md) | Victron communication-wiring chapter describing signal types, interference sources, shielded/twisted-pair practices, RJ45/RJ12/VE.Direct cable roles, and protocol adapters for monitored power systems. |
+| [`6-ac-wiring-inbox-2026-04-23.md`](../../raw/processed/2026/6-ac-wiring-inbox-2026-04-23.md) | Victron AC wiring chapter on 3-phase generation basics, TN/TT/IT network models, power factor, AC conductor sizing, breakers, and manual bypass patterns for inverter/charger systems. |
+| [`7-ground-earth-and-electrical-safety-inbox-2026-04-23.md`](../../raw/processed/2026/7-ground-earth-and-electrical-safety-inbox-2026-04-23.md) | Victron safety chapter on earth/chassis/ground distinctions, shock paths, RCD logic, neutral-earth links, and grounding models for fixed and mobile installations. |
+| [`8-galvanic-corrosion-inbox-2026-04-23.md`](../../raw/processed/2026/8-galvanic-corrosion-inbox-2026-04-23.md) | Victron marine-specific note explaining galvanic corrosion through shore earth, why hull metals corrode, and how galvanic isolators or isolation transformers interrupt the corrosion circuit without dropping protection. |
+| [`bridging-the-digital-divide-how-starlink-is-transforming-farms-with-high-speed-internet-inbox-2026-04-23.md`](../../raw/processed/2026/bridging-the-digital-divide-how-starlink-is-transforming-farms-with-high-speed-internet-inbox-2026-04-23.md) | Marketing article from an HSG partner/reseller framing Starlink as rural connectivity for precision ag, equipment monitoring, market access, security cameras, and farm-family connectivity, with financing rhetoric rather than hard technical specs. |
+| [`how-to-boost-starlink-internet-for-farms-with-many-devices-inbox-2026-04-23.md`](../../raw/processed/2026/how-to-boost-starlink-internet-for-farms-with-many-devices-inbox-2026-04-23.md) | Vendor sales article from GNS Wireless arguing that Starlink backhaul often needs point-to-point links, outdoor mesh, or long-range bridges to cover multiple barns, stores, cameras, and households on one farm. |
+| [`remote-farm-with-starlink-are-my-product-selections-sensible-inbox-2026-04-23.md`](../../raw/processed/2026/remote-farm-with-starlink-are-my-product-selections-sensible-inbox-2026-04-23.md) | Ubiquiti forum thread about linking an off-grid Starlink shed, a second off-grid house, and remote camera points across roughly 100 acres using PtP/PTMP radios, with replies weighing AirMax, LTU, and direct-bury fiber. |
+| [`starlink-anybody-inbox-2026-04-23.md`](../../raw/processed/2026/starlink-anybody-inbox-2026-04-23.md) | Farming forum thread with operator anecdotes comparing poor 4G against Starlink, discussing ease of self-install, home/farm mesh add-ons, monthly cost impressions, and general satisfaction in rural use. |
+| [`starlink-business-agriculture-inbox-2026-04-23.md`](../../raw/processed/2026/starlink-business-agriculture-inbox-2026-04-23.md) | Starlink business case-study page centered on the John Deere JDLink Boost integration: in-field data, remote diagnostics, automation support, and the claim that inadequate connectivity constrains equipment productivity. |
+| [`starlink-for-agriculture-inbox-2026-04-23.md`](../../raw/processed/2026/starlink-for-agriculture-inbox-2026-04-23.md) | Clarus Networks marketing overview of Starlink for agriculture covering precision farming, livestock tracking, remote operations, sustainability claims, and a reseller case-study narrative rather than engineering-grade deployment guidance. |
+| [`starlink-installed-on-our-farm-inbox-2026-04-23.md`](../../raw/processed/2026/starlink-installed-on-our-farm-inbox-2026-04-23.md) | Reddit anecdote from a farm using Gen 3 Starlink in bypass mode for the whole property, with comments about robots, mesh/router chaining, payment terminals, and a suggestion to add lightning protection. |
 
 ---
 

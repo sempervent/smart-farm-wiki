@@ -53,7 +53,7 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
 
 1. Add or confirm raw material under `raw/inbox/` (or processed pipeline per `docs/workflows/ingest.md`).
    - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. Source-notes for PDFs must cite **both** the `.pdf` and the `*-extracted.md` in the body (and `source_ids` includes the `.pdf` path). See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py` / `validate_wiki.py --raw-pdf-links` when the full corpus is local.
-2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths.
+2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths. **Ingest descriptions** (sometimes called **ingest summaries**): the source-note must record **what each captured file is and covers** so readers can route on prose alone. For **batch or cluster** ingests, include an **Evidence summary** (or equivalent abstract) **and** a **per-source description** (short paragraph or table row per `raw/` path); for a **single-file** note, a concise opening abstract suffices. Copying the agent’s first-pass summary into the source-note is encouraged—then refine for accuracy, not brevity at the cost of emptiness.
 3. Update relevant entity/concept/topic pages; add cross-links.
 4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
 5. **Update** `wiki/index.md` if new pages were added or titles changed.
