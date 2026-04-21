@@ -39,6 +39,9 @@ Thumbs.db
 scratch/
 tmp/
 
+# Local ingest audit ledger (not part of wiki corpus; avoids CI link checks if referenced from log)
+PROCESSED-CHECKLIST.md
+
 # Raw corpus (AGENTS.md): do not commit inbox drops or processed sources by default;
 # directory layout is preserved via tracked .gitkeep files.
 # (Git cannot re-include a file if a parent dir is excluded; un-ignore dirs then .gitkeep.)

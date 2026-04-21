@@ -1013,7 +1013,7 @@ Append-only chronological record. New entries go at the **bottom**. Heading form
 
 ## [2026-04-20] ingest | Raw processed 2026 summary-gap cleanup
 
-- **Audit ledger**: [`PROCESSED-CHECKLIST.md`](../PROCESSED-CHECKLIST.md) — deterministic checklist of `raw/processed/2026/` files that lacked any explicit wiki summary text at review time.
+- **Audit ledger**: `PROCESSED-CHECKLIST.md` at repository root (optional local scratch; not tracked) — deterministic checklist of `raw/processed/2026/` files that lacked any explicit wiki summary text at review time.
 - **Source-note updated**: [`electrical-networking-starlink-inbox-batch-2026-04-23.md`](source-notes/electrical-networking-starlink-inbox-batch-2026-04-23.md) — added **per-source descriptions** for the 14 previously unmentioned 2026-04-23 files (Victron wiring chapters plus Starlink/farm-networking supporting captures).
 - **Activation decision**: kept this work as **source-note + deferred follow-up note** rather than spawning new standalone notes because the gap set was a single batch already routed from canonical WAN/off-grid pages.
 - Validator: `uv run python scripts/validate_wiki.py`.
