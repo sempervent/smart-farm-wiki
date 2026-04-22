@@ -3,7 +3,7 @@ title: Tennessee farm business compliance — official layer cluster (2026-04-22
 page_type: source_note
 status: active
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-04-30
 source_ids:
   - raw/processed/2026/irs-ein-online-application-overview-capture-2026-04-22.md
   - raw/processed/2026/irs-responsible-parties-and-nominees-capture-2026-04-22.md
@@ -66,8 +66,8 @@ confidence: high
 | TN business tax / TNTAP excerpt | [`tennessee-business-tax-registration-licensing-tntap.md`](../../raw/processed/2026/tennessee-business-tax-registration-licensing-tntap.md) · source-note [`tennessee-business-tax-registration-licensing-tntap.md`](tennessee-business-tax-registration-licensing-tntap.md) |
 | Greenbelt law / application FAQ | [`greenbelt.md`](../../raw/processed/2026/greenbelt.md) |
 | UT — building a farm business | [`building-a-farm-business-ut-center-of-farm-management.md`](../../raw/processed/2026/building-a-farm-business-ut-center-of-farm-management.md) |
-| TN statute PDF — agriculture, zoning, property taxes | [`tn-law-and-resources-pertaining-to-the-definition-of-agriculture-zoning-farm-property-taxes-multiple-use-subclassification.pdf`](../../raw/processed/2026/tn-law-and-resources-pertaining-to-the-definition-of-agriculture-zoning-farm-property-taxes-multiple-use-subclassification.pdf) + extract |
-| UT W1266 — insurance considerations | [`ut-extension-w1266-insurance-considerations-farming-operation-pdf.md`](ut-extension-w1266-insurance-considerations-farming-operation-pdf.md) |
+| TN statute PDF — agriculture, zoning, property taxes | PDF [`…subclassification.pdf`](../../raw/processed/2026/tn-law-and-resources-pertaining-to-the-definition-of-agriculture-zoning-farm-property-taxes-multiple-use-subclassification.pdf) · extract [`…subclassification-extracted.md`](../../raw/processed/2026/tn-law-and-resources-pertaining-to-the-definition-of-agriculture-zoning-farm-property-taxes-multiple-use-subclassification-extracted.md) |
+| UT W1266 — insurance considerations | PDF [`w1266.pdf`](../../raw/processed/2026/w1266.pdf) · extract [`w1266-extracted.md`](../../raw/processed/2026/w1266-extracted.md) · source-note [`ut-extension-w1266-insurance-considerations-farming-operation-pdf.md`](ut-extension-w1266-insurance-considerations-farming-operation-pdf.md) |
 
 ## See also
 

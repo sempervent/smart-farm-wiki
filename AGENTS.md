@@ -52,7 +52,7 @@ The **mechanical goal** is **deterministic, inspectable, markdown-first** workfl
 ### Ingest
 
 1. Add or confirm raw material under `raw/inbox/` (or processed pipeline per `docs/workflows/ingest.md`).
-   - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. Source-notes for PDFs must cite **both** the `.pdf` and the `*-extracted.md` in the body (and `source_ids` includes the `.pdf` path). See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py` / `validate_wiki.py --raw-pdf-links` when the full corpus is local.
+   - **PDFs** are first-class sources: move each to `raw/processed/...` under a stable **kebab-case** basename, run `uv run python scripts/pdf_to_markdown.py <path-to.pdf>` (or `--all-raw`) so a sibling **`*-extracted.md`** machine extract exists; the **PDF remains canonical** for figures and layout. **`source_ids` + CI extract-link rule**: if `source_ids` lists any path ending in **`.pdf`**, the source-note **markdown body** (below frontmatter) must include at least one **relative** markdown link whose target path **ends with** ``{pdf-stem}-extracted.md`` (same directory as the PDF; stem = basename without `.pdf`). Prose such as “+ extract” or linking **only** the `.pdf` **fails** CI (`pytest` runs `scripts/validate_raw_pdf_links.py` with `source_note_extract_links=True`; same logic as `validate_wiki.py --raw-pdf-links`). Fix: add explicit links, e.g. in the per-source table: ``[`…-extracted.md`](../../raw/processed/…/stem-extracted.md)``. See `docs/workflows/ingest.md` and `scripts/validate_raw_pdf_links.py`.
 2. Create or update **`source-notes`** in `wiki/source-notes/` pointing to stable `raw/` paths. **Ingest descriptions** (sometimes called **ingest summaries**): the source-note must record **what each captured file is and covers** so readers can route on prose alone. For **batch or cluster** ingests, include an **Evidence summary** (or equivalent abstract) **and** a **per-source description** (short paragraph or table row per `raw/` path); for a **single-file** note, a concise opening abstract suffices. Copying the agent’s first-pass summary into the source-note is encouraged—then refine for accuracy, not brevity at the cost of emptiness.
 3. Update relevant entity/concept/topic pages; add cross-links.
 4. **Append** `wiki/log.md` with `ingest` entry (see Log format).
@@ -396,7 +396,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 1. Read `AGENTS.md` (this file) and `wiki/index.md`. For **navigation / IA** context, see [`wiki/topics/wiki-navigation-and-structural-hubs.md`](wiki/topics/wiki-navigation-and-structural-hubs.md) and [`wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md`](wiki/analyses/structural-debt-audit-wiki-ia-and-operational-maturity.md). For **procedural how-tos and runbooks**, see [`wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md`](wiki/topics/procedural-guides-package-strategy-smart-farm-wiki.md). When authoring substantive **domain** synthesis, also read [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md) for mission, audience, and voice alignment. Before creating **new** parallel analyses, apply **Canonicalization before proliferation**, check topic hubs, and consult [`wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md`](wiki/analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md) for **cluster ownership**.
 2. Identify layer: raw vs wiki vs docs change.
-3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits.
+3. Run `uv run python scripts/validate_wiki.py` before and after substantive edits. After editing **`source-notes`** that list **`.pdf`** paths in `source_ids`, also run `uv run pytest tests/test_validate_raw_pdf_links.py` (or `uv run python scripts/validate_raw_pdf_links.py --root .`) so **body → `*-extracted.md`** links are not missing.
 4. Update `wiki/index.md` when navigation should change.
 5. Append `wiki/log.md` for ingest/query/lint/refactor/policy work.
 6. Keep commits scoped and messages descriptive.
@@ -407,7 +407,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 
 | Task | Done when |
 |------|-----------|
-| **Ingest** | Raw filed (for **PDFs**: sibling `*-extracted.md` + source-note cites both); source-notes + synthesis updated; log + index updated; validator passes; run `--raw-pdf-links` when the full `raw/` corpus is present locally |
+| **Ingest** | Raw filed (for **PDFs**: sibling `*-extracted.md` + source-note **body** links **both** `.pdf` and `*-extracted.md` when the PDF is in `source_ids`); source-notes + synthesis updated; log + index updated; validator passes; run `pytest tests/test_validate_raw_pdf_links.py` or `validate_wiki.py --raw-pdf-links` when touching PDF source-notes |
 | **Query** | Answer cites wiki/raw; durable page created/updated if needed; log appended |
 | **Lint** | Validator clean (`--strict` in CI); orphans/titles addressed or explicitly deferred in log; hubs/index aligned after navigation changes (see **Hub maintenance**) |
 
@@ -419,7 +419,7 @@ Optional YAML frontmatter is encouraged. Common fields:
 |--------|------|
 | `scripts/bootstrap.py` | Create missing dirs/files; optional rename placeholders |
 | `scripts/validate_wiki.py` | Repository integrity checks; links under `raw/` need not resolve by default (corpus may be uncommitted); optional `--raw-pdf-links` with `--strict` when validating a full local corpus |
-| `scripts/validate_raw_pdf_links.py` | PDF ↔ `*-extracted.md` pairing, wiki links into `raw/`, PDF source-note extract links; **default** warns on missing local files; **`--strict`** fails (public CI uses non-strict via pytest). Public MkDocs build neutralizes `raw/` links in HTML — see `docs/operations/raw-corpus-and-publishing.md` |
+| `scripts/validate_raw_pdf_links.py` | PDF ↔ `*-extracted.md` pairing, wiki links into `raw/`, and **required** markdown links from source-note **body** to each `*-extracted.md` for every `.pdf` listed in that note’s `source_ids` (stem-matched suffix). **default** warns on missing local files; **`--strict`** fails. **CI**: `pytest tests/test_validate_raw_pdf_links.py` exercises this. Public MkDocs build neutralizes `raw/` links in HTML — see `docs/operations/raw-corpus-and-publishing.md` |
 | `scripts/rebuild_index.py` | Audit or regenerate index sections |
 | `scripts/append_log.py` | Append a correctly formatted log entry |
 | `scripts/scaffold_page.py` | New page from `templates/` |
