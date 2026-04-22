@@ -3,7 +3,7 @@ title: Master checklist — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-30
 review_status: unreviewed
 tags:
   - business-plan
@@ -18,6 +18,8 @@ confidence: medium
 ## Purpose
 
 Single priority-ordered list covering land intelligence, infrastructure recon, first business experiments, first telemetry experiments, and labor/workflow tests. Reduces hopping between pages; detailed copy-paste rows remain on [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md).
+
+**Week-by-week operator view (T0+90d)**: [`First 90 days — operator packet (East Tennessee two-site)`](first-90-days-operator-packet-east-tennessee-two-site.md) — **weeks 1–12** priorities and checkpoints alongside this checklist.
 
 **Boundaries**: [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
 

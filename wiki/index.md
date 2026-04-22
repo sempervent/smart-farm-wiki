@@ -102,7 +102,11 @@ First-stop navigation for humans and agents. Every **intentional** wiki page sho
 - [Risk register and mitigation strategy](analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
 - [East Tennessee two-site farm business plan — 10-year roadmap](analyses/east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) — Phases 0–4.
 - [Validation backlog and decision gates](analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md)
-- [Execution dossier — Phase 0–1 (hub)](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — **Start here**: memo → 90d → checklist → 12m → 24m.
+- [East Tennessee two-site farm business plan — integration revision audit (2026-04)](analyses/east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — Ledger of doctrine/evidence binding into the **canonical** package (no parallel plan).
+- [Execution dossier — Phase 0–1 (hub)](analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — **Start here**: memo → EG gates → 90d → **operator packet** → checklist → 12m → 24m.
+- [First 90 days — operator packet (East Tennessee two-site)](analyses/first-90-days-operator-packet-east-tennessee-two-site.md) — **Weeks 1–12** pilot runbook (field verification bundles, stops, checkpoints).
+- [Execution gates — Phase 0–1 (East Tennessee two-site)](analyses/execution-gates-phase-0-1-east-tennessee-two-site.md) — EG **pass/fail** by domain; **pilot** vs **production**; composite ties to **G1**.
+- [Phase 0–1 operator burden review — East Tennessee two-site (hostile)](analyses/phase-0-1-operator-burden-review-east-tennessee-two-site.md) — Travel, field/off-grid/sensor/gateway/backup/observability triage, surge, invisible load; burden table + **R17** link.
 - [First 90 days — Phase 0–1 execution](analyses/execution-first-90-days-phase-0-1-east-tennessee.md)
 - [First 12 months — Phase 0–1 execution](analyses/execution-first-12-months-phase-0-1-east-tennessee.md)
 - [First 24 months — Phase 0–1 execution](analyses/execution-first-24-months-phase-0-1-east-tennessee.md)
@@ -172,7 +176,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Kubernetes edge control-plane roles — k3s / etcd / management](entities/kubernetes-edge-control-plane-roles.md) — Cluster control vs app workloads.
 - [Edge service deployment classes — pilot vs production](entities/edge-service-deployment-classes.md) — Pilot / prod / deferred service posture.
 - [Labor roles — two-site farm operations](entities/labor-roles-two-site-farm-operations.md) — Primary, family, coverage buckets.
-- [Farm business legal entity model (placeholder)](entities/farm-business-legal-entity-model.md) — Pattern only; no named legal entity in-vault.
+- [Farm business legal entity model (pattern router)](entities/farm-business-legal-entity-model.md) — Routes to **TN + federal compliance package**; no named legal entity in-vault.
 - [Farm market channel categories](entities/farm-market-channel-categories.md) — Wholesale, direct, agritourism-class paths as **buckets**.
 - [Farm infrastructure system categories](entities/farm-infrastructure-system-categories.md) — Water, power, fence, structures, comms **taxonomy** for inventories.
 
@@ -214,7 +218,8 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Field observation template package — two-site](topics/field-observation-template-package-east-tennessee-two-site.md) — Copy-paste visit forms (fence walk, water, electrical audit, loads).
 - [Agritourism, tiny housing, and natural building sources](topics/agritourism-tiny-housing-and-natural-building.md) — Farm stays, natural building, agritourism listicles, news excerpts.
 - [Tennessee hobby farm and small-farm business sources](topics/tennessee-hobby-farm-and-small-farm-business-sources.md) — Hobby-farm primers, TN business guides, USDA BFR, revenue/licensing excerpts, startup PDFs.
-- [Backyard livestock and homestead animal sources](topics/backyard-livestock-and-homestead-animals.md) — Poultry/cattle guides, AI husbandry marketing, PDF papers.
+- [Tennessee farm business compliance package](topics/tennessee-farm-business-compliance-package.md) — LLC/EIN, TNTAP + ag exemption, greenbelt, insurance, labor, BOI calendar (**not** legal advice).
+- [Backyard livestock and homestead animal sources](topics/backyard-livestock-and-homestead-animals.md) — Poultry/cattle/**pig** guides (incl. [`raising-pigs-small-scale-homestead`](analyses/raising-pigs-small-scale-homestead-guide.md)), AI husbandry marketing, PDF papers.
 - [ESP32, ESPHome, and smart-farming builds](topics/esp32-iot-smart-farming-and-tooling.md) — MCU guides, smart-farming firmware README, ESPHome CYD.
 - [Docker, Kubernetes, Compose, and Bake (edge and homelab)](topics/docker-kubernetes-compose-and-bake.md) — Compose, Bake, k3s/RKE2, distro comparisons for self-hosted stacks.
 - [Platform doctrine package — homelab / farm edge](topics/platform-doctrine-package-homelab-farm-edge.md) — **First-class** hub: Pi + k3s + Longhorn + Rancher + storage topology; pilot vs production; **HA** semantics; ties to farmOS, telemetry, backup/DR.
@@ -262,6 +267,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [UT Extension — FM Boot 2017 budgets (Velandia) (PDF)](source-notes/ut-extension-fm-boot-2017-budgets-velandia-pdf.md)
 - [UT — W1348 cut flower enterprise budgets (PDF)](source-notes/ut-publication-w1348-pdf.md)
 - [UT — W1268 sheep enterprise budget template (PDF)](source-notes/ut-publication-w1268-pdf.md)
+- [UT Extension W1266 — insurance considerations for farming (PDF)](source-notes/ut-extension-w1266-insurance-considerations-farming-operation-pdf.md) — Farm liability / agritourism / product liability education (extension).
 - [UT — D154 publication (PDF)](source-notes/ut-publication-d154-pdf.md)
 - [UT — D31 publication (PDF)](source-notes/ut-publication-d31-pdf.md)
 - [UT — D33 publication (PDF)](source-notes/ut-publication-d33-pdf.md)
@@ -324,6 +330,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [newbusiness-checklist (PDF)](source-notes/newbusiness-checklist-pdf.md) — Checklist PDF import; confirm inside PDF.
 - [Shopify — start a business in TN (10 steps, 2025)](source-notes/shopify-how-to-start-business-tennessee-10-steps-2025.md) — TN startup outline; not legal advice.
 - [TN business tax / TNTAP licensing excerpt](source-notes/tennessee-business-tax-registration-licensing-tntap.md) — Gross receipts, county license fee notes.
+- [Tennessee farm business compliance — official layer cluster (2026-04-22)](source-notes/tennessee-farm-business-compliance-official-layer-cluster-2026-04-22.md) — IRS EIN + responsible party, SOS/TNBEAR URLs, DOL agriculture, BOI note; anchors compliance package.
 - [TN Smart Startup Guide (PDF)](source-notes/tn-smart-startup-guide-pdf.md) — Large TN startup PDF; confirm edition inside file.
 - [Zarla — how to start a business in Tennessee](source-notes/zarla-how-to-start-business-in-tennessee.md) — Stepwise TN formation article.
 - [ezcGman LoRa-to-MQTT gateway (ESP32, EByte)](source-notes/ezcgman-lora-to-mqtt-gateway-esp32-ebyte.md) — DIY gateway PCB + broker integration.
@@ -336,6 +343,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Low-volume roads BMPs — Chapter 7 roadway drainage (PDF)](source-notes/low-volume-roads-bmp-chapter7-roadway-drainage-pdf.md) — Surface drainage, rolling dips, cross-drains.
 - [Management practices for dirt roads — Culebra / Ridge to Reefs (PDF)](source-notes/management-practices-dirt-roads-culebra-ridge-to-reefs-2015-pdf.md) — Sediment reduction practices; rolling dips.
 - [Penn State TB — crown and cross-slope, dirt & gravel roads (PDF)](source-notes/penn-state-tb-crown-cross-slope-dirt-gravel-roads-pdf.md) — Crown vs in/out-slope; unpaved cross-slope %.
+- [Pig raising — homestead inbox batch (2026-04-21)](source-notes/pig-raising-homestead-inbox-batch-2026-04-21.md) — Timber Creek + Reddit + Abundant Permaculture captures; operational guide in analyses.
 - [Plant a fountain, dig a pond (Acreage Life)](source-notes/plant-a-fountain-dig-a-pond-acreage-life.md) — Farm pond sizing, liners, stocking, fountains.
 - [Pump pond water uphill — hose bib irrigation (Reddit)](source-notes/pond-pump-uphill-hose-bib-irrigation-reddit.md) — Forum advice thread.
 - [Pump water uphill](source-notes/pump-water-uphill.md) — Head/flow/pump primer.
@@ -596,6 +604,17 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Starting and stocking a pond — beautiful water feature](analyses/starting-stocking-pond-beautiful-water-feature.md) — Query synthesis: build, stock legally, aesthetics, irrigation adjacency.
 - [Farm stocking — 120 acres vs 5 acres (research prompt)](analyses/farm-stocking-120-acres-vs-5-acres-research-prompt.md) — Query brief: research prompt and methods for chickens, crops, animals; automation bias on larger holding.
 - [Homestead composting — practical guide](analyses/homestead-composting-guide.md) — Greens/browns, hot vs cold, systems, hygiene; ingested compost batch.
+- [Tennessee farm business entity options — LLC, sole prop, partnership](analyses/tennessee-farm-business-entity-options-llc-sole-prop-partnership.md) — Conceptual tradeoffs + professional gates.
+- [Tennessee LLC formation and annual report checklist](analyses/tennessee-llc-formation-annual-report-checklist.md) — SOS/TNBEAR workflow (**verify** live fees).
+- [Federal EIN and IRS registration baseline — farm business](analyses/federal-ein-irs-registration-baseline-farm-business.md) — Responsible party, session rules, state-first sequencing.
+- [Tennessee tax registration, TNTAP, and agricultural exemption baseline](analyses/tennessee-tax-registration-tntap-agricultural-exemption-baseline.md) — Revenue registration + exemption research pointers.
+- [Tennessee greenbelt and property tax — two-site Claxton and Demory](analyses/tennessee-greenbelt-property-tax-two-site-claxton-demory.md) — March 15 / per-county applications; comptroller capture.
+- [Farm insurance and liability checklist — two-site Tennessee](analyses/farm-insurance-liability-checklist-two-site-tennessee.md) — Agent questions (UT W1266 grounded).
+- [Agricultural labor, workers’ compensation, and employment baseline — Tennessee](analyses/agricultural-labor-workers-comp-employment-baseline-tennessee.md) — DOL overview + TN DOL URL routing.
+- [Beneficial ownership information reporting — FinCEN / CTA status](analyses/beneficial-ownership-information-reporting-fincen-status.md) — Date-stamped BOI routing (check FinCEN).
+- [Two-site farm business compliance calendar — East Tennessee](analyses/two-site-farm-business-compliance-calendar-east-tennessee.md) — Recurring deadlines template.
+- [Field verification program — Phase 0–1 (Claxton and Demory)](analyses/field-verification-program-phase-0-1-claxton-demory.md) — Site walks, access/drainage/utilities/power/sensors; validation **V1–V12** / **G1–G3** hooks; desktop vs field.
+- [Raising pigs — small-scale homestead guide](analyses/raising-pigs-small-scale-homestead-guide.md) — Feeder vs breeding, fence/rotation heuristics, safety; blog/forum sources (**confirm** with extension/rules).
 - [East Tennessee — profitable crops matrix](analyses/east-tennessee-profitable-crops-matrix.md) — Query synthesis: commodity vs specialty profit signals, UT enterprise budgets, CPA specialty crops, NASS context.
 - [Multi-field crop rotation plan (template)](analyses/multi-field-crop-rotation-plan.md) — Field roles, family-based rotations, coordinated A–D year tables, perennial block notes.
 - [Agritourism business plan — guest hub on 120 acres, family home 35 min away](analyses/agritourism-dual-site-business-plan-five-and-120-acres.md) — Working farm + lodging on 120 ac; private 5 ac residence; coverage and animal placement.
@@ -612,6 +631,7 @@ Stable **named** subjects—products, **modeled sites**, **infrastructure system
 - [Fixed gateway tower vs mobile or vehicle gateway](comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md) — Always-on RF vs intermittent mobile backhaul.
 - [Anderson County vs Campbell County — two-site operating implications](comparisons/anderson-county-vs-campbell-county-operating-implications.md) — County NASS rents, home-base vs farm roles, over-generalization risks (Claxton / Demory anchors).
 - [Ducks vs chickens — meat raising](comparisons/ducks-vs-chickens-meat-raising.md) — Housing, water, processing, grow-out (ingested sources + vault poultry notes).
+- [LLC vs sole proprietorship vs partnership — Tennessee farm framing](comparisons/tennessee-llc-vs-sole-proprietorship-vs-partnership-farm.md) — Matrix + counsel/CPA gates.
 
 ## Timelines
 

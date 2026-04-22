@@ -3,7 +3,7 @@ title: Automation stop rules — two-site smart farm
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-17
+updated: 2026-04-29
 review_status: unreviewed
 tags:
   - automation
@@ -20,6 +20,8 @@ confidence: medium
 Execution-safe **stop**, **freeze**, and **no-scale** rules for automation and telemetry on the East Tennessee two-site package. Aggressive automation stays allowed as **philosophy**—but **scaling stops** when failure rates, upkeep load, or operator burden exceed budgets, or when manual validation has not passed.
 
 This page does **not** assume instrumentation reduces labor by default ([`Smart technology strategy`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md), [`Instrumentation ROI`](instrumentation-roi-model-two-site-smart-farm.md)).
+
+**Hostile burden context**: Treat **hidden operator load** as the default—triage, drills, gateway swaps, and restore work **stack** with travel and off-grid O&M ([`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md)). **NS-2** exists because **dashboard culture** **lies** about hours.
 
 ---
 
@@ -96,6 +98,7 @@ Remote actuation (pump control, gate motor, irrigation writes) requires exiting 
 
 ## Related
 
+- [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md)
 - [`Instrumentation priority matrix`](instrumentation-priority-matrix-two-site-smart-farm.md)
 - [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation)
 - [`Runbook — sensor false positive and alert triage`](runbook-sensor-false-positive-alert-triage.md)

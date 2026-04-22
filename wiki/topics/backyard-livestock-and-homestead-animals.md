@@ -8,12 +8,17 @@ tags:
   - livestock
   - poultry
   - cattle
+  - pigs
 review_status: unreviewed
 ---
 
 # Backyard livestock and homestead animal sources
 
-Practical articles on **chickens**, **cattle**, dual-purpose flocks, and **AI-enabled animal husbandry** marketing—paired with **PDF** primary literature where filed (confirm titles/DOIs from the PDF or publisher metadata).
+Practical articles on **chickens**, **cattle**, **pigs**, dual-purpose flocks, and **AI-enabled animal husbandry** marketing—paired with **PDF** primary literature where filed (confirm titles/DOIs from the PDF or publisher metadata).
+
+**Procedural guides (synthesis)**
+
+- [`Raising pigs — small-scale homestead guide`](../analyses/raising-pigs-small-scale-homestead-guide.md) — Feeder vs breeding, fencing, rotation, safety; cites **homestead** blog/forum captures (**low authority**—confirm regulations and health with extension/agency sources).
 
 **Source notes**
 
@@ -27,6 +32,7 @@ Practical articles on **chickens**, **cattle**, dual-purpose flocks, and **AI-en
 - [`source-notes/ijraw-journal-pdf-4-5-50-1.md`](../source-notes/ijraw-journal-pdf-4-5-50-1.md)
 - [`source-notes/ducks-for-meat-reddit-homestead.md`](../source-notes/ducks-for-meat-reddit-homestead.md)
 - [`source-notes/raising-ducks-for-meat-bramblewood-hill.md`](../source-notes/raising-ducks-for-meat-bramblewood-hill.md)
+- [`source-notes/pig-raising-homestead-inbox-batch-2026-04-21.md`](../source-notes/pig-raising-homestead-inbox-batch-2026-04-21.md) — **Batch**: Timber Creek pasture narrative, Reddit fencing/herd-size thread, Abundant Permaculture beginner article (`raw/processed/2026/`).
 - [`source-notes/how-to-butcher-a-chicken-abundant-permaculture.md`](../source-notes/how-to-butcher-a-chicken-abundant-permaculture.md)
 - [`source-notes/butchering-chickens-first-time-mental-permies.md`](../source-notes/butchering-chickens-first-time-mental-permies.md)
 - [`source-notes/how-to-butcher-chicken-prairie-homestead.md`](../source-notes/how-to-butcher-chicken-prairie-homestead.md)

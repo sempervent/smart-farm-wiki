@@ -3,7 +3,7 @@ title: Capital plan and infrastructure sequencing
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -96,6 +96,8 @@ Sequence **capital** (and selective **financing**) for a **grazing-led**, **two-
 **Starlink at the farm** remains **optional backhaul**—sequence **after** B–C are **credible**, not as a substitute for **local** **gateway** **+** **power** **story** ([`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md)).
 
 ## Financing checklist (local thresholds)
+
+**Platform / backup / observability (when k3s or farm-edge scope is real)**: Treat **backup/restore**, **DR drills**, and **remote trust bar** as **budgeted obligations**, not implied homelab magic—[`Kubernetes platform backup/DR — Pi k3s Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md), [`Backup / DR doctrine hub`](../topics/backup-disaster-recovery-doctrine-hub.md), [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md); **integration ledger**: [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 - [ ] Debt service \< **X%** of trailing **gross farm revenue** (set **X**).
 - [ ] Personal guarantee only with **written** worst-case exit.

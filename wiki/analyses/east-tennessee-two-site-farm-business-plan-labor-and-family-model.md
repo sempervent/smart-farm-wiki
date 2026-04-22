@@ -3,7 +3,7 @@ title: Labor model and weekly operating rhythm
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-29
 review_status: unreviewed
 tags:
   - business-plan
@@ -23,6 +23,8 @@ Make **family capacity** and **time** explicit for a **two-site** operation: **~
 **Coverage detail**: [`Weekly coverage matrix — two-site farm operations`](weekly-coverage-matrix-two-site-farm-operations.md), [`Family labor model and coverage matrix — two-site smart farm`](family-labor-model-and-coverage-matrix-two-site-smart-farm.md).  
 **Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).
 
+**Hostile operator-burden review (Phase 0–1)**: [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md) — travel, field/off-grid/sensor/gateway/backup/observability triage, surge, and **invisible** load; use when the weekly grid feels “fine on paper.”
+
 ## Decisions supported by this page
 
 | Decision | This page provides |
@@ -39,6 +41,8 @@ Make **family capacity** and **time** explicit for a **two-site** operation: **~
 - **Travel-time-aware**: batch **field** work; **do not** assume **daily** presence at **120** without **resident** labor or **hired** coverage.
 
 **Local evidence (Campbell / Demory)**: **Sloped**, **rough** ground (WSS AOI summary) **increases** **on-site** hours for **fence**, **water**, **stock movement**, and **road repair** vs flat row-crop imagery—**surge** planning must **absorb** that **before** adding enterprises ([`Demory site intelligence`](demory-farm-site-intelligence.md)).
+
+**Field verification**: Budget **named** site walks and measurements per [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md)—**labor and calendar** evidence for **V\*** tasks, not optional photography.
 
 ## Roles (assign real names locally)
 
@@ -83,6 +87,8 @@ The DOW grid is a **hypothesis**, not a promise. **Execution illusion**: the far
 | Tank OK | Skip unnecessary trip |
 | Tank bad | Dispatch—batched or emergency |
 | False alarm | **Costs** labor in triage—**budget** time in weekly plan |
+
+**Burden stacking (default pessimism)**: Assume **telemetry ops** (triage, patch, restore drills) **collides** with **field surge** the same month—[`Operator burden review`](phase-0-1-operator-burden-review-east-tennessee-two-site.md). If **Tech lead** and **Field lead** are the **same body**, **halve** parallel pilot pretense.
 
 ## Phased labor expectations
 

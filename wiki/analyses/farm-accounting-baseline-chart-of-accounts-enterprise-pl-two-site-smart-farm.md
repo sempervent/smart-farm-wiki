@@ -3,7 +3,7 @@ title: Farm accounting baseline — chart of accounts and enterprise P&L structu
 page_type: analysis
 status: draft
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-22
 review_status: unreviewed
 tags:
   - accounting
@@ -19,7 +19,7 @@ confidence: low
 
 Define a **wiki-native accounting skeleton** so that **books**, **enterprise unit worksheets**, and **milestones** speak the same language. This page is **not tax advice**; it is a **structuring template** for records and internal P&L views. Align with your CPA on **tax** vs **management** accounts.
 
-**Pairs with**: [`Enterprise unit economics — worksheet methodology`](enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md), [`Revenue milestone model`](revenue-milestone-model-supplemental-to-salary-replacement.md), [`East Tennessee two-site farm business plan — capital and financing`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md).
+**Pairs with**: [`Enterprise unit economics — worksheet methodology`](enterprise-unit-economics-worksheet-methodology-two-site-smart-farm.md), [`Revenue milestone model`](revenue-milestone-model-supplemental-to-salary-replacement.md), [`East Tennessee two-site farm business plan — capital and financing`](east-tennessee-two-site-farm-business-plan-capital-and-financing.md), [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) (entity + tax **registration** before books go live).
 
 ---
 

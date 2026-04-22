@@ -3,7 +3,7 @@ title: Claxton and Demory — missing data register
 page_type: analysis
 status: active
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-04-26
 tags:
   - two-site
   - anderson-county
@@ -22,7 +22,7 @@ aliases:
 
 **Epistemic stance**: **County-level** NASS tables and **one** Campbell **Web Soil Survey** session ([`Demory site intelligence`](demory-farm-site-intelligence.md)) **improve** context; they **do not** replace **parcel** truth. **Uncertainty is explicit** until evidence is filed.
 
-**Anchors**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) · [`Parcel evidence intake and validation workflow`](parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) · [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md) · [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) · [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) · [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md).
+**Anchors**: [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) · [`Parcel evidence intake and validation workflow`](parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) · [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) · [`Claxton home base — site intelligence`](claxton-home-base-site-intelligence.md) · [`Demory farm — site intelligence`](demory-farm-site-intelligence.md) · [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) · [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md).
 
 **Legend — site**: **C** = Claxton / Anderson · **D** = Demory / Campbell · **Both** = both sites.
 
@@ -115,6 +115,21 @@ aliases:
 | **Field inspection** | **Fence** **walk**, **wet** **year** **lanes**, **tank** **levels**, **predator** **pressure** | **Family** + **optional** **consult** |
 | **Utility** **truck** **roll** | **Transformer** **location**, **line** **extension** **quotes** | Power **co-op** / **utility** |
 | **Professional services** | **Title**, **entity**, **tax** **elections** | Attorney, **CPA** |
+
+---
+
+## 9. Field verification program (how gaps get closed)
+
+Use [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) as the **operator checklist** that maps **each gap class** above to **site**, **method**, **evidence artifact**, and **validation gate** (tasks **V1–V12**, gates **G1–G3**, and **risk register** rows). When a visit produces **primary** evidence, **close** or **narrow** the matching row here and **append** [`log.md`](../log.md) per [`parcel evidence intake workflow`](parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md).
+
+| Gap section (above) | Primary verification § (program) |
+|--------------------|-----------------------------------|
+| §1 Parcel / land | §1 Site walks; §2 Access; WSS **Both** prep |
+| §2 Buildability / septic / utilities | §4 Utilities; §8 Buildability/permits |
+| §3 Soil / hydrology | §1 + §3 Drainage; **V1** soil follow-up |
+| §4 Access / road / drainage | §2 + §3 |
+| §6 Infrastructure recon | §1 Fence; §5 Power |
+| §7 Market / rent | Mostly **desktop** + contracts—**not** a substitute for §§1–4 |
 
 ---
 

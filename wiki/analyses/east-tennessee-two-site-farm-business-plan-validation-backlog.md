@@ -3,7 +3,7 @@ title: Validation backlog and decision gates
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -25,6 +25,10 @@ List **what must be proven** (with **evidence**) before **major spend**, **scale
 **24-month cadence**: [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — validation matrix, pilot streams, phase gates, cheap proofs; [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md).
 
 **Execution dossier (Phase 0–1)**: [`Hub`](execution-dossier-hub-phase-0-1-east-tennessee.md) · [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) · [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) · [`Decision memo`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md).
+
+**Integration (2026-04)**: [`Business plan integration revision audit`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — how **V\*** / **G\*** tasks now bind to **local evidence**, **off-grid/WAN**, **sensors**, **platform/backup/observability**, and **authority** packages; **field** execution rows in [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md).
+
+**Phase 0–1 execution gates (EG)**: [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — **pass/fail** tables by domain (**local evidence**, **site/infra**, **off-grid power**, **connectivity + trust bar**, **sensors**, **platform/backup/observability**, **labor**, **financial**); **pilot allowed** vs **production allowed**; composite mapping to **G1-class** production posture.
 
 ## Decisions supported by this page
 
@@ -65,6 +69,8 @@ List **what must be proven** (with **evidence**) before **major spend**, **scale
 | **G1** | V1–V4 minimum + **no** legal blocker on **intended use** | Phase **2** fence/water/herd spend |
 | **G2** | Positive operating cash year **or** explicit **subsidy** budget with end date | Phase **3** scale |
 | **G3** | Margin + labor tests documented | Phase **4** salary-replacement **claim** |
+
+**G1 “production” honesty**: Checklist **V** rows are **necessary** but **not sufficient** for **production** posture. Before treating **G1** as **passed** for **irreversible** Phase 2 CAPEX, satisfy the **production** composite in [`Execution gates — Phase 0–1`](execution-gates-phase-0-1-east-tennessee-two-site.md#composite-what-each-stance-allows) (EG gates)—or obtain a **dated, written waive** naming which EG production bars are intentionally deferred.
 
 **Align** with **G1–G8** in [`validation-backlog-before-major-spend`](validation-backlog-before-major-spend-two-site-smart-farm.md) for **major $** definition.
 

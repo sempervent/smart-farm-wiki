@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — 10-year roadmap
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -34,6 +34,7 @@ tags:
 | **Boundary** **+** **access** **docs** | **Deed**, **road** **agreement**, **gates** **IDs** |
 | **Financial** **baseline** | **12-mo** **household** **+** **farm** **ledger** **pattern** |
 | **Comms** | **Phones**, **offline** **maps** **of** **120** |
+| **Field verification plan** | [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md) **scheduled** against **V\*** / **G\*** items ([`Integration audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md)) |
 
 ## Phase 1 — low-cost proof and land intelligence
 
@@ -44,8 +45,9 @@ tags:
 | **Market** **probe** | **Auction** **attendance** **or** **buyer** **calls** |
 | **Lease** **option** | **Comps** **or** **signed** **pilot** **lease** |
 | **Telemetry** **pilot** | **One** **green** **path** **home** **→** **field** |
+| **Parcel / utility baselines** | **Measured** or **honestly deferred** rows in [`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md) **plus** field program sections executed or ticketed |
 
-**Gate to Phase 2**: **Go** **on** **grazing** **scale** **OR** **explicit** **pivot** **to** **more** **lease** **/ less** **owned** **stock**.
+**Gate to Phase 2**: **Go** **on** **grazing** **scale** **OR** **explicit** **pivot** **to** **more** **lease** **/ less** **owned** **stock**—**only** in **production** posture when [`Execution gates — Phase 0–1`](execution-gates-phase-0-1-east-tennessee-two-site.md) **composite** and [`Validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) **G1** are **both** satisfied (or **written waive** names deferred EG bars).
 
 ## Phase 2 — first real operating business
 

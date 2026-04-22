@@ -3,7 +3,7 @@ title: Field observation template package — two-site
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-26
 tags:
   - two-site
   - field-work
@@ -18,6 +18,8 @@ confidence: high
 **Purpose**: **Repeatable** forms for **walk-the-fence**, **utility recon**, and **load spot-checks** at **`SITE_HOME`** (Claxton) and **`SITE_FARM`** (Demory). Copy a block into `raw/inbox/` (dated filename) or a field notebook; after review, **promote** facts via [`Parcel evidence intake and validation workflow`](../analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md).
 
 **Package**: [`Local evidence package — East Tennessee two-site`](local-evidence-package-east-tennessee-two-site.md).
+
+**Program (Phase 0–1)**: [`Field verification program — Phase 0–1 (Claxton and Demory)`](../analyses/field-verification-program-phase-0-1-claxton-demory.md) — ties templates below to **V1–V12**, **G1–G3**, and **desktop vs field** expectations.
 
 **Targets**: [`Site inventory — Claxton`](../analyses/site-inventory-baseline-claxton-home-base-east-tennessee.md) · [`Site inventory — Demory`](../analyses/site-inventory-baseline-demory-farm-site-east-tennessee.md) · [`Infrastructure baseline`](../analyses/infrastructure-inventory-baseline-two-sites-east-tennessee.md) · [`Utility baseline`](../analyses/utility-and-service-baseline-two-sites-east-tennessee.md) · [`Loads register`](../analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md).
 

@@ -3,7 +3,7 @@ title: Business plan remediation backlog
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -18,6 +18,8 @@ aliases:
 # Business plan remediation backlog
 
 **Source critique**: [`East Tennessee two-site farm business plan — hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) — **not** superseded; this page **operationalizes** it into **repository changes** and **decision controls**. **Second-pass execution illusions**: [§7](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
+
+**Doctrine integration ledger (2026-04)**: [`Business plan integration revision audit`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — what changed in the **canonical chapters** when local evidence, off-grid/WAN, sensors, platform/backup/observability, and evidence-grade routing were **bound** (not a new plan).
 
 **Authoritative sources** (minimum ingest set, category priorities, proposed source-note titles): [`Business plan source-ingest campaign — East Tennessee two-site`](business-plan-source-ingest-campaign-east-tennessee-two-site.md).
 
@@ -91,6 +93,8 @@ aliases:
 ## 4. “Must validate in the real world first” checklist
 
 **Operational bar**: Also satisfy [`Ready for execution`](execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational) **before** treating the plan as **operational** (not just documented).
+
+**Phase 0–1 execution gates (EG)**: Domain **pass/fail** tables (**pilot** vs **production**) — [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md). Use **EG** rows when translating P0/P1 checkboxes into **who must pass what** before spend.
 
 **P0** — **no** **Phase** **2** **production** **bet** **without** **these** **as** **pass** **or** **written** **waive** **with** **date**:
 

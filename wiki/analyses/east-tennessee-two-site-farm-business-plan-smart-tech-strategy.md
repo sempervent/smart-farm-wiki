@@ -3,7 +3,7 @@ title: Smart technology and telemetry strategy — control center on 5 acres
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -29,6 +29,13 @@ Define how **telemetry and automation** support a **two-site** operation where t
 **Homelab / edge Kubernetes (when the control-center stack is Pi + k3s)**: [`How to provision k3s, Longhorn, and Rancher on a Raspberry Pi fleet`](how-to-provision-k3s-longhorn-and-rancher-on-a-raspberry-pi-fleet.md) (operational runbook; phases P0/P1 vs later).
 
 **Local evidence (Demory / Campbell)**: **Steep** haul routes and **stock water** risk **favor** **tank/pump/gate** **observability** **before** **broad** sensor sprawl—[`Demory site intelligence`](demory-farm-site-intelligence.md). **Claxton** / **Anderson**: **broker** and **backups** stay **home-base**-biased **after** **power/ISP** verified ([`Claxton site intelligence`](claxton-home-base-site-intelligence.md)).
+
+### Doctrine binding (2026-04 integration)
+
+- **Sensors**: [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md), [`Field-node classes and communication roles — Demory`](field-node-classes-and-communication-roles-demory-farm.md), [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md) — **Phase 0–1** = **one** green path + **observe-first**; defer sprawl per [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md).
+- **Degraded modes**: [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) + manual SoT—**WAN down** must not imply **safe remote actuation**.
+- **Platform / backup / observability**: [`Platform doctrine package`](../topics/platform-doctrine-package-homelab-farm-edge.md), [`Kubernetes platform backup/DR — Pi k3s Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md), [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) — **pilot-ready** vs **overbuilt**; privileged **remote** ops only after **trust bar** items are true.
+- **Ledger**: [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ## Starlink / WAN role (canonical integration)
 

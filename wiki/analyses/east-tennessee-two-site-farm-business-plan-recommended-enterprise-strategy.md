@@ -3,7 +3,7 @@ title: Recommended enterprise strategy — phased East Tennessee path
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -25,6 +25,8 @@ State the **operating thesis** for the **~120-acre** production parcel in **East
 **Optimization order** ([`Vision and constraints`](east-tennessee-two-site-farm-business-plan-vision-and-constraints.md)): **profit** > **low labor** > **resilience**. **`SITE_HOME` (~5 ac)** remains **home + control center** ([`Two-site operating model`](two-site-operations-model-5ac-homebase-120ac-production.md)); **primary land-based revenue** stays on the **120**.
 
 **Evidence base**: scenario comparison in [`Enterprise options analysis`](east-tennessee-two-site-farm-business-plan-enterprise-options-analysis.md). **Gates**: [`Validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) **G1**, tasks **V1–V7** minimum for owned-grazing CAPEX. **No invented dollars**—only constraints and validation logic already in the package.
+
+**Integration ledger (2026-04)**: Cross-chapter binding of local evidence, off-grid/WAN doctrine, sensors, platform/backup/observability, and authority routing—[`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 **Local evidence (Claxton / Anderson vs Demory / Campbell)** — [`Claxton`](claxton-home-base-site-intelligence.md), [`Demory`](demory-farm-site-intelligence.md): **2024 NASS** county **non-irrigated cropland** rent estimates (**Anderson $28.50**, **Campbell $27.50** / ac) anchor **V7** “what’s normal” **directionally**; **Campbell WSS** AOI (vault) is **strongly sloped / gravelly** in aggregate—**supports** default **grazing-led** / **batch** cattle thesis and **defers** **daily-touch** specialty/row primaries **unless** a **smaller** on-farm pocket is **proven**. **Parcel** AOI must still be **drawn** to **~120 ac** operating boundary.
 

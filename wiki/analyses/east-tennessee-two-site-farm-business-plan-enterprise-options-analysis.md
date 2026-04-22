@@ -3,7 +3,7 @@ title: Enterprise options analysis — 120-acre East Tennessee two-site smart fa
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -31,6 +31,8 @@ This page **compares plausible enterprise paths** for the **~120-acre** producti
 **Distance rule of thumb**: A **35-minute** one-way leg is **~70 minutes** in the vehicle **before** **`τ_ctx`** (gear, fuel, boots) and **before** **productive** `SITE_FARM` time. **Do not** soften this for optimism—**log P90** and plan to it ([`Two-site operating model — distance-tax rules`](two-site-operations-model-5ac-homebase-120ac-production.md#distance-tax-rules-explicit)).
 
 **Policy overlays**: [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md), [`Two-site structure disqualifiers`](two-site-structure-disqualifiers-east-tennessee.md).
+
+**Automation / telemetry fit (doctrine, not SKU optimism)**: When scoring **Automation / telemetry fit**, use **field-node roles**, **gateway/controller patterns**, **power/duty-cycle**, and the **sensor checklist matrix** as **maintenance + triage** reality checks—[`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md), [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md), [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ---
 

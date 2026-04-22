@@ -3,7 +3,7 @@ title: Validation backlog — assumptions to prove before major spend
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-17
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - validation
@@ -20,6 +20,8 @@ aliases:
 ## Purpose
 
 **Gate** **lumpy** **CAPEX** **(fence**, **water**, **herd**, **equipment**, **telemetry** **at** **scale**)** **on** **evidence**, **not** **hope**. **Operational** **checklist** **layer** **on** [`East Tennessee two-site farm business plan — validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md)—**same** **IDs** **where** **possible**.
+
+**Phase 0–1 stance (pilot vs production)**: [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — use **before** treating **G1**–**G8** checkboxes as **production**-honest.
 
 ## Key decisions supported
 

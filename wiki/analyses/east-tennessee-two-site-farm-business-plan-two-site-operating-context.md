@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — two-site operating model
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -17,6 +17,8 @@ tags:
 **Generic pattern (no ET names)**: [`Dual-site operations model — non-agritourism farm business`](dual-site-operations-model-non-agritourism.md)
 
 **First-class filters** (same brief as the **35-minute** split): [`Trip batching and site visit policy`](trip-batching-and-site-visit-policy-two-site-smart-farm.md), [`Two-site structure disqualifiers`](two-site-structure-disqualifiers-east-tennessee.md).
+
+**Connectivity doctrine (2026-04 binding)**: The **35-minute** model assumes **batchable** visits—not **WAN-dependent** welfare proof. **`SITE_FARM`** is planned **WAN-optional** for core telemetry paths ([`Local-first / WAN-optional — Demory`](local-first-wan-optional-operating-model-demory-farm.md), [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md)); **Starlink/LTE** are **backhaul**, not a substitute for **local gateway + power** truth. **Integration ledger**: [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ## Site roles
 

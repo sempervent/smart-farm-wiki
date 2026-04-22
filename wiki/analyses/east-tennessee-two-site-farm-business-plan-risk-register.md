@@ -3,7 +3,7 @@ title: Risk register and mitigation strategy
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-29
 review_status: unreviewed
 tags:
   - business-plan
@@ -56,8 +56,10 @@ Maintain a **working risk register** for the **two-site**, **telemetry-heavy**, 
 | R13 | **Theft / vandalism** at remote parcel | Ops | 2 | 3 | Access control, neighbor awareness; **not** camera-only | 2–4 |
 | R14 | **Terrain / road / sediment** (steep gravelly soils; lane erosion) | Ops | 3 | 4 | Earthwork + drainage **with** fence plan; **Campbell** evidence: [`Demory site intelligence`](demory-farm-site-intelligence.md) | 1–3 |
 | R15 | **Map / AOI mismatch** (WSS session ≠ deed or ≠ ~120 ac operating area) | Ops | 2 | 3 | Redraw AOI; clip map units to **fields**; label `MAP_AUTHORITY` | 0–1 |
+| R16 | **WAN brownout + off-grid power stress** collapses “remote triage saves trips” | Tech/Ops | 3 | 4 | **Local-first** state + manual SoT; **Pcrit** metering per off-grid doctrine; **no** privileged remote actuation before [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) **trust bar**; [`Off-grid degraded modes — power and connectivity`](off-grid-degraded-modes-power-and-connectivity-demory-farm.md) | 0–4 |
+| R17 | **Cumulative operator burden** (travel + off-grid O&M + sensors/gateways + backup/restore + alert triage + drills) **exceeds** family capacity—**hidden** by “we have docs” | Labor/Tech | 4 | 4 | **Cut** parallel pilots; **calendar** triage + restore drills; [`Operator burden review`](phase-0-1-operator-burden-review-east-tennessee-two-site.md); enforce **NS-2** / **EG-LAB**; hire or **defer** stack scope | 0–1 |
 
-**What changed**: **R14**–**R15** added from **Campbell** WSS + **two-county** NASS context; **parcel** facts still **verify** locally.
+**What changed**: **R14**–**R15** from **Campbell** WSS + **two-county** NASS context; **R16** from **WAN-optional** + **battery-backed** doctrine integration (2026-04); **R17** hostile burden stack (2026-04); **parcel** facts still **verify** locally.
 
 ## Mitigation themes
 
@@ -86,7 +88,7 @@ Maintain a **working risk register** for the **two-site**, **telemetry-heavy**, 
 | ID | Question |
 |----|----------|
 | Q1 | **Umbrella** limit and **exclusions**? |
-| Q2 | **Entity structure** (LLC etc.) and liability isolation? |
+| Q2 | **Entity structure** (LLC etc.) and liability isolation? → see [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) |
 | Q3 | **Right-to-farm** / neighbor conflict exposure? |
 
 ## Iterative updates
@@ -96,6 +98,9 @@ Maintain a **working risk register** for the **two-site**, **telemetry-heavy**, 
 
 ## Related pages
 
+- [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) — entity/tax/greenbelt/insurance/labor/BOI **router**
+- [`Farm insurance and liability checklist — two-site Tennessee`](farm-insurance-liability-checklist-two-site-tennessee.md)
 - [`East Tennessee two-site farm business plan — smart technology, telemetry, and automation`](east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md)
+- [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md)
 - [`East Tennessee two-site farm business plan — validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md)
 - [`East Tennessee two-site farm business plan — hostile internal review`](east-tennessee-two-site-farm-business-plan-hostile-internal-review.md)

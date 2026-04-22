@@ -1,9 +1,9 @@
 ---
-title: Farm business legal entity model (placeholder)
+title: Farm business legal entity model (pattern router)
 page_type: entity
 status: active
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-22
 tags:
   - business
   - legal
@@ -11,39 +11,45 @@ tags:
   - liability
 aliases:
   - Operating entity vs land holding
-confidence: low
+confidence: medium
 review_status: unreviewed
 ---
 
-# Farm business legal entity model (placeholder)
+# Farm business legal entity model (pattern router)
 
 ## Purpose
 
-Anchor discussions of **operating entity** structure (e.g. liability separation, tax reporting posture, how **land** may be held vs how **operations** are invoiced) **without** naming a specific legal entity in the vault until **sourced** or operator-published.
+Anchor **how** the wiki talks about **operating entity** vs **land** vs **personal** wallets for the **two-site** plan—**without** naming a specific formed entity, EIN, registered agent, or account numbers in `wiki/`.
+
+**Canonical compliance shell** (entity + tax + property classification + insurance + labor + BOI routing): [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md).
 
 ## Scope
 
-- **In scope**: Conceptual separation: **operating business** vs **personal** vs **real property** interests; pointers to accounting baseline.
-- **Out of scope**: Filing numbers, registered agent, or **your** chosen structure—those are private or evidence-backed future pages.
+- **In scope**: Routing to **decision-safe** checklists, **official URL indexes**, and **extension** primers with explicit **authority labels**.
+- **Out of scope**: **Your** filings, passwords, control numbers, or **advice** that substitutes for **TN SOS**, **Revenue**, **IRS**, **FinCEN**, **county assessor**, **counsel**, or **CPA**.
 
 ## Knowns
 
-- The wiki’s **farm accounting baseline** analysis establishes **chart of accounts** and enterprise P&L **shape** for planning.
+- The wiki now holds a **Tennessee + federal business-shell package** (see compliance package) backed by **IRS captures**, **SOS URL index**, **greenbelt** comptroller capture, **TNTAP** excerpt, **UT W1266** insurance PDF, and **DOL** agriculture overview.
+- [`Farm accounting baseline — chart of accounts and enterprise P&L structure`](../analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md) still defines **books shape** once entity choice is live.
 
 ## Assumptions
 
-- A **named** legal entity page may be added later with explicit `source_ids` / operator authorship—this page remains **pattern-only**.
+- If a **named** legal entity page is ever added, it must carry explicit **`source_ids`** and remain **free of secrets**.
 
 ## Related analyses
 
+- [`Tennessee farm business entity options — LLC, sole prop, partnership`](../analyses/tennessee-farm-business-entity-options-llc-sole-prop-partnership.md)
+- [`LLC vs sole proprietorship vs partnership (comparison)`](../comparisons/tennessee-llc-vs-sole-proprietorship-vs-partnership-farm.md)
 - [`Farm accounting baseline — chart of accounts and enterprise P&L structure`](../analyses/farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md)
 - [`Capital plan and infrastructure sequencing`](../analyses/east-tennessee-two-site-farm-business-plan-capital-and-financing.md)
 - [`Risk register and mitigation strategy`](../analyses/east-tennessee-two-site-farm-business-plan-risk-register.md)
 
 ## Related source notes
 
-- [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (TN Revenue ag exemption capture, etc., when **structure** touches tax posture)
+- [`Tennessee farm business compliance — official layer cluster (2026-04-22)`](../source-notes/tennessee-farm-business-compliance-official-layer-cluster-2026-04-22.md)
+- [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md)
 
 ## Outstanding unknowns
 
-- **Which** legal form and **how** land and equipment are titled—**not** stated here.
+- **Which** legal form and **how** land and equipment are titled—**operator evidence**, not vault speculation.

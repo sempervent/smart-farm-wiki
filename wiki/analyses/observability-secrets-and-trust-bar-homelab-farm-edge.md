@@ -3,7 +3,7 @@ title: Observability, secrets, and trust bar — homelab / farm edge
 page_type: analysis
 status: active
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-04-29
 tags:
   - observability
   - prometheus
@@ -69,6 +69,10 @@ confidence: high
 
 **Not sufficient alone**: **Video** / **NVR** feeds (see [`Local video / NVR — role and deferral boundaries`](local-video-nvr-role-and-deferral-boundaries-farm-stack.md)).
 
+### Operator burden (hostile default)
+
+**Trust bar ≠ free time.** Routing, inhibition, silences, and on-call paths are **recurring labor**—often **invisible** until they **collide** with **field surge** and **two-site** travel. Budget **triage hours** explicitly; otherwise **NS-2** triage stops are **theoretical** ([`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)). Skeptical stack view: [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md).
+
 ---
 
 ## Grafana Alloy (optional component)
@@ -79,6 +83,7 @@ confidence: high
 
 ## Related
 
+- [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md)
 - [`Platform doctrine package — homelab / farm edge`](../topics/platform-doctrine-package-homelab-farm-edge.md)
 - [`Backup and disaster recovery package — smart farm stack`](backup-and-disaster-recovery-package-smart-farm-stack.md)
 - [`Telemetry system of record — boundaries and authority`](telemetry-system-of-record-boundaries-and-authority.md)

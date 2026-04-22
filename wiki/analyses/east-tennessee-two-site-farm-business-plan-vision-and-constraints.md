@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — vision, objectives, and co
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -41,7 +41,7 @@ Build a **for-profit**, **two-site** farm business in **East Tennessee**: **~120
 
 | Gate | Pass condition (fill numbers locally) |
 |------|--------------------------------------|
-| End Phase 1 | **Land/water/legal** unknowns **bounded**; **pilot** telemetry **one** green light |
+| End Phase 1 | **Land/water/legal** unknowns **bounded** (measured, deferred with owner, or waived in writing); **pilot** telemetry **one** green light—see [`Execution gates — Phase 0–1`](execution-gates-phase-0-1-east-tennessee-two-site.md) **EG-LEV** / **EG-SITE** |
 | End Phase 2 | **Positive operating cash** **or** **honest** subsidy budget with **dated** end |
 | End Phase 3 | **Margin** supports **scale** **or** **second** stream without **heroic** labor |
 | Phase 4 | **Farm cash** ≥ **X%** of **household need** for **Y** consecutive years |
@@ -60,6 +60,10 @@ Build a **for-profit**, **two-site** farm business in **East Tennessee**: **~120
 - **Lifestyle branding** as substitute for **unit economics**
 - **Maximum sensor count** without **registry + triage**
 - **Single-enterprise** lock-in **before** Phase 1 **validation**
+
+## Evidence and doctrine alignment (2026-04)
+
+**Phase 1 “bounded unknowns”** in the success table means **honest closure or deferral** of register items—not “we read the wiki.” Route **desk** evidence (county NASS bands, WSS-derived terrain bias, portals) through [`Local evidence package`](../topics/local-evidence-package-east-tennessee-two-site.md) and **parcel truth** through [`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md) + [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md). **Ledger**: [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ---
 

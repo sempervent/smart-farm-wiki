@@ -3,7 +3,7 @@ title: Decision memo — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-30
 review_status: unreviewed
 tags:
   - business-plan
@@ -20,6 +20,10 @@ confidence: medium
 One memo for: **what the family may do now**, **what is pilot-only**, and **what is forbidden until validation gates pass**. Execution means **pilot-grounded** action—not premature scale.
 
 **Gates**: [`Validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) (G1–G3), [`Validation — before major spend`](validation-backlog-before-major-spend-two-site-smart-farm.md) (G1–G8 where applicable).
+
+**Governance / doctrine ledger**: [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) (what the **canonical plan** now assumes about evidence vs execution). **Privileged remote access** stays behind [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) **trust bar**—not “VPN exists.”
+
+**Execution gates (EG)**: [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — **pilot allowed** vs **production allowed** by domain; use **before** widening pilots or claiming **G1** passed.
 
 ---
 
@@ -81,4 +85,5 @@ One memo for: **what the family may do now**, **what is pilot-only**, and **what
 ## Related
 
 - [`Execution dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md)
+- [`First 90 days — operator packet (East Tennessee two-site)`](first-90-days-operator-packet-east-tennessee-two-site.md) — **Weeks 1–12** pilot runbook bounded by this memo
 - [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md)

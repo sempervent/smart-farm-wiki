@@ -3,7 +3,7 @@ title: Execution readiness gap audit — East Tennessee operational knowledge ba
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - meta
@@ -23,6 +23,8 @@ aliases:
 **Baseline**: Published site structure (`wiki/index.md`, package hub, structural audits). **Epistemic rule**: Site-specific numbers (soil class, septic setbacks, cash rent per acre, tax outcomes) belong in **your** worksheets and **citable** sources—not in synthesized pages unless **explicitly** tied to a **source-note** or **labeled assumption**.
 
 **Companion pages**: [`Evidence grade and canonical authority`](../concepts/evidence-grade-and-canonical-authority.md) (signaling vocabulary), [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md) (source index), [`Structural audit — page ownership, entity gaps, and hub routing`](structural-audit-page-ownership-entity-gaps-and-hub-routing.md) (anti–analysis-swamp policy).
+
+**Execution gate system (Phase 0–1)**: [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — operational **pass/fail** by domain (EG IDs), **pilot** vs **production**; complements this gap audit (which names **what is missing**, not **when** spend may proceed).
 
 ---
 

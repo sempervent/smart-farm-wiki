@@ -3,7 +3,7 @@ title: Tennessee hobby farm and small-farm business sources
 page_type: topic
 status: active
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-04-22
 tags:
   - tennessee
   - hobby-farm
@@ -17,6 +17,8 @@ review_status: unreviewed
 **Narrative**: This hub pairs **hobby-farm** intros (definitions, tips, step-by-step lifestyle framing) with **Tennessee-specific** business formation and **state revenue** licensing snippets, plus **USDA** beginning-farmer entry points. It supports readers asking whether **diversified income** (e.g. **agritourism**, **short-term rental** of a **tiny** dwelling, **hunting lease** where compatible with land goals) fits a **TN** **hobby** operation—always alongside **county zoning**, **building codes**, and professional advice.
 
 See [`Agritourism, tiny houses, and Tennessee hobby farms (query synthesis)`](../analyses/agritourism-tiny-houses-tennessee-hobby-farm.md) for a cross-source take on **tiny-house farm stays** in this frame.
+
+**Compliance shell (profit-intent two-site pattern)** — official-first checklists + calendars: [`Tennessee farm business compliance package`](tennessee-farm-business-compliance-package.md).
 
 **Source notes**
 

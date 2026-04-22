@@ -3,7 +3,7 @@ title: Local evidence package — East Tennessee two-site
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-26
 tags:
   - two-site
   - east-tennessee
@@ -47,6 +47,7 @@ confidence: high
 | 5 | [`Loads register — known, estimated, unknown (two sites)`](../analyses/loads-register-known-estimated-unknown-two-sites-east-tennessee.md) | **Electrical** / **duty-cycled** loads; **power** **budget** **hooks** |
 | 6 | [`Field observation template package — two-site`](../topics/field-observation-template-package-east-tennessee-two-site.md) | **Repeatable** visit forms (date, route, observations) |
 | 7 | [`Parcel evidence intake and validation workflow — two-site`](../analyses/parcel-evidence-intake-and-validation-workflow-east-tennessee-two-site.md) | **How** evidence moves **raw → wiki** without breaking provenance |
+| 8 | [`Field verification program — Phase 0–1 (Claxton and Demory)`](../analyses/field-verification-program-phase-0-1-claxton-demory.md) | **Structured** site walks, access/drainage/utilities/power/sensors/gates—**methods + evidence** per row (**no invented results**) |
 
 **Desk research (state + national; no parcel outcomes embedded on portal pages)**
 

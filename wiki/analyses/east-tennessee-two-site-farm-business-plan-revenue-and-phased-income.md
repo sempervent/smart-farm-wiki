@@ -3,7 +3,7 @@ title: Revenue model and milestones
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-27
 review_status: unreviewed
 tags:
   - business-plan
@@ -22,6 +22,8 @@ Describe **how money is expected to enter** the farm business over **~10 years**
 **Strategy link**: [`Recommended enterprise strategy — phased East Tennessee path`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md).  
 **Milestone worksheet**: [`Revenue milestone model — supplemental to salary replacement`](revenue-milestone-model-supplemental-to-salary-replacement.md).  
 **Hub**: [`East Tennessee two-site farm business plan — planning framework`](east-tennessee-two-site-farm-business-plan-framework.md).
+
+**Parcel / haul / market evidence (2026-04)**: **Owned-grazing** and **direct** channels remain **hypothesis** until **haul distance**, **processor slots**, and **parcel access** baselines are **field-closed**—[`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md), [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md); ledger [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ## Decisions supported by this page
 

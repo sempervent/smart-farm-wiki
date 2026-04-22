@@ -3,7 +3,7 @@ title: Business plan execution and pilot operations — hub
 page_type: topic
 status: active
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-30
 tags:
   - business-plan
   - execution
@@ -34,6 +34,7 @@ confidence: high
 | **First 90 days** | [`First 90 days — Phase 0–1 execution`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md) |
 | **Full validation matrix + T0 windows** | [`Validation and pilot plan — first 24 months`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) |
 | **Strategic package (chapters, roadmap, economics)** | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) |
+| **Business shell — entity, tax, insurance, labor, BOI** | [`Tennessee farm business compliance package`](tennessee-farm-business-compliance-package.md) |
 
 ---
 
@@ -43,8 +44,10 @@ confidence: high
 |------|------|
 | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) | **Navigation spine** for **strategy**, reading order, links to execution |
 | [`East Tennessee two-site farm business plan — planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) | Rubric, document tree, knowns/unknowns |
-| [`Execution dossier — Phase 0–1 (hub)`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) | **Execution** spine: memo → 90d → checklist → 12m → 24m |
+| [`Execution dossier — Phase 0–1 (hub)`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) | **Execution** spine: memo → **EG gates** → 90d → checklist → 12m → 24m |
+| [`Execution gates — Phase 0–1 (East Tennessee two-site)`](../analyses/execution-gates-phase-0-1-east-tennessee-two-site.md) | EG domain **pass/fail**; **pilot** vs **production**; **G1** production composite |
 | [`Validation backlog and decision gates`](../analyses/east-tennessee-two-site-farm-business-plan-validation-backlog.md) | **V\*** tasks and **G\*** gates (cross-check with dossier) |
+| [`Business plan integration revision audit (2026-04)`](../analyses/east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) | **Ledger**: doctrine/evidence packages **bound** into canonical chapters—**not** a parallel plan |
 
 ---
 
@@ -57,6 +60,8 @@ confidence: high
 | [`Pilot and recon checklists — first 24 months`](../analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | Copy-paste rows |
 | [`Validation backlog — before major spend`](../analyses/validation-backlog-before-major-spend-two-site-smart-farm.md) | $-sensitive gate framing |
 | [`Execution gates — financial thresholds`](../analyses/execution-gates-financial-thresholds.md) | Phase 0→4 **G** thresholds (methodology) |
+| [`Phase 0–1 operator burden review — East Tennessee two-site (hostile)`](../analyses/phase-0-1-operator-burden-review-east-tennessee-two-site.md) | **Skeptical** labor/triage/off-grid/backup stack; pairs **EG** gates + **R17** |
+| [`First 90 days — operator packet (East Tennessee two-site)`](../analyses/first-90-days-operator-packet-east-tennessee-two-site.md) | **Weeks 1–12** pilot runbook: priorities, field bundles, stops, evidence **30/60/90** |
 
 **Operational topic** (broader than execution only): [`Two-site smart farm operations`](two-site-smart-farm-operations.md) — ownership table for telemetry, runbooks, business-plan links.
 

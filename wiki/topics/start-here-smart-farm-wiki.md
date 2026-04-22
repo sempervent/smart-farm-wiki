@@ -3,7 +3,7 @@ title: Start here — Smart Farm Wiki
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-18
+updated: 2026-04-22
 tags:
   - meta
   - onboarding
@@ -21,6 +21,7 @@ confidence: high
 |-----------------|------|
 | **Understand vocabulary** (gates, SoR, two-site, degraded modes) | [`Smart Farm Wiki glossary (hub)`](../glossary/smart-farm-wiki-glossary.md) |
 | **Read the East Tennessee two-site business plan** (~5 ac + ~120 ac + phased strategy) | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) |
+| **TN + federal business shell** (LLC/EIN, TNTAP, greenbelt, insurance, labor, BOI routing—not legal advice) | [`Tennessee farm business compliance package`](tennessee-farm-business-compliance-package.md) |
 | **Run operations / telemetry / runbooks** for that scenario | [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md) |
 | **See Claxton vs Demory / county vs parcel routing** | [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) |
 | **Demory off-grid-first** (solar + battery, mesh, WAN optional) | [`Off-grid systems doctrine package — Demory`](../topics/off-grid-systems-doctrine-package-demory-farm-site.md) |

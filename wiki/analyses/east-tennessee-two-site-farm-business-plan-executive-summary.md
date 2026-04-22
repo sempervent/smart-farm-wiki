@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — executive summary
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-21
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ tags:
 A **wiki-native**, **phased** business plan for an **East Tennessee** **two-site** operation: **~5 acres** = **home + control center** (smart house, workshop/lab, telemetry spine); **~120 acres** = **primary production**, **~35 minutes** away. **Objective order**: **profit** → **low labor** → **resilience**. **Horizon**: **10 years** from side income toward **possible** **salary replacement**—**not** **guaranteed**.
 
 **Operational honesty**: A filled wiki is **not** an operating farm. **Telemetry does not automatically reduce labor**—it may reduce trips while **triage and upkeep** consume hours ([`Instrumentation ROI`](instrumentation-roi-model-two-site-smart-farm.md), [`Automation stop rules`](automation-stop-rules-two-site-smart-farm.md)). **Phase 2** still means **large, hard-to-reverse** bets if **G1** evidence is wrong—not a “modest next step.”
+
+**Doctrine binding (2026-04)**: County/site intelligence, off-grid/WAN-optional rules, sensor architecture, platform backup/DR, and observability **trust bar** are now **explicitly wired** into chapter pages—see [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
 
 ## Strategic choice (strategy family)
 
@@ -57,6 +59,8 @@ A **wiki-native**, **phased** business plan for an **East Tennessee** **two-site
 
 **G1** **gate**: **land** **+** **water** **+** **legal** **use** **clarified**; **no** **full** **herd** **before** **[`validation backlog`](east-tennessee-two-site-farm-business-plan-validation-backlog.md)** **minimums**.
 
+**Production posture**: For **irreversible** Phase 2 CAPEX, also satisfy the EG **production** composite in [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) (or **written waive** per validation backlog note)—not checklist theater alone.
+
 ## Document map
 
 | Topic | Page |
@@ -71,6 +75,7 @@ A **wiki-native**, **phased** business plan for an **East Tennessee** **two-site
 | Risks | [`Risk register and mitigation strategy`](east-tennessee-two-site-farm-business-plan-risk-register.md) |
 | 10-year phases | [`Roadmap`](east-tennessee-two-site-farm-business-plan-10-year-roadmap.md) |
 | Validation tasks | [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) |
+| Phase 0–1 execution gates (pilot vs production) | [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) |
 
 ### Operational artifacts (fillable; execution layer)
 

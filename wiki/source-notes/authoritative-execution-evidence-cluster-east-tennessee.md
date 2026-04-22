@@ -3,8 +3,13 @@ title: Authoritative execution evidence cluster — East Tennessee (index)
 page_type: source_note
 status: active
 created: 2026-04-21
-updated: 2026-04-19
-source_ids: []
+updated: 2026-04-22
+source_ids:
+  - raw/processed/2026/irs-ein-online-application-overview-capture-2026-04-22.md
+  - raw/processed/2026/irs-responsible-parties-and-nominees-capture-2026-04-22.md
+  - raw/processed/2026/tennessee-sos-business-services-official-url-index-capture-2026-04-22.md
+  - raw/processed/2026/us-dol-wage-hour-agricultural-employment-overview-capture-2026-04-22.md
+  - raw/processed/2026/fincen-boi-corporate-transparency-act-status-note-2026-04-22.md
 tags:
   - tennessee
   - execution
@@ -23,7 +28,7 @@ confidence: high
 | **Abstract** | One-page **router** from **agency, extension, and official-operator** ingests to the **East Tennessee two-site** business plan, parcel workflow, and security posture—grouped by theme (soils, rents, tax, FSA, farmOS, CISA, field ops). |
 | **Authority mix** | **Agency + Extension + vendor primary docs** (captures); **not** legal or engineering advice. |
 | **Decision relevance** | Informs **V\*/G\*** validation, **parcel** worksheets, **NASS** rent context, **septic/811** process pointers, **remote-access** hardening references, **off-grid / WAN** evidence indexes. |
-| **Canonical wiki links** | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) · [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) |
+| **Canonical wiki links** | [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md) · [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) · [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) · [`Execution readiness gap audit`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) |
 
 **Key claims** (public-safe):
 
@@ -84,6 +89,7 @@ confidence: high
 | Agricultural exemption (page capture) | [`Agricultural exemption — page capture`](agricultural-exemption-page-inbox-2026-04-18.md) |
 | Public Chapter 498 — agritourism act | [`Tennessee — Public Chapter 498 agritourism act (PDF)`](tn-public-chapter-498-agritourism-act-pdf.md) |
 | **2026-04-18 batch** — TN law / greenbelt / hobby-farm / IRS framing + UT insurance pub (index) | [`Inbox batch — Tennessee farm policy, LoRaWAN… (2026-04-18)`](inbox-batch-2026-04-18-tennessee-farm-lorawan-chirpstack-meshtastic-decentlab-halow.md) |
+| **2026-04-22 cluster** — IRS EIN + responsible party captures, SOS/TNBEAR URL index, DOL agriculture overview, BOI status note, TNTAP + greenbelt anchors | [`Tennessee farm business compliance — official layer cluster (2026-04-22)`](tennessee-farm-business-compliance-official-layer-cluster-2026-04-22.md) |
 | **TWRA** — hunting/trapping regs, FAQ, exemptions, license portal captures; third-party season blog + firearm refs (index) | [`TWRA — Tennessee hunting regulations and license captures (inbox batch 2026-04-18)`](twra-tennessee-hunting-regulations-inbox-batch-2026-04-18.md) |
 | **American ginseng** — **TN TDEC** program + dealer list + **MTSU/TSU/UT** wild-simulated PDF; **VCE 354-313** forest-farming bulletin; vendor / handbook / popular captures (index) | [`American ginseng — seed and forest culture sources (inbox batch 2026-04-19)`](american-ginseng-seed-forest-culture-sources-inbox-batch-2026-04-19.md) |
 | **American ginseng** — **PDF-heavy** batch: site scorecards, Beyfuss test protocol, **VCE 354-312**, pathology decks, PB1799 hardwood site prep (index) | [`American ginseng — PDF-heavy inbox batch (2026-04-20)`](american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md) |

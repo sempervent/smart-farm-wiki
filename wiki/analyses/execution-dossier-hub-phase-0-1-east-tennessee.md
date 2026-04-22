@@ -3,7 +3,7 @@ title: Execution dossier — Phase 0–1 (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-25
+updated: 2026-04-30
 review_status: unreviewed
 tags:
   - business-plan
@@ -21,7 +21,9 @@ confidence: medium
 
 **Stance**: **Execution** = **cheap proofs**, **small pilots**, **kill criteria**—not **premature scale**.
 
-**Sources**: [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) (**V1–V12**, **G1–G3**), [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md), [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md), [`Validation — before major spend`](validation-backlog-before-major-spend-two-site-smart-farm.md).
+**Sources**: [`Validation backlog and decision gates`](east-tennessee-two-site-farm-business-plan-validation-backlog.md) (**V1–V12**, **G1–G3**), [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) (EG domain pass/fail, **pilot vs production**), [`Validation and pilot plan — first 24 months`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md), [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md), [`Validation — before major spend`](validation-backlog-before-major-spend-two-site-smart-farm.md).
+
+**Package integration (2026-04)**: [`Business plan integration revision audit`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — ledger of **doctrine/evidence → canonical business-plan chapters** (same package spine).
 
 ---
 
@@ -30,12 +32,15 @@ confidence: medium
 | Order | Page | Use when |
 |------:|------|----------|
 | 1 | [`Decision memo — Phase 0–1`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md) | **Today**—what is **allowed**, **pilot-only**, **forbidden** |
-| 2 | [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) | **Week-by-week** startup |
+| 1b | [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) | **Pass/fail** by domain (EG tables); **pilot** vs **production** stance before expanding spend |
+| 2 | [`First 90 days`](execution-first-90-days-phase-0-1-east-tennessee.md) | **Narrative** arc (days 1–90 bands + connectivity) |
+| 2a | [`First 90 days — operator packet (East Tennessee two-site)`](first-90-days-operator-packet-east-tennessee-two-site.md) | **Canonical** **weeks 1–12** runbook: priorities, field bundles, stops, checkpoints |
 | 3 | [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md) | **One** ordered list—**land**, **infra**, **business**, **telemetry**, **labor** |
 | 4 | [`First 12 months`](execution-first-12-months-phase-0-1-east-tennessee.md) | After day **90**—quarterly rhythm |
 | 5 | [`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md) | Full arc + **G1** prep window |
 | 6 | [`Validation and pilot plan`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) | **Full** validation matrix + **cheap proofs** table (detail) |
 | 7 | [`Pilot and recon checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) | **Copy-paste** rows into your tracker |
+| 8 | [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) | **Site work tied to validation tasks and gates**: walks, roads, drainage, utilities, power, sensors, gateways, permits |
 
 **Demory `SITE_FARM` field sensors** (long-range RF, gateways, Starlink = WAN only—not field radio): [`Farm sensor architecture — Demory farm site`](farm-sensor-architecture-demory-farm-site.md) · [`Sensor checklist matrix — Demory farm`](sensor-checklist-matrix-for-demory-farm.md).
 
@@ -75,6 +80,7 @@ Treat the wiki package as **operational** (not merely “written”) only when *
 
 - [ ] **P0** items in [`Remediation` §4](east-tennessee-two-site-farm-business-plan-remediation-backlog.md) **pass** or **written waive** with date.
 - [ ] **G1** is **not** assumed from **calendar**—evidence dated ([`First 24 months`](execution-first-24-months-phase-0-1-east-tennessee.md)).
+- [ ] **Field verification program** underway: at least one **dated** visit log covering **§1–§3** at **Demory** and **§4–§5** at **Claxton** per [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md) cadence (**evidence** promoted via [`local evidence package`](../topics/local-evidence-package-east-tennessee-two-site.md), not free-text only).
 
 ### D. Technology optimism killed
 
@@ -88,12 +94,17 @@ Treat the wiki package as **operational** (not merely “written”) only when *
 
 **If any box is unchecked**, the plan is **documentation**, not **operational control**.
 
+**Domain gates (EG)**: Cross-check **A–E** above with the **composite** stance table in [`Execution gates — Phase 0–1`](execution-gates-phase-0-1-east-tennessee-two-site.md#composite-what-each-stance-allows)—especially before claiming **G1** in **production** posture.
+
 ---
 
 ## Related
 
 - [`East Tennessee two-site farm business plan (package)`](../business-plan/east-tennessee-two-site-farm-business-plan.md)
 - [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md) — **site / infra / utility / loads** baselines + field templates; where **measured** facts land without scattering across analyses
+- [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) — **structured** Claxton/Demory verification tied to **V\*/G\*** and baselines
+- [`First 90 days — operator packet (East Tennessee two-site)`](first-90-days-operator-packet-east-tennessee-two-site.md) — **Field-facing** weekly operator bundle (pilot only)
+- [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — EG tables: what may **begin**, **pilot**, or **not** proceed to **production**
 - [`Recommended enterprise strategy`](east-tennessee-two-site-farm-business-plan-recommended-enterprise-strategy.md)
 - [`Two-site smart farm operations`](../topics/two-site-smart-farm-operations.md)
 - [`Execution readiness gap audit — East Tennessee operational knowledge`](execution-readiness-gap-audit-east-tennessee-operational-knowledge.md) — **missing execution-grade data**, authority clusters, canonical update list

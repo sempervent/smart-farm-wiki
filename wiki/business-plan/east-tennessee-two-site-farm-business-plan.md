@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan (package)
 page_type: topic
 status: active
 created: 2026-04-21
-updated: 2026-04-25
+updated: 2026-04-30
 tags:
   - business-plan
   - two-site
@@ -18,6 +18,10 @@ aliases:
 
 **First-class entry** for the **decision-grade** business plan: **~5-acre** home base and **~120-acre** production in **East Tennessee**, **~35-minute** separation, **family labor**, **phased** enterprises, **telemetry as capital**, **10-year** horizon. Detailed rubric, knowns/unknowns, and full tables live in the **planning framework**; this page is the **stable navigation spine** for readers and agents.
 
+## What changed — integration pass (2026-04)
+
+This revision **does not** replace the package or reading order. It **binds** newer canonical doctrine and county/site intelligence into chapter pages so the narrative matches **execution reality**: local evidence + missing-data discipline, off-grid/WAN-optional sequencing, sensor architecture + checklist matrix, platform/backup/DR + observability **trust bar**, procedural standards routing, and clearer **confidence** boundaries (desk evidence vs parcel truth). **Durable ledger**: [`Business plan integration revision audit (2026-04)`](../analyses/east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md).
+
 **Operational bar**: The package is **not** “live” until [`Ready for execution`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md#ready-for-execution-the-plan-is-operational) passes—see [`Hostile internal review` §7](../analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md#7-second-pass-execution-illusions-stricter-than-2).
 
 **Canonical detail hub**: [`East Tennessee two-site farm business plan — planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md)
@@ -28,7 +32,7 @@ aliases:
 
 **Phase timeline (visual)**: [`East Tennessee two-site farm business plan — phase timeline`](../timelines/east-tennessee-two-site-farm-business-plan-phase-timeline.md)
 
-**Modeled sites & systems (entities)** — planning roles, not your deed: [`Five-acre home base (SITE_HOME)`](../entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre production farm (SITE_FARM)`](../entities/120-acre-production-farm-site-farm-et-two-site.md), [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). **Page ownership** (avoid analysis sprawl): [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md).
+**Modeled sites & systems (entities)** — planning roles, not your deed: [`Five-acre home base (SITE_HOME)`](../entities/five-acre-home-base-site-home-et-two-site.md), [`120-acre production farm (SITE_FARM)`](../entities/120-acre-production-farm-site-farm-et-two-site.md), [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). **Business shell (TN + federal compliance, not legal advice)**: [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) · entity pattern router [`Farm business legal entity model`](../entities/farm-business-legal-entity-model.md). **Page ownership** (avoid analysis sprawl): [`Structural audit — page ownership, entity gaps, and hub routing`](../analyses/structural-audit-page-ownership-entity-gaps-and-hub-routing.md).
 
 **Authority & execution evidence** (regulatory / agency / extension — not parcel-specific facts): [`Authoritative execution evidence cluster — East Tennessee`](../source-notes/authoritative-execution-evidence-cluster-east-tennessee.md). **Gap audit** (what is still missing for execution-grade clarity): [`Execution readiness gap audit — East Tennessee operational knowledge`](../analyses/execution-readiness-gap-audit-east-tennessee-operational-knowledge.md). **Evidence hardening audit** (2026-04 desk portals + routing; open gaps): [`Tennessee two-site — evidence hardening audit (2026-04)`](../analyses/evidence-hardening-audit-east-tennessee-two-site-2026-04.md). **Vocabulary** (canonical vs supporting vs exploratory): [`Evidence grade and canonical authority`](../concepts/evidence-grade-and-canonical-authority.md). **Operator contract** (ingest activation, Evidence summaries, structural vs integration validation): [`AGENTS.md`](../../AGENTS.md).
 
@@ -62,7 +66,9 @@ aliases:
 
 ## Execution, pilots, and first 24 months
 
-**Start here (Phase 0–1 dossier)**: [`Execution dossier hub`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — read order: [`Decision memo`](../analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md) → [`First 90 days`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md) → [`Master checklist`](../analyses/execution-dossier-master-checklist-phase-0-1-east-tennessee.md) → [`First 12 months`](../analyses/execution-first-12-months-phase-0-1-east-tennessee.md) → [`First 24 months`](../analyses/execution-first-24-months-phase-0-1-east-tennessee.md).
+**Integration ledger (2026-04)**: [`Business plan integration revision audit`](../analyses/east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — material plan deltas vs doctrine/evidence packages.
+
+**Start here (Phase 0–1 dossier)**: [`Execution dossier hub`](../analyses/execution-dossier-hub-phase-0-1-east-tennessee.md) — read order: [`Decision memo`](../analyses/execution-dossier-decision-memo-phase-0-1-east-tennessee.md) → [`Execution gates — Phase 0–1`](../analyses/execution-gates-phase-0-1-east-tennessee-two-site.md) (EG gate tables; pilot vs production) → [`First 90 days`](../analyses/execution-first-90-days-phase-0-1-east-tennessee.md) → [`First 90 days — operator packet`](../analyses/first-90-days-operator-packet-east-tennessee-two-site.md) (weeks 1–12 runbook) → [`Master checklist`](../analyses/execution-dossier-master-checklist-phase-0-1-east-tennessee.md) → [`First 12 months`](../analyses/execution-first-12-months-phase-0-1-east-tennessee.md) → [`First 24 months`](../analyses/execution-first-24-months-phase-0-1-east-tennessee.md).
 
 - [`Validation and pilot plan — first 24 months`](../analyses/validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — full validation matrix + cheap proofs (detail)
 - [`Pilot and recon checklists`](../analyses/pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md) — copy-paste rows
@@ -95,6 +101,12 @@ Linked from the framework; same targets as [`Two-site smart farm operations`](..
 - [`Execution gates — financial thresholds`](../analyses/execution-gates-financial-thresholds.md) — **Fin-G(0→1)** … **Fin-G(3→4)**; consolidates pass/fail vs **M0–M4**
 - [`Instrumentation ROI model`](../analyses/instrumentation-roi-model-two-site-smart-farm.md)
 - [`Automation stop rules`](../analyses/automation-stop-rules-two-site-smart-farm.md)
+
+---
+
+## Business shell — entity, tax, insurance, labor (Tennessee + federal)
+
+**Router**: [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) — LLC path, **EIN/responsible party**, **TNTAP** + ag exemption research, **greenbelt** per county, **insurance** checklist (**UT W1266**), **DOL/TN DOL** labor routing, **BOI/FinCEN** status note, **compliance calendar**.
 
 ---
 

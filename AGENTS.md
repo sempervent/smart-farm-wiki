@@ -275,6 +275,7 @@ See [raw/processed/2026/example.md](../../raw/processed/2026/example.md) — sec
 - Prefer **authoritative** sources for upgradable claims: **Extension**, **USDA / NRCS**, **land-grant** publications, **peer-reviewed** work, vendor **primary documentation**, and **standards** (ITU, IEEE, RFC). Label **forums, blogs, and chat exports** as **anecdotal** unless corroborated.
 - Use frontmatter **`confidence`** and **`review_status`** honestly. When mixing strong and weak sources on one page, **separate** them visually (subsections or tables). **Do not** upgrade **“might”** to **“does”** without a cited source or a labeled assumption.
 - **Regulatory and safety** claims (food safety, animal health, electrical work) require **explicit** sourcing or **deferral** to professionals—see [`wiki/concepts/smart-farm-wiki-mission-and-values.md`](wiki/concepts/smart-farm-wiki-mission-and-values.md).
+- **Legal / tax / business formation** (entity choice, licensing, BOI/CTA, property-tax programs): prefer **state/federal primary pages** and **extension PDFs** captured in `raw/`; **date-stamp** fast-moving compliance; separate **official requirement** vs **practice recommendation** vs **attorney/CPA/agent** gate on synthesis pages—never present wiki text as professional advice.
 
 ---
 

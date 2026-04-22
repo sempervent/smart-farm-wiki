@@ -3,7 +3,7 @@ title: East Tennessee two-site farm business plan — planning framework
 page_type: analysis
 status: draft
 created: 2026-04-17
-updated: 2026-04-22
+updated: 2026-04-28
 review_status: unreviewed
 tags:
   - business-plan
@@ -88,6 +88,14 @@ All paths under `wiki/analyses/`, kebab-case.
 | Farm accounting baseline — COA + enterprise P&L | [`farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md`](farm-accounting-baseline-chart-of-accounts-enterprise-pl-two-site-smart-farm.md) |
 | Revenue milestone model (supplemental → replacement) | [`revenue-milestone-model-supplemental-to-salary-replacement.md`](revenue-milestone-model-supplemental-to-salary-replacement.md) |
 | Instrumentation ROI model | [`instrumentation-roi-model-two-site-smart-farm.md`](instrumentation-roi-model-two-site-smart-farm.md) |
+
+### Business shell — Tennessee + federal compliance (entity / tax / property / insurance / labor / BOI)
+
+| Layer | Page |
+|-------|------|
+| **Compliance package (router)** | [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) |
+| **Entity pattern (no named LLC in wiki)** | [`Farm business legal entity model`](../entities/farm-business-legal-entity-model.md) |
+| **Evidence cluster** | [`Tennessee farm business compliance — official layer cluster (2026-04-22)`](../source-notes/tennessee-farm-business-compliance-official-layer-cluster-2026-04-22.md) |
 
 ### Smart-farm architecture package (supports the business plan)
 
@@ -232,6 +240,7 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 | K7 | **Automation/telemetry** is a **design principle** with **maintenance and failure** explicitly in scope. |
 | K8 | **120-acre enterprise mix is undecided** — cattle, grazing, crops, agritourism, mixed remain **options** until validated. |
 | K9 | **East Tennessee** regional context (markets, climate, extension) — see existing matrix and TN topic sources. |
+| K10 | **County/site desktop intelligence** exists for **named** anchors (Claxton / Anderson; Demory / Campbell) in [`Local site and county intelligence`](../topics/local-site-and-county-intelligence.md) and [`Local evidence package`](../topics/local-evidence-package-east-tennessee-two-site.md); **parcel-scale operating truth** still requires **field verification** and worksheets—see [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md). |
 
 ---
 
@@ -248,6 +257,7 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 | U7 | **Infrastructure state** (power, barns, fence, pond, road) on 120 ac | Stranded cost vs greenfield |
 | U8 | **Insurance and liability appetite** | Especially visitors, livestock, product |
 | U9 | **Telemetry stack choices** (vendor lock, spares, cyber) | OPEX and failure modes |
+| U10 | **Parcel-level hydrology, internal lanes, utility baselines, and haul/processor math** | Still **evidence-gapped** until register + field program close items in [`Claxton and Demory — missing data register`](claxton-and-demory-missing-data-register.md) |
 
 ---
 
@@ -259,6 +269,7 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 | A2 | **Homelab / edge “brain”** can justify its cost via fewer trips + faster triage | After-action review on incidents |
 | A3 | **Salary replacement** target is stated as **household cash need** on revenue page | Fill number in [`…-revenue-and-phased-income`](east-tennessee-two-site-farm-business-plan-revenue-and-phased-income.md) |
 | A4 | No **implicit** full-time resident manager at remote site unless budgeted | Labor model |
+| A5 | **Desk maps and county statistics** strengthen **direction** only; **G1-class** spend stays blocked until **field** measurements and **parcel** worksheets satisfy the **validation backlog** + [`Field verification program — Phase 0–1`](field-verification-program-phase-0-1-claxton-demory.md) | Integration audit [`…integration-revision-audit-2026-04`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) |
 
 ---
 
@@ -291,6 +302,11 @@ Score each dimension **1–5**. Direction: **5 = best for a commercially serious
 - [`Business plan remediation backlog`](east-tennessee-two-site-farm-business-plan-remediation-backlog.md) — Weakness→fix matrix, **decision controls**, P0/P1/P2 validation checklist
 - [`Business plan source-ingest campaign — East Tennessee two-site`](business-plan-source-ingest-campaign-east-tennessee-two-site.md) — **Extension/NRCS/market/insurance** priorities; proposed source-note titles; **raw vs synthesis** rules
 - [`Execution dossier — Phase 0–1 (hub)`](execution-dossier-hub-phase-0-1-east-tennessee.md) — **Practical** first 24 months: memo, 90d/12m/24m, master checklist; **start here** for field execution
+- [`Business plan integration revision audit (2026-04)`](east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) — Ledger of **doctrine/evidence → plan** binding for this package (no parallel plan)
+- [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) — Structured **site** work tied to **V\*** / **G\*** gates
+- [`Execution gates — Phase 0–1 (East Tennessee two-site)`](execution-gates-phase-0-1-east-tennessee-two-site.md) — EG domain **pass/fail**; **pilot** vs **production**; ties to **G1** honesty
+- [`Kubernetes platform backup/DR — Pi k3s Longhorn`](kubernetes-platform-backup-dr-pi-k3s-longhorn.md) · [`Backup / DR doctrine hub`](../topics/backup-disaster-recovery-doctrine-hub.md) — When control-center stack is **real**, backup/restore is **not optional**
+- [`Observability, secrets, and trust bar — homelab / farm edge`](observability-secrets-and-trust-bar-homelab-farm-edge.md) — **Remote trust** minimums vs dashboards
 - [`Validation and pilot plan — first 24 months (East Tennessee two-site)`](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md) — Validation matrix, **pilot** program (land, infra, business, telemetry, labor), **phase** gates, cheap proofs, **T0** calendar; [`checklists`](pilot-and-recon-checklists-first-24-months-two-site-smart-farm.md)
 - [`Business plan wiki — Git-friendly execution sequence`](business-plan-wiki-git-execution-sequence.md) — How to **merge** the plan work in **coherent PRs** (navigation first, meta after core)
 - Comparisons: [`LoRaWAN vs Meshtastic`](../comparisons/lorawan-vs-meshtastic-fixed-farm-telemetry.md), [`farmOS vs lightweight`](../comparisons/farmos-vs-lightweight-stack-two-site-farm.md), [`own vs hire`](../comparisons/own-equipment-vs-custom-hire-two-site-logistics.md), [`fixed vs mobile gateway`](../comparisons/fixed-gateway-tower-vs-mobile-vehicle-gateway.md)

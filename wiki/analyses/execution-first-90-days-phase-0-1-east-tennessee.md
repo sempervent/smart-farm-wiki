@@ -3,7 +3,7 @@ title: First 90 days — Phase 0–1 execution (East Tennessee two-site)
 page_type: analysis
 status: active
 created: 2026-04-21
-updated: 2026-04-17
+updated: 2026-04-30
 review_status: unreviewed
 tags:
   - business-plan
@@ -19,6 +19,8 @@ confidence: medium
 **Actionable** first **90 days** after **T0** (execution start—[`dossier hub`](execution-dossier-hub-phase-0-1-east-tennessee.md)). **Pilot-grounded** tasks only; **no** **scale** bets.
 
 **Boundaries**: [`Decision memo — Phase 0–1`](execution-dossier-decision-memo-phase-0-1-east-tennessee.md). **Ordered tasks**: [`Master checklist`](execution-dossier-master-checklist-phase-0-1-east-tennessee.md).
+
+**Operator packet (canonical runbook)**: [`First 90 days — operator packet (East Tennessee two-site)`](first-90-days-operator-packet-east-tennessee-two-site.md) — **weeks 1–12** priorities, field verification bundling, infra/sensor caps, documentation, **stop** conditions, evidence by day **30/60/90**, decision checkpoints—**pilot** stance aligned with **EG** gates and [`Operator burden review (hostile)`](phase-0-1-operator-burden-review-east-tennessee-two-site.md).
 
 **Connectivity validation (WAN / Starlink track)** — survey, power, reliability log, remote-access readiness, cost lines: [`Validation and pilot plan` § Connectivity validation](validation-and-pilot-plan-first-24-months-east-tennessee-two-site.md#connectivity-validation) · [`Connectivity strategy — Claxton & Demory`](connectivity-strategy-for-claxton-and-demory.md). **Parallel** tasks below **overlap** **V10** **and** **G8**.
 

@@ -3,7 +3,7 @@ title: Domain content overview (Smart Farm Wiki)
 page_type: analysis
 status: active
 created: 2026-04-18
-updated: 2026-04-20
+updated: 2026-04-21
 review_status: unreviewed
 tags:
   - domain
@@ -55,7 +55,7 @@ Not every page sits in all three rings; many **source-notes** are single-import 
 
 **Themes**: Rotations, cover crops, compost, forage, precision soil sensing, livestock, ponds, irrigation, horses, **woodland specialty** botanicals (e.g. **American ginseng** ingests + start plan).
 
-**Hubs**: [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`Homestead composting and soil sources`](../topics/homestead-composting-and-soil-sources.md), [`Homestead and regional gardening sources`](../topics/homestead-and-regional-gardening-sources.md), [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md), [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md) · **Synthesis**: [`American ginseng from seed — ASAP start plan`](../analyses/american-ginseng-from-seed-asap-start-plan.md) (ASAP + **TDEC** gates) · companion **site / planting / maintenance** guides in `analyses/` + [`PDF-heavy ginseng batch`](../source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md).
+**Hubs**: [`Sustainable cropping, soil, and farm entry sources`](../topics/sustainable-cropping-soil-and-farm-entry-sources.md), [`Homestead composting and soil sources`](../topics/homestead-composting-and-soil-sources.md), [`Homestead and regional gardening sources`](../topics/homestead-and-regional-gardening-sources.md), [`Backyard livestock and homestead animal sources`](../topics/backyard-livestock-and-homestead-animals.md), [`Ponds, water features, and homestead hydrology`](../topics/ponds-water-features-and-homestead-hydrology.md) · **Synthesis**: [`American ginseng from seed — ASAP start plan`](../analyses/american-ginseng-from-seed-asap-start-plan.md) (ASAP + **TDEC** gates) · companion **site / planting / maintenance** guides in `analyses/` + [`PDF-heavy ginseng batch`](../source-notes/american-ginseng-pdf-heavy-inbox-batch-2026-04-20.md) · [`Raising pigs — small-scale homestead guide`](../analyses/raising-pigs-small-scale-homestead-guide.md) (homestead blog/forum batch; **confirm** with extension).
 
 **Concepts**: [`Precision agriculture`](../concepts/precision-agriculture.md), [`Composting`](../concepts/composting.md).
 
@@ -152,7 +152,7 @@ These **four** analyses connect strands that the map above used to only **gestur
 | Decision type | Why |
 |---------------|-----|
 | **Exact enterprise profitability** | Needs **your** yields, prices, costs |
-| **Insurance / entity / liability** | Questions only—see future insurance checklist |
+| **Insurance / entity / liability** | [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) + **UT W1266** insurance PDF (see package) — still **agent/attorney** gates for limits |
 | **Whether to deploy LoRaWAN vs Meshtastic** on **your** terrain | Site survey + comparison page is input, not answer |
 | **Legal market channels** (meat, on-farm sales) | Counsel + current **TN** rules |
 | **“Hands-off” remote farm** via automation alone | Conflicts with welfare and **coverage** reality |

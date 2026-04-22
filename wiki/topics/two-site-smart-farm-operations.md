@@ -3,7 +3,7 @@ title: Two-site smart farm operations
 page_type: topic
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-28
 tags:
   - two-site
   - operations
@@ -27,6 +27,7 @@ review_status: unreviewed
 | Cluster | Canonical entry | Notes |
 |---------|-----------------|--------|
 | **Business plan (ET)** | [`Package hub`](../business-plan/east-tennessee-two-site-farm-business-plan.md) + [`Planning framework`](../analyses/east-tennessee-two-site-farm-business-plan-framework.md) | Chapters are supporting; **not** parallel “strategy blogs.” |
+| **TN + federal business shell** | [`Tennessee farm business compliance package`](../topics/tennessee-farm-business-compliance-package.md) + [`Farm business legal entity model`](../entities/farm-business-legal-entity-model.md) | LLC path, **EIN**, **TNTAP**/exemptions, **greenbelt**, **insurance** checklist, **labor** routing, **BOI** status note—**CPA/attorney/agent** gates. |
 | **Two-site ops (named sites)** | [`Two-site operating model — 5 ac / 120 ac`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) + [`Trip policy`](../analyses/trip-batching-and-site-visit-policy-two-site-smart-farm.md) + [`Disqualifiers`](../analyses/two-site-structure-disqualifiers-east-tennessee.md) | **35-min distance tax** is structural. Generic pattern: [`Dual-site — non-agritourism`](../analyses/dual-site-operations-model-non-agritourism.md). **Entities**: [`SITE_HOME`](../entities/five-acre-home-base-site-home-et-two-site.md), [`SITE_FARM`](../entities/120-acre-production-farm-site-farm-et-two-site.md). |
 | **Telemetry + SoR** | [`Execution topology package (Mermaid)`](../analyses/execution-topology-package-two-site-smart-farm.md), [`Connectivity strategy — Claxton & Demory`](../analyses/connectivity-strategy-for-claxton-and-demory.md), [`Remote access & security`](../analyses/remote-access-operational-security-model-two-site-smart-farm.md), [`Network segmentation & internet exposure`](../analyses/network-segmentation-site-to-site-and-internet-exposure-two-site-smart-farm.md), [`Reference architecture`](../analyses/reference-architecture-5ac-homebase-120ac-smart-farm.md), [`SoR boundaries`](../analyses/telemetry-system-of-record-boundaries-and-authority.md), [`Field telemetry ref arch`](../analyses/field-telemetry-reference-architecture-homestead-120ac.md), [`Farm sensor architecture — Demory`](../analyses/farm-sensor-architecture-demory-farm-site.md), [`Sensor checklist matrix — Demory`](../analyses/sensor-checklist-matrix-for-demory-farm.md), [`Network topology (Mermaid)`](../analyses/two-site-smart-farm-network-topology-and-wan-edge-reference.md) | **Ops-first** diagrams + **WAN** + **Z1/Z2** **segmentation** **policy**; **WAN** detail also in [`Two-site operations model`](../analyses/two-site-operations-model-5ac-homebase-120ac-production.md) + [`Smart tech strategy`](../analyses/east-tennessee-two-site-farm-business-plan-smart-tech-strategy.md). **Entity**: [`Field telemetry network — two-site`](../entities/field-telemetry-network-two-site.md). |
 | **Land IDs** | [`Farm spatial model / asset registry`](../analyses/farm-spatial-model-and-asset-registry-standard.md) | **Entity**: [`Farm parcels and land units`](../entities/farm-parcels-and-land-units.md). |
@@ -48,6 +49,8 @@ review_status: unreviewed
 | [`Hostile internal review`](../analyses/east-tennessee-two-site-farm-business-plan-hostile-internal-review.md) | Skeptical critique |
 | [`Business plan remediation backlog`](../analyses/east-tennessee-two-site-farm-business-plan-remediation-backlog.md) | Fixes, **do not finance**, validation checklist |
 | [`Business plan source-ingest campaign`](../analyses/business-plan-source-ingest-campaign-east-tennessee-two-site.md) | Extension/NRCS/market priorities, backlog titles |
+| [`Business plan integration revision audit (2026-04)`](../analyses/east-tennessee-two-site-farm-business-plan-integration-revision-audit-2026-04.md) | **Doctrine → plan** ledger; strengthened vs blocked assumptions |
+| [`Execution gates — Phase 0–1 (East Tennessee two-site)`](../analyses/execution-gates-phase-0-1-east-tennessee-two-site.md) | EG gate **pass/fail** by domain; **pilot** vs **production**; ties to **G1** |
 
 ## Operations & logistics
 

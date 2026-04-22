@@ -3,7 +3,7 @@ title: Parcel evidence intake and validation workflow — two-site
 page_type: analysis
 status: active
 created: 2026-04-17
-updated: 2026-04-25
+updated: 2026-04-26
 tags:
   - two-site
   - parcel
@@ -23,6 +23,8 @@ confidence: high
 **Local evidence package**: [`Local evidence package — East Tennessee two-site`](../topics/local-evidence-package-east-tennessee-two-site.md).
 
 **Worksheets**: [`Parcel intelligence — Claxton home base`](../analyses/parcel-intelligence-claxton-home-base-east-tennessee-two-site.md) · [`Parcel intelligence — Demory farm site`](../analyses/parcel-intelligence-demory-farm-site-east-tennessee-two-site.md).
+
+**Field verification program (Phase 0–1)**: [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md) — **action-oriented** checklist tables (site, method, evidence, **V\*/G\*** hooks, desktop vs field). Use it to **plan** visits; use this workflow to **promote** outcomes into `raw/` → source-notes → baselines/worksheets.
 
 ---
 
@@ -81,4 +83,5 @@ If new evidence **contradicts** an old row: **do not** silent delete—add **dat
 
 ## Related
 
+- [`Field verification program — Phase 0–1 (Claxton and Demory)`](field-verification-program-phase-0-1-claxton-demory.md)
 - [`Site inventory — Claxton`](site-inventory-baseline-claxton-home-base-east-tennessee.md) · [`Site inventory — Demory`](site-inventory-baseline-demory-farm-site-east-tennessee.md) · [`Infrastructure baseline`](infrastructure-inventory-baseline-two-sites-east-tennessee.md) · [`Utility baseline`](utility-and-service-baseline-two-sites-east-tennessee.md)
